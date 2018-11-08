@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>MoMo Output Formats - MEME Suite</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/memesuite_icon.ico">
+    <link rel="icon" type="image/png" href="images/memesuite_icon.png">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script src="js/menu.js"></script>
+    <script src="js/constants.js"></script>
+    <script src="js/simple-shared-doc.js"></script>
+  </head>
+  <body>
+    <div class="memesuitelogo">
+      <h1>The MEME Suite</h1>
+      <h2>Motif-based sequence analysis tools</h2>
+    </div>
+
+    <h2>MoMo Output Formats</h2>
+
+    <ul>
+      <h3><li><a href="#html_results">MoMo Results HTML Format</a></li></h3>
+      <h3><li><a href="#tsv_results">MoMo Results TSV Format</a></li></h3>
+      <h3><li><a href="#txt_motifs">MoMo Results Text Format</a></li></h3>
+    </ul>
+
+    <div id="html_results">
+      <h3> MoMo Results HTML Format</h3>
+      <p>See this <a href="examples/momo_example_output_files/momo.html">sample HTML results file</a>.</p>
+      <p>
+	The MoMo HTML file contains five sections:
+	<ul>
+	  <li>Links: links to 1) the first motif found, 2) debugging information, 
+	  3) the results in TSV format, and the motifs in <a href="meme-format.html">MEME motif format</a></li>
+	  <li>Program Information: version, availability and citation information</li>
+	  <li>Peptide Preprocessing: information on MoMo's preprocessing of the modified peptides in its input</li>
+	  <li>Results: the motifs found by MoMo</li>
+	  <li>Debugging Information: the command line and the parameters given to MoMo</li>
+	</ul>
+      </p>
+      <p>
+        Motifs are reported in the Results section in the order in which they are found
+	by MoMo. The entry for each motif contains three entries:
+        <ul>
+          <li>Motif Description Line: the regular expression for the motif and various statistics</li>
+	  <li>Sequence Logo: a visual representation of the motif</li>
+	  <li>Motif Occurrences: the list of foreground peptides matching the motif</li>
+        </ul>
+      </p>
+      <p>
+	The Motif Description Line contains the following fields, depending on the algorithm you chose:
+        <ul>
+          <li><b>All algorithms</b>
+	    <ul>
+	      <li>'motif:' - (a string similar to) a regular expression describing the motif.  Lower case 'x' represents
+		    a match to any residue the non-central positions.  The central peptide and its modification
+		    weight (if any) is surrounded by '_' characters.  If --single-motif-per-mass was specified,
+		    the central peptide will be represented by an uppercase 'X', which also represents
+		    a match to any residue.
+              </li>
+	    </ul>
+          <li><b>simple</b>
+	    <ul>
+	      <li>'motif:' - the regular expression describing the motif.  Lower case 'x' represents
+		    the wildcard character in the non-central positions.  The central peptide and its modification
+		    weight (if any) is surrounded by '_' characters.  If --single-motif-per-mass was specified,
+		    the central peptide will be represented by an uppercase 'X'.</li>
+	      <li>'fg_matches:' - the number of peptides matching the motif.
+	    </ul>
+          </li>
+          <li><b>motif-x</b> or <b>modl</b>
+	    <ul>
+	       <li>'score:' - the algorithm-dependent score.
+		  For motif-x, this is the sum over the significant position/residue pairs of -log(p<sub>binomial</sub>);
+		  for modl, this is the increase in description length in bits if that motif was removed from the final set of motifs.
+              </li>
+	      <li>'fg:' - the number of foreground peptides matching the motif, followed by '/', 
+		followed by the total number of foreground peptides with the given central modification.
+              </li>
+	      <li>'bg:' - the number of background peptides matching the motif, followed by '/', 
+		followed by the total number of background peptides with the given central modification.
+              </li>
+	      <li>'fg/bg:' - the fold enrichment of the foreground vs. the background counts.
+	      </li>
+	      <li>'unadjusted <i>p</i>-value:' - the <i>p</i>-value of the Fisher Exact test on the
+		enrichment of the motif in the foreground vs. the background peptides.  This
+		value does <b>NOT</b> accurately represent the statistical significance of the
+		motif, but should be interpreted as a <b>score</b> only.
+	      </li>
+	    </ul>
+          <li><b>motif-x</b> -- The following additional fields appear for <b>motif-x</b> when used <b>without --db-background</b>, and
+		<b>DO</b> accurately represent the statistical significance of the motif.
+            <ul> 
+	      <li>'tests:' - the number of independent tests performed in the search for the motif,
+		which is the number of position/residue pairs motif-x tested for statistical significance.
+              </li>
+	      <li>'adjusted <i>p</i>-value:' - the <i>p</i>-value of the Fisher Exact test on the
+		enrichment of the motif in the foreground vs. the background peptides, adjusted
+		for the number of independent tests (1 - (1-pvalue)^tests).
+              </li>
+<!---
+	      <li>'<i>E</i>-value:' - the unadjusted <i>p</i>-value multiplied times the number of independent tests,
+		which gives an estimate of the number of motifs expected with the given unadjusted
+		<i>p</i>-value or better, if the input peptides were each shuffled.
+              </li>
+--->
+	    </ul>
+            <li><b>Note 1: </b>For motif-x, the foreground and background counts are based on
+              <i>all</i> the peptides unless the <span class="popt">--harvard</span> option
+              is specified, in which case the counts are based on the <i>remaining</i> peptides.
+            </li>
+          </ul>
+        </ul>
+      </p>
+    </div>
+
+    <div id="tsv_results">
+      <h3>MoMo Results TSV Format</h3>
+      <p>See this <a href="examples/momo_example_output_files/momo.tsv">sample TSV results file</a>.</p>
+      <p>
+	The Results TSV file contains the <b>same information as the Motif Description Line</b> (see above)
+        in the HTML output format.  The column headers are self-explanatory.
+      </p>
+    </div>
+
+    <div id="txt_motifs">
+      <h3>MoMo Results Text Format</h3>
+      <p>See this <a href="examples/momo_example_output_files/momo.txt">sample motifs file</a>.</p>
+      <p>
+	The Results Text file contains each of the motifs found by MoMo in <a href="meme-format.html">MEME motif format</a>.
+	MoMo creates these position-frequency matrix motifs by aligning the foreground peptides matching
+	the motif and computing the position-frequency matrix.  No pseudo-counts are added.
+	For motif-x motifs, MoMo writes the value of 'tests' times the 'unadjusted p-value' in the <i>E</i>-value field,
+	and '1' in that field for all other types of motifs.
+      </p>
+    </div>
+
+  </body>
+</html>
