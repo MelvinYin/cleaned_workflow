@@ -35,11 +35,13 @@ then
     #mkdir -p ./files/from_dhcl
     #python ./external_scripts/dhcl/executables/everything.py -d ./files/input_pdb --outdir ./files/from_dhcl &>> $LOG
     #source deactivate
-    python src/process_dhcl_output.py
+    python src/process_dhcl_output_meme.py
     echo "Success!\n\n\n" &>> $LOG
 fi
 # Input: ./files/input_pdb
-# Output: ./files/init_seed_seqs.fasta
+# Output: ./files/consensus_seqs.txt
+
+
 
 # Run converge
 if $RUN_CONVERGE
