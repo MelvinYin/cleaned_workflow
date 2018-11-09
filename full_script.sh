@@ -2,17 +2,19 @@
 
 COPY_INIT_FASTA=false
 RUN_DHCL=false
-MEME_BASH=true
-RUN_MEME=true
-BUILD_STARTER=true
-MERGE_MEME=true
+MEME_BASH=false
+RUN_MEME=false
+BUILD_STARTER=false
+MERGE_MEME=false
 SCREEN_EVALUE=false
+SCREEN_ENTROPY=false
 SCREEN_CORRELATED=false
+SCREEN_CORRELATED2=false
 SCREEN_NON_COMBI=false
-MAST_COMBI=false
-CLUSTER_COMBI=false
-CREATE_CLUSTER_MOTIFS=false
-CREATE_CLUSTER_LOGOS=false
+MAST_COMBI=true
+CLUSTER_COMBI=true
+CREATE_CLUSTER_MOTIFS=true
+CREATE_CLUSTER_LOGOS=true
 DELETE_INIT_FASTA=false
 DELETE_INTERMEDIATE=false
 
@@ -105,6 +107,18 @@ then
     echo "Success!\n\n\n"
 fi
 # Input: ./files/meme_consolidated.txt
+# Output: ./files/meme_evalue_screened.txt
+
+# Screen entropy
+if $SCREEN_ENTROPY
+then
+    echo "SCREEN_ENTROPY:\n"
+    cp -f ./files/meme_evalue_screened.txt    ./files/meme.txt
+    python src/screen_motif_entropy.py
+    mv ./files/meme.txt $TRASH
+    echo "Success!\n\n\n"
+fi
+# Input: ./files/meme_evalue_screened.txt
 # Output: ./files/meme_format.txt
 
 # Screen correlated profiles
@@ -116,7 +130,7 @@ then
     mast -remcorr meme_format.txt consolidated_single.fasta &>> ../.$LOG
     cd ..
     cd ..
-    mv ./external_scripts/meme/mast_out ./files/mast_single
+    mv -f ./external_scripts/meme/mast_out ./files/mast_single
     cp -f ./files/mast_single/mast.txt ./files
     python src/mast_remove_profiles.py &>> $LOG
     mv -f ./external_scripts/meme/meme_format.txt $TRASH
@@ -126,8 +140,28 @@ fi
 # Input: ./files/meme_format.txt    ./external_scripts/meme/consolidated_single.fasta
 # Output: ./files/mast_single    ./files/meme_format2.txt
 
+# Screen correlated profiles again
+if $SCREEN_CORRELATED2
+then
+    echo "SCREEN_CORRELATED2:\n" &>> $LOG
+    cp -f ./files/meme_format2.txt ./external_scripts/meme
+    cd ./external_scripts/meme
+    mast -remcorr meme_format2.txt consolidated_single.fasta &>> ../.$LOG
+    cd ..
+    cd ..
+    mv -f ./external_scripts/meme/mast_out ./files/mast_single
+    cp -f ./files/mast_single/mast.txt ./files
+    rm ./files/meme_format.txt
+    mv -f ./files/meme_format2.txt ./files/meme_format.txt
+    python src/mast_remove_profiles.py &>> $LOG
+    mv -f ./external_scripts/meme/meme_format2.txt $TRASH
+    mv -f ./files/mast.txt $TRASH
+    echo "Success!\n\n\n" &>> $LOG
+fi
+# Input: ./files/meme_format.txt    ./external_scripts/meme/consolidated_single.fasta
+# Output: ./files/mast_single    ./files/meme_format2.txt
+
 # Screen non-combi profiles
-# WARNING: TAKES 1 HOURS
 if $SCREEN_NON_COMBI
 then
     echo "SCREEN_NON_COMBI:\n" &>> $LOG

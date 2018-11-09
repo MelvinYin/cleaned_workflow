@@ -1,7 +1,7 @@
 import re
 
 meme_filename = "./files/meme.txt"
-output_filename = "./files/meme_format.txt"
+output_filename = "./files/meme_evalue_screened.txt"
 
 to_write = ''
 evalue_threshold = 0.5

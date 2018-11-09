@@ -206,7 +206,7 @@ MQ[VL][AI]PVAGW[DG]SM[LV][SL][HN][RL]SG[EA][TH]E[DP]TF[IT][AR][DN][LI][VA][VI]
 
 
 
-Time 12.67 secs.
+Time 12.02 secs.
 
 ********************************************************************************
 

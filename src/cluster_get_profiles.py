@@ -1,10 +1,8 @@
 from collections import Counter, defaultdict
 import re
 import numpy as np
-import sys
-from leven import levenshtein
 import difflib
-from sklearn.cluster import dbscan, mean_shift, AgglomerativeClustering
+from sklearn.cluster import AgglomerativeClustering
 import pickle
 
 USE_SAVE = False

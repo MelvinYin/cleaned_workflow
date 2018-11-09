@@ -1,0 +1,138 @@
+Cluster 0
+Combination: [28 21 12 14 35 ]
+OSBS : 771
+
+
+Cluster 1
+Combination: [28 2 29 12 16 35 13 ]
+CC : 1447
+OSBS : 647
+M : 95
+DE : 52
+NSART : 7
+NSAR : 3
+
+
+Cluster 2
+Combination: [28 2 21 12 16 4 ]
+DE : 2231
+OSBS : 147
+LFD : 69
+CC : 3
+
+
+Cluster 3
+Combination: [2 21 12 14 4 13 ]
+HB : 49
+DE : 30
+CIS : 19
+OSBS : 9
+
+
+Cluster 4
+Combination: [4 27 2 34 29 12 14 17 24 13 ]
+GCRD : 3455
+
+
+Cluster 5
+Combination: [2 29 12 5 36 23 ]
+LFD : 918
+LTGD : 295
+LGD : 141
+OSBS : 44
+DE : 1
+
+
+Cluster 6
+Combination: [29 12 14 35 ]
+OSBS : 1439
+
+
+Cluster 7
+Combination: [28 2 21 12 16 35 ]
+DE : 1555
+OSBS : 289
+NSART : 213
+
+
+Cluster 8
+Combination: [29 12 14 4 ]
+OSBS : 53
+HB : 8
+DE : 2
+
+
+Cluster 9
+Combination: [15 2 18 12 5 36 13 ]
+DGD : 269
+AALG : 76
+RD : 39
+LGD : 35
+LFD : 24
+CC : 18
+XDT : 6
+XD : 6
+LTGD : 5
+LLD : 4
+MD : 4
+OSBS : 2
+GCND : 2
+MR : 1
+
+
+Cluster 12
+Combination: [2 4 ]
+MAL : 85
+
+
+Cluster 14
+Combination: [28 2 12 5 4 13 ]
+OSBS : 29
+MR : 8
+
+
+Cluster 15
+Combination: [9 6 11 2 1 7 10 5 32 3 8 ]
+ENL : 13198
+
+
+Cluster 16
+Combination: [22 30 2 12 5 36 13 ]
+RD : 686
+LGD : 31
+LFD : 28
+
+
+Cluster 17
+Combination: [15 2 18 12 16 4 13 ]
+DGD : 1266
+DTD : 285
+LLD : 236
+MD : 157
+XDT : 112
+GDD : 91
+OSBS : 85
+DE : 79
+GLC : 50
+AALG : 27
+DAD : 8
+NSAR : 7
+GCND : 4
+HB : 3
+XD : 3
+CC : 2
+NSART : 2
+
+
+Cluster 18
+Combination: [28 12 14 4 14 ]
+OSBS : 52
+
+
+Cluster 19
+Combination: [2 21 12 36 35 23 ]
+DE : 231
+OSBS : 30
+NSART : 3
+
+
