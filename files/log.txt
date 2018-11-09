@@ -1,3 +1,17 @@
+SCREEN_CORRELATED:\n
+Writing results to output directory 'mast_out'.
+
+Success!\n\n\n
+SCREEN_CORRELATED2:\n
+Writing results to output directory 'mast_out'.
+
+Success!\n\n\n
+SCREEN_NON_COMBI:\n
+sequences:    100 sequences:    200 sequences:    300 sequences:    400 sequences:    500 sequences:    600 sequences:    700 sequences:    800 sequences:    900 sequences:   1000 sequences:   1100 sequences:   1200 sequences:   1300 sequences:   1400 sequences:   1500 sequences:   1600 sequences:   1700 sequences:   1800 sequences:   1900 sequences:   2000 sequences:   2100 sequences:   2200 sequences:   2300 sequences:   2400 sequences:   2500 sequences:   2600 sequences:   2700 sequences:   2800 sequences:   2900 sequences:   3000 sequences:   3100 sequences:   3200 sequences:   3300 sequences:   3400 sequences:   3500 sequences:   3600 sequences:   3700 sequences:   3800 sequences:   3900 sequences:   4000 sequences:   4100 sequences:   4200 sequences:   4300 sequences:   4400 sequences:   4500 sequences:   4600 sequences:   4700 sequences:   4800 sequences:   4900 sequences:   5000 sequences:   5100 sequences:   5200 sequences:   5300 sequences:   5400 sequences:   5500 sequences:   5600 sequences:   5700 sequences:   5800 sequences:   5900 sequences:   6000 sequences:   6100 sequences:   6200 sequences:   6300 sequences:   6400 sequences:   6500 sequences:   6600 sequences:   6700 sequences:   6800 sequences:   6900 sequences:   7000 sequences:   7100 sequences:   7200 sequences:   7300 sequences:   7400 sequences:   7500 sequences:   7600 sequences:   7700 sequences:   7800 sequences:   7900 sequences:   8000 sequences:   8100 sequences:   8200 sequences:   8300 sequences:   8400 sequences:   8500 sequences:   8600 sequences:   8700 sequences:   8800 sequences:   8900 sequences:   9000 sequences:   9100 sequences:   9200 sequences:   9300 sequences:   9400 sequences:   9500 sequences:   9600 sequences:   9700 sequences:   9800 sequences:   9900 sequences:  10000 sequences:  10100 sequences:  10200 sequences:  10300 sequences:  10400 sequences:  10500 sequences:  10600 sequences:  10700 sequences:  10800 sequences:  10900 sequences:  11000 sequences:  11100 sequences:  11200 sequences:  11300 sequences:  11400 sequences:  11500 sequences:  11600 sequences:  11700 sequences:  11800 sequences:  11900 sequences:  12000 sequences:  12100 sequences:  12200 sequences:  12300 sequences:  12400 sequences:  12500 sequences:  12600 sequences:  12700 sequences:  12800 sequences:  12900 sequences:  13000 sequences:  13100 sequences:  13200 sequences:  13300 sequences:  13400 sequences:  13500 sequences:  13600 sequences:  13700 sequences:  13800 sequences:  13900 sequences:  14000 sequences:  14100 sequences:  14200 sequences:  14300 sequences:  14400 sequences:  14500 sequences:  14600 sequences:  14700 sequences:  14800 sequences:  14900 sequences:  15000 sequences:  15100 sequences:  15200 sequences:  15300 sequences:  15400 sequences:  15500 sequences:  15600 sequences:  15700 sequences:  15800 sequences:  15900 sequences:  16000 sequences:  16100 sequences:  16200 sequences:  16300 sequences:  16400 sequences:  16500 sequences:  16600 sequences:  16700 sequences:  16800 sequences:  16900 sequences:  17000 sequences:  17100 sequences:  17200 sequences:  17300 sequences:  17400 sequences:  17500 sequences:  17600 sequences:  17700 sequences:  17800 sequences:  17900 sequences:  18000 sequences:  18100 sequences:  18200 sequences:  18300 sequences:  18400 sequences:  18500 sequences:  18600 sequences:  18700 sequences:  18800 sequences:  18900 sequences:  19000 sequences:  19100 sequences:  19200 sequences:  19300 sequences:  19400 sequences:  19500 sequences:  19600 sequences:  19700 sequences:  19800 sequences:  19900 sequences:  20000 sequences:  20100 sequences:  20200 sequences:  20300 sequences:  20400 sequences:  20500 sequences:  20600 sequences:  20700 sequences:  20800 sequences:  20900 sequences:  21000 sequences:  21100 sequences:  21200 sequences:  21300 sequences:  21400 sequences:  21500 sequences:  21600 sequences:  21700 sequences:  21800 sequences:  21900 sequences:  22000 sequences:  22100 sequences:  22200 sequences:  22300 sequences:  22400 sequences:  22500 sequences:  22600 sequences:  22700 sequences:  22800 sequences:  22900 sequences:  23000 sequences:  23100 sequences:  23200 sequences:  23300 sequences:  23400 sequences:  23500 sequences:  23600 sequences:  23700 sequences:  23800 sequences:  23900 sequences:  24000 sequences:  24100 sequences:  24200 sequences:  24300 sequences:  24400 sequences:  24500 sequences:  24600 sequences:  24700 sequences:  24800 sequences:  24900 sequences:  25000 sequences:  25100 sequences:  25200 sequences:  25300 sequences:  25400 sequences:  25500 sequences:  25600 sequences:  25700 sequences:  25800 sequences:  25900 sequences:  26000 sequences:  26100 sequences:  26200 sequences:  26300 sequences:  26400 sequences:  26500 sequences:  26600 sequences:  26700 sequences:  26800 sequences:  26900 sequences:  27000 sequences:  27100 sequences:  27200 sequences:  27300 sequences:  27400 sequences:  27500 sequences:  27600 sequences:  27700 sequences:  27800 sequences:  27900 sequences:  28000 sequences:  28100 sequences:  28200 sequences:  28300 sequences:  28400 sequences:  28500 sequences:  28600 sequences:  28700 sequences:  28800 sequences:  28900 sequences:  29000 sequences:  29100 sequences:  29200 sequences:  29300 sequences:  29400 sequences:  29500 sequences:  29600 sequences:  29700 sequences:  29800 sequences:  29900 sequences:  30000 sequences:  30100 sequences:  30200 sequences:  30300 sequences:  30400 sequences:  30500 sequences:  30600 sequences:  30700 sequences:  30800 sequences:  30900 sequences:  31000 sequences:  31100 sequences:  31200 sequences:  31300 sequences:  31400 sequences:  31500 sequences:  31600 sequences:  31700 sequences:  31800 sequences:  31900 sequences:  32000 sequences:  32100 sequences:  32200 sequences:  32300 sequences:  32400 sequences:  32500 sequences:  32600 sequences:  32700 sequences:  32800 sequences:  32900 sequences:  33000 sequences:  33100 sequences:  33200 sequences:  33300 sequences:  33400 Writing results to output directory 'mast_out'.
+
+/home/melvin/anaconda3/lib/python3.6/site-packages/sklearn/externals/joblib/externals/cloudpickle/cloudpickle.py:47: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+  import imp
+Success!\n\n\n
 MAST_COMBI:\n
 sequences:    100 sequences:    200 sequences:    300 sequences:    400 sequences:    500 sequences:    600 sequences:    700 sequences:    800 sequences:    900 sequences:   1000 sequences:   1100 sequences:   1200 sequences:   1300 sequences:   1400 sequences:   1500 sequences:   1600 sequences:   1700 sequences:   1800 sequences:   1900 sequences:   2000 sequences:   2100 sequences:   2200 sequences:   2300 sequences:   2400 sequences:   2500 sequences:   2600 sequences:   2700 sequences:   2800 sequences:   2900 sequences:   3000 sequences:   3100 sequences:   3200 sequences:   3300 sequences:   3400 sequences:   3500 sequences:   3600 sequences:   3700 sequences:   3800 sequences:   3900 sequences:   4000 sequences:   4100 sequences:   4200 sequences:   4300 sequences:   4400 sequences:   4500 sequences:   4600 sequences:   4700 sequences:   4800 sequences:   4900 sequences:   5000 sequences:   5100 sequences:   5200 sequences:   5300 sequences:   5400 sequences:   5500 sequences:   5600 sequences:   5700 sequences:   5800 sequences:   5900 sequences:   6000 sequences:   6100 sequences:   6200 sequences:   6300 sequences:   6400 sequences:   6500 sequences:   6600 sequences:   6700 sequences:   6800 sequences:   6900 sequences:   7000 sequences:   7100 sequences:   7200 sequences:   7300 sequences:   7400 sequences:   7500 sequences:   7600 sequences:   7700 sequences:   7800 sequences:   7900 sequences:   8000 sequences:   8100 sequences:   8200 sequences:   8300 sequences:   8400 sequences:   8500 sequences:   8600 sequences:   8700 sequences:   8800 sequences:   8900 sequences:   9000 sequences:   9100 sequences:   9200 sequences:   9300 sequences:   9400 sequences:   9500 sequences:   9600 sequences:   9700 sequences:   9800 sequences:   9900 sequences:  10000 sequences:  10100 sequences:  10200 sequences:  10300 sequences:  10400 sequences:  10500 sequences:  10600 sequences:  10700 sequences:  10800 sequences:  10900 sequences:  11000 sequences:  11100 sequences:  11200 sequences:  11300 sequences:  11400 sequences:  11500 sequences:  11600 sequences:  11700 sequences:  11800 sequences:  11900 sequences:  12000 sequences:  12100 sequences:  12200 sequences:  12300 sequences:  12400 sequences:  12500 sequences:  12600 sequences:  12700 sequences:  12800 sequences:  12900 sequences:  13000 sequences:  13100 sequences:  13200 sequences:  13300 sequences:  13400 sequences:  13500 sequences:  13600 sequences:  13700 sequences:  13800 sequences:  13900 sequences:  14000 sequences:  14100 sequences:  14200 sequences:  14300 sequences:  14400 sequences:  14500 sequences:  14600 sequences:  14700 sequences:  14800 sequences:  14900 sequences:  15000 sequences:  15100 sequences:  15200 sequences:  15300 sequences:  15400 sequences:  15500 sequences:  15600 sequences:  15700 sequences:  15800 sequences:  15900 sequences:  16000 sequences:  16100 sequences:  16200 sequences:  16300 sequences:  16400 sequences:  16500 sequences:  16600 sequences:  16700 sequences:  16800 sequences:  16900 sequences:  17000 sequences:  17100 sequences:  17200 sequences:  17300 sequences:  17400 sequences:  17500 sequences:  17600 sequences:  17700 sequences:  17800 sequences:  17900 sequences:  18000 sequences:  18100 sequences:  18200 sequences:  18300 sequences:  18400 sequences:  18500 sequences:  18600 sequences:  18700 sequences:  18800 sequences:  18900 sequences:  19000 sequences:  19100 sequences:  19200 sequences:  19300 sequences:  19400 sequences:  19500 sequences:  19600 sequences:  19700 sequences:  19800 sequences:  19900 sequences:  20000 sequences:  20100 sequences:  20200 sequences:  20300 sequences:  20400 sequences:  20500 sequences:  20600 sequences:  20700 sequences:  20800 sequences:  20900 sequences:  21000 sequences:  21100 sequences:  21200 sequences:  21300 sequences:  21400 sequences:  21500 sequences:  21600 sequences:  21700 sequences:  21800 sequences:  21900 sequences:  22000 sequences:  22100 sequences:  22200 sequences:  22300 sequences:  22400 sequences:  22500 sequences:  22600 sequences:  22700 sequences:  22800 sequences:  22900 sequences:  23000 sequences:  23100 sequences:  23200 sequences:  23300 sequences:  23400 sequences:  23500 sequences:  23600 sequences:  23700 sequences:  23800 sequences:  23900 sequences:  24000 sequences:  24100 sequences:  24200 sequences:  24300 sequences:  24400 sequences:  24500 sequences:  24600 sequences:  24700 sequences:  24800 sequences:  24900 sequences:  25000 sequences:  25100 sequences:  25200 sequences:  25300 sequences:  25400 sequences:  25500 sequences:  25600 sequences:  25700 sequences:  25800 sequences:  25900 sequences:  26000 sequences:  26100 sequences:  26200 sequences:  26300 sequences:  26400 sequences:  26500 sequences:  26600 sequences:  26700 sequences:  26800 sequences:  26900 sequences:  27000 sequences:  27100 sequences:  27200 sequences:  27300 sequences:  27400 sequences:  27500 sequences:  27600 sequences:  27700 sequences:  27800 sequences:  27900 sequences:  28000 sequences:  28100 sequences:  28200 sequences:  28300 sequences:  28400 sequences:  28500 sequences:  28600 sequences:  28700 sequences:  28800 sequences:  28900 sequences:  29000 sequences:  29100 sequences:  29200 sequences:  29300 sequences:  29400 sequences:  29500 sequences:  29600 sequences:  29700 sequences:  29800 sequences:  29900 sequences:  30000 sequences:  30100 sequences:  30200 sequences:  30300 sequences:  30400 sequences:  30500 sequences:  30600 sequences:  30700 sequences:  30800 sequences:  30900 sequences:  31000 sequences:  31100 sequences:  31200 sequences:  31300 sequences:  31400 sequences:  31500 sequences:  31600 sequences:  31700 sequences:  31800 sequences:  31900 sequences:  32000 sequences:  32100 sequences:  32200 sequences:  32300 sequences:  32400 sequences:  32500 sequences:  32600 sequences:  32700 sequences:  32800 sequences:  32900 sequences:  33000 sequences:  33100 sequences:  33200 sequences:  33300 sequences:  33400 Writing results to output directory 'mast_out'.
 
@@ -9,7 +23,7 @@ Success!\n\n\n
 CREATE_CLUSTER_MOTIFS:\n
 Success!\n\n\n
 CREATE_CLUSTER_LOGOS:\n
-Failed to find motif 6 in the file "./files/motifs/motifs_in_cluster_0.txt"
+Failed to find motif 7 in the file "./files/motifs/motifs_in_cluster_0.txt"
 Usage: ceqlogo [-i <filename> -m <id/n> | -i<id/n> <filename>]+ [options]
   1. Example: Load a motif called MA0036.1 within a MEME motif file
      ceqlogo -i meme.motifs -m MA0036.1 -o logo.eps
@@ -54,7 +68,97 @@ Logo toggles (all uppercase)
   -X   ...................   Turn on boxing of characters  
   -N   ...................   Turn off numbering of x-axis.
   -Y   ...................   Turn off y-axis 
-Failed to find motif 3 in the file "./files/motifs/motifs_in_cluster_12.txt"
+Failed to find motif 6 in the file "./files/motifs/motifs_in_cluster_10.txt"
+Usage: ceqlogo [-i <filename> -m <id/n> | -i<id/n> <filename>]+ [options]
+  1. Example: Load a motif called MA0036.1 within a MEME motif file
+     ceqlogo -i meme.motifs -m MA0036.1 -o logo.eps
+  2. Example: Load second motif from each of two files and shift the first one
+     ceqlogo -i2 meme1.motifs -s 2 -i2 meme2.motifs -o logo.png -f PNG
+
+Motif loading options:
+  -i <input filename>        Loads motifs within the file as specified by
+                              the following -m options.
+  -i<id/n> <input filename>  Loads the specified motif (n-th position or ID)
+                              within the file. Can also be combined with the
+                              -m option.
+  -m <id/n>                  Loads a motif from the file specified by the
+                              previous -i option. The motif ID or position
+                              can be used.
+  -n <sample number>         Number of samples for previously loaded motif
+                              (-m or -i).
+  -s <shift>                 Shift for previously loaded motif (-m or -i).
+  -r                         Reverse complement previously loaded motif
+                              (-m or -i).
+  -p <pseudocounts>          Pseudocounts for loaded motifs; default: 0.
+  -l                         Prefentially lookup motifs by position;
+                              default: prefer the ID.
+
+Logo options:
+  -o <output file>           Output file path. Default is stdout.
+  -f <format>                Format of output (EPS, PNG); default: EPS
+  -h <logo height>           Height of output logo in cm (real # > 0).
+  -w <logo width>            Width of output logo in cm (real # > 0).
+  -t <title label>           Label for title.
+  -d <fine print>            Descriptive fine print.
+  -x <x-axis label>          Label for x-axis.
+  -y <y-axis label>          Label for y-axis; default: "bits".
+  -c <tic bits>              Number of bits between tic marks.
+  -e <error bar fraction>    Fraction of error bar to show (real # > 0).
+
+Logo toggles (all uppercase) 
+  -S   ...................   Turn on small sample correction.
+  -B   ...................   Turn on bar ends.
+  -E   ...................   Turn on error bars.
+  -O   ...................   Turn on outlining of characters.
+  -X   ...................   Turn on boxing of characters  
+  -N   ...................   Turn off numbering of x-axis.
+  -Y   ...................   Turn off y-axis 
+Failed to find motif 7 in the file "./files/motifs/motifs_in_cluster_11.txt"
+Usage: ceqlogo [-i <filename> -m <id/n> | -i<id/n> <filename>]+ [options]
+  1. Example: Load a motif called MA0036.1 within a MEME motif file
+     ceqlogo -i meme.motifs -m MA0036.1 -o logo.eps
+  2. Example: Load second motif from each of two files and shift the first one
+     ceqlogo -i2 meme1.motifs -s 2 -i2 meme2.motifs -o logo.png -f PNG
+
+Motif loading options:
+  -i <input filename>        Loads motifs within the file as specified by
+                              the following -m options.
+  -i<id/n> <input filename>  Loads the specified motif (n-th position or ID)
+                              within the file. Can also be combined with the
+                              -m option.
+  -m <id/n>                  Loads a motif from the file specified by the
+                              previous -i option. The motif ID or position
+                              can be used.
+  -n <sample number>         Number of samples for previously loaded motif
+                              (-m or -i).
+  -s <shift>                 Shift for previously loaded motif (-m or -i).
+  -r                         Reverse complement previously loaded motif
+                              (-m or -i).
+  -p <pseudocounts>          Pseudocounts for loaded motifs; default: 0.
+  -l                         Prefentially lookup motifs by position;
+                              default: prefer the ID.
+
+Logo options:
+  -o <output file>           Output file path. Default is stdout.
+  -f <format>                Format of output (EPS, PNG); default: EPS
+  -h <logo height>           Height of output logo in cm (real # > 0).
+  -w <logo width>            Width of output logo in cm (real # > 0).
+  -t <title label>           Label for title.
+  -d <fine print>            Descriptive fine print.
+  -x <x-axis label>          Label for x-axis.
+  -y <y-axis label>          Label for y-axis; default: "bits".
+  -c <tic bits>              Number of bits between tic marks.
+  -e <error bar fraction>    Fraction of error bar to show (real # > 0).
+
+Logo toggles (all uppercase) 
+  -S   ...................   Turn on small sample correction.
+  -B   ...................   Turn on bar ends.
+  -E   ...................   Turn on error bars.
+  -O   ...................   Turn on outlining of characters.
+  -X   ...................   Turn on boxing of characters  
+  -N   ...................   Turn off numbering of x-axis.
+  -Y   ...................   Turn off y-axis 
+Failed to find motif 6 in the file "./files/motifs/motifs_in_cluster_13.txt"
 Usage: ceqlogo [-i <filename> -m <id/n> | -i<id/n> <filename>]+ [options]
   1. Example: Load a motif called MA0036.1 within a MEME motif file
      ceqlogo -i meme.motifs -m MA0036.1 -o logo.eps
@@ -144,7 +248,7 @@ Logo toggles (all uppercase)
   -X   ...................   Turn on boxing of characters  
   -N   ...................   Turn off numbering of x-axis.
   -Y   ...................   Turn off y-axis 
-Failed to find motif 12 in the file "./files/motifs/motifs_in_cluster_15.txt"
+Failed to find motif 9 in the file "./files/motifs/motifs_in_cluster_15.txt"
 Usage: ceqlogo [-i <filename> -m <id/n> | -i<id/n> <filename>]+ [options]
   1. Example: Load a motif called MA0036.1 within a MEME motif file
      ceqlogo -i meme.motifs -m MA0036.1 -o logo.eps
@@ -234,7 +338,7 @@ Logo toggles (all uppercase)
   -X   ...................   Turn on boxing of characters  
   -N   ...................   Turn off numbering of x-axis.
   -Y   ...................   Turn off y-axis 
-Failed to find motif 8 in the file "./files/motifs/motifs_in_cluster_17.txt"
+Failed to find motif 11 in the file "./files/motifs/motifs_in_cluster_18.txt"
 Usage: ceqlogo [-i <filename> -m <id/n> | -i<id/n> <filename>]+ [options]
   1. Example: Load a motif called MA0036.1 within a MEME motif file
      ceqlogo -i meme.motifs -m MA0036.1 -o logo.eps
@@ -279,7 +383,7 @@ Logo toggles (all uppercase)
   -X   ...................   Turn on boxing of characters  
   -N   ...................   Turn off numbering of x-axis.
   -Y   ...................   Turn off y-axis 
-Failed to find motif 5 in the file "./files/motifs/motifs_in_cluster_18.txt"
+Failed to find motif 7 in the file "./files/motifs/motifs_in_cluster_1.txt"
 Usage: ceqlogo [-i <filename> -m <id/n> | -i<id/n> <filename>]+ [options]
   1. Example: Load a motif called MA0036.1 within a MEME motif file
      ceqlogo -i meme.motifs -m MA0036.1 -o logo.eps
@@ -324,7 +428,7 @@ Logo toggles (all uppercase)
   -X   ...................   Turn on boxing of characters  
   -N   ...................   Turn off numbering of x-axis.
   -Y   ...................   Turn off y-axis 
-Failed to find motif 7 in the file "./files/motifs/motifs_in_cluster_19.txt"
+Failed to find motif 8 in the file "./files/motifs/motifs_in_cluster_2.txt"
 Usage: ceqlogo [-i <filename> -m <id/n> | -i<id/n> <filename>]+ [options]
   1. Example: Load a motif called MA0036.1 within a MEME motif file
      ceqlogo -i meme.motifs -m MA0036.1 -o logo.eps
@@ -369,7 +473,7 @@ Logo toggles (all uppercase)
   -X   ...................   Turn on boxing of characters  
   -N   ...................   Turn off numbering of x-axis.
   -Y   ...................   Turn off y-axis 
-Failed to find motif 8 in the file "./files/motifs/motifs_in_cluster_1.txt"
+Failed to find motif 8 in the file "./files/motifs/motifs_in_cluster_3.txt"
 Usage: ceqlogo [-i <filename> -m <id/n> | -i<id/n> <filename>]+ [options]
   1. Example: Load a motif called MA0036.1 within a MEME motif file
      ceqlogo -i meme.motifs -m MA0036.1 -o logo.eps
@@ -414,97 +518,7 @@ Logo toggles (all uppercase)
   -X   ...................   Turn on boxing of characters  
   -N   ...................   Turn off numbering of x-axis.
   -Y   ...................   Turn off y-axis 
-Failed to find motif 7 in the file "./files/motifs/motifs_in_cluster_2.txt"
-Usage: ceqlogo [-i <filename> -m <id/n> | -i<id/n> <filename>]+ [options]
-  1. Example: Load a motif called MA0036.1 within a MEME motif file
-     ceqlogo -i meme.motifs -m MA0036.1 -o logo.eps
-  2. Example: Load second motif from each of two files and shift the first one
-     ceqlogo -i2 meme1.motifs -s 2 -i2 meme2.motifs -o logo.png -f PNG
-
-Motif loading options:
-  -i <input filename>        Loads motifs within the file as specified by
-                              the following -m options.
-  -i<id/n> <input filename>  Loads the specified motif (n-th position or ID)
-                              within the file. Can also be combined with the
-                              -m option.
-  -m <id/n>                  Loads a motif from the file specified by the
-                              previous -i option. The motif ID or position
-                              can be used.
-  -n <sample number>         Number of samples for previously loaded motif
-                              (-m or -i).
-  -s <shift>                 Shift for previously loaded motif (-m or -i).
-  -r                         Reverse complement previously loaded motif
-                              (-m or -i).
-  -p <pseudocounts>          Pseudocounts for loaded motifs; default: 0.
-  -l                         Prefentially lookup motifs by position;
-                              default: prefer the ID.
-
-Logo options:
-  -o <output file>           Output file path. Default is stdout.
-  -f <format>                Format of output (EPS, PNG); default: EPS
-  -h <logo height>           Height of output logo in cm (real # > 0).
-  -w <logo width>            Width of output logo in cm (real # > 0).
-  -t <title label>           Label for title.
-  -d <fine print>            Descriptive fine print.
-  -x <x-axis label>          Label for x-axis.
-  -y <y-axis label>          Label for y-axis; default: "bits".
-  -c <tic bits>              Number of bits between tic marks.
-  -e <error bar fraction>    Fraction of error bar to show (real # > 0).
-
-Logo toggles (all uppercase) 
-  -S   ...................   Turn on small sample correction.
-  -B   ...................   Turn on bar ends.
-  -E   ...................   Turn on error bars.
-  -O   ...................   Turn on outlining of characters.
-  -X   ...................   Turn on boxing of characters  
-  -N   ...................   Turn off numbering of x-axis.
-  -Y   ...................   Turn off y-axis 
-Failed to find motif 7 in the file "./files/motifs/motifs_in_cluster_3.txt"
-Usage: ceqlogo [-i <filename> -m <id/n> | -i<id/n> <filename>]+ [options]
-  1. Example: Load a motif called MA0036.1 within a MEME motif file
-     ceqlogo -i meme.motifs -m MA0036.1 -o logo.eps
-  2. Example: Load second motif from each of two files and shift the first one
-     ceqlogo -i2 meme1.motifs -s 2 -i2 meme2.motifs -o logo.png -f PNG
-
-Motif loading options:
-  -i <input filename>        Loads motifs within the file as specified by
-                              the following -m options.
-  -i<id/n> <input filename>  Loads the specified motif (n-th position or ID)
-                              within the file. Can also be combined with the
-                              -m option.
-  -m <id/n>                  Loads a motif from the file specified by the
-                              previous -i option. The motif ID or position
-                              can be used.
-  -n <sample number>         Number of samples for previously loaded motif
-                              (-m or -i).
-  -s <shift>                 Shift for previously loaded motif (-m or -i).
-  -r                         Reverse complement previously loaded motif
-                              (-m or -i).
-  -p <pseudocounts>          Pseudocounts for loaded motifs; default: 0.
-  -l                         Prefentially lookup motifs by position;
-                              default: prefer the ID.
-
-Logo options:
-  -o <output file>           Output file path. Default is stdout.
-  -f <format>                Format of output (EPS, PNG); default: EPS
-  -h <logo height>           Height of output logo in cm (real # > 0).
-  -w <logo width>            Width of output logo in cm (real # > 0).
-  -t <title label>           Label for title.
-  -d <fine print>            Descriptive fine print.
-  -x <x-axis label>          Label for x-axis.
-  -y <y-axis label>          Label for y-axis; default: "bits".
-  -c <tic bits>              Number of bits between tic marks.
-  -e <error bar fraction>    Fraction of error bar to show (real # > 0).
-
-Logo toggles (all uppercase) 
-  -S   ...................   Turn on small sample correction.
-  -B   ...................   Turn on bar ends.
-  -E   ...................   Turn on error bars.
-  -O   ...................   Turn on outlining of characters.
-  -X   ...................   Turn on boxing of characters  
-  -N   ...................   Turn off numbering of x-axis.
-  -Y   ...................   Turn off y-axis 
-Failed to find motif 11 in the file "./files/motifs/motifs_in_cluster_4.txt"
+Failed to find motif 5 in the file "./files/motifs/motifs_in_cluster_4.txt"
 Usage: ceqlogo [-i <filename> -m <id/n> | -i<id/n> <filename>]+ [options]
   1. Example: Load a motif called MA0036.1 within a MEME motif file
      ceqlogo -i meme.motifs -m MA0036.1 -o logo.eps
@@ -594,7 +608,7 @@ Logo toggles (all uppercase)
   -X   ...................   Turn on boxing of characters  
   -N   ...................   Turn off numbering of x-axis.
   -Y   ...................   Turn off y-axis 
-Failed to find motif 5 in the file "./files/motifs/motifs_in_cluster_6.txt"
+Failed to find motif 6 in the file "./files/motifs/motifs_in_cluster_6.txt"
 Usage: ceqlogo [-i <filename> -m <id/n> | -i<id/n> <filename>]+ [options]
   1. Example: Load a motif called MA0036.1 within a MEME motif file
      ceqlogo -i meme.motifs -m MA0036.1 -o logo.eps
@@ -639,7 +653,7 @@ Logo toggles (all uppercase)
   -X   ...................   Turn on boxing of characters  
   -N   ...................   Turn off numbering of x-axis.
   -Y   ...................   Turn off y-axis 
-Failed to find motif 7 in the file "./files/motifs/motifs_in_cluster_7.txt"
+Failed to find motif 6 in the file "./files/motifs/motifs_in_cluster_7.txt"
 Usage: ceqlogo [-i <filename> -m <id/n> | -i<id/n> <filename>]+ [options]
   1. Example: Load a motif called MA0036.1 within a MEME motif file
      ceqlogo -i meme.motifs -m MA0036.1 -o logo.eps
@@ -684,52 +698,7 @@ Logo toggles (all uppercase)
   -X   ...................   Turn on boxing of characters  
   -N   ...................   Turn off numbering of x-axis.
   -Y   ...................   Turn off y-axis 
-Failed to find motif 5 in the file "./files/motifs/motifs_in_cluster_8.txt"
-Usage: ceqlogo [-i <filename> -m <id/n> | -i<id/n> <filename>]+ [options]
-  1. Example: Load a motif called MA0036.1 within a MEME motif file
-     ceqlogo -i meme.motifs -m MA0036.1 -o logo.eps
-  2. Example: Load second motif from each of two files and shift the first one
-     ceqlogo -i2 meme1.motifs -s 2 -i2 meme2.motifs -o logo.png -f PNG
-
-Motif loading options:
-  -i <input filename>        Loads motifs within the file as specified by
-                              the following -m options.
-  -i<id/n> <input filename>  Loads the specified motif (n-th position or ID)
-                              within the file. Can also be combined with the
-                              -m option.
-  -m <id/n>                  Loads a motif from the file specified by the
-                              previous -i option. The motif ID or position
-                              can be used.
-  -n <sample number>         Number of samples for previously loaded motif
-                              (-m or -i).
-  -s <shift>                 Shift for previously loaded motif (-m or -i).
-  -r                         Reverse complement previously loaded motif
-                              (-m or -i).
-  -p <pseudocounts>          Pseudocounts for loaded motifs; default: 0.
-  -l                         Prefentially lookup motifs by position;
-                              default: prefer the ID.
-
-Logo options:
-  -o <output file>           Output file path. Default is stdout.
-  -f <format>                Format of output (EPS, PNG); default: EPS
-  -h <logo height>           Height of output logo in cm (real # > 0).
-  -w <logo width>            Width of output logo in cm (real # > 0).
-  -t <title label>           Label for title.
-  -d <fine print>            Descriptive fine print.
-  -x <x-axis label>          Label for x-axis.
-  -y <y-axis label>          Label for y-axis; default: "bits".
-  -c <tic bits>              Number of bits between tic marks.
-  -e <error bar fraction>    Fraction of error bar to show (real # > 0).
-
-Logo toggles (all uppercase) 
-  -S   ...................   Turn on small sample correction.
-  -B   ...................   Turn on bar ends.
-  -E   ...................   Turn on error bars.
-  -O   ...................   Turn on outlining of characters.
-  -X   ...................   Turn on boxing of characters  
-  -N   ...................   Turn off numbering of x-axis.
-  -Y   ...................   Turn off y-axis 
-Failed to find motif 8 in the file "./files/motifs/motifs_in_cluster_9.txt"
+Failed to find motif 6 in the file "./files/motifs/motifs_in_cluster_9.txt"
 Usage: ceqlogo [-i <filename> -m <id/n> | -i<id/n> <filename>]+ [options]
   1. Example: Load a motif called MA0036.1 within a MEME motif file
      ceqlogo -i meme.motifs -m MA0036.1 -o logo.eps

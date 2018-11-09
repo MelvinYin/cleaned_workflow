@@ -4,13 +4,13 @@ COPY_INIT_FASTA=false
 RUN_DHCL=false
 MEME_BASH=false
 RUN_MEME=false
-BUILD_STARTER=false
-MERGE_MEME=false
-SCREEN_EVALUE=false
-SCREEN_ENTROPY=false
-SCREEN_CORRELATED=false
-SCREEN_CORRELATED2=false
-SCREEN_NON_COMBI=false
+BUILD_STARTER=true
+MERGE_MEME=true
+SCREEN_EVALUE=true
+SCREEN_ENTROPY=true
+SCREEN_CORRELATED=true
+SCREEN_CORRELATED2=true
+SCREEN_NON_COMBI=true
 MAST_COMBI=true
 CLUSTER_COMBI=true
 CREATE_CLUSTER_MOTIFS=true
@@ -78,7 +78,7 @@ if $BUILD_STARTER
 then
     echo "BUILD_STARTER:\n"
     cd ./external_scripts/meme
-    meme -protein -w 30 -p 8 -nmotifs 20 consolidated.fasta
+    meme -protein -w 30 -p 8 -nmotifs 1 consolidated.fasta
     cd ..
     cd ..
     mv ./external_scripts/meme/meme_out/meme.txt ./files/meme_starter.txt
@@ -149,9 +149,10 @@ then
     mast -remcorr meme_format2.txt consolidated_single.fasta &>> ../.$LOG
     cd ..
     cd ..
+    mv -r ./files/mast_single $TRASH
     mv -f ./external_scripts/meme/mast_out ./files/mast_single
     cp -f ./files/mast_single/mast.txt ./files
-    rm ./files/meme_format.txt
+    mv ./files/meme_format.txt $TRASH
     mv -f ./files/meme_format2.txt ./files/meme_format.txt
     python src/mast_remove_profiles.py &>> $LOG
     mv -f ./external_scripts/meme/meme_format2.txt $TRASH
