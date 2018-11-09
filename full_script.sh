@@ -1,8 +1,12 @@
 # chmod +rwx full_script.sh
 
 COPY_INIT_FASTA=false
-RUN_DHCL=true
-RUN_CONVERGE=false
+RUN_DHCL=false
+MEME_BASH=true
+RUN_MEME=true
+BUILD_STARTER=true
+MERGE_MEME=true
+SCREEN_EVALUE=false
 SCREEN_CORRELATED=false
 SCREEN_NON_COMBI=false
 MAST_COMBI=false
@@ -13,8 +17,10 @@ DELETE_INIT_FASTA=false
 DELETE_INTERMEDIATE=false
 
 LOG=./files/log.txt
+TRASH=./files/_trash
 
-rm -f $LOG
+mkdir -p $TRASH
+mv -f $LOG $TRASH
 touch $LOG
 
 # Copy initial fasta files
@@ -28,38 +34,77 @@ then
 fi
 
 # Run dhcl
+# WARNING: TAKES 0.5 HOUR
 if $RUN_DHCL
 then
-    #echo "RUN_DHCL:\n" &>> $LOG
-    #source activate p2.7
-    #mkdir -p ./files/from_dhcl
-    #python ./external_scripts/dhcl/executables/everything.py -d ./files/input_pdb --outdir ./files/from_dhcl &>> $LOG
-    #source deactivate
+    echo "RUN_DHCL:\n" &>> $LOG
+    source activate p2.7
+    mkdir -p ./files/from_dhcl
+    python ./external_scripts/dhcl/executables/everything.py -d ./files/input_pdb --outdir ./files/from_dhcl &>> $LOG
+    source deactivate
     python src/process_dhcl_output_meme.py
     echo "Success!\n\n\n" &>> $LOG
 fi
 # Input: ./files/input_pdb
 # Output: ./files/consensus_seqs.txt
 
-
-
-# Run converge
-if $RUN_CONVERGE
+# Create meme bash
+if $MEME_BASH
 then
-    #echo "RUN_CONVERGE:\n" &>> $LOG
-    #cp -f ./files/init_seed_seqs.fasta ./external_scripts/pipeline
-    #cd ./external_scripts/pipeline
-    #mpirun -np 8 ./converge -c composition.csv -B -E 1 -r 1 -f 1 -p consolidated.fasta -i init_seed_seqs.fasta &>> ../.$LOG
-    #cd ..
-    #cd ..
-    #mv ./external_scripts/pipeline/output.4.matrix.0 ./files/output.4.matrix.0
-    #mv ./external_scripts/pipeline/composition.csv ./files/composition.csv
-    #python src/converge2meme.py &>> $LOG
-    rm ./external_scripts/pipeline/init_seed_seqs.fasta
-    rm ./external_scripts/pipeline/output.1.matrix.0
-    echo "Success!\n\n\n" &>> $LOG
+    echo "MEME_BASH:\n"
+    python src/create_bash_script_for_meme.py
+    echo "Success!\n\n\n"
 fi
-# Input: ./files/init_seed_seqs.fasta    ./external_scripts/pipeline/consolidated.fasta
+# Input: ./files/consensus_seqs.txt    ./files/consolidated.fasta
+# Output: ./files/call_meme.sh
+
+# Run meme script
+# WARNING: TAKES 2 HOURS
+if $RUN_MEME
+then
+    echo "RUN_MEME:\n"
+    chmod +rwx ./files/call_meme.sh
+    ./files/call_meme.sh
+    mv ./external_scripts/meme/meme_output ./files/meme_full
+    echo "Success!\n\n\n"
+fi
+# Input: ./files/call_meme.sh    ./files/consolidated.fasta
+# Output: ./files/meme_full
+
+# Build meme_starter
+if $BUILD_STARTER
+then
+    echo "BUILD_STARTER:\n"
+    cd ./external_scripts/meme
+    meme -protein -w 30 -p 8 -nmotifs 20 consolidated.fasta
+    cd ..
+    cd ..
+    mv ./external_scripts/meme/meme_out/meme.txt ./files/meme_starter.txt
+    echo "Success!\n\n\n"
+fi
+# Input: ./files/meme_full    ./files/meme_starter.txt
+# Output: ./files/meme_consolidated.txt
+
+# Merge meme
+if $MERGE_MEME
+then
+    echo "MERGE_MEME:\n"
+    python src/meme_merger.py
+    echo "Success!\n\n\n"
+fi
+# Input: ./files/meme_full    ./files/meme_starter.txt
+# Output: ./files/meme_consolidated.txt
+
+# Screen evalue
+if $SCREEN_EVALUE
+then
+    echo "SCREEN_EVALUE:\n"
+    cp -f ./files/meme_consolidated.txt    ./files/meme.txt
+    python src/remove_motifs_with_low_evalue.py
+    mv ./files/meme.txt $TRASH
+    echo "Success!\n\n\n"
+fi
+# Input: ./files/meme_consolidated.txt
 # Output: ./files/meme_format.txt
 
 # Screen correlated profiles
@@ -74,14 +119,15 @@ then
     mv ./external_scripts/meme/mast_out ./files/mast_single
     cp -f ./files/mast_single/mast.txt ./files
     python src/mast_remove_profiles.py &>> $LOG
-    rm ./external_scripts/meme/meme_format.txt
-    rm ./files/mast.txt
+    mv -f ./external_scripts/meme/meme_format.txt $TRASH
+    mv -f ./files/mast.txt $TRASH
     echo "Success!\n\n\n" &>> $LOG
 fi
 # Input: ./files/meme_format.txt    ./external_scripts/meme/consolidated_single.fasta
 # Output: ./files/mast_single    ./files/meme_format2.txt
 
 # Screen non-combi profiles
+# WARNING: TAKES 1 HOURS
 if $SCREEN_NON_COMBI
 then
     echo "SCREEN_NON_COMBI:\n" &>> $LOG
@@ -95,14 +141,15 @@ then
     cp -f ./files/mast_nocorr/mast.txt ./files
     python src/cluster_get_profiles.py &>> $LOG
     python src/mast_remove_profiles_using_pkl.py &>> $LOG
-    rm ./external_scripts/meme/meme_format2.txt
-    rm ./files/mast.txt
+    mv -f ./external_scripts/meme/meme_format2.txt $TRASH
+    mv -f ./files/mast.txt $TRASH
     echo "Success!\n\n\n" &>> $LOG
 fi
 # Input: ./files/meme_format2.txt    ./external_scripts/meme/consolidated.fasta
 # Output: ./files/mast_nocorr    ./files/meme_format3.txt
 
 # MAST on final set of profiles
+# WARNING: TAKES 1 HOURS
 if $MAST_COMBI
 then
     echo "MAST_COMBI:\n" &>> $LOG
@@ -113,7 +160,7 @@ then
     cd ..
     mv ./external_scripts/meme/mast_out ./files/mast_onlycombi
     cp -r ./files/mast_onlycombi ./output/mast
-    rm ./external_scripts/meme/meme_format3.txt
+    mv -f ./external_scripts/meme/meme_format3.txt $TRASH
     echo "Success!\n\n\n" &>> $LOG
 fi
 # Input: ./files/meme_format3.txt    ./external_scripts/meme/consolidated.fasta
@@ -125,7 +172,7 @@ then
     echo "CLUSTER_COMBI:\n" &>> $LOG
     cp -f ./files/mast_onlycombi/mast.txt ./files
     python src/cluster_final.py &>> $LOG
-    rm ./files/mast.txt
+    mv -f ./files/mast.txt $TRASH
     echo "Success!\n\n\n" &>> $LOG
 fi
 # Input: ./files/mast_onlycombi/mast.txt
@@ -167,24 +214,24 @@ fi
 if $DELETE_INIT_FASTA
 then
     echo "DELETE_INIT_FASTA:\n" &>> $LOG
-    rm ./external_scripts/pipeline/consolidated.fasta 
-    rm ./external_scripts/meme/consolidated_single.fasta 
-    rm ./external_scripts/meme/consolidated.fasta 
+    mv -f ./external_scripts/pipeline/consolidated.fasta $TRASH
+    mv -f ./external_scripts/meme/consolidated_single.fasta $TRASH
+    mv -f ./external_scripts/meme/consolidated.fasta $TRASH
     echo "Success!\n\n\n" &>> $LOG
 fi
 
 # Delete all intermediate files
 if $DELETE_INTERMEDIATE
 then
-    rm -f ./files/init_seed_seqs.fasta
-    rm -f ./files/meme_format.txt
-    rm -rf ./files/mast_single
-    rm -f ./files/meme_format2.txt
-    rm -rf ./files/mast_nocorr
-    rm -f ./files/meme_format3.txt
-    rm -rf ./files/mast_onlycombi
-    rm -f ./files/cluster_centroids.pkl
-    rm -rf ./files/motifs
-    rm -r $LOG
+    mv -f ./files/init_seed_seqs.fasta $TRASH
+    mv -f ./files/meme_format.txt $TRASH
+    mv -rf ./files/mast_single $TRASH
+    mv -f ./files/meme_format2.txt $TRASH
+    mv -rf ./files/mast_nocorr $TRASH
+    mv -f ./files/meme_format3.txt $TRASH
+    mv -rf ./files/mast_onlycombi $TRASH
+    mv -f ./files/cluster_centroids.pkl $TRASH
+    mv -rf ./files/motifs $TRASH
+    mv -f $LOG $TRASH
 fi
 

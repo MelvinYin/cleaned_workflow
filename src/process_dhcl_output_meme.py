@@ -44,7 +44,6 @@ def main():
         filename_seqs_map[raw_filename] = seqs
 
     # Splitting into segments
-    tot_seq_count = 0
     filename_segments_map = dict()
     for filename, loops in filename_loop_map.items():
         seq = filename_seqs_map[filename]
@@ -86,11 +85,9 @@ def main():
                 loop = seq[raw_end-15:raw_end+15]
                 merged_seq.append(loop)
         filename_segments_map[filename] = merged_seq
-        tot_seq_count += len(merged_seq)
 
     # Output as fasta for seed seqs
     with open(output_filename, "w") as file:
-        file.write("{}\n".format(tot_seq_count))
         for filename, seqs in filename_segments_map.items():
             for seq in seqs:
                 assert len(seq) == 30

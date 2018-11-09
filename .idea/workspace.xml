@@ -2,9 +2,192 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="977e9f69-e7b2-4235-9856-6e88bdf80fc9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/build_meme_starter.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/create_bash_script_for_meme.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/meme_merger.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/remove_motifs_with_low_evalue.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cluster_centroids.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cluster_labels.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist_metric.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/bin/meme_out (copy)/logo1.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/bin/meme_out (copy)/logo1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/bin/meme_out (copy)/logo2.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/bin/meme_out (copy)/logo2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/bin/meme_out (copy)/logo3.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/bin/meme_out (copy)/logo3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/bin/meme_out (copy)/logo4.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/bin/meme_out (copy)/logo4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/bin/meme_out (copy)/logo5.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/bin/meme_out (copy)/logo5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/bin/meme_out (copy)/meme.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/bin/meme_out (copy)/meme.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/bin/meme_out (copy)/meme.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/cluster_centroids.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/composition.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/consensus_seqs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/consensus_seqs.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/init_seed_seqs.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/mast_nocorr/mast.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/mast_nocorr/mast.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/mast_nocorr/mast.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/mast_onlycombi/mast.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/mast_onlycombi/mast.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/mast_onlycombi/mast.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/mast_single/mast.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/mast_single/mast.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/mast_single/mast.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_format.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_format2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_format3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/motifs/motifs_in_cluster_0.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/motifs/motifs_in_cluster_1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/motifs/motifs_in_cluster_10.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/motifs/motifs_in_cluster_11.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/motifs/motifs_in_cluster_12.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/motifs/motifs_in_cluster_13.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/motifs/motifs_in_cluster_14.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/motifs/motifs_in_cluster_15.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/motifs/motifs_in_cluster_16.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/motifs/motifs_in_cluster_17.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/motifs/motifs_in_cluster_18.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/motifs/motifs_in_cluster_19.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/motifs/motifs_in_cluster_2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/motifs/motifs_in_cluster_3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/motifs/motifs_in_cluster_4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/motifs/motifs_in_cluster_5.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/motifs/motifs_in_cluster_6.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/motifs/motifs_in_cluster_7.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/motifs/motifs_in_cluster_8.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/motifs/motifs_in_cluster_9.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/output.4.matrix.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/profiles_to_remove.pkl" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/full_script.sh" beforeDir="false" afterPath="$PROJECT_DIR$/full_script.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/cluster_description.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_0/logo_129.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_0/logo_184.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_0/logo_38.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_0/logo_43.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_0/logo_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_0/logo_93.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_1/logo_112.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_1/logo_118.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_1/logo_12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_1/logo_14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_1/logo_30.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_1/logo_68.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_10/logo_12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_10/logo_13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_10/logo_144.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_10/logo_207.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_10/logo_38.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_10/logo_43.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_10/logo_51.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_10/logo_73.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_11/logo_27.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_11/logo_29.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_11/logo_30.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_11/logo_33.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_11/logo_34.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_11/logo_35.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_11/logo_37.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_11/logo_38.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_11/logo_40.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_12/logo_12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_12/logo_121.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_12/logo_123.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_12/logo_127.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_12/logo_130.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_12/logo_132.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_12/logo_133.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_12/logo_24.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_13/logo_12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_13/logo_188.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_13/logo_190.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_13/logo_192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_13/logo_196.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_14/logo_10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_14/logo_12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_14/logo_16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_14/logo_162.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_14/logo_77.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_14/logo_84.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_15/logo_117.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_15/logo_14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_15/logo_141.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_15/logo_25.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_15/logo_30.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_16/logo_12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_16/logo_67.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_16/logo_69.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_16/logo_70.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_16/logo_72.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_16/logo_73.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_16/logo_77.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_16/logo_79.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_17/logo_129.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_17/logo_150.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_17/logo_44.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_17/logo_8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_17/logo_93.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_18/logo_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_18/logo_11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_18/logo_12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_18/logo_62.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_19/logo_54.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_19/logo_55.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_19/logo_56.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_19/logo_58.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_19/logo_64.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_19/logo_66.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_19/logo_77.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_2/logo_116.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_2/logo_146.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_2/logo_212.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_2/logo_28.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_2/logo_73.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_2/logo_90.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_3/logo_12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_3/logo_14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_3/logo_147.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_3/logo_166.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_3/logo_77.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_4/logo_212.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_4/logo_37.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_4/logo_38.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_4/logo_74.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_4/logo_93.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_5/logo_13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_5/logo_146.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_5/logo_52.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_5/logo_99.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_6/logo_24.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_6/logo_38.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_6/logo_43.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_6/logo_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_6/logo_74.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_6/logo_9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_7/logo_129.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_7/logo_184.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_7/logo_28.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_7/logo_38.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_7/logo_8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_7/logo_90.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_8/logo_12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_8/logo_144.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_8/logo_166.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_8/logo_24.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_8/logo_38.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_8/logo_93.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_8/logo_95.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_9/logo_116.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_9/logo_14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_9/logo_207.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_9/logo_30.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_9/logo_51.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_9/logo_73.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/make_cluster_csv.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/process_dhcl_output_meme.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/process_dhcl_output_meme.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,6 +197,8 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/merged_src$mast_remove_profiles.coverage" NAME="mast_remove_profiles Coverage Results" MODIFIED="1540454008157" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cleaned_workflow$remove_motifs_with_low_evalue.coverage" NAME="remove_motifs_with_low_evalue Coverage Results" MODIFIED="1541731354918" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/cleaned_workflow$meme_merger.coverage" NAME="meme_merger Coverage Results" MODIFIED="1541743204874" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="2007311421">
@@ -82,31 +267,33 @@
     <session id="922574488">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="7" />
+          <entry key="project.closed" value="8" />
           <entry key="project.open.time.0" value="3" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.open.time.7" value="1" />
+          <entry key="project.open.time.7" value="2" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="9" />
+          <entry key="project.opened" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="520" />
+          <entry key="py" value="2746" />
+          <entry key="regexp" value="27" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="520" />
+          <entry key="Python" value="2746" />
+          <entry key="RegExp" value="27" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="csv" value="1" />
-          <entry key="py" value="9" />
+          <entry key="py" value="17" />
           <entry key="sh" value="2" />
         </counts>
       </usages-collector>
@@ -115,7 +302,7 @@
           <entry key="Bash" value="1" />
           <entry key="CSV" value="1" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Python" value="9" />
+          <entry key="Python" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -125,57 +312,29 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/split_motifs_into_cluster_motifs.py">
+        <entry file="file://$PROJECT_DIR$/src/create_bash_script_for_meme.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="25" column="15" selection-start-line="25" selection-start-column="15" selection-end-line="25" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/rename_cluster_logos.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dhcl_script.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="67" column="44" selection-start-line="67" selection-start-column="44" selection-end-line="67" selection-end-column="44" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/process_dhcl_output.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="26" column="53" lean-forward="true" selection-start-line="26" selection-start-column="53" selection-end-line="26" selection-end-column="53" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="44">
+              <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/process_dhcl_output_meme.py">
+        <entry file="file://$PROJECT_DIR$/src/meme_merger.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="96" column="32" selection-start-line="96" selection-start-column="32" selection-end-line="96" selection-end-column="32" />
+            <state relative-caret-position="450">
+              <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/build_meme_starter.py">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -191,6 +350,7 @@
     <findStrings>
       <find>could not</find>
       <find>isdir</find>
+      <find>tot_</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/../cleaned_workflow_full_meme/external_scripts/dhcl/executables</dir>
@@ -218,7 +378,11 @@
         <option value="$PROJECT_DIR$/src/rename_cluster_logos.py" />
         <option value="$PROJECT_DIR$/src/dhcl_script.py" />
         <option value="$PROJECT_DIR$/src/process_dhcl_output.py" />
+        <option value="$PROJECT_DIR$/src/remove_motifs_with_low_evalue.py" />
         <option value="$PROJECT_DIR$/src/process_dhcl_output_meme.py" />
+        <option value="$PROJECT_DIR$/src/create_bash_script_for_meme.py" />
+        <option value="$PROJECT_DIR$/src/meme_merger.py" />
+        <option value="$PROJECT_DIR$/src/build_meme_starter.py" />
       </list>
     </option>
   </component>
@@ -229,9 +393,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="25" />
+    <option name="x" value="758" />
+    <option name="y" value="319" />
     <option name="width" value="960" />
-    <option name="height" value="990" />
+    <option name="height" value="741" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -304,7 +469,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last.edited.regexp" value="    Removed motifs 12, 12, 23, 34, 21 and 12" />
+    <property name="last.edited.regexp" value="E-value = 4.1e+001" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -327,7 +492,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.meme_merger">
     <configuration name="mast_remove_profiles" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="merged_src" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -350,8 +515,59 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="meme_merger" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="merged_src" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/meme_merger.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="remove_motifs_with_low_evalue" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="merged_src" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/remove_motifs_with_low_evalue.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.mast_remove_profiles" />
+      <item itemvalue="Python.remove_motifs_with_low_evalue" />
+      <item itemvalue="Python.meme_merger" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.meme_merger" />
+        <item itemvalue="Python.remove_motifs_with_low_evalue" />
         <item itemvalue="Python.mast_remove_profiles" />
       </list>
     </recent_temporary>
@@ -373,12 +589,12 @@
     <frame x="0" y="25" width="1920" height="990" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26627535" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12219851" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.33552632" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33552632" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -460,20 +676,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/split_motifs_into_cluster_motifs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="25" column="15" selection-start-line="25" selection-start-column="15" selection-end-line="25" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../cleaned_workflow_full_meme/external_scripts/dhcl/executables/loops.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
-          <folding>
-            <element signature="e#107#130#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -484,17 +690,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/rename_cluster_logos.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/dhcl_script.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
           <caret line="67" column="44" selection-start-line="67" selection-start-column="44" selection-end-line="67" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/make_cluster_csv.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="3" column="11" lean-forward="true" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/process_dhcl_output_meme.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="49" column="23" lean-forward="true" selection-start-line="49" selection-start-column="23" selection-end-line="49" selection-end-column="23" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
@@ -503,18 +716,52 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/process_dhcl_output.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="26" column="53" lean-forward="true" selection-start-line="26" selection-start-column="53" selection-end-line="26" selection-end-column="53" />
+        <state relative-caret-position="300">
+          <caret line="82" column="31" selection-start-line="82" selection-start-column="31" selection-end-line="82" selection-end-column="31" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/process_dhcl_output_meme.py">
+    <entry file="file://$PROJECT_DIR$/src/rename_cluster_logos.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="96" column="32" selection-start-line="96" selection-start-column="32" selection-end-line="96" selection-end-column="32" />
+        <state relative-caret-position="330">
+          <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/split_motifs_into_cluster_motifs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="25" column="15" selection-start-line="25" selection-start-column="15" selection-end-line="25" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/remove_motifs_with_low_evalue.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mast_remove_profiles.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/create_bash_script_for_meme.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/build_meme_starter.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/meme_merger.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
