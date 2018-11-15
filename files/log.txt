@@ -1,0 +1,2 @@
+FATAL: Failed to open motif file: meme_format3.txt
+

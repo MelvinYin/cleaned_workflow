@@ -10,17 +10,21 @@ def run(kwargs):
         consensus_seqs = []
         for line in cons_file:
             consensus_seqs.append(line.strip())
-    file_popens = []
-    for i, cons in enumerate(consensus_seqs):
-        file = open(output_folder + "/meme_out{}.txt".format(i), 'w')
-        popen = subprocess.Popen(["./external_scripts/meme/bin/meme",
-                             seq_filename, "-text", "-protein", "-cons",
-                             cons, "-w", "30", "-nmotifs", "1"], stdout=file)
-        file_popens.append((file, popen))
-    while file_popens:
-        file, popen = file_popens.pop(0)
-        popen.wait()
-        file.close()
+    i = 0
+    while consensus_seqs:
+        file_popens = []
+        while len(file_popens) < 8:
+            cons = consensus_seqs.pop(0)
+            i += 1
+            file = open(output_folder + "/meme_out{}.txt".format(i), 'w')
+            popen = subprocess.Popen(["./external_scripts/meme/bin/meme",
+                                 seq_filename, "-text", "-protein", "-cons",
+                                 cons, "-w", "30", "-nmotifs", "1"], stdout=file)
+            file_popens.append((file, popen))
+        while file_popens:
+            file, popen = file_popens.pop(0)
+            popen.wait()
+            file.close()
 
 def main(args):
     kwargs = read_cmd_args(args, 'consensus seqs output_folder')

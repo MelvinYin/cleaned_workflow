@@ -24,11 +24,7 @@ def write_to_file(filelines, output_filename):
             wfile.write(line)
     return True
 
-def main(args):
-    # seqs_filename = "consolidated.fasta"
-    # output_filename = "consolidated_shortened.fasta"
-    # DENOMINATOR = 100
-    kwargs = read_cmd_args(args, 'seqs output divideby')
+def main(kwargs):
     filelines = select_filelines(kwargs['seqs'], int(kwargs['divideby']))
     write_to_file(filelines, kwargs['output'])
     return
