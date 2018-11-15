@@ -1,80 +1,0 @@
-BACKGROUND: using background model of order 0
-PRIMARY (classic): n 33461 p0 249 p1 33212 p2 0
-SEQUENCE GROUP USAGE-- Starts/EM: p0; Trim: p0; pvalue: p0; nsites: p0,p1,p2
-w set, setting max and min widths to 30
-SEEDS: maxwords 60316 highwater mark: seq 162 pos 308
-BALANCE: samples 162 chars 65020 nodes 8 chars/node 8127
-Initializing the motif probability tables for 2 to 249 sites...
-nsites = 8nsites = 16nsites = 24nsites = 32nsites = 40nsites = 48nsites = 56nsites = 64nsites = 72nsites = 80nsites = 88nsites = 96nsites = 104nsites = 112nsites = 120nsites = 128nsites = 136nsites = 144nsites = 152nsites = 160nsites = 168nsites = 176nsites = 184nsites = 192nsites = 200nsites = 208nsites = 216nsites = 224nsites = 232nsites = 240nsites = 248
-Done initializing.
-********************************************************************************
-MEME - Motif discovery tool
-********************************************************************************
-MEME version 5.0.2 (Release date: Thu Aug 30 14:26:08 2018 -0700)
-
-For further information on how to interpret please access http://meme-suite.org.
-To get a copy of the MEME software please access http://meme-suite.org.
-
-********************************************************************************
-
-
-********************************************************************************
-REFERENCE
-********************************************************************************
-If you use this program in your research, please cite:
-
-Timothy L. Bailey and Charles Elkan,
-"Fitting a mixture model by expectation maximization to discover
-motifs in biopolymers", Proceedings of the Second International
-Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
-AAAI Press, Menlo Park, California, 1994.
-********************************************************************************
-
-
-********************************************************************************
-TRAINING SET
-********************************************************************************
-PRIMARY SEQUENCES= consolidated.fasta
-CONTROL SEQUENCES= --none--
-ALPHABET= ACDEFGHIKLMNPQRSTVWY
-
-********************************************************************************
-
-********************************************************************************
-COMMAND LINE SUMMARY
-********************************************************************************
-This information can also be useful in the event you wish to report a
-problem with the MEME software.
-
-command: meme -text -protein -w 30 -nmotifs 1 -cons GDRIEWVKLSLAFLPLATPVSDAKVLTGRQ consolidated.fasta 
-
-model:  mod=         zoops    nmotifs=         1    evt=           inf
-objective function:           em=       E-value of product of p-values
-                              starts=   E-value of product of p-values
-width:  minw=           30    maxw=           30
-nsites: minsites=        2    maxsites=    33461    wnsites=       0.8
-theta:  spmap=         pam    spfuzz=        120
-em:     prior=       megap    b=        6.67329e+07    maxiter=        50
-        distance=    1e-05
-trim:   wg=             11    ws=              1    endgaps=       yes
-data:   n=        13347854    N=           33461
-sample: seed=            0    hsfrac=          0
-        searchsize= 100000    norand=         no    csites=       1000
-Dirichlet mixture priors file: prior30.plib
-Letter frequencies in dataset:
-A 0.113 C 0.0105 D 0.0638 E 0.0702 F 0.0297 G 0.0889 H 0.0205 I 0.0614 K 0.0495 
-L 0.0963 M 0.0246 N 0.036 P 0.0427 Q 0.0317 R 0.0509 S 0.0508 T 0.0505 V 0.0702 
-W 0.0129 Y 0.0257 
-Background letter frequencies (from file dataset with add-one prior applied):
-A 0.113 C 0.0105 D 0.0638 E 0.0702 F 0.0297 G 0.0889 H 0.0205 I 0.0614 K 0.0495 
-L 0.0963 M 0.0246 N 0.036 P 0.0427 Q 0.0317 R 0.0509 S 0.0508 T 0.0505 V 0.0702 
-W 0.0129 Y 0.0257 
-Background model order: 0
-********************************************************************************
-
-seqs= 33461, min_w= 168, max_w= 2507, total_size= 13347854
-
-motif=1
-SEED DEPTHS: 2 4 8 16 32 64 128 249
-SEED WIDTHS: 30
-em: w=  30, psites=   2, iter=   0 

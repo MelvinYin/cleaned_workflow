@@ -1,8 +1,0 @@
-BACKGROUND: using background model of order 0
-PRIMARY (classic): n 33461 p0 249 p1 33212 p2 0
-SEQUENCE GROUP USAGE-- Starts/EM: p0; Trim: p0; pvalue: p0; nsites: p0,p1,p2
-w set, setting max and min widths to 30
-SEEDS: maxwords 60316 highwater mark: seq 162 pos 308
-BALANCE: samples 162 chars 65020 nodes 8 chars/node 8127
-Initializing the motif probability tables for 2 to 249 sites...
-nsites = 8nsites = 16nsites = 24nsites = 32nsites = 40nsites = 48nsites = 56nsites = 64nsites = 72nsites = 80nsites = 88nsites = 96nsites = 104

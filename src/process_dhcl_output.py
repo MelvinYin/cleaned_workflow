@@ -2,21 +2,22 @@ import re
 import os
 import sys
 
-input_file_directory = "files/from_dhcl"
-fasta_file_directory = "files/input_fasta"
-output_filename = "files/init_seed_seqs.fasta"
+from utils import read_cmd_args
 
-def main():
+def get_dhcl_segments(kwargs):
+    dhcl_dir = kwargs['dhcl_dir']
+    fasta_dir = kwargs['fasta_dir']
+    output_filename = kwargs['output']
+
     input_filenames = []
-    for filename in os.listdir(input_file_directory):
+    for filename in os.listdir(dhcl_dir):
         input_filenames.append(filename)
-
     filename_loop_map = dict()
 
     for filename in input_filenames:
         if not filename.endswith("dhcl.txt"):
             continue
-        with open(input_file_directory + "/" + filename) as file:
+        with open(dhcl_dir + "/" + filename) as file:
             loops = []
             for line in file:
                 if line.startswith("LOOPS"):
@@ -30,7 +31,7 @@ def main():
 
     for raw_filename in filename_loop_map.keys():
         filename = raw_filename + ".fasta.txt"
-        with open(fasta_file_directory + "/" + filename) as file:
+        with open(fasta_dir + "/" + filename) as file:
             start = True
             seqs = ""
             for line in file:
@@ -49,7 +50,6 @@ def main():
         seq = filename_seqs_map[filename]
         merged_seq = ""
         for loop_i in loops:
-            print(loop_i)
             raw_start, raw_end = loop_i[0], loop_i[1]
             len_loop = raw_end - raw_start
             if len_loop >= 30:
@@ -82,9 +82,13 @@ def main():
                 file.write(seq[int(len(seq) // 60) * 60:])
                 file.write("\n")
 
+def main(args):
+    # dhcl_filedir = "files/from_dhcl"
+    # fasta_filedir = "files/input_fasta"
+    # output = "files/init_seed_seqs.fasta"
+    kwargs = read_cmd_args(args, 'dhcl_dir fasta_dir output')
+    get_dhcl_segments(kwargs)
+    return
+
 if __name__ == "__main__":
-    force_run = True
-    if len(sys.argv) > 1 and sys.argv[1] == "-f":
-        force_run = True
-    if force_run or not os.path.isfile(output_filename):
-        main()
+    main(sys.argv)

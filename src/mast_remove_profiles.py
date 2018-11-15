@@ -1,8 +1,9 @@
-
 import re
 import sys
 
-def get_correlated_motifs(fname='files/mast.txt'):
+from utils import read_cmd_args
+
+def get_correlated_motifs(fname):
     to_remove = []
     with open(fname, 'r') as file:
         for line in file:
@@ -13,8 +14,7 @@ def get_correlated_motifs(fname='files/mast.txt'):
                 break
     return to_remove
 
-def meme_txt_rewritter(to_remove, r_fname="meme_format2.txt",
-                       w_fname="meme_format123.txt"):
+def meme_txt_rewritter(to_remove, r_fname, w_fname):
     motif_count = 0
     with open(r_fname, 'r') as rfile:
         with open(w_fname, 'w') as wfile:
@@ -35,8 +35,10 @@ def meme_txt_rewritter(to_remove, r_fname="meme_format2.txt",
 #                     59, 60, 61, 64, 69, 76, 77, 78, 82, 88, 89, 90, 91, 92,
 #                     94, 98, 101, 102, 107, 108, 109])
 
-to_remove = get_correlated_motifs()
-meme_txt_rewritter(to_remove, r_fname="files/meme_format.txt",
-                       w_fname="files/meme_format2.txt")
-# meme_txt_rewritter([], r_fname="meme_format123.txt",
-#                        w_fname="meme_format_after_tomtom2.txt")
+def main(sys_args):
+    kwargs = read_cmd_args(sys_args, 'meme_in meme_out')
+    to_remove = get_correlated_motifs(kwargs['meme_in'])
+    meme_txt_rewritter(to_remove, kwargs['meme_in'], kwargs['meme_out'])
+
+if __name__ == '__main__':
+    main(sys.argv)

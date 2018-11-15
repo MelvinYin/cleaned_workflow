@@ -2,325 +2,943 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="977e9f69-e7b2-4235-9856-6e88bdf80fc9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/screen_motif_entropy.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/meme_cleaner.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/reduce_dhcl_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/run_meme_on_dhcl_loops.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/merged_src.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/merged_src.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out0.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out10.txt" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out10.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out100.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out101.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out102.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out103.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out104.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out105.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out106.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out107.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out108.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out109.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out11.txt" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out11.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out110.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out111.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out112.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out113.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out114.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out115.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out116.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out117.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out118.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out119.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out12.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out120.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out121.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out122.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out123.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out124.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out125.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out126.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out127.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out128.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out129.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out13.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out130.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out131.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out132.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out133.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out134.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out135.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out136.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out137.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out138.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out139.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out14.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out140.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out141.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out142.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out143.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out144.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out145.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out146.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out147.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out148.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out149.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out15.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out150.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out151.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out152.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out153.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out154.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out155.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out156.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out157.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out158.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out159.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out16.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out160.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out161.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out162.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out163.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out164.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out165.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out166.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out167.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out168.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out169.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out17.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out170.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out171.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out172.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out173.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out174.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out175.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out176.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out177.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out178.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out179.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out18.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out180.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out181.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out182.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out183.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out184.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out185.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out186.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out187.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out188.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out189.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out19.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out190.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out191.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out192.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out193.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out194.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out195.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out196.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out197.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out198.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out199.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out20.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out200.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out201.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out202.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out203.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out204.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out205.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out206.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out207.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out208.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out209.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out21.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out210.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out211.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out212.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out213.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out214.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out215.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out216.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out217.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out218.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out219.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out22.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out220.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out221.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out222.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out223.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out224.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out225.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out226.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out227.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out228.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out229.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out23.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out230.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out231.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out232.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out233.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out234.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out235.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out236.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out237.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out238.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out239.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out24.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out240.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out241.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out242.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out243.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out244.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out245.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out246.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out247.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out248.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out249.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out25.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out250.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out251.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out252.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out253.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out254.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out255.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out256.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out257.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out258.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out259.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out26.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out260.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out261.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out262.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out263.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out264.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out265.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out266.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out267.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out268.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out269.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out27.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out270.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out271.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out272.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out273.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out274.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out275.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out276.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out277.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out278.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out279.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out28.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out280.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out281.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out282.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out283.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out284.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out285.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out286.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out287.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out288.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out289.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out29.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out290.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out291.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out292.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out293.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out294.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out295.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out296.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out297.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out298.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out299.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out3.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out30.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out300.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out301.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out302.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out303.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out304.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out305.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out306.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out307.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out308.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out309.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out31.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out310.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out311.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out32.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out33.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out34.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out35.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out36.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out37.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out38.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out39.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out4.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out40.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out41.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out42.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out43.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out44.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out45.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out46.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out47.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out48.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out49.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out5.txt" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out5.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out50.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out51.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out52.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out53.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out54.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out55.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out56.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out57.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out58.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out59.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out6.txt" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out6.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out60.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out61.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out62.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out63.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out64.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out65.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out66.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out67.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out68.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out69.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out7.txt" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out7.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out70.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out71.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out72.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out73.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out74.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out75.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out76.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out77.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out78.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out79.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out8.txt" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out8.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out80.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out81.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out82.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out83.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out84.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out85.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out86.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out87.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out88.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out89.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out9.txt" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out9.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out90.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out91.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out92.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out93.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out94.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out95.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out96.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out97.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out98.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out99.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cluster_centroids.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cluster_labels.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist_metric.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/consolidated.fasta" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/consolidated.fasta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_out/logo1.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_out/logo1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_out/logo10.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_out/logo10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_out/logo11.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_out/logo11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_out/logo12.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_out/logo12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_out/logo13.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_out/logo13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_out/logo14.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_out/logo14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_out/logo15.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_out/logo15.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_out/logo16.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_out/logo16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_out/logo17.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_out/logo17.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_out/logo18.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_out/logo18.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_out/logo19.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_out/logo19.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_out/logo2.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_out/logo2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_out/logo20.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_out/logo20.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_out/logo3.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_out/logo3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_out/logo4.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_out/logo4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_out/logo5.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_out/logo5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_out/logo6.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_out/logo6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_out/logo7.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_out/logo7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_out/logo8.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_out/logo8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_out/logo9.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_out/logo9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_out/meme.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_out/meme.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out0.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out10.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out11.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out5.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out6.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out7.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out8.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme_output/meme_out9.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/pipeline/consolidated.fasta" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/pipeline/consolidated.fasta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/files/_trash/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/_trash/log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/_trash/mast.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/_trash/meme.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/_trash/meme_format.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/_trash/meme_format2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/_trash/meme_format3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/call_meme.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/cluster_centroids.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/consensus_seqs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/consensus_seqs.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/consolidated.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/consolidated_single.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/from_dhcl/DE_3der.dhcl.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/from_dhcl/DE_3der.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/from_dhcl/DGD_3rra.dhcl.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/from_dhcl/DGD_3rra.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/from_dhcl/DTD_2dw6.dhcl.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/from_dhcl/DTD_2dw6.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/from_dhcl/EL_1bqg.dhcl.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/from_dhcl/EL_1bqg.dhcl.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/from_dhcl/GD2_3hpf.dhcl.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/from_dhcl/GD2_3hpf.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/from_dhcl/GD_1bqg.dhcl.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/from_dhcl/GD_1bqg.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/from_dhcl/LFD_2hxu.dhcl.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/from_dhcl/LFD_2hxu.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/from_dhcl/LTGD_2pp3.dhcl.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/from_dhcl/LTGD_2pp3.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/from_dhcl/MAL_3zvi.dhcl.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/from_dhcl/MAL_3zvi.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/from_dhcl/MCANTI_3dg6.dhcl.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/from_dhcl/MCANTI_3dg6.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/from_dhcl/MCSL_2chr.dhcl.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/from_dhcl/MCSL_2chr.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/from_dhcl/MD_3vcn.dhcl.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/from_dhcl/MD_3vcn.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/from_dhcl/MR_4hnc.dhcl.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/from_dhcl/MR_4hnc.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/from_dhcl/NSAR2_2p8b.dhcl.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/from_dhcl/NSAR2_2p8b.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/from_dhcl/NSAR_2ggi.dhcl.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/from_dhcl/NSAR_2ggi.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/from_dhcl/OSS_4a6g.dhcl.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/from_dhcl/OSS_4a6g.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/from_dhcl/RD_2i5q.dhcl.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/from_dhcl/RD_2i5q.pdb" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/files/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/mast_nocorr/mast.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/mast_nocorr/mast.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/mast_nocorr/mast.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/mast_onlycombi/mast.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/mast_onlycombi/mast.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/mast_onlycombi/mast.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/mast_single/mast.html" beforeDir="false" afterPath="$PROJECT_DIR$/files/mast_single/mast.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/mast_single/mast.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/mast_single/mast.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/mast_single/mast.xml" beforeDir="false" afterPath="$PROJECT_DIR$/files/mast_single/mast.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/mast_single/mast_out/mast.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/mast_single/mast_out/mast.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/mast_single/mast_out/mast.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_consolidated.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_evalue_screened.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/meme_evalue_screened.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_format.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/meme_format.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_format2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/meme_format2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_format3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out0.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out10.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out100.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out101.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out102.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out103.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out104.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out105.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out106.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out107.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out108.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out109.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out11.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out110.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out111.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out112.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out113.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out114.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out115.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out116.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out117.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out118.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out119.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out12.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out120.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out121.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out122.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out123.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out124.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out125.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out126.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out127.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out128.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out129.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out13.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out130.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out131.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out132.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out133.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out134.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out135.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out136.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out137.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out138.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out139.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out14.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out140.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out141.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out142.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out143.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out144.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out145.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out146.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out147.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out148.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out149.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out15.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out150.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out151.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out152.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out153.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out154.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out155.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out156.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out157.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out158.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out159.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out16.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out160.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out161.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out162.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out163.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out164.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out165.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out166.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out167.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out168.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out169.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out17.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out170.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out171.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out172.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out173.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out174.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out175.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out176.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out177.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out178.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out179.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out18.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out180.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out181.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out182.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out183.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out184.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out185.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out186.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out187.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out188.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out189.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out19.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out190.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out191.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out192.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out193.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out194.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out195.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out196.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out197.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out198.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out199.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out20.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out200.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out201.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out202.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out203.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out204.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out205.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out206.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out207.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out208.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out209.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out21.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out210.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out211.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out212.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out213.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out214.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out215.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out216.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out217.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out218.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out219.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out22.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out220.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out221.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out222.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out223.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out224.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out225.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out226.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out227.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out228.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out229.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out23.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out230.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out231.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out232.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out233.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out234.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out235.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out236.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out237.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out238.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out239.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out24.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out240.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out241.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out242.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out243.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out244.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out245.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out246.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out247.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out248.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out249.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out25.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out250.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out251.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out252.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out253.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out254.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out255.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out256.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out257.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out258.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out259.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out26.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out260.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out261.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out262.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out263.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out264.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out265.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out266.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out267.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out268.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out269.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out27.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out270.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out271.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out272.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out273.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out274.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out275.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out276.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out277.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out278.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out279.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out28.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out280.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out281.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out282.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out283.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out284.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out285.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out286.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out287.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out288.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out289.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out29.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out290.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out291.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out292.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out293.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out294.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out295.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out296.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out297.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out298.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out299.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out30.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out300.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out301.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out302.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out303.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out304.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out305.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out306.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out307.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out308.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out309.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out31.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out310.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out311.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out312.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out313.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out314.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out315.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out316.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out317.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out318.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out319.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out32.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out320.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out321.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out322.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out323.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out324.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out325.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out326.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out327.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out328.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out329.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out33.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out330.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out331.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out332.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out333.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out334.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out335.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out336.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out337.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out338.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out339.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out34.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out340.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out341.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out342.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out343.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out344.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out345.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out346.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out347.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out348.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out349.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out35.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out350.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out351.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out352.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out353.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out354.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out355.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out356.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out357.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out358.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out359.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out36.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out360.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out361.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out362.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out363.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out364.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out365.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out366.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out367.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out368.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out369.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out37.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out370.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out371.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out372.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out373.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out374.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out375.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out376.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out377.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out378.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out379.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out38.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out380.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out381.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out382.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out383.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out384.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out385.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out386.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out387.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out388.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out389.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out39.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out390.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out391.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out392.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out393.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out394.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out395.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out396.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out397.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out398.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out399.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out40.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out400.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out401.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out402.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out403.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out404.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out405.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out406.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out407.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out408.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out409.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out41.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out410.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out411.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out412.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out413.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out414.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out415.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out416.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out417.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out418.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out419.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out42.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out420.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out421.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out422.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out423.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out424.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out425.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out426.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out427.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out428.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out429.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out43.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out430.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out431.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out432.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out433.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out434.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out435.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out436.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out437.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out438.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out439.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out44.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out440.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out441.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out442.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out443.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out444.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out445.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out446.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out447.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out448.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out449.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out45.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out450.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out451.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out452.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out453.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out454.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out455.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out456.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out457.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out458.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out459.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out46.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out460.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out461.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out462.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out463.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out464.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out465.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out466.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out467.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out468.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out469.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out47.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out470.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out471.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out472.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out473.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out474.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out475.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out476.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out477.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out478.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out479.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out48.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out480.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out481.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out482.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out483.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out484.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out485.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out486.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out487.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out488.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out489.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out49.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out490.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out491.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out492.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out493.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out494.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out495.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out496.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out497.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out498.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out499.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out5.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out50.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out500.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out501.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out502.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out503.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out504.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out505.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out506.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out507.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out508.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out509.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out51.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out510.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out511.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out512.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out513.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out514.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out515.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out516.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out517.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out518.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out519.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out52.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out520.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out521.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out522.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out523.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out524.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out525.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out526.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out527.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out528.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out529.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out53.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out530.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out531.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out532.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out533.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out534.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out535.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out536.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out537.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out538.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out539.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out54.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out540.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out541.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out542.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out543.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out544.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out545.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out546.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out547.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out548.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out549.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out55.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out550.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out551.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out552.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out553.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out554.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out555.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out556.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out557.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out558.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out559.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out56.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out560.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out561.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out562.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out563.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out564.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out565.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out566.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out567.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out568.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out569.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out57.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out570.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out571.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out572.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out573.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out574.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out575.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out576.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out577.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out578.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out579.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out58.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out580.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out581.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out582.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out583.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out584.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out585.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out586.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out587.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out588.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out589.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out59.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out590.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out591.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out592.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out593.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out594.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out595.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out596.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out597.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out598.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out599.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out6.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out60.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out600.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out601.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out602.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out603.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out604.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out605.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out606.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out607.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out608.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out609.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out61.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out610.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out611.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out612.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out613.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out614.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out615.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out616.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out617.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out618.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out619.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out62.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out620.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out621.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out622.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out623.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out624.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out625.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out626.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out627.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out628.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out629.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out63.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out630.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out631.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out632.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out633.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out634.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out635.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out636.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out637.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out638.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out639.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out64.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out640.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out641.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out642.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out643.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out644.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out645.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out646.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out647.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out648.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out649.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out65.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out650.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out651.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out652.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out653.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out654.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out655.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out656.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out657.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out658.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out659.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out66.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out660.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out661.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out662.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out663.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out664.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out665.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out666.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out667.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out668.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out669.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out67.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out670.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out671.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out672.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out673.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out674.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out675.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out676.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out677.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out678.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out679.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out68.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out680.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out69.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out7.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out70.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out71.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out72.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out73.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out74.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out75.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out76.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out77.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out78.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out79.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out8.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out80.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out81.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out82.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out83.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out84.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out85.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out86.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out87.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out88.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out89.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out9.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out90.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out91.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out92.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out93.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out94.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out95.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out96.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out97.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out98.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out99.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_starter.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/meme_starter.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/motifs/motifs_in_cluster_0.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/motifs/motifs_in_cluster_1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/motifs/motifs_in_cluster_10.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/motifs/motifs_in_cluster_11.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/motifs/motifs_in_cluster_13.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/motifs/motifs_in_cluster_14.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/motifs/motifs_in_cluster_15.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/motifs/motifs_in_cluster_16.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/motifs/motifs_in_cluster_18.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/motifs/motifs_in_cluster_2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/motifs/motifs_in_cluster_3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/motifs/motifs_in_cluster_4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/motifs/motifs_in_cluster_5.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/motifs/motifs_in_cluster_6.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/motifs/motifs_in_cluster_7.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/motifs/motifs_in_cluster_9.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/profiles_to_remove.pkl" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/full_script.sh" beforeDir="false" afterPath="$PROJECT_DIR$/full_script.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cluster_get_profiles.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cluster_get_profiles.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/cluster_description.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_0/logos_HELYKK MEME-1515&#9;width =  30  sites = 9947  llr = 280703  E-value = 3.0e-471.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_0/logos_ITPVDL MEME-1549&#9;width =  30  sites = 2668  llr = 76079  E-value = 5.3e-022.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_0/logos_KLTERJ MEME-1143&#9;width =  30  sites = 23520  llr = 810499  E-value = 7.9e-1747.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_0/logos_LSRVGG MEME-1432&#9;width =  30  sites = 7300  llr = 265566  E-value = 4.1e-647.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_0/logos_RLLGGL MEME-1608&#9;width =  30  sites = 28818  llr = 1001669  E-value = 2.8e-2203.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_0/logos_SVRQTQ MEME-1243&#9;width =  30  sites = 5270  llr = 163334  E-value = 1.1e-308.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_1/logos_AAGYTV MEME-1471&#9;width =  30  sites = 26085  llr = 901890  E-value = 2.7e-1838.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_1/logos_GEZEIE MEME-1335&#9;width =  30  sites = 7954  llr = 257455  E-value = 4.8e-436.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_1/logos_IKLLKD MEME-1338&#9;width =  30  sites = 32380  llr = 899980  E-value = 3.7e-1640.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_1/logos_ITPVDL MEME-1549&#9;width =  30  sites = 2668  llr = 76079  E-value = 5.3e-022.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_1/logos_LAVATN MEME-1603&#9;width =  30  sites = 22253  llr = 669194  E-value = 5.8e-1154.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_1/logos_RLLGGL MEME-1608&#9;width =  30  sites = 28818  llr = 1001669  E-value = 2.8e-2203.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_10/logos_AHLAAA MEME-1475&#9;width =  30  sites = 8648  llr = 270580  E-value = 8.2e-382.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_10/logos_GEZEIE MEME-1335&#9;width =  30  sites = 7954  llr = 257455  E-value = 4.8e-436.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_10/logos_HELYKK MEME-1515&#9;width =  30  sites = 9947  llr = 280703  E-value = 3.0e-471.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_10/logos_IKLLKD MEME-1338&#9;width =  30  sites = 32380  llr = 899980  E-value = 3.7e-1640.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_10/logos_TATNMI MEME-1394&#9;width =  30  sites = 3503  llr = 243745  E-value = 7.4e-357.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_11/logos_DIQEFM MEME-1438&#9;width =  30  sites = 13197  llr = 406171  E-value = 9.6e-637.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_11/logos_GGDYHD MEME-1160&#9;width =  30  sites = 459  llr = 29402  E-value = 1.7e-010.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_11/logos_IEEPVL MEME-1501&#9;width =  30  sites = 6251  llr = 219392  E-value = 5.2e-538.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_11/logos_KSVLDK MEME-1194&#9;width =  30  sites = 542  llr = 36782  E-value = 7.7e-032.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_11/logos_LSRVGG MEME-1432&#9;width =  30  sites = 7300  llr = 265566  E-value = 4.1e-647.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_11/logos_LVVYLT MEME-1494&#9;width =  30  sites = 17997  llr = 510589  E-value = 8.9e-1097.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_13/logos_IAAGLG MEME-1590&#9;width =  30  sites = 289  llr = 23078  E-value = 3.1e-002.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_13/logos_IEEPVL MEME-1501&#9;width =  30  sites = 6251  llr = 219392  E-value = 5.2e-538.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_13/logos_IPRILE MEME-1563&#9;width =  30  sites = 290  llr = 22413  E-value = 5.0e-001.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_13/logos_KRFPDA MEME-1259&#9;width =  30  sites = 8164  llr = 300023  E-value = 6.6e-571.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_13/logos_RLLGGL MEME-1608&#9;width =  30  sites = 28818  llr = 1001669  E-value = 2.8e-2203.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_14/logos_AAGYTV MEME-1471&#9;width =  30  sites = 26085  llr = 901890  E-value = 2.7e-1838.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_14/logos_AMNPDP MEME-1199&#9;width =  30  sites = 1316  llr = 81059  E-value = 7.9e-220.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_14/logos_DIQEFM MEME-1438&#9;width =  30  sites = 13197  llr = 406171  E-value = 9.6e-637.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_14/logos_IKLLKD MEME-1338&#9;width =  30  sites = 32380  llr = 899980  E-value = 3.7e-1640.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_14/logos_LAVATN MEME-1603&#9;width =  30  sites = 22253  llr = 669194  E-value = 5.8e-1154.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_14/logos_RLLGGL MEME-1608&#9;width =  30  sites = 28818  llr = 1001669  E-value = 2.8e-2203.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_15/logos_AMNPDP MEME-1199&#9;width =  30  sites = 1316  llr = 81059  E-value = 7.9e-220.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_15/logos_AYMPPT MEME-1238&#9;width =  30  sites = 1385  llr = 88088  E-value = 1.5e-264.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_15/logos_HELYKK MEME-1515&#9;width =  30  sites = 9947  llr = 280703  E-value = 3.0e-471.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_15/logos_IEEPVL MEME-1501&#9;width =  30  sites = 6251  llr = 219392  E-value = 5.2e-538.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_15/logos_LAPLVV MEME-1204&#9;width =  30  sites = 1372  llr = 79100  E-value = 2.7e-216.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_15/logos_LSRVGG MEME-1432&#9;width =  30  sites = 7300  llr = 265566  E-value = 4.1e-647.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_15/logos_RYJTDA MEME-1214&#9;width =  30  sites = 1415  llr = 86400  E-value = 6.3e-257.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_15/logos_TGAVVN MEME-1207&#9;width =  30  sites = 1339  llr = 92570  E-value = 2.6e-317.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_16/logos_AHLAAA MEME-1475&#9;width =  30  sites = 8648  llr = 270580  E-value = 8.2e-382.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_16/logos_HELYKK MEME-1515&#9;width =  30  sites = 9947  llr = 280703  E-value = 3.0e-471.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_16/logos_IEEPVL MEME-1501&#9;width =  30  sites = 6251  llr = 219392  E-value = 5.2e-538.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_16/logos_IIDSSR MEME-1497&#9;width =  30  sites = 1823  llr = 70848  E-value = 4.2e-109.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_16/logos_LSRVGG MEME-1432&#9;width =  30  sites = 7300  llr = 265566  E-value = 4.1e-647.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_16/logos_LVVYLT MEME-1494&#9;width =  30  sites = 17997  llr = 510589  E-value = 8.9e-1097.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_16/logos_SLGIHY MEME-1195&#9;width =  30  sites = 1476  llr = 105357  E-value = 6.6e-224.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_18/logos_ALLDLL MEME-1371&#9;width =  30  sites = 2677  llr = 162836  E-value = 1.1e-203.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_18/logos_GEZEIE MEME-1335&#9;width =  30  sites = 7954  llr = 257455  E-value = 4.8e-436.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_18/logos_GKGLGG MEME-1592&#9;width =  30  sites = 1306  llr = 54951  E-value = 3.8e-093.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_18/logos_GRYNNV MEME-1367&#9;width =  30  sites = 2903  llr = 153230  E-value = 4.0e-171.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_18/logos_HELYKK MEME-1515&#9;width =  30  sites = 9947  llr = 280703  E-value = 3.0e-471.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_18/logos_IABJVV MEME-10&#9;width =  30  sites = 11800  llr = 339083  E-value = 2.9e-378.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_18/logos_IDTHWI MEME-169&#9;width =  30  sites = 3483  llr = 259841  E-value = 4.2e-398.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_18/logos_LSEPDG MEME-1376&#9;width =  30  sites = 2891  llr = 174592  E-value = 2.2e-220.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_18/logos_TATNMI MEME-1394&#9;width =  30  sites = 3503  llr = 243745  E-value = 7.4e-357.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_18/logos_VWTMQG MEME-1671&#9;width =  30  sites = 10012  llr = 326845  E-value = 1.3e-344.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_2/logos_DIQEFM MEME-1438&#9;width =  30  sites = 13197  llr = 406171  E-value = 9.6e-637.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_2/logos_HELYKK MEME-1515&#9;width =  30  sites = 9947  llr = 280703  E-value = 3.0e-471.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_2/logos_IEEPVL MEME-1501&#9;width =  30  sites = 6251  llr = 219392  E-value = 5.2e-538.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_2/logos_KRFPDA MEME-1259&#9;width =  30  sites = 8164  llr = 300023  E-value = 6.6e-571.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_2/logos_LSRVGG MEME-1432&#9;width =  30  sites = 7300  llr = 265566  E-value = 4.1e-647.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_2/logos_RLLGGL MEME-1608&#9;width =  30  sites = 28818  llr = 1001669  E-value = 2.8e-2203.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_2/logos_TRDGFE MEME-12&#9;width =  30  sites = 308  llr = 22187  E-value = 1.4e-036.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_3/logos_AHLAAA MEME-1475&#9;width =  30  sites = 8648  llr = 270580  E-value = 8.2e-382.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_3/logos_GEZEIE MEME-1335&#9;width =  30  sites = 7954  llr = 257455  E-value = 4.8e-436.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_3/logos_IKLLKD MEME-1338&#9;width =  30  sites = 32380  llr = 899980  E-value = 3.7e-1640.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_3/logos_JVRLRC MEME-1245&#9;width =  30  sites = 1237  llr = 81683  E-value = 1.1e-277.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_3/logos_LVVYLT MEME-1494&#9;width =  30  sites = 17997  llr = 510589  E-value = 8.9e-1097.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_3/logos_NIDRYF MEME-1282&#9;width =  30  sites = 3300  llr = 118101  E-value = 4.3e-276.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_3/logos_RDFZLH MEME-172&#9;width =  30  sites = 1351  llr = 82642  E-value = 2.3e-199.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_4/logos_AHLAAA MEME-1475&#9;width =  30  sites = 8648  llr = 270580  E-value = 8.2e-382.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_4/logos_GAGHDG MEME-179&#9;width =  30  sites = 212  llr = 10408  E-value = 2.2e-001.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_4/logos_KLTERJ MEME-1143&#9;width =  30  sites = 23520  llr = 810499  E-value = 7.9e-1747.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_4/logos_KRFPDA MEME-1259&#9;width =  30  sites = 8164  llr = 300023  E-value = 6.6e-571.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_5/logos_GFAPNL MEME-1447&#9;width =  30  sites = 13197  llr = 691904  E-value = 1.8e-1504.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_5/logos_ILPVGA MEME-1&#9;width =  30  sites = 16458  llr = 989131  E-value = 2.2e-2241.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_5/logos_KLTERJ MEME-1143&#9;width =  30  sites = 23520  llr = 810499  E-value = 7.9e-1747.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_5/logos_LAVATN MEME-1603&#9;width =  30  sites = 22253  llr = 669194  E-value = 5.8e-1154.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_5/logos_LTETLD MEME-1349&#9;width =  30  sites = 13440  llr = 755981  E-value = 6.4e-1630.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_5/logos_RLLGGL MEME-1608&#9;width =  30  sites = 28818  llr = 1001669  E-value = 2.8e-2203.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_6/logos_GAGHDG MEME-179&#9;width =  30  sites = 212  llr = 10408  E-value = 2.2e-001.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_6/logos_IKLLKD MEME-1338&#9;width =  30  sites = 32380  llr = 899980  E-value = 3.7e-1640.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_6/logos_KLTERJ MEME-1143&#9;width =  30  sites = 23520  llr = 810499  E-value = 7.9e-1747.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_6/logos_LSRVGG MEME-1432&#9;width =  30  sites = 7300  llr = 265566  E-value = 4.1e-647.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_6/logos_RLLGGL MEME-1608&#9;width =  30  sites = 28818  llr = 1001669  E-value = 2.8e-2203.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_7/logos_IKLLKD MEME-1338&#9;width =  30  sites = 32380  llr = 899980  E-value = 3.7e-1640.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_7/logos_ITPVDL MEME-1549&#9;width =  30  sites = 2668  llr = 76079  E-value = 5.3e-022.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_7/logos_LSRVGG MEME-1432&#9;width =  30  sites = 7300  llr = 265566  E-value = 4.1e-647.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_7/logos_NIDRYF MEME-1282&#9;width =  30  sites = 3300  llr = 118101  E-value = 4.3e-276.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_7/logos_TGAVVN MEME-1207&#9;width =  30  sites = 1339  llr = 92570  E-value = 2.6e-317.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_9/logos_AAGYTV MEME-1471&#9;width =  30  sites = 26085  llr = 901890  E-value = 2.7e-1838.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_9/logos_GKGLGG MEME-1592&#9;width =  30  sites = 1306  llr = 54951  E-value = 3.8e-093.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_9/logos_IKLLKD MEME-1338&#9;width =  30  sites = 32380  llr = 899980  E-value = 3.7e-1640.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_9/logos_LAVATN MEME-1603&#9;width =  30  sites = 22253  llr = 669194  E-value = 5.8e-1154.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_9/logos_TATNMI MEME-1394&#9;width =  30  sites = 3503  llr = 243745  E-value = 7.4e-357.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/mast/mast.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/mast/mast.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/mast/mast.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/create_bash_script_for_meme.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/create_bash_script_for_meme.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mast_remove_profiles.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/mast_remove_profiles.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/meme_merger.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/meme_merger.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/process_dhcl_output.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/process_dhcl_output.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/remove_motifs_with_low_evalue.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/remove_motifs_with_low_evalue.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screen_motif_entropy.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/screen_motif_entropy.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -329,9 +947,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/cleaned_workflow$test.coverage" NAME="test Coverage Results" MODIFIED="1542169872568" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/merged_src$mast_remove_profiles.coverage" NAME="mast_remove_profiles Coverage Results" MODIFIED="1540454008157" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/cleaned_workflow$remove_motifs_with_low_evalue.coverage" NAME="remove_motifs_with_low_evalue Coverage Results" MODIFIED="1541731354918" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/cleaned_workflow$meme_merger.coverage" NAME="meme_merger Coverage Results" MODIFIED="1541743204874" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/cleaned_workflow$create_consolidated_test.coverage" NAME="create_consolidated_test Coverage Results" MODIFIED="1542168688314" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="2007311421">
@@ -400,33 +1020,36 @@
     <session id="922574488">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="9" />
-          <entry key="project.open.time.0" value="3" />
-          <entry key="project.open.time.1" value="1" />
+          <entry key="project.closed" value="15" />
+          <entry key="project.open.time.0" value="4" />
+          <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.10" value="1" />
+          <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.6" value="2" />
-          <entry key="project.open.time.7" value="2" />
+          <entry key="project.open.time.7" value="3" />
+          <entry key="project.open.time.8" value="3" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="11" />
+          <entry key="project.opened" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="3078" />
+          <entry key="py" value="7548" />
           <entry key="regexp" value="27" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="3078" />
+          <entry key="Python" value="7548" />
           <entry key="RegExp" value="27" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="csv" value="1" />
-          <entry key="py" value="25" />
+          <entry key="py" value="48" />
+          <entry key="pyi" value="1" />
           <entry key="sh" value="2" />
         </counts>
       </usages-collector>
@@ -435,7 +1058,8 @@
           <entry key="Bash" value="1" />
           <entry key="CSV" value="1" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Python" value="25" />
+          <entry key="Python" value="48" />
+          <entry key="PythonStub" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -445,28 +1069,13 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/split_motifs_into_cluster_motifs.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="620">
-              <caret line="27" selection-start-line="27" selection-end-line="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/remove_motifs_with_low_evalue.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="31" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/screen_motif_entropy.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="2" column="34" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
+            <state relative-caret-position="1110">
+              <caret line="40" column="19" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="19" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -474,35 +1083,36 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/mast_remove_profiles.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-520" />
+            <state relative-caret-position="300">
+              <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+                <marker date="1542092279694" expanded="true" signature="1320:1509" ph="..." />
+              </folding>
+            </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/mast_remove_profiles_using_pkl.py">
+        <entry file="file://$PROJECT_DIR$/src/run_meme_on_dhcl_loops.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-550">
+            <state relative-caret-position="840">
+              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
               <folding>
-                <element signature="e#0#9#0" expanded="true" />
+                <element signature="e#0#10#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/rename_cluster_logos.py">
+        <entry file="file://$PROJECT_DIR$/src/meme_cleaner.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="660">
-              <caret line="23" column="10" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/create_bash_script_for_meme.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+            <state relative-caret-position="90">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -510,34 +1120,44 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/meme_merger.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="900">
-              <caret line="32" selection-start-line="32" selection-end-line="32" />
+            <state relative-caret-position="1110">
+              <caret line="40" column="26" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/reduce_dhcl_test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-line="22" selection-end-column="18" />
               <folding>
-                <element signature="e#0#9#0" expanded="true" />
+                <element signature="e#0#10#0" expanded="true" />
+                <marker date="1542175288172" expanded="true" signature="104:406" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cluster_final.py">
+        <entry file="file://$PROJECT_DIR$/src/create_bash_script_for_meme.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="8040">
-              <caret line="275" selection-start-line="275" selection-end-line="275" />
+            <state relative-caret-position="570">
+              <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
               <folding>
-                <element signature="e#0#57#0" expanded="true" />
+                <element signature="e#0#10#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cluster_get_profiles.py">
+        <entry file="file://$PROJECT_DIR$/src/shrink_input_for_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
+            <state relative-caret-position="90">
+              <caret line="4" column="15" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
               <folding>
-                <element signature="e#0#44#0" expanded="true" />
+                <element signature="e#0#10#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -557,6 +1177,9 @@
       <find>could not</find>
       <find>isdir</find>
       <find>tot_</find>
+      <find>read_cmd_args</find>
+      <find>USE_SAVE</find>
+      <find>consoli</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/../cleaned_workflow_full_meme/external_scripts/dhcl/executables</dir>
@@ -583,14 +1206,24 @@
         <option value="$PROJECT_DIR$/src/converge2meme.py" />
         <option value="$PROJECT_DIR$/src/rename_cluster_logos.py" />
         <option value="$PROJECT_DIR$/src/dhcl_script.py" />
-        <option value="$PROJECT_DIR$/src/process_dhcl_output.py" />
         <option value="$PROJECT_DIR$/src/process_dhcl_output_meme.py" />
-        <option value="$PROJECT_DIR$/src/create_bash_script_for_meme.py" />
-        <option value="$PROJECT_DIR$/src/meme_merger.py" />
         <option value="$PROJECT_DIR$/src/build_meme_starter.py" />
         <option value="$PROJECT_DIR$/src/cluster_get_profiles.py" />
+        <option value="$PROJECT_DIR$/src/cluster_final.py" />
+        <option value="$PROJECT_DIR$/src/test2.py" />
+        <option value="$PROJECT_DIR$/src/create_bash_script_for_meme.py" />
+        <option value="$PROJECT_DIR$/src/process_dhcl_output.py" />
+        <option value="$PROJECT_DIR$/src/meme_merger.py" />
+        <option value="$PROJECT_DIR$/src/utils.py" />
         <option value="$PROJECT_DIR$/src/remove_motifs_with_low_evalue.py" />
         <option value="$PROJECT_DIR$/src/screen_motif_entropy.py" />
+        <option value="$PROJECT_DIR$/src/mast_remove_profiles.py" />
+        <option value="$PROJECT_DIR$/src/test.py" />
+        <option value="$PROJECT_DIR$/src/reduce_dhcl_test.py" />
+        <option value="$PROJECT_DIR$/src/create_consolidated_test.py" />
+        <option value="$PROJECT_DIR$/src/shrink_input_for_test.py" />
+        <option value="$PROJECT_DIR$/src/meme_cleaner.py" />
+        <option value="$PROJECT_DIR$/src/run_meme_on_dhcl_loops.py" />
       </list>
     </option>
   </component>
@@ -600,11 +1233,10 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="1011" />
-    <option name="y" value="507" />
-    <option name="width" value="950" />
-    <option name="height" value="741" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="25" />
+    <option name="width" value="960" />
+    <option name="height" value="990" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -655,29 +1287,11 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="cleaned_workflow" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cleaned_workflow" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cleaned_workflow" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cleaned_workflow" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last.edited.regexp" value="E-value = 4.1e+001" />
+    <property name="last.edited.regexp" value="***" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -700,7 +1314,29 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.meme_merger">
+  <component name="RunManager" selected="Python.test">
+    <configuration name="create_consolidated_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="merged_src" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/create_consolidated_test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="mast_remove_profiles" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="merged_src" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -767,13 +1403,39 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="merged_src" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Python.mast_remove_profiles" />
       <item itemvalue="Python.remove_motifs_with_low_evalue" />
       <item itemvalue="Python.meme_merger" />
+      <item itemvalue="Python.create_consolidated_test" />
+      <item itemvalue="Python.test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.test" />
+        <item itemvalue="Python.create_consolidated_test" />
         <item itemvalue="Python.meme_merger" />
         <item itemvalue="Python.remove_motifs_with_low_evalue" />
         <item itemvalue="Python.mast_remove_profiles" />
@@ -794,15 +1456,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="744" y="492" width="950" height="741" extended-state="0" />
+    <frame x="0" y="25" width="1920" height="990" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.41924778" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.39606127" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.33552632" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.29385966" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -907,89 +1569,160 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/build_meme_starter.py" />
+    <entry file="file://$PROJECT_DIR$/src/split_motifs_into_cluster_motifs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/process_dhcl_output.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="82" column="31" selection-start-line="82" selection-start-column="31" selection-end-line="82" selection-end-column="31" />
+        <state relative-caret-position="2256">
+          <caret line="87" column="31" lean-forward="true" selection-start-line="87" selection-start-column="31" selection-end-line="87" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/build_meme_starter.py" />
+    <entry file="file://$PROJECT_DIR$/src/mast_remove_profiles_using_pkl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="7" column="49" selection-start-line="7" selection-start-column="49" selection-end-line="7" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/rename_cluster_logos.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="23" column="10" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
+        <state relative-caret-position="150">
+          <caret line="6" column="11" lean-forward="true" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/meme_merger.py">
+    <entry file="file://$PROJECT_DIR$/src/remove_motifs_with_low_evalue.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        <state relative-caret-position="510">
+          <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cluster_final.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6930">
+          <caret line="238" selection-start-line="238" selection-end-line="238" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test2.py" />
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/3/subprocess.pyi">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/subprocess.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="581" lean-forward="true" selection-start-line="581" selection-end-line="581" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cluster_get_profiles.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="163" selection-start-line="163" selection-end-line="163" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="4" selection-start-column="4" selection-end-column="4" />
+          <folding>
+            <marker date="1542091055550" expanded="true" signature="42:47" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/create_consolidated_test.py" />
+    <entry file="file://$PROJECT_DIR$/src/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="1" column="9" lean-forward="true" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/screen_motif_entropy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1110">
+          <caret line="40" column="19" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="19" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cluster_final.py">
+    <entry file="file://$PROJECT_DIR$/src/mast_remove_profiles.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8040">
-          <caret line="275" selection-start-line="275" selection-end-line="275" />
+        <state relative-caret-position="300">
+          <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
           <folding>
-            <element signature="e#0#57#0" expanded="true" />
+            <element signature="e#0#9#0" expanded="true" />
+            <marker date="1542092279694" expanded="true" signature="1320:1509" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cluster_get_profiles.py">
+    <entry file="file://$PROJECT_DIR$/src/meme_cleaner.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="90">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
           <folding>
-            <element signature="e#0#44#0" expanded="true" />
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/meme_merger.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1110">
+          <caret line="40" column="26" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reduce_dhcl_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="22" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+            <marker date="1542175288172" expanded="true" signature="104:406" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/create_bash_script_for_meme.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/split_motifs_into_cluster_motifs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="620">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/remove_motifs_with_low_evalue.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="31" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/screen_motif_entropy.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="2" column="34" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/mast_remove_profiles.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-520" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/mast_remove_profiles_using_pkl.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-550">
+        <state relative-caret-position="570">
+          <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
           <folding>
-            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/shrink_input_for_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="4" column="15" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/run_meme_on_dhcl_loops.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="840">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>
