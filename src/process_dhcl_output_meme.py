@@ -1,14 +1,14 @@
 import re
 import os
 import sys
+from utils import read_cmd_args
 
-input_file_directory = "files/from_dhcl"
-fasta_file_directory = "files/input_fasta"
-output_filename = "files/consensus_seqs.txt"
-
-def main():
+def main(kwargs):
+    dhcl_dir = kwargs['dhcl_dir']
+    fasta_dir = kwargs['fasta_dir']
+    output = kwargs['output']
     input_filenames = []
-    for filename in os.listdir(input_file_directory):
+    for filename in os.listdir(dhcl_dir):
         input_filenames.append(filename)
 
     filename_loop_map = dict()
@@ -16,7 +16,7 @@ def main():
     for filename in input_filenames:
         if not filename.endswith("dhcl.txt"):
             continue
-        with open(input_file_directory + "/" + filename) as file:
+        with open(dhcl_dir + "/" + filename) as file:
             loops = []
             for line in file:
                 if line.startswith("LOOPS"):
@@ -30,7 +30,7 @@ def main():
 
     for raw_filename in filename_loop_map.keys():
         filename = raw_filename + ".fasta.txt"
-        with open(fasta_file_directory + "/" + filename) as file:
+        with open(fasta_dir + "/" + filename) as file:
             start = True
             seqs = ""
             for line in file:
@@ -87,15 +87,15 @@ def main():
         filename_segments_map[filename] = merged_seq
 
     # Output as fasta for seed seqs
-    with open(output_filename, "w") as file:
+    with open(output, "w") as file:
         for filename, seqs in filename_segments_map.items():
             for seq in seqs:
                 assert len(seq) == 30
                 file.write("{}\n".format(seq))
 
 if __name__ == "__main__":
-    force_run = True
-    if len(sys.argv) > 1 and sys.argv[1] == "-f":
-        force_run = True
-    if force_run or not os.path.isfile(output_filename):
-        main()
+    # input_file_directory = "files/from_dhcl"
+    # fasta_file_directory = "files/input_fasta"
+    # output_filename = "files/consensus_seqs.txt"
+    kwargs = read_cmd_args(sys.argv, 'dhcl_dir fasta_dir output')
+    main(kwargs)

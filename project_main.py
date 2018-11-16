@@ -86,7 +86,7 @@ class Executor:
         command = 'source activate p2.7 ' \
                   '&& python ./external_scripts/dhcl/executables/everything.py ' \
                   '-d {} --outdir files/from_dhcl ' \
-                  '&& source deactivate'.format(INPUT_PDB)
+                  '&& source deactivate'.format(self.CONST['input_pdb'])
         subprocess.run(command.split())
         print("Success!\n")
         return
@@ -201,7 +201,7 @@ class Executor:
     def screen_non_combi(self):
         # Input: ./files/meme_format2.txt    ./files/single_seq.fasta
         # Output: ./files/mast_nocorr    ./files/meme_format3.txt
-        print("screen_correlated:")
+        print("screen_non_combi:")
         command = './external_scripts/meme/bin/mast -remcorr ' \
                   'files/meme_format2.txt single_seq.fasta'
         subprocess.run(command.split())
@@ -234,22 +234,102 @@ class Executor:
         return
 
     def cluster_combi(self):
+        # Input: ./files/mast_onlycombi/mast.txt
+        # Output: ./output/cluster_description.txt    ./files/cluster_centroids.pkl
+        print("cluster_combi:")
+        shutil.copy('files/mast_onlycombi/mast.txt', './files')
+        from cluster_final import main
+        kwargs = dict()
+        main(kwargs)
+        shutil.move('files/mast.txt', self.CONST['trash'])
+        print("Success!\n")
         return
 
     def create_cluster_motifs(self):
+        # Input: ./files/meme_format3.txt    ./files/cluster_centroids.pkl
+        # Output: multiple ./files/motifs/motifs_in_cluster_{}.txt
+        print("create_cluster_motifs:")
+        from split_motifs_into_cluster_motifs import main
+        shutil.move("files/motifs", self.CONST['trash'])
+        os.mkdir("files/motifs")
+        kwargs = dict()
+        main(kwargs)
+        print("Success!\n")
         return
 
     def create_cluster_logos(self):
+        # Input: multiple ./files/motifs/motifs_in_cluster_{}.txt
+        # Output: multiple ./output/logos/cluster_{}/logo_{}.png
+        print("create_cluster_logos:")
+        shutil.move("files/output/logos", self.CONST['trash'])
+        os.mkdir("files/output/logos")
+        for filename in os.listdir('files/motifs'):
+            filename = filename[15:]
+            cluster_i = filename[18:-4]
+            i=1
+            os.mkdir("files/output/cluster_{}".format(cluster_i))
+            command = 'external_scripts/meme/ceqlogo -i{} ' \
+                      './files/motifs/{} -o ' \
+                      './output/logos/cluster_{}/logo_{}.png -f ' \
+                      'PNG'.format(i, filename, cluster_i, i)
+            while True:
+                try:
+                    subprocess.run(command.split())
+                    i += 1
+                except:
+                    break
+        from rename_cluster_logos import main
+        kwargs = dict()
+        main(kwargs)
+        print("Success!\n")
         return
 
     def delete_init_fasta(self):
+        print("delete_init_fasta:")
+        shutil.move('external_scripts/pipeline/{}'
+                    .format(self.CONST['input_seqs']),
+                    self.CONST['trash'])
+        shutil.move('external_scripts/meme/single_seq.fasta',
+                    self.CONST['trash'])
+        shutil.move('external_scripts/meme/{}'.format(self.CONST['input_seqs']),
+                    self.CONST['trash'])
+        print("Success!\n")
         return
 
     def delete_intermediate(self):
+        print("delete_intermediate:")
+        shutil.move('files/init_seed_seqs.fasta', self.CONST['trash'])
+        shutil.move('files/meme_format.fasta', self.CONST['trash'])
+        shutil.move('files/mast_single', self.CONST['trash'])
+        shutil.move('files/meme_format2.txt', self.CONST['trash'])
+        shutil.move('files/mast_nocorr', self.CONST['trash'])
+        shutil.move('files/meme_format3.txt', self.CONST['trash'])
+        shutil.move('files/mast_onlycombi', self.CONST['trash'])
+        shutil.move('files/cluster_centroids.pkl', self.CONST['trash'])
+        shutil.move('files/motifs', self.CONST['trash'])
+        shutil.move(self.CONST['log'], self.CONST['trash'])
+        print("Success!\n")
         return
 
     def reduce_dhcl(self):
+        # Input: ./files/consensus_seqs.txt
+        # Output: ./files/consensus_seqs.txt
+        from reduce_dhcl_test import main
+        kwargs = dict(consensus='files/consensus_seqs.txt',
+                      output='files/consensus_seqs.txt')
+        main(kwargs)
+        print("Success!\n")
         return
 
     def shrink_input(self):
+        # Input: ./files/input_seqs.fasta
+        # Output: ./files/input_seqs.fasta
+        from shrink_input_for_test import main
+        kwargs = dict(seqs='files/input_seqs.txt',
+                      output='files/input_seqs.txt',
+                      divideby=100)
+        main(kwargs)
+        print("Success!\n")
         return
+
+

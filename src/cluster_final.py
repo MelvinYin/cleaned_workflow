@@ -1,10 +1,8 @@
 from collections import Counter, defaultdict, OrderedDict
 import re
 import numpy as np
-import sys
-from leven import levenshtein
 import difflib
-from sklearn.cluster import dbscan, mean_shift, AgglomerativeClustering
+from sklearn.cluster import AgglomerativeClustering
 import pickle
 
 USE_SAVE = False
@@ -96,7 +94,8 @@ def cluster_metric(dist_metric, n_clusters=20):
     except:
         # Remember that each combi may have many members, so don't judge
         # based on number of combis per cluster, but members per cluster
-        class_ = AgglomerativeClustering(n_clusters=n_clusters, affinity='precomputed',
+        class_ = AgglomerativeClustering(n_clusters=n_clusters,
+                                         affinity='precomputed',
                                          linkage='average').fit(dist_metric)
         cluster_labels = class_.labels_
         cluster_labels = np.array(cluster_labels)
@@ -190,8 +189,6 @@ def get_cluster_allocation(name_clusters):
         _cluster_alloc = dict(_cluster_alloc)
         cluster_allocation[label] = _cluster_alloc
     return cluster_allocation
-
-
 
 def find_clusters_too_few_members(cluster_allocation, threshold=30):
     labels_to_delete = []
