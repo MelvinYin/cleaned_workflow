@@ -1,2 +1,70 @@
 Cluster 0
-Combination: [(9, 6, 11, 2, 1, 7, 10, 5, 32, 3, 8)]
+Combination: (9, 6, 11, 2, 1, 7, 10, 5, 32, 3, 8)
+ENL : 2271
+
+
+Cluster 1
+Combination: (22, 30, 2, 12, 5, 36, 13)
+RD : 520
+LFD : 18
+
+
+Cluster 2
+Combination: (2, 21, 12, 16, 35)
+DE : 604
+NSART : 180
+
+
+Cluster 3
+Combination: (15, 2, 18, 12, 16, 4, 13)
+DGD : 1192
+
+
+Cluster 4
+Combination: (15, 2, 18, 12, 36, 13)
+DGD : 263
+
+
+Cluster 5
+Combination: (28, 2, 29, 12, 16, 35, 23)
+CC : 93
+LFD : 12
+
+
+Cluster 6
+Combination: (2, 29, 12, 5, 36, 23)
+LFD : 335
+LTGD : 221
+
+
+Cluster 7
+Combination: (4, 2, 34, 29, 12, 14, 17, 24, 13)
+GCRD : 1086
+
+
+Cluster 8
+Combination: (6, 11, 2, 1, 7, 10, 5, 32, 3)
+ENL : 1597
+
+
+Cluster 10
+Combination: (28, 2, 21, 12, 16, 4)
+DE : 222
+
+
+Cluster 11
+Combination: (4, 27, 2, 34, 29, 12, 14, 17, 1, 23)
+GCRD : 622
+
+
+Cluster 12
+Combination: (28, 2, 29, 12, 16, 35, 13)
+CC : 1169
+NSART : 1
+
+
+Cluster 13
+Combination: (2, 21, 12, 36, 35, 23)
+DE : 61
+
+

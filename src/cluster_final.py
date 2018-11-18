@@ -5,6 +5,7 @@ import difflib
 from sklearn.cluster import AgglomerativeClustering
 import pickle
 import pandas as pd
+import operator
 
 def parse_mast_txt(screen=True, input_fname="../files/mast.txt"):
     # combi_count_map gives combi as key, number of sequences with that combi
@@ -161,15 +162,13 @@ import sys
 
 def main_for_2nd_clustering():
     name_combi_map = parse_mast_txt()
-    to_df = list([(key, val) for key, val in name_combi_map.items()])
-    df = pd.DataFrame(to_df, columns=('combi', 'seqs'))
+    df = pd.DataFrame(index=range(len(name_combi_map)),
+                      columns=('combi', 'seqs', 'dist_metric',
+                               'cluster_label', 'num_seqs'))
+    df['combi'] = list(name_combi_map.keys())
+    df['seqs'] = list(name_combi_map.values())
 
-    # Raw combinations = list(name_combi_map.keys())
-
-    # Next, we try to get the cluster centroids
-    # From there, we can get the set of profiles, and then rebuild combi using
-    # mast, maybe.
-    dist_metric = get_dist_metric(df['combi'].values)
+    dist_metric = get_dist_metric(df['combi'])
 
     dist_metric_series = pd.Series()
     for i in range(len(dist_metric)):
@@ -191,107 +190,47 @@ def main_for_2nd_clustering():
     for cluster_label, ind_df in df.groupby('cluster_label'):
         num_seqs = sum(ind_df['num_seqs'])
         cluster_df.at[cluster_label, 'num_seqs'] = num_seqs
-
         min_score = None
         min_i = None
         for combi_i, full_dist in ind_df['dist_metric'].iteritems():
-            reduced_dist = full_dist[ind_df.index.values]
+            reduced_dist = full_dist[ind_df.index]
             score = sum(reduced_dist * ind_df['num_seqs'])
             if min_score is None or score < min_score:
                 min_score = score
                 min_i = combi_i
         centroid = ind_df.loc[min_i, 'combi']
         cluster_df.at[cluster_label, 'centroid'] = centroid
-        seq_alloc = defaultdict(int)
-        for merged_seq in ind_df['seqs'].values:
+        seq_alloc_unsorted = defaultdict(int)
+        for merged_seq in ind_df['seqs']:
             for seq in merged_seq.split(" "):
                 match_obj = re.match("([A-Z]+)Uniprot", seq)
                 if match_obj is None:
                     continue
                 group = match_obj.group(1)
-                seq_alloc[group] += 1
-        seq_alloc = dict(seq_alloc)
+                seq_alloc_unsorted[group] += 1
+        seq_alloc = OrderedDict()
+        for key, value in sorted(seq_alloc_unsorted.items(),
+                          key=operator.itemgetter(1), reverse=True):
+            seq_alloc[key] = value
         cluster_df.at[cluster_label, 'seq_alloc'] = seq_alloc
-    print(cluster_df)
-    sys.exit()
 
+    to_drop = []
+    for cluster_i, ind_df in cluster_df.iterrows():
+        if ind_df['num_seqs'] < 50:
+            to_drop.append(cluster_i)
 
-
-    to_trim = np.array([True] * len(df), dtype=bool)
-    for c_label, ind_df in df.groupby('cluster_label'):
-        tot_seq_count = sum(ind_df['num_seqs'])
-        if tot_seq_count < 50:
-            # df = df[df.cluster_label != c_label]
-            to_trim = to_trim & df.cluster_label != c_label
-
-    df = df[to_trim]
-
-    for i, ind_row in df.iterrows():
-        df.at[i, 'dist_metric'] = df.loc[i]['dist_metric'][to_trim]
-
-    assert len(df) == len(df['dist_metric'])
-    assert len(df['dist_metric']) == len(df['dist_metric'][0])
-
-    df = df.assign(score=None)
-
-    for cluster_label, cluster_df in df.groupby('cluster_label'):
-        bool_mask = df['cluster_label'] == cluster_label
-        for i, ind_row in cluster_df.iterrows():
-            assert not np.any(ind_row['dist_metric'] < 0)
-            # This should only be multiplied with those from the same cluster
-            score = sum(ind_row['dist_metric'][bool_mask] * df['num_seqs'][bool_mask])
-            df.loc[i, 'score'] = score
-
-    # for i, ind_row in df.iterrows():
-    #     assert not np.any(ind_row['dist_metric'] < 0)
-    #     # This should only be multiplied with those from the same cluster
-    #     score = sum(ind_row['dist_metric'] * df['num_seqs'])
-    #     df.loc[i, 'score'] = score
-
-    centroid_series = pd.Series()
-    for cluster_label, cluster_df in df.groupby('cluster_label'):
-        indices, scores = cluster_df['score'].index, cluster_df['score'].values
-        min_i = indices[np.argmin(scores)]
-        centroid = df.loc[min_i, 'combi']
-        for i in indices:
-            centroid_series.at[i] = centroid
-
-    df['centroid'] = centroid_series
-    print(df.columns)
-    # todo: it might make sense to spawn another df, specifically for
-    # extracting info from the previous, larger df.
-
-    # # cluster_centroid_table = list(cluster_centroids.values())
-    # # profiles output
-    #
-    # name_clusters = get_name_clusters(index_clusters, name_combi_map)
-    #
-    #
-    # cluster_allocation = get_cluster_allocation(name_clusters)
-    # labels_to_delete = find_clusters_too_few_members(cluster_allocation)
-    # for label in labels_to_delete:
-    #     del cluster_centroids[label]
-    #     del cluster_allocation[label]
-    #
-    # cluster_allocation = OrderedDict(
-    #     sorted(cluster_allocation.items(), key=lambda t: t[0]))
-    # cluster_centroids = OrderedDict(
-    #     sorted(cluster_centroids.items(), key=lambda t: t[0]))
+    cluster_df = cluster_df.drop(to_drop, axis='index')
 
     with open("../files/df.pkl", 'wb') as file:
         pickle.dump(df, file, -1)
+    with open("../files/cluster_df.pkl", 'wb') as file:
+        pickle.dump(cluster_df, file, -1)
 
     with open("../output/cluster_description.txt", 'w') as file:
-        for cluster_label, ind_df in df.groupby("cluster_label"):
+        for cluster_label, ind_df in cluster_df.iterrows():
             file.write("Cluster {}\n".format(cluster_label))
-            file.write("Combination: [{}]\n".format(ind_df['centroid'][0]))
-            ind_df = ind_df.sort('')
-            name_cluster = []
-            for group_name, seqs in clusters.items():
-                name_cluster.append([group_name, len(seqs)])
-            name_cluster.sort(key=lambda x: x[1])
-            name_cluster = name_cluster[::-1]
-            for group_name, seq_len in name_cluster:
+            file.write("Combination: {}\n".format(ind_df['centroid']))
+            for group_name, seq_len in ind_df['seq_alloc'].items():
                 file.write("{} : {}\n".format(group_name, seq_len))
             file.write("\n\n")
 
@@ -314,3 +253,65 @@ if __name__ == "__main__":
 #         for i in combi:
 #             profiles.add(i)
 #     return profiles
+
+
+    # to_trim = np.array([True] * len(df), dtype=bool)
+    # for c_label, ind_df in df.groupby('cluster_label'):
+    #     tot_seq_count = sum(ind_df['num_seqs'])
+    #     if tot_seq_count < 50:
+    #         # df = df[df.cluster_label != c_label]
+    #         to_trim = to_trim & df.cluster_label != c_label
+    #
+    # df = df[to_trim]
+    #
+    # for i, ind_row in df.iterrows():
+    #     df.at[i, 'dist_metric'] = df.loc[i]['dist_metric'][to_trim]
+    #
+    # assert len(df) == len(df['dist_metric'])
+    # assert len(df['dist_metric']) == len(df['dist_metric'][0])
+    #
+    # df = df.assign(score=None)
+    #
+    # for cluster_label, cluster_df in df.groupby('cluster_label'):
+    #     bool_mask = df['cluster_label'] == cluster_label
+    #     for i, ind_row in cluster_df.iterrows():
+    #         assert not np.any(ind_row['dist_metric'] < 0)
+    #         # This should only be multiplied with those from the same cluster
+    #         score = sum(ind_row['dist_metric'][bool_mask] * df['num_seqs'][bool_mask])
+    #         df.loc[i, 'score'] = score
+
+    # for i, ind_row in df.iterrows():
+    #     assert not np.any(ind_row['dist_metric'] < 0)
+    #     # This should only be multiplied with those from the same cluster
+    #     score = sum(ind_row['dist_metric'] * df['num_seqs'])
+    #     df.loc[i, 'score'] = score
+
+    # centroid_series = pd.Series()
+    # for cluster_label, cluster_df in df.groupby('cluster_label'):
+    #     indices, scores = cluster_df['score'].index, cluster_df['score'].values
+    #     min_i = indices[np.argmin(scores)]
+    #     centroid = df.loc[min_i, 'combi']
+    #     for i in indices:
+    #         centroid_series.at[i] = centroid
+    #
+    # df['centroid'] = centroid_series
+    # print(df.columns)
+    # todo: it might make sense to spawn another df, specifically for
+    # extracting info from the previous, larger df.
+
+    # # cluster_centroid_table = list(cluster_centroids.values())
+    # # profiles output
+    #
+    # name_clusters = get_name_clusters(index_clusters, name_combi_map)
+    #
+    #
+    # cluster_allocation = get_cluster_allocation(name_clusters)
+    # labels_to_delete = find_clusters_too_few_members(cluster_allocation)
+    # for label in labels_to_delete:
+    #     del cluster_centroids[label]
+    #     del cluster_allocation[label]
+    #
+    # cluster_allocation = OrderedDict(
+    #     sorted(cluster_allocation.items(), key=lambda t: t[0]))
+    # cluster_centroids = OrderedDict(
+    #     sorted(cluster_centroids.items(), key=lambda t: t[0]))
