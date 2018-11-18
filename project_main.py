@@ -199,8 +199,8 @@ class Executor:
         return
 
     def screen_non_combi(self):
-        # Input: ./files/meme_format2.txt    ./files/single_seq.fasta
-        # Output: ./files/mast_nocorr    ./files/meme_format3.txt
+        # Input: files/meme_format2.txt    files/single_seq.fasta
+        # Output: files/mast_nocorr    files/meme_format3.txt
         print("screen_non_combi:")
         command = './external_scripts/meme/bin/mast -remcorr ' \
                   'files/meme_format2.txt single_seq.fasta'
@@ -220,10 +220,10 @@ class Executor:
         return
 
     def mast_combi(self):
-        # Input: ./files/meme_format3.txt    ./external_scripts/meme/consolidated.fasta
-        # Output: ./files/mast_onlycombi    ./output/mast
+        # Input: .iles/meme_format3.txt    ./external_scripts/meme/consolidated.fasta
+        # Output: files/mast_onlycombi    ./output/mast
         print("mast_combi:")
-        command = './external_scripts/meme/bin/mast -remcorr ' \
+        command = 'external_scripts/meme/bin/mast -remcorr ' \
                   'files/meme_format3.txt {}'.format(self.CONST['input_seqs'])
         subprocess.run(command.split())
         shutil.move("files/mast_onlycombi", self.CONST['trash'])
@@ -233,15 +233,31 @@ class Executor:
         print("Success!\n")
         return
 
-    def cluster_combi(self):
-        # Input: ./files/mast_onlycombi/mast.txt
-        # Output: ./output/cluster_description.txt    ./files/cluster_centroids.pkl
-        print("cluster_combi:")
+    def get_cluster_params(self):
+        # Input: files/mast_onlycombi/mast.txt
+        # Output: files/clustering_df.pkl
+        print("get_cluster_params:")
         shutil.copy('files/mast_onlycombi/mast.txt', './files')
-        from cluster_final import main
-        kwargs = dict()
+        from generate_cluster_params import main
+        kwargs = dict(input_fname="../files/mast.txt",
+                      screen_threshold=5,
+                      pkl_path="../files/clustering_df.pkl")
         main(kwargs)
         shutil.move('files/mast.txt', self.CONST['trash'])
+        print("Success!\n")
+        return
+
+    def cluster_combi(self):
+        # Input: files/clustering_df.pkl
+        # Output: files/cluster_description.txt  output/cluster_description.txt
+        print("cluster_combi:")
+        from cluster_final import main
+        kwargs = dict(cluster_threshold=50,
+                      pkl_path="files/clustering_df.pkl",
+                      output="files/cluster_description.txt")
+        main(kwargs)
+        shutil.copy('files/cluster_description.txt',
+                    'output/cluster_description.txt')
         print("Success!\n")
         return
 
