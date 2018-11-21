@@ -28,15 +28,16 @@ def write_memelines(meme_lines, output_filename, meme_starter):
                     for memeline in meme_lines:
                         wfile.write(memeline)
                 wfile.write(line)
+    return
 
-def main(sys_args):
+def main(kwargs):
     # meme_folder = "./files/meme_full"
     # output = "./files/meme_consolidated.txt"
     # meme_starter_file = "./files/meme_starter.txt"
-    kwargs = read_cmd_args(sys_args, 'meme_folder output meme_starter')
     memelines = get_memelines(kwargs['meme_folder'])
     write_memelines(memelines, kwargs['output'], kwargs['meme_starter'])
     return
 
 if __name__ == "__main__":
-    main(sys.argv)
+    kwargs = read_cmd_args(sys.argv, 'meme_folder output meme_starter')
+    main(kwargs)

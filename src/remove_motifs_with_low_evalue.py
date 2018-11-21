@@ -36,13 +36,13 @@ def write_memelines(to_write, output_filename):
             file.write(line)
     return
 
-def main(sys_argv):
+def main(kwargs):
     # meme_filename = "./files/meme.txt"
     # output = "./files/meme_evalue_screened.txt"
-    kwargs = read_cmd_args(sys_argv, 'meme output')
     memelines = get_cropped_memelines(kwargs['meme'])
     write_memelines(memelines, kwargs['output'])
     return
 
 if __name__ == '__main__':
-    main(sys.argv)
+    kwargs = read_cmd_args(sys.argv, 'meme output')
+    main(kwargs)

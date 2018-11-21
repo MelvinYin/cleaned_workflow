@@ -17,14 +17,14 @@ def meme_txt_rewritter(to_keep, r_fname, w_fname):
                         continue
                 wfile.write(line)
 
-def main():
+def main(kwargs=None):
     with open("files/cluster_centroids.pkl", 'rb') as file:
         cluster_centroids = pickle.load(file)
 
     r_fname = 'files/meme_format3.txt'
-    for label, centroid in cluster_centroids.items():
+    for label, centroid in cluster_centroids['centroid'].items():
         w_fname = 'files/motifs/motifs_in_cluster_{}.txt'.format(label)
         meme_txt_rewritter(centroid, r_fname, w_fname)
 
 if __name__ == "__main__":
-    main()
+    main(kwargs=None)

@@ -31,14 +31,10 @@ def meme_txt_rewritter(to_remove, r_fname, w_fname):
                         continue
                 wfile.write(line)
 
-# meme_txt_rewritter([3, 6, 7, 12, 14, 16, 25, 36, 38, 39, 46, 47, 54, 56, 58,
-#                     59, 60, 61, 64, 69, 76, 77, 78, 82, 88, 89, 90, 91, 92,
-#                     94, 98, 101, 102, 107, 108, 109])
-
-def main(sys_args):
-    kwargs = read_cmd_args(sys_args, 'meme_in meme_out')
+def main(kwargs):
     to_remove = get_correlated_motifs(kwargs['meme_in'])
     meme_txt_rewritter(to_remove, kwargs['meme_in'], kwargs['meme_out'])
 
 if __name__ == '__main__':
-    main(sys.argv)
+    kwargs = read_cmd_args(sys.argv, 'meme_in meme_out')
+    main(kwargs)

@@ -20,8 +20,7 @@ def get_cleaned_lines(file):
             cleaned_lines.append(line)
     return cleaned_lines
 
-def main(args):
-    kwargs = read_cmd_args(args, 'input output')
+def main(kwargs):
     with open(kwargs['input'], 'r') as rfile:
         cleaned_lines = get_cleaned_lines(rfile)
     with open(kwargs['output'], 'w') as wfile:
@@ -30,4 +29,5 @@ def main(args):
     return
 
 if __name__ == '__main__':
-    main(sys.argv)
+    kwargs = read_cmd_args(sys.argv, 'input output')
+    main(kwargs)

@@ -1,24 +1,28 @@
 import os
 from collections import defaultdict
+import sys
+from utils import read_cmd_args
+import re
 
-MOTIF_FILE_DIRECTORY = "files/motifs"
-LOGO_FILE_DIRECTORY = "output/logos"
-
-def main():
+def main(kwargs):
+    motif_filedir = kwargs['motif_filedir']
+    output_logodir = kwargs['output_logodir']
     motif_filename_profile_no_map = defaultdict(list)
-    for filename in os.listdir(MOTIF_FILE_DIRECTORY):
-        with open(MOTIF_FILE_DIRECTORY + "/" + filename) as file:
+    for filename in os.listdir(motif_filedir):
+        cluster_no = filename[18:-4]
+        with open(motif_filedir + "/" + filename) as file:
             for line in file:
                 if line.startswith("MOTIF"):
-                    motif_no = line[30:].strip()
-                    cluster_no = filename[18:-4]
+                    motif_no = re.search("MEME-([0-9]+)", line).group(1)
                     motif_filename_profile_no_map[cluster_no].append(motif_no)
     for cluster_no, logo_nos in motif_filename_profile_no_map.items():
         for i, logo_no in enumerate(logo_nos):
-            folder_dir = LOGO_FILE_DIRECTORY + "/cluster_{}/".format(cluster_no)
+            folder_dir = output_logodir + "/cluster_{}/".format(cluster_no)
             orig_filename = folder_dir + "logo_{}.png".format(i+1)
             new_filename = folder_dir + "logos_{}.png".format(logo_no)
             os.rename(orig_filename, new_filename)
+    return
 
 if __name__ == "__main__":
-    main()
+    kwargs = read_cmd_args(sys.argv, 'motif_filedir output_logodir')
+    main(kwargs)

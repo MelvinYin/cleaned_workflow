@@ -7,68 +7,6 @@ import pickle
 import pandas as pd
 import operator
 import sys
-#
-# def parse_mast_txt(input_fname="../files/mast.txt", screen_threshold=5):
-#     first_start = False
-#     second_start = False
-#     name_combi = defaultdict(str)
-#     with open(input_fname, 'r') as file:
-#         for line in file:
-#             if line.startswith("SECTION II"):
-#                 first_start = True
-#                 continue
-#             if first_start and line.startswith("-------------"):
-#                 second_start = True
-#                 continue
-#             if first_start and second_start:
-#                 if line == "\n":
-#                     break
-#                 name, remainder = line.split(" ", maxsplit=1)
-#                 combi = re.findall("\[[0-9]+\]", remainder)
-#                 combi_int = tuple([int(term[1:-1]) for term in combi])
-#
-#                 name_combi[combi_int] += name + " "
-#     name_combi = dict(name_combi)
-#     # if screen_threshold:
-#     #     name_combi = screen_combi(name_combi, screen_threshold)
-#     return name_combi
-#
-# def screen_combi(name_combi, threshold):
-#     to_del_combi = []
-#     for combi, seqs in name_combi.items():
-#         if len(seqs.split(" ")) < threshold:
-#             to_del_combi.append(combi)
-#             print(combi)
-#             print(seqs)
-#     for combi in to_del_combi:
-#         del name_combi[combi]
-#     return name_combi
-#
-# def lev_metric(x, y):
-#     sm = difflib.SequenceMatcher(None, x, y)
-#     return 1 - sm.ratio()
-#
-# def get_dist_metric(combinations):
-#     metric = []
-#     for curr in combinations:
-#         line = []
-#         for ref in combinations:
-#             line.append(lev_metric(curr, ref))
-#         metric.append(line)
-#     metric = np.array(metric)
-#     return np.array(metric)
-#
-# def cluster_metric(dist_metric, n_clusters):
-#     # Clustered combi, showing labels that can be matched as indices to the
-#     # combinations
-#
-#     # Remember that each combi may have many members, so don't judge
-#     # based on number of combis per cluster, but members per cluster
-#     class_ = AgglomerativeClustering(n_clusters=n_clusters,
-#                                      affinity='precomputed',
-#                                      linkage='average').fit(dist_metric)
-#     cluster_labels = class_.labels_
-#     return cluster_labels
 
 def get_cluster_centroid(ind_df):
     min_score = None
@@ -101,6 +39,7 @@ def main(kwargs):
     cluster_threshold = kwargs['cluster_threshold']
     pkl_path = kwargs['pkl_path']
     output = kwargs['output']
+    cluster_df_pkl = kwargs['cluster_df_pkl']
 
     # Load cluster_params
     with open(pkl_path, 'rb') as file:
@@ -119,6 +58,8 @@ def main(kwargs):
         cluster_df.at[cluster_label, 'centroid'] = centroid
 
         # Get seq_alloc
+        # seq_alloc may be less than what num_seqs indicate, because some
+        # lines are dropped, from the "Uniprot" screen.
         seq_alloc = get_seq_alloc_sorted(ind_df['seqs'])
         cluster_df.at[cluster_label, 'seq_alloc'] = seq_alloc
 
@@ -128,19 +69,24 @@ def main(kwargs):
         if ind_df['num_seqs'] < cluster_threshold:
             to_drop.append(cluster_i)
     cluster_df = cluster_df.drop(to_drop, axis='index')
+    if cluster_df_pkl:
+        with open(cluster_df_pkl, 'wb') as file:
+            pickle.dump(cluster_df, file, -1)
 
     # Output clusters as txt
-    with open(output, 'w') as file:
-        for cluster_label, ind_df in cluster_df.iterrows():
-            file.write("Cluster {}\n".format(cluster_label))
-            file.write("Combination: {}\n".format(ind_df['centroid']))
-            for group_name, seq_len in ind_df['seq_alloc'].items():
-                file.write("{} : {}\n".format(group_name, seq_len))
-            file.write("\n\n")
+    if output:
+        with open(output, 'w') as file:
+            for cluster_label, ind_df in cluster_df.iterrows():
+                file.write("Cluster {}\n".format(cluster_label))
+                file.write("Combination: {}\n".format(ind_df['centroid']))
+                for group_name, seq_len in ind_df['seq_alloc'].items():
+                    file.write("{} : {}\n".format(group_name, seq_len))
+                file.write("\n\n")
     return True
 
 if __name__ == "__main__":
     kwargs = dict(cluster_threshold=50,
                   pkl_path="../files/clustering_df.pkl",
-                  output="../files/cluster_description.txt")
+                  output="../files/cluster_description.txt",
+                  cluster_df_pkl=None)
     main(kwargs)

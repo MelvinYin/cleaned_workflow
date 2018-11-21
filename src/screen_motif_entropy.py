@@ -38,13 +38,13 @@ def write_to_file(lines, output_filename):
             file.write(line)
     return
 
-def main(sys_argv):
+def main(kwargs):
     # meme_filename = "./files/meme.txt"
     # output = "./files/meme_format.txt"
-    kwargs = read_cmd_args(sys_argv, 'meme output')
     memelines = get_screened_memelines(kwargs['meme'])
     write_to_file(memelines, kwargs['output'])
     return
 
 if __name__ == '__main__':
-    main(sys.argv)
+    kwargs = read_cmd_args(sys.argv, 'meme output')
+    main(kwargs)

@@ -55,9 +55,6 @@ def sort_combi_data(combi_data):
     to_sort = np.array([element[1] for element in to_sort])
     return to_sort
 
-def OUTPUT2_get_raw_combinations(combi_count_map):
-    return list(combi_count_map.keys())
-
 def lev_metric(x, y):
     sm = difflib.SequenceMatcher(None, x, y)
     return 1 - sm.ratio()
@@ -162,13 +159,6 @@ def create_set_of_conserved_profiles(cluster_centroids):
             profiles.add(i)
     return profiles
 
-def OUTPUT_cluster_centroid_table(cluster_centroids):
-    combi = list(cluster_centroids.values())
-    return combi
-
-def OUTPUT_profiles(profiles):
-    return profiles
-
 def get_name_clusters(index_clusters, name_combi_map):
     name_clusters = defaultdict(list)
     combinations = np.array(list(name_combi_map.keys()))
@@ -201,7 +191,6 @@ def find_clusters_too_few_members(cluster_allocation, threshold=30):
 
 def main_for_1st_round_clustering():
     combi_count_map, name_combi_map = parse_mast_txt()
-    OUTPUT2_get_raw_combinations(combi_count_map)
     dist_metric = get_dist_metric(name_combi_map)
     cluster_labels = cluster_metric(dist_metric)
     index_clusters = get_index_clusters(cluster_labels)

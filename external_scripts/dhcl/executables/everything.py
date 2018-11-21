@@ -65,7 +65,6 @@ if __name__=='__main__':
 
     # Read in filenames either from commandline arguments or a list file
     if opts.dir:
-        print(os.path)
         if not os.path.isdir(opts.dir):
             raise IOError, ''' Isn\'t a directory: %s ''' % opts.dir
         orig_fnames = [ os.path.join(opts.dir, fname) for fname in os.listdir(opts.dir) if opts.suffix is None or fname.endswith(opts.suffix) ]

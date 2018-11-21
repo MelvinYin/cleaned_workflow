@@ -7,7 +7,7 @@ import pickle
 import pandas as pd
 import operator
 
-def parse_mast_txt(input_fname="../files/mast.txt", screen_threshold=5):
+def parse_mast_txt(input_fname):
     first_start = False
     second_start = False
     name_combi = defaultdict(str)
@@ -62,7 +62,7 @@ def main(kwargs):
     # Assemble full_df
     full_df = pd.DataFrame(columns=('combi', 'seqs', 'dist_metric',
                                'cluster_label', 'num_seqs'))
-    name_combi_map = parse_mast_txt(input_fname, screen_threshold)
+    name_combi_map = parse_mast_txt(input_fname)
     full_df['combi'] = list(name_combi_map.keys())
     full_df['seqs'] = list(name_combi_map.values())
 

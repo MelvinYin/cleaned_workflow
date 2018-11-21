@@ -1,155 +1,185 @@
 import shutil
 import subprocess
 import os
+from collections import OrderedDict, namedtuple
+
+DirTemplate = namedtuple('dir', 'file log trash input_seqs input_pdb '
+                                'p2_7_env ext_meme ext_dhcl_exec '
+                                'bash_exec output')
 
 class Executor:
     def __init__(self):
         self.switches = self.set_switches()
-        self.switch_map = self.set_switch_map()
-        self.CONST = self.set_CONST()
+        self.dir = self.set_dir()
 
-    def set_CONST(self):
-        CONST = dict()
-        CONST['log'] = "files/log.txt"
-        CONST['trash'] = "files/_trash"
-        CONST['input_seqs'] = "files/input_seqs_copy.fasta"
-        CONST['input_pdb'] = "files/input_pdb_test"
-        return CONST
+    def run(self):
+        for _switch, (to_run, function) in self.switches.items():
+            if to_run:
+                try:
+                    function()
+                except:
+                    print("Error: {}".format(function.__name__))
+                    raise
+        return
+
+    def set_dir(self):
+        dir = DirTemplate(
+            file="files/",
+            log="files/log.txt",
+            trash="files/_trash/",
+            input_seqs="files/input_seqs.fasta",
+            input_pdb="files/input_pdb_test",
+            output="output/",
+            p2_7_env='/home/melvin/anaconda3/envs/p2.7/bin/python',
+            ext_meme='./external_scripts/meme/bin/',
+            ext_dhcl_exec='./external_scripts/dhcl/executables/everything.py',
+            bash_exec='/bin/bash')
+        return dir
 
     def set_switches(self):
-        switches = dict()
-        switches['COPY_INIT_SEQS'] = False
-        switches['RUN_DHCL'] = False
-        switches['EXTRACT_CONSENSUS'] = False
-        switches['RUN_MEME'] = False
-        switches['BUILD_STARTER'] = False
-        switches['CLEAN_MEME'] = False
-        switches['MERGE_MEME'] = False
-        switches['SCREEN_EVALUE'] = False
-        switches['SCREEN_ENTROPY'] = False
-        switches['SCREEN_CORRELATED'] = False
-        switches['SCREEN_NON_COMBI'] = False
-        switches['MAST_COMBI'] = False
-        switches['CLUSTER_COMBI'] = False
-        switches['CREATE_CLUSTER_MOTIFS'] = False
-        switches['CREATE_CLUSTER_LOGOS'] = False
-        switches['DELETE_INIT_FASTA'] = False
-        switches['DELETE_INTERMEDIATE'] = False
-
-        # For testing purposes
-        switches['REDUCE_DHCL'] = False
-        switches['SHRINK_INPUT'] = False
+        switches = OrderedDict()
+        switches['SHRINK_INPUT'] = (False, self.shrink_input)
+        switches['RUN_DHCL'] = (False, self.run_dhcl)
+        switches['EXTRACT_CONSENSUS'] = (False, self.extract_consensus)
+        switches['REDUCE_DHCL'] = (False, self.reduce_dhcl)
+        switches['BUILD_PSSM'] = (False, self.build_pssm)
+        switches['BUILD_STARTER'] = (False, self.build_starter)
+        switches['CLEAN_PSSM'] = (False, self.clean_pssm)
+        switches['MERGE_PSSM'] = (False, self.merge_pssm)
+        switches['SCREEN_EVALUE'] = (False, self.screen_evalue)
+        switches['SCREEN_ENTROPY'] = (False, self.screen_entropy)
+        switches['SCREEN_CORRELATED'] = (False, self.screen_correlated)
+        switches['SCREEN_NON_COMBI'] = (False, self.screen_non_combi)
+        switches['ASSEMBLE_COMBI'] = (False, self.assemble_combi)
+        switches['GET_CLUSTER_PARAMS'] = (False, self.get_cluster_params)
+        switches['CLUSTER_COMBI'] = (False, self.cluster_combi)
+        switches['CREATE_CLUSTER_MOTIFS'] = (False, self.create_cluster_motifs)
+        switches['CREATE_CLUSTER_LOGOS'] = (False, self.create_cluster_logos)
+        switches['DELETE_INTERMEDIATE'] = (True, self.delete_intermediate)
         return switches
 
-    def set_switch_map(self):
-        switch_map = dict()
-        switch_map['COPY_INIT_SEQS'] = self.copy_init_seqs
-        switch_map['RUN_DHCL'] = self.run_dhcl
-        switch_map['EXTRACT_CONSENSUS'] = self.extract_consensus
-        switch_map['RUN_MEME'] = self.run_meme
-        switch_map['BUILD_STARTER'] = self.build_starter
-        switch_map['CLEAN_MEME'] = self.clean_meme
-        switch_map['MERGE_MEME'] = self.merge_meme
-        switch_map['SCREEN_EVALUE'] = self.screen_evalue
-        switch_map['SCREEN_ENTROPY'] = self.screen_entropy
-        switch_map['SCREEN_CORRELATED'] = self.screen_correlated
-        switch_map['SCREEN_NON_COMBI'] = self.screen_non_combi
-        switch_map['MAST_COMBI'] = self.mast_combi
-        switch_map['CLUSTER_COMBI'] = self.cluster_combi
-        switch_map['CREATE_CLUSTER_MOTIFS'] = self.create_cluster_motifs
-        switch_map['CREATE_CLUSTER_LOGOS'] = self.create_cluster_logos
-        switch_map['DELETE_INIT_FASTA'] = self.delete_init_fasta
-        switch_map['DELETE_INTERMEDIATE'] = self.delete_intermediate
+    @staticmethod
+    def move_replace(input_path, output_dir, output_filename=None):
+        if not (os.path.isdir(input_path) or os.path.isfile(input_path)):
+            return
+        filename = input_path.rsplit("/", maxsplit=1)[-1]
+        if os.path.isdir(input_path):
+            if output_filename:
+                output_path = output_dir + output_filename
+            else:
+                output_path = output_dir + filename
+            if os.path.isdir(output_path):
+                shutil.rmtree(output_path)
+            shutil.move(input_path, output_dir)
 
-        # For testing purposes
-        switch_map['REDUCE_DHCL'] = self.reduce_dhcl
-        switch_map['SHRINK_INPUT'] = self.shrink_input
-        return switch_map
-
-    def copy_init_seqs(self):
-        # Input: ./files/input_seqs.fasta    ./files/single_seq.fasta
-        # Output: ./external_scripts/pipeline/input_seqs.fasta    ./external_scripts/meme/input_seqs.fasta
-        #         ./external_scripts/meme/single_seq.fasta
-        print("copy_init_seqs:")
-        shutil.copy(self.CONST['input_seqs'], './external_scripts/pipeline')
-        shutil.copy('./files/single_seq.fasta', './external_scripts/meme')
-        shutil.copy(self.CONST['input_seqs'], './external_scripts/meme')
-        print("Success!\n")
+            if output_filename:
+                os.rename(output_dir + filename, output_dir + output_filename)
+        else:
+            if output_filename:
+                output_path = output_dir + output_filename
+            else:
+                output_path = output_dir + filename
+            if os.path.isfile(output_path):
+                os.remove(output_path)
+            shutil.move(input_path, output_path)
         return
+
+    def to_trash(self, file):
+        if not os.path.isdir(self.dir.trash):
+            os.mkdir(self.dir.trash)
+        return self.move_replace(file, self.dir.trash)
 
     def run_dhcl(self):
         # Input: ./files/input_pdb
         # Output: ./files/from_dhcl
         print("RUN_DHCL:")
-        shutil.rmtree("files/from_dhcl", ignore_errors=True)
-        os.mkdir("files/from_dhcl")
-        command = 'source activate p2.7 ' \
-                  '&& python ./external_scripts/dhcl/executables/everything.py ' \
-                  '-d {} --outdir files/from_dhcl ' \
-                  '&& source deactivate'.format(self.CONST['input_pdb'])
-        subprocess.run(command.split())
+        assert os.path.isdir(self.dir.input_pdb)
+        shutil.rmtree("./files/from_dhcl", ignore_errors=True)
+        os.mkdir("./files/from_dhcl")
+        command = f'{self.dir.p2_7_env} {self.dir.ext_dhcl_exec} -d ' \
+                  f'{self.dir.input_pdb} --outdir '
+        subprocess.run(command, shell=True)
+        assert os.path.isdir('files/from_dhcl')
         print("Success!\n")
         return
 
     def extract_consensus(self):
         # Input: ./files/from_dhcl    ./files/input_fasta
-        # Output: ./files/init_seed_seqs.fasta
+        # Output: ./files/init_seed_seqs.txt
         print("extract_consensus:")
+        assert os.path.isdir('files/from_dhcl')
+        assert os.path.isdir('files/input_fasta')
         from process_dhcl_output_meme import main
         kwargs = dict(dhcl_dir='files/from_dhcl',
                       fasta_dir='files/input_fasta',
-                      output='files/init_seed_seqs.fasta')
+                      output='files/init_seed_seqs.txt')
         main(kwargs)
+        assert os.path.isfile('files/init_seed_seqs.txt')
         print("Success!\n")
         return
 
-    def run_meme(self):
-        # Input: ./files/consensus_seqs.txt    ./files/input_seqs.fasta
+    def build_pssm(self):
+        # Input: ./files/init_seed_seqs.txt    ./files/input_seqs.fasta
         # Output: ./files/meme_full
         print("run_meme:")
+        assert os.path.isfile('files/init_seed_seqs.txt')
+        assert os.path.isfile(self.dir.input_seqs)
+        shutil.rmtree("./files/meme_full", ignore_errors=True)
+        os.mkdir("./files/meme_full")
         from run_meme_on_dhcl_loops import main
-        kwargs = dict(consensus='files/consensus_seqs.txt',
-                      seqs=self.CONST['input_seqs'],
-                      output_folder='files/meme_full')
+        kwargs = dict(consensus='./files/init_seed_seqs.txt',
+                      seqs=self.dir.input_seqs,
+                      output_folder='./files/meme_full')
         main(kwargs)
+        assert os.path.isdir('files/meme_full')
         print("Success!\n")
         return
 
     def build_starter(self):
-        # Input: ./files/input_seqs.txt
+        # Input: ./files/input_seqs.fasta
         # Output: ./files/meme_starter.txt
         print("build_starter:")
-        command = './external_scripts/meme/bin/meme -text -protein -w 30 ' \
-                  '-p 7 -nmotifs 2 -nostatus {} &>>./files/meme_starter.txt' \
-                  ''.format(self.CONST['input_seqs'])
-        subprocess.run(command.split())
+        assert os.path.isfile('files/input_seqs.fasta')
+        command = f'{self.dir.ext_meme}meme {self.dir.input_seqs} ' \
+                  '-text -protein -w 30 -p 7 -nmotifs 2 -nostatus &>> ' \
+                  './files/meme_starter.txt'
+        subprocess.run(command, shell=True, executable=self.dir.bash_exec)
+        assert os.path.isfile('files/meme_starter.txt')
         print("Success!\n")
         return
 
-    def clean_meme(self):
+    def clean_pssm(self):
         # Input: ./files/meme_full    ./files/meme_starter.txt
         # Output: ./files/meme_full    ./files/meme_starter.txt
         print("clean_meme:")
+        assert os.path.isdir('files/meme_full')
+        assert os.path.isfile('files/meme_starter.txt')
         from meme_cleaner import main
-        kwargs = dict(input=self.CONST['input_seqs'],
-                      output=self.CONST['input_seqs'])
+        kwargs = dict(input='./files/meme_starter.txt',
+                      output='./files/meme_starter.txt')
         main(kwargs)
-        for filename in os.listdir('files/meme_full'):
-            kwargs = dict(input='files/'+filename,
-                          output='files/'+filename)
+        for filename in os.listdir('./files/meme_full'):
+            kwargs = dict(input='./files/meme_full/'+filename,
+                          output='./files/meme_full/'+filename)
             main(kwargs)
+        assert os.path.isdir('files/meme_full')
+        assert os.path.isfile('files/meme_starter.txt')
         print("Success!\n")
         return
 
-    def merge_meme(self):
+    def merge_pssm(self):
+        # todo: remove SUMMARY OF MOTIFS for smaller input_seqs
         # Input: ./files/meme_full    ./files/meme_starter.txt
         # Output: ./files/meme_merged.txt
         print("merge_meme:")
+        assert os.path.isdir('files/meme_full')
+        assert os.path.isfile('files/meme_starter.txt')
         from meme_merger import main
-        kwargs = dict(meme_folder='files/meme_full',
-                      output='files/meme_merged.txt',
-                      meme_starter='files/meme_starter.txt')
+        kwargs = dict(meme_folder='./files/meme_full',
+                      output='./files/meme_merged.txt',
+                      meme_starter='./files/meme_starter.txt')
         main(kwargs)
+        assert os.path.isfile('files/meme_merged.txt')
         print("Success!\n")
         return
 
@@ -157,12 +187,14 @@ class Executor:
         # Input: ./files/meme_merged.txt
         # Output: ./files/meme_evalue_screened.txt
         print("screen_evalue:")
-        shutil.copy('files/meme_merged.txt', './files/meme.txt')
+        assert os.path.isfile('files/meme_merged.txt')
+        shutil.copy('./files/meme_merged.txt', './files/meme.txt')
         from remove_motifs_with_low_evalue import main
-        kwargs = dict(meme='files/meme.txt',
-                      output='files/meme_evalue_screened.txt')
+        kwargs = dict(meme='./files/meme.txt',
+                      output='./files/meme_evalue_screened.txt')
         main(kwargs)
-        shutil.move('files/meme.txt', self.CONST['trash'])
+        self.to_trash('./files/meme.txt')
+        assert os.path.isfile('files/meme_evalue_screened.txt')
         print("Success!\n")
         return
 
@@ -170,12 +202,14 @@ class Executor:
         # Input: ./files/meme_evalue_screened.txt
         # Output: ./files/meme_format.txt
         print("screen_entropy:")
-        shutil.copy('files/meme_evalue_screened.txt', './files/meme.txt')
+        assert os.path.isfile('files/meme_evalue_screened.txt')
+        shutil.copy('./files/meme_evalue_screened.txt', './files/meme.txt')
         from screen_motif_entropy import main
-        kwargs = dict(meme='files/meme.txt',
-                      output='files/meme_format.txt')
+        kwargs = dict(meme='./files/meme.txt',
+                      output='./files/meme_format.txt')
         main(kwargs)
-        shutil.move('files/meme.txt', self.CONST['trash'])
+        self.to_trash('./files/meme.txt')
+        assert os.path.isfile('files/meme_format.txt')
         print("Success!\n")
         return
 
@@ -183,81 +217,114 @@ class Executor:
         # Input: ./files/meme_format.txt    ./files/single_seq.fasta
         # Output: ./files/mast_single    ./files/meme_format2.txt
         print("screen_correlated:")
-        command = './external_scripts/meme/bin/mast -remcorr ' \
-                  'files/meme_format.txt single_seq.fasta'
-        subprocess.run(command.split())
+        assert os.path.isfile('files/meme_format.txt')
+        assert os.path.isfile('files/single_seq.fasta')
+        command = f'{self.dir.ext_meme}mast -remcorr ' \
+                  './files/meme_format.txt ./files/single_seq.fasta'
+        subprocess.run(command, shell=True, executable=self.dir.bash_exec)
         shutil.rmtree("files/mast_single", ignore_errors=True)
         os.mkdir("files/mast_single")
-        shutil.move('external_scripts/meme/mast_out', 'files/mast_single')
-        shutil.copy('files/mast_single/mast.txt', './files')
+        self.move_replace('mast_out', self.dir.file, 'mast_single')
+        shutil.copy('./files/mast_single/mast.txt', self.dir.file)
         from mast_remove_profiles import main
-        kwargs = dict(meme_in='files/meme_format.txt',
-                      meme_out='files/meme_format2.txt')
+        kwargs = dict(meme_in='./files/meme_format.txt',
+                      meme_out='./files/meme_format2.txt')
         main(kwargs)
-        shutil.move('files/mast.txt', self.CONST['trash'])
+        self.to_trash('./files/mast.txt')
+        assert os.path.isdir('files/mast_single')
+        assert os.path.isfile('files/meme_format2.txt')
         print("Success!\n")
         return
 
     def screen_non_combi(self):
-        # Input: files/meme_format2.txt    files/single_seq.fasta
-        # Output: files/mast_nocorr    files/meme_format3.txt
+        # todo: split this up
+        # Input: ./files/meme_format2.txt    ./files/single_seq.fasta
+        # Output: ./files/mast_nocorr    ./files/meme_format3.txt
         print("screen_non_combi:")
-        command = './external_scripts/meme/bin/mast -remcorr ' \
-                  'files/meme_format2.txt single_seq.fasta'
-        subprocess.run(command.split())
-        shutil.rmtree("files/mast_nocorr", ignore_errors=True)
-        os.mkdir("files/mast_nocorr")
-        shutil.move('external_scripts/meme/mast_out', 'files/mast_nocorr')
-        shutil.copy('files/mast_nocorr/mast.txt', './files')
-        from cluster_get_profiles import main
-        kwargs = dict()
+        assert os.path.isfile('files/meme_format2.txt')
+        assert os.path.isfile('files/single_seq.fasta')
+        command = f'{self.dir.ext_meme}mast -remcorr ' \
+                  f'./files/meme_format2.txt {self.dir.input_seqs}'
+        subprocess.run(command, shell=True, executable=self.dir.bash_exec)
+        shutil.rmtree("./files/mast_nocorr", ignore_errors=True)
+        os.mkdir("./files/mast_nocorr")
+        self.move_replace('mast_out', self.dir.file, 'mast_nocorr')
+        shutil.copy('./files/mast_nocorr/mast.txt', './files')
+
+        from generate_cluster_params import main
+        kwargs = dict(input_fname="./files/mast.txt",
+                      screen_threshold=5,
+                      pkl_path="./files/clustering_df.pkl")
         main(kwargs)
+
+        from cluster_final import main
+        kwargs = dict(cluster_threshold=50,
+                      pkl_path="./files/clustering_df.pkl",
+                      output=None,
+                      cluster_df_pkl="./files/cluster_final.pkl")
+        main(kwargs)
+
         from mast_remove_profiles_using_pkl import main
-        kwargs = dict()
+        kwargs = dict(cluster_df_pkl="./files/cluster_final.pkl",
+                      input='./files/meme_format2.txt',
+                      output='./files/meme_format3.txt')
         main(kwargs)
-        shutil.move('files/mast.txt', self.CONST['trash'])
+        self.to_trash('./files/mast.txt')
+        self.to_trash('./files/clustering_df.pkl')
+        self.to_trash('./files/cluster_final.pkl')
+        assert os.path.isfile('files/meme_format3.txt')
+        assert os.path.isdir('files/mast_nocorr')
         print("Success!\n")
         return
 
-    def mast_combi(self):
-        # Input: .iles/meme_format3.txt    ./external_scripts/meme/consolidated.fasta
-        # Output: files/mast_onlycombi    ./output/mast
+    def assemble_combi(self):
+        # Input: .iles/meme_format3.txt    ./external_scripts/meme/input_seqs.fasta
+        # Output: ./files/mast_onlycombi    ./output/mast
         print("mast_combi:")
-        command = 'external_scripts/meme/bin/mast -remcorr ' \
-                  'files/meme_format3.txt {}'.format(self.CONST['input_seqs'])
-        subprocess.run(command.split())
-        shutil.move("files/mast_onlycombi", self.CONST['trash'])
-        os.mkdir("files/mast_onlycombi")
-        shutil.move('external_scripts/meme/mast_out', 'files/mast_onlycombi')
-        shutil.copy('files/mast_onlycombi', 'output/mast')
+        assert os.path.isfile('files/meme_format3.txt')
+        command = f'{self.dir.ext_meme}mast -remcorr ' \
+                  f'./files/meme_format3.txt {self.dir.input_seqs}'
+        subprocess.run(command, shell=True, executable=self.dir.bash_exec)
+        self.to_trash('./files/mast_onlycombi')
+        os.mkdir("./files/mast_onlycombi")
+        self.move_replace('mast_out', self.dir.file, 'mast_onlycombi')
+        shutil.copytree('./files/mast_onlycombi', 'output/mast')
+        assert os.path.isdir('files/mast_onlycombi')
+        assert os.path.isdir('output/mast')
         print("Success!\n")
         return
 
     def get_cluster_params(self):
-        # Input: files/mast_onlycombi/mast.txt
-        # Output: files/clustering_df.pkl
+        # Input: ./files/mast_onlycombi/mast.txt
+        # Output: ./files/clustering_df.pkl
         print("get_cluster_params:")
+        assert os.path.isfile('files/mast_onlycombi/mast.txt')
         shutil.copy('files/mast_onlycombi/mast.txt', './files')
         from generate_cluster_params import main
-        kwargs = dict(input_fname="../files/mast.txt",
+        kwargs = dict(input_fname="files/mast.txt",
                       screen_threshold=5,
-                      pkl_path="../files/clustering_df.pkl")
+                      pkl_path="files/clustering_df.pkl")
         main(kwargs)
-        shutil.move('files/mast.txt', self.CONST['trash'])
+        self.to_trash('./files/mast.txt')
+        assert os.path.isfile('files/clustering_df.pkl')
         print("Success!\n")
         return
 
     def cluster_combi(self):
-        # Input: files/clustering_df.pkl
-        # Output: files/cluster_description.txt  output/cluster_description.txt
+        # Input: ./files/clustering_df.pkl
+        # Output: output/cluster_description.txt
+        #         (optional) files/cluster_centroids.pkl
         print("cluster_combi:")
+        assert os.path.isfile('files/clustering_df.pkl')
         from cluster_final import main
         kwargs = dict(cluster_threshold=50,
-                      pkl_path="files/clustering_df.pkl",
-                      output="files/cluster_description.txt")
+                      pkl_path="./files/clustering_df.pkl",
+                      output="./files/cluster_description.txt",
+                      cluster_df_pkl="./files/cluster_centroids.pkl",)
         main(kwargs)
-        shutil.copy('files/cluster_description.txt',
+        shutil.move('files/cluster_description.txt',
                     'output/cluster_description.txt')
+        assert os.path.isfile('output/cluster_description.txt')
         print("Success!\n")
         return
 
@@ -265,87 +332,98 @@ class Executor:
         # Input: ./files/meme_format3.txt    ./files/cluster_centroids.pkl
         # Output: multiple ./files/motifs/motifs_in_cluster_{}.txt
         print("create_cluster_motifs:")
+        assert os.path.isfile('files/meme_format3.txt')
+        assert os.path.isfile('files/cluster_centroids.pkl')
         from split_motifs_into_cluster_motifs import main
-        shutil.move("files/motifs", self.CONST['trash'])
+        self.to_trash('files/motifs')
         os.mkdir("files/motifs")
         kwargs = dict()
         main(kwargs)
+        assert os.path.isdir('files/motifs')
         print("Success!\n")
         return
 
     def create_cluster_logos(self):
+        # todo: check ordering of logo after renaming, see if it is a
+        # file_folder options thing or my fault.
+
         # Input: multiple ./files/motifs/motifs_in_cluster_{}.txt
         # Output: multiple ./output/logos/cluster_{}/logo_{}.png
         print("create_cluster_logos:")
-        shutil.move("files/output/logos", self.CONST['trash'])
-        os.mkdir("files/output/logos")
+        assert os.path.isdir('files/motifs')
+        self.to_trash('output/logos')
+        os.mkdir("output/logos")
         for filename in os.listdir('files/motifs'):
-            filename = filename[15:]
             cluster_i = filename[18:-4]
             i=1
-            os.mkdir("files/output/cluster_{}".format(cluster_i))
-            command = 'external_scripts/meme/ceqlogo -i{} ' \
-                      './files/motifs/{} -o ' \
-                      './output/logos/cluster_{}/logo_{}.png -f ' \
-                      'PNG'.format(i, filename, cluster_i, i)
+            os.mkdir("output/logos/cluster_{}".format(cluster_i))
             while True:
-                try:
-                    subprocess.run(command.split())
-                    i += 1
-                except:
+                command = f'{self.dir.ext_meme}ceqlogo -i{i} ' \
+                      f'files/motifs/{filename} -o ' \
+                      f'output/logos/cluster_{cluster_i}/logo_{i}.png -f PNG'
+                i += 1
+                returncode = subprocess.run(
+                    command, shell=True, executable=self.dir.bash_exec,
+                    stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)\
+                    .returncode
+                if returncode != 0:
                     break
         from rename_cluster_logos import main
-        kwargs = dict()
+        kwargs = dict(motif_filedir="files/motifs",
+                      output_logodir="output/logos")
         main(kwargs)
-        print("Success!\n")
-        return
-
-    def delete_init_fasta(self):
-        print("delete_init_fasta:")
-        shutil.move('external_scripts/pipeline/{}'
-                    .format(self.CONST['input_seqs']),
-                    self.CONST['trash'])
-        shutil.move('external_scripts/meme/single_seq.fasta',
-                    self.CONST['trash'])
-        shutil.move('external_scripts/meme/{}'.format(self.CONST['input_seqs']),
-                    self.CONST['trash'])
+        assert os.path.isdir('output/logos')
         print("Success!\n")
         return
 
     def delete_intermediate(self):
         print("delete_intermediate:")
-        shutil.move('files/init_seed_seqs.fasta', self.CONST['trash'])
-        shutil.move('files/meme_format.fasta', self.CONST['trash'])
-        shutil.move('files/mast_single', self.CONST['trash'])
-        shutil.move('files/meme_format2.txt', self.CONST['trash'])
-        shutil.move('files/mast_nocorr', self.CONST['trash'])
-        shutil.move('files/meme_format3.txt', self.CONST['trash'])
-        shutil.move('files/mast_onlycombi', self.CONST['trash'])
-        shutil.move('files/cluster_centroids.pkl', self.CONST['trash'])
-        shutil.move('files/motifs', self.CONST['trash'])
-        shutil.move(self.CONST['log'], self.CONST['trash'])
+        self.to_trash('./files/init_seed_seqs.txt')
+        self.to_trash('./files/meme_format.txt')
+        self.to_trash('./files/mast_single')
+        self.to_trash('./files/meme_merged.txt')
+        self.to_trash('./files/meme_starter.txt')
+        self.to_trash('./files/meme_format2.txt')
+        self.to_trash('./files/meme_format3.txt')
+        self.to_trash('./files/mast_onlycombi')
+        self.to_trash('./files/cluster_centroids.pkl')
+        self.to_trash('./files/clustering_df.pkl')
+        self.to_trash('./files/meme_evalue_screened.txt')
+        self.to_trash('./files/motifs')
+        self.to_trash('./files/mast_nocorr')
+        self.to_trash('./files/meme_full')
+        self.to_trash('files/from_dhcl')
+        self.to_trash(self.dir.log)
         print("Success!\n")
         return
 
     def reduce_dhcl(self):
-        # Input: ./files/consensus_seqs.txt
-        # Output: ./files/consensus_seqs.txt
+        # Input: ./files/init_seed_seqs.txt
+        # Output: ./files/init_seed_seqs.txt
+        print("reduce_dhcl:")
+        assert os.path.isfile('files/init_seed_seqs.txt')
         from reduce_dhcl_test import main
-        kwargs = dict(consensus='files/consensus_seqs.txt',
-                      output='files/consensus_seqs.txt')
+        kwargs = dict(input='./files/init_seed_seqs.txt',
+                      denominator=5,
+                      output='./files/init_seed_seqs.txt')
         main(kwargs)
+        assert os.path.isfile('files/init_seed_seqs.txt')
         print("Success!\n")
         return
 
     def shrink_input(self):
         # Input: ./files/input_seqs.fasta
         # Output: ./files/input_seqs.fasta
+        print("shrink_input:")
+        assert os.path.isfile('files/input_seqs.fasta')
         from shrink_input_for_test import main
-        kwargs = dict(seqs='files/input_seqs.txt',
-                      output='files/input_seqs.txt',
-                      divideby=100)
+        kwargs = dict(seqs='./files/input_seqs.fasta',
+                      output='./files/input_seqs.fasta',
+                      divideby=20)
         main(kwargs)
+        assert os.path.isfile('files/input_seqs.fasta')
         print("Success!\n")
         return
 
-
+executor = Executor()
+executor.run()
