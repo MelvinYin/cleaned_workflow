@@ -1,10 +1,9 @@
 import os
 from collections import defaultdict
-import sys
-from utils import read_cmd_args
 import re
 
 def main(kwargs):
+    # motif_filedir output_logodir
     motif_filedir = kwargs['motif_filedir']
     output_logodir = kwargs['output_logodir']
     motif_filename_profile_no_map = defaultdict(list)
@@ -22,7 +21,3 @@ def main(kwargs):
             new_filename = folder_dir + "logos_{}.png".format(logo_no)
             os.rename(orig_filename, new_filename)
     return
-
-if __name__ == "__main__":
-    kwargs = read_cmd_args(sys.argv, 'motif_filedir output_logodir')
-    main(kwargs)

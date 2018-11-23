@@ -1,9 +1,10 @@
 import re
 import os
-import sys
-from utils import read_cmd_args
 
 def main(kwargs):
+    # dhcl_dir = "files/from_dhcl"
+    # fasta_dir = "files/input_fasta"
+    # output = "files/consensus_seqs.txt"
     dhcl_dir = kwargs['dhcl_dir']
     fasta_dir = kwargs['fasta_dir']
     output = kwargs['output']
@@ -92,10 +93,3 @@ def main(kwargs):
             for seq in seqs:
                 assert len(seq) == 30
                 file.write("{}\n".format(seq))
-
-if __name__ == "__main__":
-    # input_file_directory = "files/from_dhcl"
-    # fasta_file_directory = "files/input_fasta"
-    # output_filename = "files/consensus_seqs.txt"
-    kwargs = read_cmd_args(sys.argv, 'dhcl_dir fasta_dir output')
-    main(kwargs)

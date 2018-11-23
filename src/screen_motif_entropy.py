@@ -1,7 +1,4 @@
 import re
-import sys
-
-from utils import read_cmd_args
 
 def get_screened_memelines(meme_filename):
     to_write = []
@@ -39,12 +36,8 @@ def write_to_file(lines, output_filename):
     return
 
 def main(kwargs):
-    # meme_filename = "./files/meme.txt"
+    # meme = "./files/meme.txt"
     # output = "./files/meme_format.txt"
     memelines = get_screened_memelines(kwargs['meme'])
     write_to_file(memelines, kwargs['output'])
     return
-
-if __name__ == '__main__':
-    kwargs = read_cmd_args(sys.argv, 'meme output')
-    main(kwargs)

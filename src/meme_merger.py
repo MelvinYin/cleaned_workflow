@@ -1,7 +1,6 @@
 import os
 import re
 import sys
-from utils import read_cmd_args
 
 def get_memelines(meme_folder):
     meme_lines = []
@@ -37,7 +36,3 @@ def main(kwargs):
     memelines = get_memelines(kwargs['meme_folder'])
     write_memelines(memelines, kwargs['output'], kwargs['meme_starter'])
     return
-
-if __name__ == "__main__":
-    kwargs = read_cmd_args(sys.argv, 'meme_folder output meme_starter')
-    main(kwargs)

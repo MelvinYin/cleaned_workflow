@@ -1,5 +1,3 @@
-import sys
-from utils import read_cmd_args
 import re
 
 def get_cleaned_lines(file):
@@ -21,13 +19,10 @@ def get_cleaned_lines(file):
     return cleaned_lines
 
 def main(kwargs):
+    # input output
     with open(kwargs['input'], 'r') as rfile:
         cleaned_lines = get_cleaned_lines(rfile)
     with open(kwargs['output'], 'w') as wfile:
         for line in cleaned_lines:
             wfile.write(line)
     return
-
-if __name__ == '__main__':
-    kwargs = read_cmd_args(sys.argv, 'input output')
-    main(kwargs)

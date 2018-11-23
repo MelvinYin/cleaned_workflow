@@ -1,8 +1,6 @@
 import re
 import sys
 
-from utils import read_cmd_args
-
 def get_correlated_motifs(fname):
     to_remove = []
     with open(fname, 'r') as file:
@@ -32,9 +30,6 @@ def meme_txt_rewritter(to_remove, r_fname, w_fname):
                 wfile.write(line)
 
 def main(kwargs):
+    # meme_in meme_out
     to_remove = get_correlated_motifs(kwargs['meme_in'])
     meme_txt_rewritter(to_remove, kwargs['meme_in'], kwargs['meme_out'])
-
-if __name__ == '__main__':
-    kwargs = read_cmd_args(sys.argv, 'meme_in meme_out')
-    main(kwargs)

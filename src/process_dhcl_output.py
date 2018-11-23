@@ -1,8 +1,5 @@
 import re
 import os
-import sys
-
-from utils import read_cmd_args
 
 def get_dhcl_segments(kwargs):
     dhcl_dir = kwargs['dhcl_dir']
@@ -82,13 +79,9 @@ def get_dhcl_segments(kwargs):
                 file.write(seq[int(len(seq) // 60) * 60:])
                 file.write("\n")
 
-def main(args):
+def main(kwargs):
     # dhcl_filedir = "files/from_dhcl"
     # fasta_filedir = "files/input_fasta"
     # output = "files/init_seed_seqs.fasta"
-    kwargs = read_cmd_args(args, 'dhcl_dir fasta_dir output')
     get_dhcl_segments(kwargs)
     return
-
-if __name__ == "__main__":
-    main(sys.argv)

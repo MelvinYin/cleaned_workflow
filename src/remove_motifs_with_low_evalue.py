@@ -1,8 +1,6 @@
 import re
 import sys
 
-from utils import read_cmd_args
-
 def get_cropped_memelines(meme_filename):
     to_write = []
     evalue_threshold = 0.5
@@ -37,12 +35,8 @@ def write_memelines(to_write, output_filename):
     return
 
 def main(kwargs):
-    # meme_filename = "./files/meme.txt"
+    # meme = "./files/meme.txt"
     # output = "./files/meme_evalue_screened.txt"
     memelines = get_cropped_memelines(kwargs['meme'])
     write_memelines(memelines, kwargs['output'])
     return
-
-if __name__ == '__main__':
-    kwargs = read_cmd_args(sys.argv, 'meme output')
-    main(kwargs)

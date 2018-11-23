@@ -1,5 +1,4 @@
 import sys
-from utils import read_cmd_args
 
 def reduce_dhcl(kwargs):
     consensus_filename = kwargs['input']
@@ -17,9 +16,6 @@ def reduce_dhcl(kwargs):
     return True
 
 def main(kwargs):
+    # consensus denominator output
     reduce_dhcl(kwargs)
     return
-
-if __name__ == '__main__':
-    kwargs = read_cmd_args(sys.argv, 'consensus denominator output')
-    main(kwargs)

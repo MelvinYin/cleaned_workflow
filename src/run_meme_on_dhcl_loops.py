@@ -1,5 +1,4 @@
 import sys
-from utils import read_cmd_args
 from subprocess import Popen
 
 def run(kwargs):
@@ -28,9 +27,6 @@ def run(kwargs):
             popen.wait()
 
 def main(kwargs):
+    # consensus seqs output_folder
     run(kwargs)
     return
-
-if __name__ == '__main__':
-    kwargs = read_cmd_args(sys.argv, 'consensus seqs output_folder')
-    main(kwargs)

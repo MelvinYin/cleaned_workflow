@@ -1,5 +1,4 @@
 import sys
-from utils import read_cmd_args
 
 def select_filelines(seqs_filename, divide_by):
     fileslines = []

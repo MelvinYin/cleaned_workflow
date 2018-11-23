@@ -2,94 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="977e9f69-e7b2-4235-9856-6e88bdf80fc9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/cluster.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_cluster.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tt.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/input_pdb/DE_3der.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/input_pdb/DGD_3rra.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/input_pdb/DTD_2dw6.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/input_pdb/EL_1bqg.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/input_pdb/GD2_3hpf.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/input_pdb/GD_1bqg.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/input_pdb/LFD_2hxu.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/input_pdb/LTGD_2pp3.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/input_pdb/MAL_3zvi.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/input_pdb/MCANTI_3dg6.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/input_pdb/MCSL_2chr.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/input_pdb/MD_3vcn.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/input_pdb/MR_4hnc.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/input_pdb/NSAR2_2p8b.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/input_pdb/NSAR_2ggi.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/input_pdb/OSS_4a6g.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/input_pdb/RD_2i5q.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/input_seqs_copy.fasta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/filter.py" beforeDir="false" afterPath="$PROJECT_DIR$/filter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/cluster_description.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_0/logos_126.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_0/logos_136.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_0/logos_145.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_0/logos_146.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_0/logos_17.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_2/logos_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_2/logos_126.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_2/logos_13.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_2/logos_134.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_2/logos_136.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_2/logos_14.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_2/logos_147.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_2/logos_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_4/logos_13.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_4/logos_134.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_4/logos_144.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_4/logos_145.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_4/logos_146.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_4/logos_17.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_4/logos_18.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_5/logos_136.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_5/logos_145.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_5/logos_146.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_5/logos_17.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_6/logos_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_6/logos_126.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_6/logos_13.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_6/logos_134.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_6/logos_136.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_6/logos_146.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_6/logos_17.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_6/logos_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_7/logos_116.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_7/logos_126.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_7/logos_13.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_7/logos_134.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_7/logos_136.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_7/logos_14.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_7/logos_147.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_7/logos_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_8/logos_13.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_8/logos_137.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_8/logos_144.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_8/logos_17.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_8/logos_18.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_9/logos_114.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_9/logos_124.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_9/logos_125.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_9/logos_127.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_9/logos_128.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_9/logos_131.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_9/logos_144.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_9/logos_145.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/mast/mast.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/mast/mast.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/mast/mast.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/project_main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cluster_centroids.pkl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cluster_final.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cluster_final.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cluster_labels.pkl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dist_metric.pkl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/full_script.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/split_motifs_into_cluster_motifs.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/split_motifs_into_cluster_motifs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/create_bash_script_for_meme.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/create_bash_script_for_meme.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mast_remove_profiles.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/mast_remove_profiles.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/meme_cleaner.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/meme_cleaner.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/meme_merger.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/meme_merger.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/process_dhcl_output.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/process_dhcl_output.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/process_dhcl_output_meme.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/process_dhcl_output_meme.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reduce_dhcl_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/reduce_dhcl_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/remove_motifs_with_low_evalue.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/remove_motifs_with_low_evalue.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rename_cluster_logos.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/rename_cluster_logos.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/run_meme_on_dhcl_loops.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/run_meme_on_dhcl_loops.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screen_motif_entropy.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/screen_motif_entropy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shrink_input_for_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/shrink_input_for_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -119,7 +44,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/project_main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5066">
+            <state relative-caret-position="4886">
               <caret line="174" column="32" selection-start-line="174" selection-start-column="32" selection-end-line="174" selection-end-column="32" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
@@ -137,11 +62,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cluster.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="124" column="52" selection-start-line="124" selection-start-column="52" selection-end-line="124" selection-end-column="52" />
+            <state relative-caret-position="3750">
+              <caret line="125" column="20" lean-forward="true" selection-start-line="125" selection-start-column="20" selection-end-line="125" selection-end-column="20" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -149,11 +74,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1590">
-              <caret line="34" column="20" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
+            <state relative-caret-position="270">
+              <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -170,8 +95,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>cluster_param_pkl</find>
-      <find>self.dir.in</find>
       <find>split_motifs</find>
       <find>centroid</find>
       <find>print</find>
@@ -200,6 +123,8 @@
       <find>cl</find>
       <find>cluster_pkl</find>
       <find>assemble_combi</find>
+      <find>move_replace</find>
+      <find>read_cmd_args</find>
     </findStrings>
     <replaceStrings>
       <replace>False</replace>
@@ -240,42 +165,42 @@
         <option value="$PROJECT_DIR$/src/dhcl_script.py" />
         <option value="$PROJECT_DIR$/src/build_meme_starter.py" />
         <option value="$PROJECT_DIR$/src/test2.py" />
-        <option value="$PROJECT_DIR$/src/create_bash_script_for_meme.py" />
-        <option value="$PROJECT_DIR$/src/process_dhcl_output.py" />
         <option value="$PROJECT_DIR$/src/test.py" />
         <option value="$PROJECT_DIR$/src/create_consolidated_test.py" />
         <option value="$PROJECT_DIR$/src/full_script.ipynb" />
         <option value="$PROJECT_DIR$/full_script.ipynb" />
-        <option value="$PROJECT_DIR$/src/shrink_input_for_test.py" />
         <option value="$PROJECT_DIR$/full_script.py" />
-        <option value="$PROJECT_DIR$/src/process_dhcl_output_meme.py" />
         <option value="$PROJECT_DIR$/../ai4r_p3/testing_suite_ice_rover.py" />
         <option value="$PROJECT_DIR$/src/cluster_get_profiles.py" />
         <option value="$PROJECT_DIR$/src/generate_cluster_params.py" />
         <option value="$PROJECT_DIR$/tes.py" />
         <option value="$PROJECT_DIR$/external_scripts/dhcl/executables/everything.py" />
-        <option value="$PROJECT_DIR$/src/reduce_dhcl_test.py" />
         <option value="$PROJECT_DIR$/src/__init__.py" />
-        <option value="$PROJECT_DIR$/src/meme_cleaner.py" />
-        <option value="$PROJECT_DIR$/src/meme_merger.py" />
-        <option value="$PROJECT_DIR$/src/remove_motifs_with_low_evalue.py" />
-        <option value="$PROJECT_DIR$/src/screen_motif_entropy.py" />
-        <option value="$PROJECT_DIR$/src/run_meme_on_dhcl_loops.py" />
-        <option value="$PROJECT_DIR$/src/mast_remove_profiles.py" />
-        <option value="$PROJECT_DIR$/src/rename_cluster_logos.py" />
         <option value="$PROJECT_DIR$/../assignment_6-master/assignment_6-master_mine/hmm_submission.py" />
         <option value="$PROJECT_DIR$/src/mast_remove_profiles_using_pkl.py" />
-        <option value="$PROJECT_DIR$/src/utils.py" />
         <option value="$PROJECT_DIR$/ttt.py" />
         <option value="$PROJECT_DIR$/src/split_motifs_into_cluster_motifs.py" />
         <option value="$PROJECT_DIR$/src/cluster_final.py" />
         <option value="$PROJECT_DIR$/tt.py" />
         <option value="$PROJECT_DIR$/test_cluster.py" />
-        <option value="$PROJECT_DIR$/config.py" />
         <option value="$PROJECT_DIR$/filter.py" />
         <option value="$PROJECT_DIR$/cluster.py" />
         <option value="$PROJECT_DIR$/dd.py" />
         <option value="$PROJECT_DIR$/project_main.py" />
+        <option value="$PROJECT_DIR$/config.py" />
+        <option value="$PROJECT_DIR$/src/create_bash_script_for_meme.py" />
+        <option value="$PROJECT_DIR$/src/shrink_input_for_test.py" />
+        <option value="$PROJECT_DIR$/src/process_dhcl_output.py" />
+        <option value="$PROJECT_DIR$/src/process_dhcl_output_meme.py" />
+        <option value="$PROJECT_DIR$/src/reduce_dhcl_test.py" />
+        <option value="$PROJECT_DIR$/src/meme_merger.py" />
+        <option value="$PROJECT_DIR$/src/meme_cleaner.py" />
+        <option value="$PROJECT_DIR$/src/screen_motif_entropy.py" />
+        <option value="$PROJECT_DIR$/src/remove_motifs_with_low_evalue.py" />
+        <option value="$PROJECT_DIR$/src/rename_cluster_logos.py" />
+        <option value="$PROJECT_DIR$/src/run_meme_on_dhcl_loops.py" />
+        <option value="$PROJECT_DIR$/src/mast_remove_profiles.py" />
+        <option value="$PROJECT_DIR$/src/utils.py" />
       </list>
     </option>
   </component>
@@ -501,12 +426,12 @@
       <option name="presentableId" value="Default" />
       <updated>1540444260895</updated>
       <workItem from="1542862416710" duration="20442000" />
-      <workItem from="1542952538753" duration="3178000" />
+      <workItem from="1542952538753" duration="3603000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23620000" />
+    <option name="totallyTimeSpent" value="24045000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1920" height="990" extended-state="6" />
@@ -845,25 +770,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1590">
-          <caret line="34" column="20" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dd.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project_main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5066">
-          <caret line="174" column="32" selection-start-line="174" selection-start-column="32" selection-end-line="174" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/filter.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -874,11 +782,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cluster.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="124" column="52" selection-start-line="124" selection-start-column="52" selection-end-line="124" selection-end-column="52" />
+        <state relative-caret-position="3750">
+          <caret line="125" column="20" lean-forward="true" selection-start-line="125" selection-start-column="20" selection-end-line="125" selection-end-column="20" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project_main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4886">
+          <caret line="174" column="32" selection-start-line="174" selection-start-column="32" selection-end-line="174" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
         </state>
       </provider>
     </entry>

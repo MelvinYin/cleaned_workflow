@@ -1,11 +1,7 @@
 import sys
-from utils import read_cmd_args
 
 def write_bash_script(kwargs):
-    # consensus_filename = "files/consensus_seqs.txt"
-    # bash_filename = "files/call_meme.sh"
-    # seq_filename = 'consolidated.fasta'
-    # output_folder = "./meme_output"
+
     consensus_filename = kwargs['consensus']
     bash_filename = kwargs['bash_output']
     seq_filename = kwargs['seqs']
@@ -33,10 +29,10 @@ def write_bash_script(kwargs):
         bash_file.write("cd ..\n")
         bash_file.write("cd ..\n")
 
-def main(args):
-    kwargs = read_cmd_args(args, 'consensus bash_output seqs output_folder')
+def main(kwargs):
+    # consensus_filename = "files/consensus_seqs.txt"
+    # bash_filename = "files/call_meme.sh"
+    # seq_filename = 'consolidated.fasta'
+    # output_folder = "./meme_output"
     write_bash_script(kwargs)
     return
-
-if __name__ == '__main__':
-    main(sys.argv)
