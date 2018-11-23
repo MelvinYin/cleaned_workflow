@@ -20,8 +20,7 @@ def write_bash_script(kwargs):
         count = 0
         for seq in consensus_seqs:
             cons_command = "-cons " + seq + " "
-            command_end = seq_filename + " &>>{}/meme_out{}.txt".format(
-                output_folder, count)
+            command_end = f"{seq_filename} &>>{output_folder}/meme_out{count}.txt"
             meme_command = command_start + n_motif_command + cons_command + command_end
             bash_file.write(meme_command + "\n")
             count += 1

@@ -3,12 +3,12 @@ import subprocess
 import os
 from collections import OrderedDict, namedtuple
 from utils import move_replace, rename
-from config import ClusterDir
+from config import Directory
 from cluster import Cluster
 
 FilterIntDir = namedtuple(
-    'FilterIntDir', 'post_evalue post_entropy post_corr mast_singleseq '
-                    'mast_postcorr cluster_pkl')
+    'FilterIntDir', "post_evalue post_entropy post_corr mast_singleseq "
+                    "mast_postcorr cluster_pkl")
 
 class Filter:
     def __init__(self, dir):
@@ -46,12 +46,12 @@ class Filter:
 
     def set_internal_dir(self):
         _dir = FilterIntDir(
-            post_evalue='files/meme_evalue_screened.txt',
-            post_entropy='files/meme_entropy_screened.txt',
-            post_corr='files/meme_correlated_screened.txt',
-            mast_singleseq='files/mast_single',
-            mast_postcorr='files/mast_nocorr',
-            cluster_pkl='files/cluster_final.pkl')
+            post_evalue=f"{self.dir.file}/meme_evalue_screened.txt",
+            post_entropy=f"{self.dir.file}/meme_entropy_screened.txt",
+            post_corr=f"{self.dir.file}/meme_correlated_screened.txt",
+            mast_singleseq=f"{self.dir.file}/mast_single",
+            mast_postcorr=f"{self.dir.file}/mast_nocorr",
+            cluster_pkl=f"{self.dir.file}/cluster_final.pkl")
         return _dir
 
     def screen_evalue(self):
@@ -88,9 +88,9 @@ class Filter:
         assert os.path.isfile(self.dir.single_seq)
         if os.path.isdir(self._dir.mast_singleseq):
             shutil.rmtree(self._dir.mast_singleseq)
-        command = f'{self.dir.meme_dir}/mast -remcorr ' \
-                  f'{self._dir.post_entropy} {self.dir.single_seq} -o ' \
-                  f'{self._dir.mast_singleseq}'
+        command = f"{self.dir.meme_dir}/mast -remcorr " \
+                  f"{self._dir.post_entropy} {self.dir.single_seq} -o " \
+                  f"{self._dir.mast_singleseq}"
         subprocess.run(command, shell=True, executable=self.dir.bash_exec)
         from mast_remove_profiles import main
         kwargs = dict(meme_in=self._dir.post_entropy,
@@ -113,18 +113,10 @@ class Filter:
                   f"{self._dir.post_corr} {self.dir.input_seqs} -o " \
                   f"{self._dir.mast_postcorr}"
         subprocess.run(command, shell=True, executable=self.dir.bash_exec)
-        cluster_dir = ClusterDir(
-            file=self.dir.file,
-            log=self.dir.log,
-            trash=self.dir.trash,
+        cluster_dir = Directory.cluster_dir._replace(
             input_mast=f"{self._dir.mast_postcorr}/mast.txt",
             input_meme=self._dir.post_corr,
-            output_mast=None,
-            description=None,
-            logos=None,
-            cluster_pkl=self._dir.cluster_pkl,
-            meme_dir=self.dir.meme_dir,
-            bash_exec=self.dir.bash_exec)
+            cluster_pkl=self._dir.cluster_pkl)
         cluster = Cluster(cluster_dir)
         cluster.run()
         cluster.delete_intermediate()

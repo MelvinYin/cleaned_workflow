@@ -6,7 +6,7 @@ from utils import move_replace
 from filter import Filter
 import sys
 
-from config import Dir, ClusterDir
+from config import Directory
 from cluster import Cluster
 
 ExecIntDir = namedtuple(
@@ -16,17 +16,17 @@ ExecIntDir = namedtuple(
 class Executor:
     def __init__(self):
         self.switches = self.set_switches()
-        self.dir = Dir.executor_dir
+        self.dir = Directory.executor_dir
         self._dir = self.set_internal_dir()
 
     def set_internal_dir(self):
         _dir = ExecIntDir(
-            dhcl_output="files/from_dhcl",
-            consensus_seeds="files/init_seed_seqs.txt",
-            meme_full="files/meme_full",
-            starter_meme="files/meme_starter.txt",
-            meme_merged="files/meme_merged.txt",
-            meme_cleaned='files/meme_cleaned.txt')
+            dhcl_output=f"{self.dir.file}/from_dhcl",
+            consensus_seeds=f"{self.dir.file}/init_seed_seqs.txt",
+            meme_full=f"{self.dir.file}/meme_full",
+            starter_meme=f"{self.dir.file}/meme_starter.txt",
+            meme_merged=f"{self.dir.file}/meme_merged.txt",
+            meme_cleaned=f"{self.dir.file}/meme_cleaned.txt")
         return _dir
 
     def set_switches(self):
@@ -42,7 +42,7 @@ class Executor:
         switches['SCREEN_PSSM'] = (True, self.screen_pssm)
         switches['ASSEMBLE_COMBI'] = (True, self.assemble_combi)
         switches['CLUSTER'] = (True, self.cluster)
-        switches['DELETE_INTERMEDIATE'] = (False, self.delete_intermediate)
+        switches['DELETE_INTERMEDIATE'] = (True, self.delete_intermediate)
         return switches
 
     def shrink_input(self):
@@ -61,7 +61,7 @@ class Executor:
     def run_dhcl(self):
         # Input: ./files/input_pdb
         # Output: ./files/from_dhcl
-        print("RUN_DHCL:")
+        print("run_dhcl:")
         assert os.path.isdir(self.dir.input_pdb)
         shutil.rmtree(self._dir.dhcl_output, ignore_errors=True)
         os.mkdir(self._dir.dhcl_output)
@@ -171,17 +171,10 @@ class Executor:
         #        ./files/single_seq.fasta
         # Output: ./files/mast_single     ./files/mast_nocorr
         # self._dir.meme_cleaned
-        from config import FilterDir
-        filter_dir = FilterDir(
-            file=self.dir.file,
-            input_seqs=self.dir.input_seqs,
-            log=self.dir.log,
-            trash=self.dir.trash,
-            meme_dir=self.dir.meme_dir,
-            bash_exec=self.dir.bash_exec,
-            single_seq=self.dir.single_seq,
-            cleaned=self._dir.meme_cleaned,
-            orig=self._dir.meme_merged)
+
+        filter_dir = Directory.filter_dir._replace(
+            orig=self._dir.meme_merged,
+            cleaned=self._dir.meme_cleaned)
         filter = Filter(filter_dir)
         filter.run()
         filter.delete_intermediate()
@@ -206,18 +199,12 @@ class Executor:
         return
 
     def cluster(self):
-        cluster_dir = ClusterDir(
-            file=self.dir.file,
-            log=self.dir.log,
-            trash=self.dir.trash,
+        cluster_dir = Directory.cluster_dir._replace(
             input_mast=f"{self.dir.output_mast}/mast.txt",
             input_meme=self._dir.meme_cleaned,
             output_mast=f"{self.dir.output}/mast.txt",
             description=self.dir.output_clusters,
-            logos=f"{self.dir.output}/logos",
-            meme_dir=self.dir.meme_dir,
-            cluster_pkl=None,
-            bash_exec=self.dir.bash_exec)
+            logos=f"{self.dir.output}/logos")
         cluster = Cluster(cluster_dir)
         cluster.run()
         cluster.delete_intermediate()

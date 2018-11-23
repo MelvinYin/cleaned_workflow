@@ -1,9 +1,8 @@
 import os
 import shutil
-from config import Dir, namedtuple
 import subprocess
 from utils import move_replace
-from collections import OrderedDict
+from collections import OrderedDict, namedtuple
 
 ClusterIntDir = namedtuple(
     "ClusterIntDir", "full_param_pkl cluster_pkl motifs")
