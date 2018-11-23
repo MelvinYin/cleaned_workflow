@@ -1,11 +1,10 @@
-from collections import defaultdict, OrderedDict
-import re
-import numpy as np
+from collections import defaultdict
 import difflib
-from sklearn.cluster import AgglomerativeClustering
-import pickle
+import numpy as np
 import pandas as pd
-import operator
+import pickle
+import re
+from sklearn.cluster import AgglomerativeClustering
 
 def parse_mast_txt(input_fname):
     first_start = False

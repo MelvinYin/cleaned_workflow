@@ -51,7 +51,7 @@ class Executor:
         assert os.path.isfile(self.dir.input_seqs)
         from shrink_input_for_test import main
         kwargs = dict(seqs=self.dir.input_seqs, output=self.dir.input_seqs,
-                      divideby=20)
+                      divideby=10)
         main(kwargs)
         assert os.path.isfile(self.dir.input_seqs)
         return
@@ -87,7 +87,7 @@ class Executor:
         assert os.path.isfile(self._dir.consensus_seeds)
         from reduce_dhcl_test import main
         kwargs = dict(input=self._dir.consensus_seeds,
-                      divideby=8,
+                      divideby=5,
                       output=self._dir.consensus_seeds)
         main(kwargs)
         assert os.path.isfile(self._dir.consensus_seeds)
