@@ -4,13 +4,14 @@ import os
 from collections import OrderedDict, namedtuple
 from utils import move_replace
 from filter import Filter
+import sys
 
-from config import Dir, ClusterDir, FilterDir
+from config import Dir, ClusterDir
 from cluster import Cluster
 
 ExecIntDir = namedtuple(
     'ExecIntDir', 'dhcl_output consensus_seeds meme_full starter_meme '
-                  'meme_merged meme_cleaned output_mast cluster_description')
+                  'meme_merged meme_cleaned')
 
 class Executor:
     def __init__(self):
@@ -20,19 +21,17 @@ class Executor:
 
     def set_internal_dir(self):
         _dir = ExecIntDir(
-            dhcl_output="files/from_dhcl/",
+            dhcl_output="files/from_dhcl",
             consensus_seeds="files/init_seed_seqs.txt",
-            meme_full="files/meme_full/",
+            meme_full="files/meme_full",
             starter_meme="files/meme_starter.txt",
             meme_merged="files/meme_merged.txt",
-            meme_cleaned='files/meme_cleaned.txt',
-            output_mast='output/mast/',
-            cluster_description='output/cluster_description.txt')
+            meme_cleaned='files/meme_cleaned.txt')
         return _dir
 
     def set_switches(self):
         switches = OrderedDict()
-        switches['SHRINK_INPUT'] = (False, self.shrink_input)
+        switches['SHRINK_INPUT'] = (True, self.shrink_input)
         switches['RUN_DHCL'] = (True, self.run_dhcl)
         switches['EXTRACT_CONSENSUS'] = (True, self.extract_consensus)
         switches['REDUCE_CONSENSUS'] = (True, self.reduce_consensus)
@@ -52,8 +51,7 @@ class Executor:
         print("shrink_input:")
         assert os.path.isfile(self.dir.input_seqs)
         from shrink_input_for_test import main
-        kwargs = dict(seqs=self.dir.input_seqs,
-                      output=self.dir.input_seqs,
+        kwargs = dict(seqs=self.dir.input_seqs, output=self.dir.input_seqs,
                       divideby=20)
         main(kwargs)
         assert os.path.isfile(self.dir.input_seqs)
@@ -125,7 +123,7 @@ class Executor:
         # Output: ./files/meme_starter.txt
         print("build_starter:")
         assert os.path.isfile(self.dir.input_seqs)
-        command = f'{self.dir.meme_dir}meme {self.dir.input_seqs} ' \
+        command = f'{self.dir.meme_dir}/meme {self.dir.input_seqs} ' \
                   f'-text -protein -w 30 -p 7 -nmotifs 2 -nostatus &>> ' \
                   f'{self._dir.starter_meme}'
         subprocess.run(command, shell=True, executable=self.dir.bash_exec)
@@ -144,8 +142,8 @@ class Executor:
                       output=self._dir.starter_meme)
         main(kwargs)
         for filename in os.listdir(self._dir.meme_full):
-            kwargs = dict(input=self._dir.meme_full+filename,
-                          output=self._dir.meme_full+filename)
+            kwargs = dict(input=f"{self._dir.meme_full}/{filename}",
+                          output=f"{self._dir.meme_full}/{filename}")
             main(kwargs)
         assert os.path.isdir(self._dir.meme_full)
         assert os.path.isfile(self._dir.starter_meme)
@@ -186,7 +184,7 @@ class Executor:
             orig=self._dir.meme_merged)
         filter = Filter(filter_dir)
         filter.run()
-        filter.reset()
+        filter.delete_intermediate()
         return True
 
     def assemble_combi(self):
@@ -195,15 +193,15 @@ class Executor:
         # Output: ./files/mast_onlycombi    ./output/mast
         print("assemble_combi:")
         assert os.path.isfile(self._dir.meme_cleaned)
-        self.to_trash(self._dir.output_mast)
-        if not os.path.isdir('output/'):
-            os.mkdir('output/')
-        command = f'{self.dir.meme_dir}mast -remcorr ' \
+        self.to_trash(self.dir.output_mast)
+        if not os.path.isdir('output'):
+            os.mkdir('output')
+        command = f'{self.dir.meme_dir}/mast -remcorr ' \
                   f'{self._dir.meme_cleaned} {self.dir.input_seqs} -o ' \
-                  f'{self._dir.output_mast}'
+                  f'{self.dir.output_mast}'
         subprocess.run(command, shell=True, executable=self.dir.bash_exec)
-        assert os.path.isdir(self._dir.output_mast)
-        assert os.path.isfile(self._dir.output_mast + "mast.txt"), self._dir.output_mast + "mast.txt"
+        assert os.path.isdir(self.dir.output_mast)
+        assert os.path.isfile(f"{self.dir.output_mast}/mast.txt")
         print("Success!\n")
         return
 
@@ -212,25 +210,18 @@ class Executor:
             file=self.dir.file,
             log=self.dir.log,
             trash=self.dir.trash,
-            input_mast=self._dir.output_mast + "mast.txt",
+            input_mast=f"{self.dir.output_mast}/mast.txt",
             input_meme=self._dir.meme_cleaned,
-            output_mast=self.dir.output + "mast",
-            description=self._dir.cluster_description,
-            logos=self.dir.output + "logo/",
+            output_mast=f"{self.dir.output}/mast.txt",
+            description=self.dir.output_clusters,
+            logos=f"{self.dir.output}/logos",
             meme_dir=self.dir.meme_dir,
             cluster_pkl=None,
             bash_exec=self.dir.bash_exec)
         cluster = Cluster(cluster_dir)
         cluster.run()
-        cluster.reset()
+        cluster.delete_intermediate()
         return True
-
-    def delete_intermediate(self):
-        print("delete_intermediate:")
-        for file in self._dir:
-            self.to_trash(file)
-        print("Success!\n")
-        return
 
     def run(self):
         for _switch, (to_run, function) in self.switches.items():
@@ -245,9 +236,12 @@ class Executor:
     def to_trash(self, file):
         return move_replace(file, self.dir.trash)
 
-    def reset(self):
-        for name in self._dir:
-            self.to_trash(name)
+    def delete_intermediate(self):
+        print("delete_intermediate:")
+        for file in self._dir:
+            self.to_trash(file)
+        print("Success!\n")
+        return
 
 executor = Executor()
 executor.run()

@@ -1,0 +1,48 @@
+Cluster 0
+Combination: (3, 6)
+LFD : 39
+CC : 35
+LTGD : 16
+DTD : 14
+OSBS : 13
+NSART : 10
+LGD : 10
+DE : 6
+AALG : 3
+HB : 3
+GLC : 2
+XDT : 2
+GDD : 1
+LLD : 1
+
+
+Cluster 1
+Combination: (3, 2)
+DGD : 43
+RD : 6
+ENL : 1
+
+
+Cluster 3
+Combination: (3, 6, 4)
+DE : 151
+CC : 2
+
+
+Cluster 4
+Combination: (3, 1, 2)
+ENL : 54
+GDD : 2
+RD : 1
+
+
+Cluster 6
+Combination: (7, 3, 1, 2)
+ENL : 585
+
+
+Cluster 9
+Combination: (5, 10, 3, 8, 6, 9, 1)
+GCRD : 166
+
+

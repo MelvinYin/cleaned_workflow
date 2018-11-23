@@ -25,5 +25,5 @@ def main(kwargs):
         cluster_centroids = pickle.load(file)
 
     for label, centroid in cluster_centroids['centroid'].items():
-        output = motifs + 'motifs_in_cluster_{}.txt'.format(label)
+        output = f"{motifs}/motifs_in_cluster_{label}.txt"
         meme_txt_rewritter(centroid, input_meme, output)

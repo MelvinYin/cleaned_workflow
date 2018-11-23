@@ -20,7 +20,7 @@ class Cluster:
         _dir = ClusterIntDir(
             full_param_pkl='files/full_param.pkl',
             cluster_pkl="files/_cluster.pkl",
-            motifs="files/motifs/")
+            motifs="files/motifs")
         return _dir
 
     def run(self):
@@ -31,9 +31,12 @@ class Cluster:
             self.create_cluster_logos()
         return
 
-    def reset(self):
-        for name in self._dir:
-            self.to_trash(name)
+    def delete_intermediate(self):
+        print("delete_intermediate:")
+        for file in self._dir:
+            self.to_trash(file)
+        print("Success!\n")
+        return
 
     def to_trash(self, file):
         return move_replace(file, self.dir.trash)
@@ -107,11 +110,11 @@ class Cluster:
         for filename in os.listdir(self._dir.motifs):
             cluster_i = filename[18:-4]
             i = 1
-            path = self.dir.logos+"cluster_{}".format(cluster_i)
+            path = f"{self.dir.logos}/cluster_{cluster_i}"
             os.mkdir(path)
             while True:
-                command = f'{self.dir.meme_dir}ceqlogo -i{i} ' \
-                      f'{self._dir.motifs}{filename} -o ' \
+                command = f'{self.dir.meme_dir}/ceqlogo -i{i} ' \
+                      f'{self._dir.motifs}/{filename} -o ' \
                       f'{path}/logo_{i}.png -f PNG'
                 i += 1
                 returncode = subprocess.run(
