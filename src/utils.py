@@ -36,6 +36,3 @@ def move_replace(input_path, output_dir, output_filename=None):
             os.remove(output_path)
         shutil.move(input_path, output_path)
     return
-
-def to_trash(file, trash_dir):
-    return move_replace(file, self.dir.trash)

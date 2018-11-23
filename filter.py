@@ -3,16 +3,17 @@ import subprocess
 import os
 from collections import OrderedDict, namedtuple
 from utils import move_replace
-from config import Dir
+from config import ClusterDir
+from cluster import Cluster
 
-IntDirTemplate = namedtuple(
-    '_dir', 'post_evalue post_entropy post_corr mast_singleseq mast_postcorr '
-            'full_param_pkl cluster_param_pkl')
+FilterIntDir = namedtuple(
+    'FilterIntDir', 'post_evalue post_entropy post_corr mast_singleseq '
+                    'mast_postcorr cluster_pkl')
 
 class Filter:
-    def __init__(self):
+    def __init__(self, dir):
         self.switches = self.set_switches()
-        self.dir = Dir.filter_dir
+        self.dir = dir
         self._dir = self.set_internal_dir()
 
     def run(self):
@@ -25,26 +26,29 @@ class Filter:
                     raise
         return
 
+    def reset(self):
+        for name in self._dir:
+            self.to_trash(name)
+
     def to_trash(self, file):
         return move_replace(file, self.dir.trash)
 
     def set_switches(self):
         switches = OrderedDict()
-        switches['SCREEN_EVALUE'] = (False, self.screen_evalue)
-        switches['SCREEN_ENTROPY'] = (False, self.screen_entropy)
-        switches['SCREEN_CORRELATED'] = (False, self.screen_correlated)
-        switches['SCREEN_NON_COMBI'] = (False, self.screen_non_combi)
+        switches['SCREEN_EVALUE'] = (True, self.screen_evalue)
+        switches['SCREEN_ENTROPY'] = (True, self.screen_entropy)
+        switches['SCREEN_CORRELATED'] = (True, self.screen_correlated)
+        switches['SCREEN_NON_COMBI'] = (True, self.screen_non_combi)
         return switches
 
     def set_internal_dir(self):
-        _dir = IntDirTemplate(
+        _dir = FilterIntDir(
             post_evalue='files/meme_evalue_screened.txt',
             post_entropy='files/meme_entropy_screened.txt',
             post_corr='files/meme_correlated_screened.txt',
             mast_singleseq='files/mast_single/',
             mast_postcorr='files/mast_nocorr/',
-            full_param_pkl='files/clustering_df.pkl',
-            cluster_param_pkl='files/cluster_final.pkl')
+            cluster_pkl='files/cluster_final.pkl')
         return _dir
 
     def screen_evalue(self):
@@ -83,6 +87,8 @@ class Filter:
                   f'{self._dir.post_entropy} {self.dir.single_seq}'
         subprocess.run(command, shell=True, executable=self.dir.bash_exec)
         shutil.rmtree("", ignore_errors=True)
+        if os.path.isdir(self._dir.mast_singleseq):
+            shutil.rmtree(self._dir.mast_singleseq)
         os.mkdir(self._dir.mast_singleseq)
         move_replace('mast_out', self.dir.file, 'mast_single')
         from mast_remove_profiles import main
@@ -95,39 +101,39 @@ class Filter:
         return
 
     def screen_non_combi(self):
-        # todo: split this up
-        # Input: ./files/meme_format2.txt    ./files/single_seq.fasta
+        # Input: ./files/meme_format2.txt    ./files/input_seqs.fasta
         # Output: ./files/mast_nocorr    ./files/meme_format3.txt
         print("screen_non_combi:")
         assert os.path.isfile(self._dir.post_corr)
-        assert os.path.isfile(self.dir.single_seq)
+        assert os.path.isfile(self.dir.input_seqs)
         command = f"{self.dir.meme_dir}mast -remcorr " \
-                  f"{self._dir.post_corr} {self.dir.orig}"
+                  f"{self._dir.post_corr} {self.dir.input_seqs}"
         subprocess.run(command, shell=True, executable=self.dir.bash_exec)
         shutil.rmtree(self._dir.mast_postcorr, ignore_errors=True)
         os.mkdir(self._dir.mast_postcorr)
         move_replace('mast_out', self.dir.file, 'mast_nocorr')
 
-        from generate_cluster_params import main
-        kwargs = dict(input_fname=self._dir.mast_postcorr+"mast.txt",
-                      screen_threshold=5,
-                      pkl_path=self._dir.full_param_pkl)
-        main(kwargs)
-
-        from cluster_final import main
-        kwargs = dict(cluster_threshold=50,
-                      pkl_path=self._dir.full_param_pkl,
-                      output=None,
-                      cluster_df_pkl="./files/cluster_final.pkl")
-        main(kwargs)
+        cluster_dir = ClusterDir(
+            file=self.dir.file,
+            log=self.dir.log,
+            trash=self.dir.trash,
+            input_mast=self._dir.mast_postcorr + "mast.txt",
+            input_meme=self._dir.post_corr,
+            output_mast=None,
+            description=None,
+            logos=None,
+            cluster_pkl=self._dir.cluster_pkl)
+        cluster = Cluster(cluster_dir)
+        cluster.run()
+        cluster.reset()
 
         from mast_remove_profiles_using_pkl import main
-        kwargs = dict(cluster_df_pkl="./files/cluster_final.pkl",
+        kwargs = dict(cluster_df_pkl=self._dir.cluster_pkl,
                       input=self._dir.post_corr,
                       output=self.dir.cleaned)
         main(kwargs)
         self.to_trash(self._dir.post_corr)
-        self.to_trash(self._dir.cluster_param_pkl)
+        self.to_trash(self._dir.cluster_pkl)
         assert os.path.isfile(self.dir.cleaned)
         assert os.path.isdir(self._dir.mast_postcorr)
         print("Success!\n")

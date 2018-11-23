@@ -84,9 +84,9 @@ def main(kwargs):
                 file.write("\n\n")
     return True
 
-if __name__ == "__main__":
-    kwargs = dict(cluster_threshold=50,
-                  pkl_path="../files/clustering_df.pkl",
-                  output="../files/cluster_description.txt",
-                  cluster_df_pkl=None)
-    main(kwargs)
+# if __name__ == "__main__":
+#     kwargs = dict(cluster_threshold=50,
+#                   pkl_path="../files/clustering_df.pkl",
+#                   output="../files/cluster_description.txt",
+#                   cluster_df_pkl=None)
+#     main(kwargs)
