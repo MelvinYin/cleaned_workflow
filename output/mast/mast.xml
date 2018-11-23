@@ -30,7 +30,7 @@
 	</alphabet>
 	<background source="--nrdb--" A="0.0730919" C="0.0181455" D="0.051688" E="0.0622785" F="0.0402434" G="0.0692596" H="0.0224055" I="0.056227" K="0.058435" L="0.0916218" M="0.0230443" N="0.0460321" P="0.0506238" Q="0.0407153" R="0.0518462" S="0.073729" T="0.0593523" V="0.0642985" W="0.0133282" Y="0.0326497"/>
 	<motif_dbs>
-		<motif_db source="files/meme_cleaned.txt" last_mod_date="Fri Nov 23 17:51:22 2018">
+		<motif_db source="files/meme_cleaned.txt" last_mod_date="Fri Nov 23 18:43:49 2018">
 			<background A="0.113965" C="0.0103973" D="0.0639807" E="0.0704787" F="0.0297913" G="0.088773" H="0.0204941" I="0.0611815" K="0.0495851" L="0.0962707" M="0.0245929" N="0.0360893" P="0.0426873" Q="0.0316907" R="0.0509847" S="0.050085" T="0.0504848" V="0.0697789" W="0.0129965" Y="0.0256925"/>
 		</motif_db>
 	</motif_dbs>
@@ -404,7 +404,7 @@
 		<correlation idx_a="8" idx_b="9" value="0.13"/>
 	</correlations>
 	<sequence_dbs>
-		<sequence_db source="files/input_seqs.fasta" last_mod_date="Fri Nov 23 17:49:14 2018" seq_count="1673" residue_count="665413"/>
+		<sequence_db source="files/input_seqs.fasta" last_mod_date="Fri Nov 23 18:41:42 2018" seq_count="1673" residue_count="665413"/>
 	</sequence_dbs>
 	<sequences>
 		<sequence db="0" name="GCRDUniprot|A0A0F3V7T3|EFDID|3794232|FULL" comment="SEQUENCE full" length="446">
@@ -33092,5 +33092,5 @@ LGELEYMEQPCASIAELAELRRRISVPIAADESIRRVSDPYEVARLHAADVAVVKAAPLGGPRNIVDIAKFYQQR
 			</seg>
 		</sequence>
 	</sequences>
-	<runtime host="melvin-GE72-2QF" when="Fri Nov 23 17:51:22 2018" cycles="532432" seconds="0.532"/>
+	<runtime host="melvin-GE72-2QF" when="Fri Nov 23 18:43:49 2018" cycles="550323" seconds="0.550"/>
 </mast>

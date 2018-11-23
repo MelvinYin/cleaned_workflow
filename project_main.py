@@ -1,13 +1,13 @@
+from collections import OrderedDict, namedtuple
+import os
 import shutil
 import subprocess
-import os
-from collections import OrderedDict, namedtuple
-from utils import move_replace
-from filter import Filter
 import sys
 
-from config import Directory
 from cluster import Cluster
+from config import Directory
+from filter import Filter
+from utils import move_replace
 
 ExecIntDir = namedtuple(
     'ExecIntDir', 'dhcl_output consensus_seeds meme_full starter_meme '
@@ -48,20 +48,17 @@ class Executor:
     def shrink_input(self):
         # Input: ./files/input_seqs.fasta
         # Output: ./files/input_seqs.fasta
-        print("shrink_input:")
         assert os.path.isfile(self.dir.input_seqs)
         from shrink_input_for_test import main
         kwargs = dict(seqs=self.dir.input_seqs, output=self.dir.input_seqs,
                       divideby=20)
         main(kwargs)
         assert os.path.isfile(self.dir.input_seqs)
-        print("Success!\n")
         return
 
     def run_dhcl(self):
         # Input: ./files/input_pdb
         # Output: ./files/from_dhcl
-        print("run_dhcl:")
         assert os.path.isdir(self.dir.input_pdb)
         shutil.rmtree(self._dir.dhcl_output, ignore_errors=True)
         os.mkdir(self._dir.dhcl_output)
@@ -69,13 +66,11 @@ class Executor:
                   f'{self.dir.input_pdb} --outdir {self._dir.dhcl_output}'
         subprocess.run(command, shell=True)
         assert os.path.isdir(self._dir.dhcl_output)
-        print("Success!\n")
         return
 
     def extract_consensus(self):
         # Input: ./files/from_dhcl    ./files/input_fasta
         # Output: ./files/init_seed_seqs.txt
-        print("extract_consensus:")
         assert os.path.isdir(self._dir.dhcl_output)
         assert os.path.isdir(self.dir.fasta_for_pdb)
         from process_dhcl_output_meme import main
@@ -84,27 +79,23 @@ class Executor:
                       output=self._dir.consensus_seeds)
         main(kwargs)
         assert os.path.isfile(self._dir.consensus_seeds)
-        print("Success!\n")
         return
 
     def reduce_consensus(self):
         # Input: ./files/init_seed_seqs.txt
         # Output: ./files/init_seed_seqs.txt
-        print("reduce_consensus:")
         assert os.path.isfile(self._dir.consensus_seeds)
         from reduce_dhcl_test import main
         kwargs = dict(input=self._dir.consensus_seeds,
-                      denominator=8,
+                      divideby=8,
                       output=self._dir.consensus_seeds)
         main(kwargs)
         assert os.path.isfile(self._dir.consensus_seeds)
-        print("Success!\n")
         return
 
     def build_pssm(self):
         # Input: ./files/init_seed_seqs.txt    ./files/input_seqs.fasta
         # Output: ./files/meme_full
-        print("build_pssm:")
         assert os.path.isfile(self._dir.consensus_seeds)
         assert os.path.isfile(self.dir.input_seqs)
         shutil.rmtree(self._dir.meme_full, ignore_errors=True)
@@ -112,29 +103,27 @@ class Executor:
         from run_meme_on_dhcl_loops import main
         kwargs = dict(consensus=self._dir.consensus_seeds,
                       seqs=self.dir.input_seqs,
-                      output_folder=self._dir.meme_full)
+                      output_folder=self._dir.meme_full,
+                      num_p=self.dir.num_p,
+                      meme_dir=self.dir.meme_dir)
         main(kwargs)
         assert os.path.isdir(self._dir.meme_full)
-        print("Success!\n")
         return
 
     def build_starter(self):
         # Input: ./files/input_seqs.fasta
         # Output: ./files/meme_starter.txt
-        print("build_starter:")
         assert os.path.isfile(self.dir.input_seqs)
         command = f'{self.dir.meme_dir}/meme {self.dir.input_seqs} ' \
-                  f'-text -protein -w 30 -p 7 -nmotifs 2 -nostatus &>> ' \
-                  f'{self._dir.starter_meme}'
+                  f'-text -protein -w 30 -p {self.dir.num_p} -nmotifs 2 ' \
+                  f'-nostatus &>> {self._dir.starter_meme}'
         subprocess.run(command, shell=True, executable=self.dir.bash_exec)
         assert os.path.isfile(self._dir.starter_meme)
-        print("Success!\n")
         return
 
     def clean_pssm(self):
         # Input: ./files/meme_full    ./files/meme_starter.txt
         # Output: ./files/meme_full    ./files/meme_starter.txt
-        print("clean_meme:")
         assert os.path.isdir(self._dir.meme_full)
         assert os.path.isfile(self._dir.starter_meme)
         from meme_cleaner import main
@@ -147,14 +136,12 @@ class Executor:
             main(kwargs)
         assert os.path.isdir(self._dir.meme_full)
         assert os.path.isfile(self._dir.starter_meme)
-        print("Success!\n")
         return
 
     def merge_pssm(self):
         # todo: remove SUMMARY OF MOTIFS for smaller input_seqs
         # Input: ./files/meme_full    ./files/meme_starter.txt
         # Output: ./files/meme_merged.txt
-        print("merge_pssm:")
         assert os.path.isdir(self._dir.meme_full)
         assert os.path.isfile(self._dir.starter_meme)
         from meme_merger import main
@@ -163,15 +150,13 @@ class Executor:
                       meme_starter=self._dir.starter_meme)
         main(kwargs)
         assert os.path.isfile(self._dir.meme_merged)
-        print("Success!\n")
         return
 
     def screen_pssm(self):
         # Input: self._dir.meme_merged    self.dir.input_seqs.fasta
-        #        ./files/single_seq.fasta
-        # Output: ./files/mast_single     ./files/mast_nocorr
+        #        files/single_seq.fasta
+        # Output: files/mast_single     files/mast_nocorr
         # self._dir.meme_cleaned
-
         filter_dir = Directory.filter_dir._replace(
             orig=self._dir.meme_merged,
             cleaned=self._dir.meme_cleaned)
@@ -184,7 +169,6 @@ class Executor:
         # Input: .files/meme_format3.txt
         # ./external_scripts/meme/input_seqs.fasta
         # Output: ./files/mast_onlycombi    ./output/mast
-        print("assemble_combi:")
         assert os.path.isfile(self._dir.meme_cleaned)
         self.to_trash(self.dir.output_mast)
         if not os.path.isdir('output'):
@@ -195,28 +179,32 @@ class Executor:
         subprocess.run(command, shell=True, executable=self.dir.bash_exec)
         assert os.path.isdir(self.dir.output_mast)
         assert os.path.isfile(f"{self.dir.output_mast}/mast.txt")
-        print("Success!\n")
         return
 
     def cluster(self):
         cluster_dir = Directory.cluster_dir._replace(
             input_mast=f"{self.dir.output_mast}/mast.txt",
             input_meme=self._dir.meme_cleaned,
-            output_mast=f"{self.dir.output}/mast.txt",
             description=self.dir.output_clusters,
-            logos=f"{self.dir.output}/logos")
+            logos=self.dir.output_logos)
         cluster = Cluster(cluster_dir)
         cluster.run()
         cluster.delete_intermediate()
         return True
 
     def run(self):
-        for _switch, (to_run, function) in self.switches.items():
+        if not os.path.isdir(self.dir.trash):
+            os.mkdir(self.dir.trash)
+        if not os.path.isdir(self.dir.output):
+            os.mkdir(self.dir.output)
+        for (to_run, func) in self.switches.values():
             if to_run:
                 try:
-                    function()
+                    print(f"{func.__name__}:")
+                    func()
+                    print("Success!\n")
                 except:
-                    print("Error: {}".format(function.__name__))
+                    print("Error: {}".format(func.__name__))
                     raise
         return
 
@@ -224,10 +212,8 @@ class Executor:
         return move_replace(file, self.dir.trash)
 
     def delete_intermediate(self):
-        print("delete_intermediate:")
         for file in self._dir:
             self.to_trash(file)
-        print("Success!\n")
         return
 
 executor = Executor()

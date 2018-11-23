@@ -23,7 +23,7 @@ REFERENCE
 DATABASE AND MOTIFS
 ********************************************************************************
 	DATABASE input_seqs.fasta (peptide)
-	Last updated on Fri Nov 23 17:49:14 2018
+	Last updated on Fri Nov 23 18:41:42 2018
 	Database contains 1673 sequences, 665413 residues
 
 	MOTIFS meme_cleaned.txt (peptide)
@@ -49898,6 +49898,6 @@ OSBSUniprot|H2HV83|EFDID|299954|FULL
 
 
 CPU: melvin-GE72-2QF
-Time 0.532 secs.
+Time 0.550 secs.
 
 mast -remcorr -o output/mast files/meme_cleaned.txt files/input_seqs.fasta

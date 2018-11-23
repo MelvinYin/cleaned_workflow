@@ -3,11 +3,11 @@ import sys
 def reduce_dhcl(kwargs):
     consensus_filename = kwargs['input']
     output = kwargs['output']
-    denominator = kwargs['denominator']
+    divideby = kwargs['divideby']
     cons_seqs = []
     with open(consensus_filename, 'r') as rfile:
         for i, line in enumerate(rfile):
-            if i % denominator == 0:
+            if i % divideby == 0:
                 cons_seqs.append(line)
 
     with open(output, 'w') as wfile:

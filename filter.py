@@ -1,10 +1,12 @@
+from collections import namedtuple
+import os
 import shutil
 import subprocess
-import os
-from collections import OrderedDict, namedtuple
-from utils import move_replace, rename
-from config import Directory
+
 from cluster import Cluster
+from config import Directory
+from utils import move_replace
+
 
 FilterIntDir = namedtuple(
     'FilterIntDir', "post_evalue post_entropy post_corr mast_singleseq "
@@ -12,37 +14,30 @@ FilterIntDir = namedtuple(
 
 class Filter:
     def __init__(self, dir):
-        self.switches = self.set_switches()
         self.dir = dir
         self._dir = self.set_internal_dir()
 
     def run(self):
-        for _switch, (to_run, function) in self.switches.items():
-            if to_run:
-                try:
-                    function()
-                except:
-                    print("Error: {}".format(function.__name__))
-                    raise
+        to_run = (self.screen_evalue, self.screen_entropy,
+                        self.screen_correlated, self.screen_non_combi,
+                        self.delete_intermediate)
+        for func in to_run:
+            try:
+                print(f"Filter/{func.__name__}:")
+                func()
+                print("Filter/Success!\n")
+            except:
+                print("Filter/Error: {}".format(func.__name__))
+                raise
         return
 
     def delete_intermediate(self):
-        print("delete_intermediate:")
         for file in self._dir:
             self.to_trash(file)
-        print("Success!\n")
         return
 
     def to_trash(self, file):
         return move_replace(file, self.dir.trash)
-
-    def set_switches(self):
-        switches = OrderedDict()
-        switches['SCREEN_EVALUE'] = (True, self.screen_evalue)
-        switches['SCREEN_ENTROPY'] = (True, self.screen_entropy)
-        switches['SCREEN_CORRELATED'] = (True, self.screen_correlated)
-        switches['SCREEN_NON_COMBI'] = (True, self.screen_non_combi)
-        return switches
 
     def set_internal_dir(self):
         _dir = FilterIntDir(
@@ -57,33 +52,28 @@ class Filter:
     def screen_evalue(self):
         # Input: ./files/meme_merged.txt
         # Output: ./files/meme_evalue_screened.txt
-        print("screen_evalue:")
         assert os.path.isfile(self.dir.orig), self.dir.orig
         from remove_motifs_with_low_evalue import main
         kwargs = dict(meme=self.dir.orig,
                       output=self._dir.post_evalue)
         main(kwargs)
         assert os.path.isfile(self._dir.post_evalue)
-        print("Success!\n")
         return
 
     def screen_entropy(self):
         # Input: ./files/meme_evalue_screened.txt
         # Output: ./files/meme_format.txt
-        print("screen_entropy:")
         assert os.path.isfile(self._dir.post_evalue)
         from screen_motif_entropy import main
         kwargs = dict(meme=self._dir.post_evalue,
                       output=self._dir.post_entropy)
         main(kwargs)
         assert os.path.isfile(self._dir.post_entropy)
-        print("Success!\n")
         return
 
     def screen_correlated(self):
         # Input: ./files/meme_format.txt    ./files/single_seq.fasta
         # Output: ./files/mast_single    ./files/meme_format2.txt
-        print("screen_correlated:")
         assert os.path.isfile(self._dir.post_entropy)
         assert os.path.isfile(self.dir.single_seq)
         if os.path.isdir(self._dir.mast_singleseq):
@@ -98,13 +88,11 @@ class Filter:
         main(kwargs)
         assert os.path.isdir(self._dir.mast_singleseq)
         assert os.path.isfile(self._dir.post_corr)
-        print("Success!\n")
         return
 
     def screen_non_combi(self):
         # Input: ./files/meme_format2.txt    ./files/input_seqs.fasta
         # Output: ./files/mast_nocorr    ./files/meme_format3.txt
-        print("screen_non_combi:")
         assert os.path.isfile(self._dir.post_corr)
         assert os.path.isfile(self.dir.input_seqs)
         if os.path.isdir(self._dir.mast_postcorr):
@@ -130,5 +118,4 @@ class Filter:
         self.to_trash(self._dir.cluster_pkl)
         assert os.path.isfile(self.dir.cleaned)
         assert os.path.isdir(self._dir.mast_postcorr)
-        print("Success!\n")
         return

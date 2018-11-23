@@ -7,10 +7,10 @@ def get_memelines(meme_folder):
     for filename in os.listdir(meme_folder):
         start_copy = False
         meme_label = int(re.search("[0-9]+", filename).group(0))
-        with open(meme_folder+"/"+filename, 'r') as file:
+        with open(f"{meme_folder}/{filename}", 'r') as file:
             for line in file:
                 if re.search('MEME-[0-9]+', line):
-                    line = re.sub('MEME-[0-9]+', 'MEME-1{}'.format(meme_label), line)
+                    line = re.sub('MEME-[0-9]+', f"MEME-1{meme_label}", line)
                 if line.startswith("MOTIF"):
                     start_copy = True
                 if line.startswith("Stopped"):

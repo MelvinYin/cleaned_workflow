@@ -3,7 +3,7 @@ from collections import namedtuple
 ExecutorDirectory = namedtuple(
     'ExecutorDirectory',
     "file log trash input_seqs input_pdb fasta_for_pdb p2_7_env meme_dir "
-    "dhcl_exec bash_exec output single_seq output_clusters output_logos "
+    "dhcl_exec bash_exec num_p output single_seq output_clusters output_logos "
     "output_mast")
 
 FilterDirectory = namedtuple(
@@ -12,8 +12,8 @@ FilterDirectory = namedtuple(
 
 ClusterDirectory = namedtuple(
     "ClusterDirectory",
-    "file log trash meme_dir bash_exec input_mast input_meme output_mast "
-    "description logos cluster_pkl")
+    "file log trash meme_dir bash_exec input_mast input_meme description "
+    "logos cluster_pkl")
 
 class Directory:
     file = "files"
@@ -31,6 +31,7 @@ class Directory:
     output_clusters = f"{output}/cluster_description.txt"
     output_logos = f"{output}/logos"
     output_mast = f"{output}/mast"
+    num_processor = 7    # Memory use increases as well
 
     executor_dir = ExecutorDirectory(
         file=file,
@@ -43,6 +44,7 @@ class Directory:
         p2_7_env=p2_7_env,
         dhcl_exec=dhcl_exec,
         bash_exec=bash_exec,
+        num_p=num_processor,
         meme_dir=meme_dir,
         output=output,
         output_clusters=output_clusters,
@@ -57,7 +59,6 @@ class Directory:
         bash_exec=bash_exec,
         input_mast=None,    # Necessary
         input_meme=None,    # Necessary
-        output_mast=None,   # Optional
         description=None,   # Optional
         logos=None,         # Optional
         cluster_pkl=None)   # Optional

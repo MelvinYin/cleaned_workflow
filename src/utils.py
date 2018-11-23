@@ -14,9 +14,9 @@ def move_replace(input_path, output_dir):
     shutil.move(input_path, output_dir)
     return
 
-def rename(path, new_name):
-    assert os.path.isfile(path) or os.path.isdir(path)
-    dir_path = path.rsplit("/", maxsplit=1)[0]
-    new_path = dir_path + "/" + new_name
-    os.rename(path, new_path)
-    return
+# def rename(path, new_name):
+#     assert os.path.isfile(path) or os.path.isdir(path)
+#     dir_path = path.rsplit("/", maxsplit=1)[0]
+#     new_path = dir_path + "/" + new_name
+#     os.rename(path, new_path)
+#     return

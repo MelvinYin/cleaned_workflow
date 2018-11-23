@@ -1,15 +1,15 @@
+from collections import namedtuple
 import os
 import shutil
 import subprocess
+
 from utils import move_replace
-from collections import OrderedDict, namedtuple
 
 ClusterIntDir = namedtuple(
     "ClusterIntDir", "full_param_pkl cluster_pkl motifs")
 
 class Cluster:
     def __init__(self, dir):
-        self.switches = self.set_switches()
         self.dir = dir
         self._dir = self.set_internal_dir()
 
@@ -23,35 +23,31 @@ class Cluster:
         return _dir
 
     def run(self):
-        self.get_cluster_params()
-        self.cluster_combi()
+        to_run = [self.get_cluster_params, self.cluster_combi]
         if self.dir.logos:
-            self.create_cluster_motifs()
-            self.create_cluster_logos()
+            to_run.append(self.create_cluster_motifs)
+            to_run.append(self.create_cluster_logos)
+        for func in to_run:
+            try:
+                print(f"Cluster/{func.__name__}:")
+                func()
+                print("Cluster/Success!\n")
+            except:
+                print("Cluster/Error: {}".format(func.__name__))
+                raise
         return
 
     def delete_intermediate(self):
-        print("delete_intermediate:")
         for file in self._dir:
             self.to_trash(file)
-        print("Success!\n")
         return
 
     def to_trash(self, file):
         return move_replace(file, self.dir.trash)
 
-    def set_switches(self):
-        switches = OrderedDict()
-        switches['GET_CLUSTER_PARAMS'] = (True, self.get_cluster_params)
-        switches['CLUSTER_COMBI'] = (True, self.cluster_combi)
-        switches['CREATE_CLUSTER_MOTIFS'] = (True, self.create_cluster_motifs)
-        switches['CREATE_CLUSTER_LOGOS'] = (True, self.create_cluster_logos)
-        return switches
-
     def get_cluster_params(self):
         # Input: ./files/mast_onlycombi/mast.txt
         # Output: ./files/clustering_df.pkl
-        print("get_cluster_params:")
         assert os.path.isfile(self.dir.input_mast)
         from generate_cluster_params import main
         kwargs = dict(input_fname=self.dir.input_mast,
@@ -59,14 +55,12 @@ class Cluster:
                       pkl_path=self._dir.full_param_pkl)
         main(kwargs)
         assert os.path.isfile(self._dir.full_param_pkl)
-        print("Success!\n")
         return
 
     def cluster_combi(self):
         # Input: ./files/clustering_df.pkl
         # Output: output/cluster_description.txt
         #         (optional) files/cluster_centroids.pkl
-        print("cluster_combi:")
         assert os.path.isfile(self._dir.full_param_pkl)
         from cluster_final import main
         kwargs = dict(cluster_threshold=50,
@@ -78,13 +72,11 @@ class Cluster:
             assert os.path.isfile(self.dir.description)
         if self.dir.cluster_pkl:
             shutil.copy(self._dir.cluster_pkl, self.dir.cluster_pkl)
-        print("Success!\n")
         return
 
     def create_cluster_motifs(self):
         # Input: ./files/meme_format3.txt    ./files/cluster_centroids.pkl
         # Output: multiple ./files/motifs/motifs_in_cluster_{}.txt
-        print("create_cluster_motifs:")
         assert os.path.isfile(self.dir.input_meme)
         assert os.path.isfile(self._dir.cluster_pkl)
         from split_motifs_into_cluster_motifs import main
@@ -96,13 +88,11 @@ class Cluster:
         kwargs['motifs'] = self._dir.motifs
         main(kwargs)
         assert os.path.isdir(self._dir.motifs)
-        print("Success!\n")
         return
 
     def create_cluster_logos(self):
         # Input: multiple ./files/motifs/motifs_in_cluster_{}.txt
         # Output: multiple ./output/logos/cluster_{}/logo_{}.png
-        print("create_cluster_logos:")
         assert os.path.isdir(self._dir.motifs)
         self.to_trash(self.dir.logos)
         os.mkdir(self.dir.logos)
@@ -127,7 +117,6 @@ class Cluster:
                       output_logodir=self.dir.logos)
         main(kwargs)
         assert os.path.isdir(self.dir.logos)
-        print("Success!\n")
         return
 
 

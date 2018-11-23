@@ -5,6 +5,8 @@ def run(kwargs):
     consensus_filename = kwargs['consensus']
     seq_filename = kwargs['seqs']
     output_folder = kwargs['output_folder']
+    num_p = kwargs['num_p']
+    meme_dir = kwargs['meme_dir']
     with open(consensus_filename, 'r') as cons_file:
         consensus_seqs = []
         for line in cons_file:
@@ -12,14 +14,13 @@ def run(kwargs):
     i = 0
     while consensus_seqs:
         popens = []
-        while len(popens) < 8 and consensus_seqs:
+        while len(popens) < num_p and consensus_seqs:
             cons = consensus_seqs.pop(0)
             i += 1
-            filename = output_folder + "/meme_out{}.txt".format(i)
+            filename = f"{output_folder}/meme_out{i}.txt"
             open(filename, 'w').close()
-            command = "./external_scripts/meme/bin/meme {} -text -protein " \
-                      "-cons {} -w 30 -nmotifs 1 -nostatus &>> {}"\
-                .format(seq_filename, cons, filename)
+            command = f"{meme_dir}/meme {seq_filename} -text -protein " \
+                f"-cons {cons} -w 30 -nmotifs 1 -nostatus &>> {filename}"
             popen = Popen(command, shell=True, executable='/bin/bash')
             popens.append(popen)
         while popens:
