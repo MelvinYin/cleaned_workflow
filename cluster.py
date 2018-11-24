@@ -62,7 +62,7 @@ class Cluster:
         # Output: output/cluster_description.txt
         #         (optional) files/cluster_centroids.pkl
         assert os.path.isfile(self._dir.full_param_pkl)
-        from cluster_final import main
+        from assemble_cluster_output import main
         kwargs = dict(cluster_threshold=50,
                       pkl_path=self._dir.full_param_pkl,
                       output=self.dir.description,
@@ -79,7 +79,7 @@ class Cluster:
         # Output: multiple ./files/motifs/motifs_in_cluster_{}.txt
         assert os.path.isfile(self.dir.input_meme)
         assert os.path.isfile(self._dir.cluster_pkl)
-        from split_motifs_into_cluster_motifs import main
+        from split_motifs_by_cluster import main
         self.to_trash(self._dir.motifs)
         os.mkdir(self._dir.motifs)
         kwargs = dict()

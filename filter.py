@@ -53,7 +53,7 @@ class Filter:
         # Input: ./files/meme_merged.txt
         # Output: ./files/meme_evalue_screened.txt
         assert os.path.isfile(self.dir.orig), self.dir.orig
-        from remove_motifs_with_low_evalue import main
+        from screen_motif_evalue import main
         kwargs = dict(meme=self.dir.orig,
                       output=self._dir.post_evalue)
         main(kwargs)
@@ -109,7 +109,7 @@ class Filter:
         cluster.run()
         cluster.delete_intermediate()
 
-        from mast_remove_profiles_using_pkl import main
+        from remove_noncentroid_profiles import main
         kwargs = dict(cluster_df_pkl=self._dir.cluster_pkl,
                       input=self._dir.post_corr,
                       output=self.dir.cleaned)

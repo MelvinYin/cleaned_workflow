@@ -31,23 +31,23 @@ class Executor:
 
     def set_switches(self):
         switches = OrderedDict()
-        switches['SHRINK_INPUT'] = (True, self.shrink_input)
-        switches['RUN_DHCL'] = (True, self.run_dhcl)
-        switches['EXTRACT_CONSENSUS'] = (True, self.extract_consensus)
-        switches['REDUCE_CONSENSUS'] = (True, self.reduce_consensus)
-        switches['BUILD_PSSM'] = (True, self.build_pssm)
+        switches['SHRINK_INPUT'] = (False, self.shrink_input)
+        switches['RUN_DHCL'] = (False, self.run_dhcl)
+        switches['EXTRACT_CONSENSUS'] = (False, self.extract_consensus)
+        switches['REDUCE_CONSENSUS'] = (False, self.reduce_consensus)
+        switches['BUILD_PSSM'] = (False, self.build_pssm)
         switches['BUILD_STARTER'] = (True, self.build_starter)
-        switches['CLEAN_PSSM'] = (True, self.clean_pssm)
-        switches['MERGE_PSSM'] = (True, self.merge_pssm)
-        switches['SCREEN_PSSM'] = (True, self.screen_pssm)
-        switches['ASSEMBLE_COMBI'] = (True, self.assemble_combi)
-        switches['CLUSTER'] = (True, self.cluster)
-        switches['DELETE_INTERMEDIATE'] = (True, self.delete_intermediate)
+        switches['CLEAN_PSSM'] = (False, self.clean_pssm)
+        switches['MERGE_PSSM'] = (False, self.merge_pssm)
+        switches['SCREEN_PSSM'] = (False, self.screen_pssm)
+        switches['ASSEMBLE_COMBI'] = (False, self.assemble_combi)
+        switches['CLUSTER'] = (False, self.cluster)
+        switches['DELETE_INTERMEDIATE'] = (False, self.delete_intermediate)
         return switches
 
     def shrink_input(self):
-        # Input: ./files/input_seqs.fasta
-        # Output: ./files/input_seqs.fasta
+        # Input: self.dir.input_seqs
+        # Output: self.dir.input_seqs
         assert os.path.isfile(self.dir.input_seqs)
         from shrink_input_for_test import main
         kwargs = dict(seqs=self.dir.input_seqs, output=self.dir.input_seqs,
@@ -57,8 +57,8 @@ class Executor:
         return
 
     def run_dhcl(self):
-        # Input: ./files/input_pdb
-        # Output: ./files/from_dhcl
+        # Input: self.dir.input_pdb
+        # Output: self._dir.dhcl_output
         assert os.path.isdir(self.dir.input_pdb)
         shutil.rmtree(self._dir.dhcl_output, ignore_errors=True)
         os.mkdir(self._dir.dhcl_output)
@@ -69,11 +69,11 @@ class Executor:
         return
 
     def extract_consensus(self):
-        # Input: ./files/from_dhcl    ./files/input_fasta
-        # Output: ./files/init_seed_seqs.txt
+        # Input: self._dir.dhcl_output | self.dir.fasta_for_pdb
+        # Output: self._dir.consensus_seeds
         assert os.path.isdir(self._dir.dhcl_output)
         assert os.path.isdir(self.dir.fasta_for_pdb)
-        from process_dhcl_output_meme import main
+        from dhcl_output_to_consensus import main
         kwargs = dict(dhcl_dir=self._dir.dhcl_output,
                       fasta_dir=self.dir.fasta_for_pdb,
                       output=self._dir.consensus_seeds)
@@ -82,10 +82,10 @@ class Executor:
         return
 
     def reduce_consensus(self):
-        # Input: ./files/init_seed_seqs.txt
-        # Output: ./files/init_seed_seqs.txt
+        # Input: self._dir.consensus_seeds
+        # Output: self._dir.consensus_seeds
         assert os.path.isfile(self._dir.consensus_seeds)
-        from reduce_dhcl_test import main
+        from reduce_dhcl_for_test import main
         kwargs = dict(input=self._dir.consensus_seeds,
                       divideby=5,
                       output=self._dir.consensus_seeds)
@@ -94,13 +94,13 @@ class Executor:
         return
 
     def build_pssm(self):
-        # Input: ./files/init_seed_seqs.txt    ./files/input_seqs.fasta
-        # Output: ./files/meme_full
+        # Input: self._dir.consensus_seeds | self.dir.input_seqs
+        # Output: self._dir.meme_full
         assert os.path.isfile(self._dir.consensus_seeds)
         assert os.path.isfile(self.dir.input_seqs)
         shutil.rmtree(self._dir.meme_full, ignore_errors=True)
         os.mkdir(self._dir.meme_full)
-        from run_meme_on_dhcl_loops import main
+        from run_meme_on_cons import main
         kwargs = dict(consensus=self._dir.consensus_seeds,
                       seqs=self.dir.input_seqs,
                       output_folder=self._dir.meme_full,
@@ -111,8 +111,8 @@ class Executor:
         return
 
     def build_starter(self):
-        # Input: ./files/input_seqs.fasta
-        # Output: ./files/meme_starter.txt
+        # Input: self.dir.input_seqs
+        # Output: self._dir.starter_meme
         assert os.path.isfile(self.dir.input_seqs)
         command = f'{self.dir.meme_dir}/meme {self.dir.input_seqs} ' \
                   f'-text -protein -w 30 -p {self.dir.num_p} -nmotifs 2 ' \
@@ -122,8 +122,8 @@ class Executor:
         return
 
     def clean_pssm(self):
-        # Input: ./files/meme_full    ./files/meme_starter.txt
-        # Output: ./files/meme_full    ./files/meme_starter.txt
+        # Input: self._dir.meme_full | self._dir.starter_meme
+        # Output: self._dir.meme_full | self._dir.starter_meme
         assert os.path.isdir(self._dir.meme_full)
         assert os.path.isfile(self._dir.starter_meme)
         from meme_cleaner import main
@@ -139,24 +139,22 @@ class Executor:
         return
 
     def merge_pssm(self):
-        # todo: remove SUMMARY OF MOTIFS for smaller input_seqs
-        # Input: ./files/meme_full    ./files/meme_starter.txt
-        # Output: ./files/meme_merged.txt
+        # Input: self._dir.meme_full | self._dir.starter_meme
+        # Output: self._dir.meme_merged
         assert os.path.isdir(self._dir.meme_full)
         assert os.path.isfile(self._dir.starter_meme)
-        from meme_merger import main
+        from merge_meme_files import main
         kwargs = dict(meme_folder=self._dir.meme_full,
-                      output=self._dir.meme_merged,
-                      meme_starter=self._dir.starter_meme)
+                      meme_starter=self._dir.starter_meme,
+                      output=self._dir.meme_merged)
         main(kwargs)
         assert os.path.isfile(self._dir.meme_merged)
         return
 
     def screen_pssm(self):
-        # Input: self._dir.meme_merged    self.dir.input_seqs.fasta
-        #        files/single_seq.fasta
-        # Output: files/mast_single     files/mast_nocorr
-        # self._dir.meme_cleaned
+        # Input: self._dir.meme_merged | self.dir.input_seqs |
+        #        self.dir.single_seq
+        # Output: self._dir.meme_cleaned
         filter_dir = Directory.filter_dir._replace(
             orig=self._dir.meme_merged,
             cleaned=self._dir.meme_cleaned)
@@ -166,9 +164,8 @@ class Executor:
         return True
 
     def assemble_combi(self):
-        # Input: .files/meme_format3.txt
-        # ./external_scripts/meme/input_seqs.fasta
-        # Output: ./files/mast_onlycombi    ./output/mast
+        # Input: self._dir.meme_cleaned | self.dir.input_seqs
+        # Output: self.dir.output_mast
         assert os.path.isfile(self._dir.meme_cleaned)
         self.to_trash(self.dir.output_mast)
         if not os.path.isdir('output'):
@@ -182,6 +179,8 @@ class Executor:
         return
 
     def cluster(self):
+        # Input:self.dir.output_mast | self._dir.meme_cleaned
+        # Output: self.dir.output_clusters | self.dir.output_logos
         cluster_dir = Directory.cluster_dir._replace(
             input_mast=f"{self.dir.output_mast}/mast.txt",
             input_meme=self._dir.meme_cleaned,
