@@ -31,19 +31,31 @@ class Executor:
 
     def set_switches(self):
         switches = OrderedDict()
+        switches['MERGE_INPUT'] = (False, self.merge_input)
         switches['SHRINK_INPUT'] = (False, self.shrink_input)
         switches['RUN_DHCL'] = (False, self.run_dhcl)
         switches['EXTRACT_CONSENSUS'] = (False, self.extract_consensus)
         switches['REDUCE_CONSENSUS'] = (False, self.reduce_consensus)
         switches['BUILD_PSSM'] = (False, self.build_pssm)
-        switches['BUILD_STARTER'] = (True, self.build_starter)
+        switches['BUILD_STARTER'] = (False, self.build_starter)
         switches['CLEAN_PSSM'] = (False, self.clean_pssm)
         switches['MERGE_PSSM'] = (False, self.merge_pssm)
         switches['SCREEN_PSSM'] = (False, self.screen_pssm)
         switches['ASSEMBLE_COMBI'] = (False, self.assemble_combi)
         switches['CLUSTER'] = (False, self.cluster)
-        switches['DELETE_INTERMEDIATE'] = (False, self.delete_intermediate)
+        switches['DELETE_INTERMEDIATE'] = (True, self.delete_intermediate)
         return switches
+
+    def merge_input(self):
+        # Input: self.dir.input_seqs
+        # Output: self.dir.input_seqs
+        assert os.path.isdir(self.dir.input_seqdir)
+        from create_input_seqs import main
+        kwargs = dict(input_dir=self.dir.input_seqdir,
+                      output=self._dir.input_seqs)
+        main(kwargs)
+        assert os.path.isfile(self.dir.input_seqs)
+        return
 
     def shrink_input(self):
         # Input: self.dir.input_seqs

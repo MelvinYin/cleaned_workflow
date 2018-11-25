@@ -2,64 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="977e9f69-e7b2-4235-9856-6e88bdf80fc9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/cluster.py" beforeDir="false" afterPath="$PROJECT_DIR$/cluster.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/_cluster.pkl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/cluster_final.pkl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/from_dhcl/DE_3der.dhcl.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/from_dhcl/DE_3der.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/from_dhcl/EL_1bqg.dhcl.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/from_dhcl/EL_1bqg.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/full_param.pkl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/init_seed_seqs.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/mast_nocorr/mast.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/mast_nocorr/mast.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/mast_nocorr/mast.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/mast_single/mast.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/mast_single/mast.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/mast_single/mast.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_cleaned.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_correlated_screened.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_entropy_screened.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_evalue_screened.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out10.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out11.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out12.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out13.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out14.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out15.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out16.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out17.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out3.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out4.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out5.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out6.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out7.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out8.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out9.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_merged.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_starter.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/motifs/motifs_in_cluster_0.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/motifs/motifs_in_cluster_1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/motifs/motifs_in_cluster_2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/motifs/motifs_in_cluster_3.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/motifs/motifs_in_cluster_5.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/motifs/motifs_in_cluster_6.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/motifs/motifs_in_cluster_8.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/input_seqs.fasta" beforeDir="false" afterPath="$PROJECT_DIR$/files/input_seqs.fasta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/filter.py" beforeDir="false" afterPath="$PROJECT_DIR$/filter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/input_seqs.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/meme_full/meme_out1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out10.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/meme_full/meme_out10.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out11.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/meme_full/meme_out11.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out12.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/meme_full/meme_out12.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out13.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/meme_full/meme_out13.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out14.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/meme_full/meme_out14.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out15.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/meme_full/meme_out15.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out16.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/meme_full/meme_out16.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out17.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/meme_full/meme_out17.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/meme_full/meme_out2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/meme_full/meme_out3.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/meme_full/meme_out4.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out5.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/meme_full/meme_out5.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out6.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/meme_full/meme_out6.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out7.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/meme_full/meme_out7.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out8.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/meme_full/meme_out8.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out9.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/meme_full/meme_out9.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_merged.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/meme_merged.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_starter.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/meme_starter.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/project_main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cluster_final.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mast_remove_profiles_using_pkl.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/meme_cleaner.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/meme_merger.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/process_dhcl_output_meme.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reduce_dhcl_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/remove_motifs_with_low_evalue.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/run_meme_on_dhcl_loops.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shrink_input_for_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/shrink_input_for_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/split_motifs_into_cluster_motifs.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -68,7 +33,9 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/cleaned_workflow$create_input_seqs__2_.coverage" NAME="create_input_seqs (2) Coverage Results" MODIFIED="1543142801632" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/cleaned_workflow$meme_merger.coverage" NAME="meme_merger Coverage Results" MODIFIED="1542597330449" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/cleaned_workflow$create_input_seqs__1_.coverage" NAME="create_input_seqs (1) Coverage Results" MODIFIED="1543142718959" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/cleaned_workflow$generate_cluster_params.coverage" NAME="generate_cluster_params Coverage Results" MODIFIED="1542596956182" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/cleaned_workflow$remove_motifs_with_low_evalue.coverage" NAME="remove_motifs_with_low_evalue Coverage Results" MODIFIED="1541731354918" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/cleaned_workflow$utils.coverage" NAME="utils Coverage Results" MODIFIED="1542965375200" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
@@ -78,8 +45,9 @@
     <SUITE FILE_PATH="coverage/cleaned_workflow$cluster_final.coverage" NAME="cluster_final Coverage Results" MODIFIED="1542597332644" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/cleaned_workflow$dd.coverage" NAME="dd Coverage Results" MODIFIED="1542960204036" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/merged_src$mast_remove_profiles.coverage" NAME="mast_remove_profiles Coverage Results" MODIFIED="1540454008157" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cleaned_workflow$create_input_seqs.coverage" NAME="create_input_seqs Coverage Results" MODIFIED="1543142665116" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="/media/melvin/My Book2/Backup/Backup/Files/Windows/Work_backup/Enolase_mast_process" />
     <SUITE FILE_PATH="coverage/cleaned_workflow$ttt.coverage" NAME="ttt Coverage Results" MODIFIED="1542877380998" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/cleaned_workflow$project_main.coverage" NAME="project_main Coverage Results" MODIFIED="1543017285081" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cleaned_workflow$project_main.coverage" NAME="project_main Coverage Results" MODIFIED="1543146161360" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/cleaned_workflow$test.coverage" NAME="test Coverage Results" MODIFIED="1542169872568" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/cleaned_workflow$process_dhcl_output_meme.coverage" NAME="process_dhcl_output_meme Coverage Results" MODIFIED="1543006691302" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/cleaned_workflow$tes.coverage" NAME="tes Coverage Results" MODIFIED="1542607562897" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -92,8 +60,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/project_main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="34" column="43" lean-forward="true" selection-start-line="34" selection-start-column="43" selection-end-line="34" selection-end-column="43" />
+            <state relative-caret-position="295">
+              <caret line="55" column="29" selection-start-line="55" selection-start-column="29" selection-end-line="55" selection-end-column="29" />
               <folding>
                 <element signature="e#0#47#0" expanded="true" />
               </folding>
@@ -102,69 +70,31 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/merge_meme_files.py">
+        <entry file="file://$PROJECT_DIR$/filter.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-360">
+            <state relative-caret-position="-65">
+              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
               <folding>
-                <element signature="e#0#9#0" expanded="true" />
+                <element signature="e#0#34#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/create_input_seqs.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="10" column="40" lean-forward="true" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/memefile_cleaner.py">
+        <entry file="file://$PROJECT_DIR$/config.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1140">
-              <caret line="62" column="17" lean-forward="true" selection-start-line="62" selection-start-column="17" selection-end-line="62" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/filter.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3015">
-              <caret line="108" column="21" selection-start-line="108" selection-start-column="21" selection-end-line="108" selection-end-column="21" />
-              <folding>
-                <element signature="e#0#34#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cluster.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
-              <folding>
-                <element signature="e#0#34#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/utils.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/generate_cluster_params.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1440">
-              <caret line="48" column="53" selection-start-line="48" selection-start-column="53" selection-end-line="48" selection-end-column="53" />
-              <folding>
-                <element signature="e#0#35#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="475">
+              <caret line="28" column="33" lean-forward="true" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -181,7 +111,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>screen_non_combi</find>
       <find>se</find>
       <find>move_re</find>
       <find>cluster_combi</find>
@@ -210,6 +139,7 @@
       <find>cluster_final</find>
       <find>remove</find>
       <find>remove_motifs</find>
+      <find>memefile</find>
       <find>run_meme</find>
     </findStrings>
     <replaceStrings>
@@ -237,10 +167,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/converge2meme.py" />
-        <option value="$PROJECT_DIR$/mast_remove_profiles.py" />
-        <option value="$PROJECT_DIR$/test_python.py" />
-        <option value="$PROJECT_DIR$/Actual_processing_2410.py" />
         <option value="$PROJECT_DIR$/cluster_get_profiles.py" />
         <option value="$PROJECT_DIR$/mast_remove_profiles_using_pkl.py" />
         <option value="$PROJECT_DIR$/cluster_final.py" />
@@ -279,15 +205,19 @@
         <option value="$PROJECT_DIR$/src/meme_merger.py" />
         <option value="$PROJECT_DIR$/src/reduce_dhcl_test.py" />
         <option value="$PROJECT_DIR$/src/cluster_final.py" />
-        <option value="$PROJECT_DIR$/config.py" />
         <option value="$PROJECT_DIR$/src/utils.py" />
         <option value="$PROJECT_DIR$/src/generate_cluster_params.py" />
         <option value="$PROJECT_DIR$/src/shrink_input_for_test.py" />
         <option value="$PROJECT_DIR$/src/process_dhcl_output_meme.py" />
         <option value="$PROJECT_DIR$/cluster.py" />
         <option value="$PROJECT_DIR$/filter.py" />
-        <option value="$PROJECT_DIR$/project_main.py" />
         <option value="$PROJECT_DIR$/src/memefile_cleaner.py" />
+        <option value="$PROJECT_DIR$/src/remove_noncentroid_profiles.py" />
+        <option value="/media/melvin/My Book2/Backup/Backup/Files/Windows/Work_backup/Enolase_mast_process/create_input_seqs.py" />
+        <option value="$PROJECT_DIR$/create_input_seqs.py" />
+        <option value="$PROJECT_DIR$/src/create_input_seqs.py" />
+        <option value="$PROJECT_DIR$/project_main.py" />
+        <option value="$PROJECT_DIR$/config.py" />
       </list>
     </option>
   </component>
@@ -392,7 +322,7 @@
     </option>
   </component>
   <component name="RunManager" selected="Python.project_main">
-    <configuration name="dd" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="create_input_seqs (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="merged_src" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -405,7 +335,51 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dd.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/create_input_seqs.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="create_input_seqs (2)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="merged_src" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/create_input_seqs.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="create_input_seqs" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="merged_src" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="/media/melvin/My Book2/Backup/Backup/Files/Windows/Work_backup/Enolase_mast_process" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="/media/melvin/My Book2/Backup/Backup/Files/Windows/Work_backup/Enolase_mast_process/create_input_seqs.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -458,64 +432,20 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="tes (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="merged_src" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/tes.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="utils" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="merged_src" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/utils.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <list>
       <item itemvalue="Python.project_main" />
-      <item itemvalue="Python.dd" />
-      <item itemvalue="Python.tes (1)" />
-      <item itemvalue="Python.utils" />
       <item itemvalue="Python.process_dhcl_output_meme" />
+      <item itemvalue="Python.create_input_seqs" />
+      <item itemvalue="Python.create_input_seqs (1)" />
+      <item itemvalue="Python.create_input_seqs (2)" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.project_main" />
+        <item itemvalue="Python.create_input_seqs (2)" />
+        <item itemvalue="Python.create_input_seqs (1)" />
+        <item itemvalue="Python.create_input_seqs" />
         <item itemvalue="Python.process_dhcl_output_meme" />
-        <item itemvalue="Python.utils" />
-        <item itemvalue="Python.tes (1)" />
-        <item itemvalue="Python.dd" />
       </list>
     </recent_temporary>
   </component>
@@ -531,18 +461,19 @@
       <updated>1540444260895</updated>
       <workItem from="1542862416710" duration="20442000" />
       <workItem from="1542952538753" duration="16293000" />
-      <workItem from="1542991318871" duration="12228000" />
+      <workItem from="1542991318871" duration="13803000" />
+      <workItem from="1543135853474" duration="5867000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48963000" />
+    <option name="totallyTimeSpent" value="56405000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1920" height="990" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49945235" weight="0.21664888" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49945235" weight="0.19263607" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.50054765" side_tool="true" weight="0.3569904" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -592,19 +523,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/create_consolidated_test.py" />
-    <entry file="file://$PROJECT_DIR$/src/full_script.ipynb" />
-    <entry file="file://$PROJECT_DIR$/src/create_bash_script_for_meme.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/full_script.ipynb" />
-    <entry file="file://$PROJECT_DIR$/README.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/process_dhcl_output.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="800">
@@ -709,16 +627,7 @@
     <entry file="file://$PROJECT_DIR$/tt.py" />
     <entry file="file://$PROJECT_DIR$/dd.py" />
     <entry file="file://$PROJECT_DIR$/sss.py" />
-    <entry file="file://$PROJECT_DIR$/src/remove_motifs_with_low_evalue.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/remove_motifs_with_low_evalue.py" />
     <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/shutil.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
@@ -733,23 +642,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/meme_merger.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/run_meme_on_dhcl_loops.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/meme_merger.py" />
+    <entry file="file://$PROJECT_DIR$/src/run_meme_on_dhcl_loops.py" />
     <entry file="file://$PROJECT_DIR$/src/meme_cleaner.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="660">
@@ -757,13 +651,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/reduce_dhcl_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reduce_dhcl_test.py" />
     <entry file="file://$PROJECT_DIR$/src/rename_cluster_logos.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -774,26 +662,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/split_motifs_into_cluster_motifs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="26" column="39" selection-start-line="26" selection-start-column="39" selection-end-line="26" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/split_motifs_into_cluster_motifs.py" />
     <entry file="file://$PROJECT_DIR$/src/test.py" />
     <entry file="file://$PROJECT_DIR$/src/test_python.py" />
     <entry file="file://$PROJECT_DIR$/src/tes.py" />
-    <entry file="file://$PROJECT_DIR$/src/generate_cluster_params.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1440">
-          <caret line="48" column="53" selection-start-line="48" selection-start-column="53" selection-end-line="48" selection-end-column="53" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/shrink_input_for_test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="720">
@@ -801,40 +673,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/process_dhcl_output_meme.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="885">
-          <caret line="80" lean-forward="true" selection-start-line="80" selection-end-line="80" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/mast_remove_profiles_using_pkl.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cluster_final.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="37" column="6" selection-start-line="37" selection-start-column="6" selection-end-line="37" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="801">
-          <caret line="46" column="28" selection-start-line="46" selection-start-column="28" selection-end-line="46" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/process_dhcl_output_meme.py" />
+    <entry file="file://$PROJECT_DIR$/src/mast_remove_profiles_using_pkl.py" />
+    <entry file="file://$PROJECT_DIR$/src/cluster_final.py" />
     <entry file="file://$PROJECT_DIR$/src/mast_remove_profiles.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
@@ -842,19 +683,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/filter.py">
+    <entry file="file://$PROJECT_DIR$/src/memefile_cleaner.py" />
+    <entry file="file://$PROJECT_DIR$/src/remove_noncentroid_profiles.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3015">
-          <caret line="108" column="21" selection-start-line="108" selection-start-column="21" selection-end-line="108" selection-end-column="21" />
+        <state relative-caret-position="1320">
+          <caret line="45" column="49" lean-forward="true" selection-start-line="45" selection-start-column="49" selection-end-line="45" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/merge_meme_files.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
           <folding>
-            <element signature="e#0#34#0" expanded="true" />
+            <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cluster.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
+        <state relative-caret-position="480">
           <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
           <folding>
             <element signature="e#0#34#0" expanded="true" />
@@ -864,7 +712,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/utils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
+        <state relative-caret-position="450">
           <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
@@ -872,29 +720,68 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/merge_meme_files.py">
+    <entry file="file:///media/melvin/My Book2/Backup/Backup/Files/Windows/Work_backup/Enolase_mast_process/merge_fasta.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-360">
+        <state>
+          <caret selection-end-line="16" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///media/melvin/My Book2/Backup/Backup/Files/Windows/Work_backup/Enolase_mast_process/create_input_seqs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="16" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/create_input_seqs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="8" column="42" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/generate_cluster_params.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="48" column="53" selection-start-line="48" selection-start-column="53" selection-end-line="48" selection-end-column="53" />
           <folding>
-            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/filter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-65">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/project_main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="34" column="43" lean-forward="true" selection-start-line="34" selection-start-column="43" selection-end-line="34" selection-end-column="43" />
+        <state relative-caret-position="295">
+          <caret line="55" column="29" selection-start-line="55" selection-start-column="29" selection-end-line="55" selection-end-column="29" />
           <folding>
             <element signature="e#0#47#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/memefile_cleaner.py">
+    <entry file="file://$PROJECT_DIR$/src/create_input_seqs.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1140">
-          <caret line="62" column="17" lean-forward="true" selection-start-line="62" selection-start-column="17" selection-end-line="62" selection-end-column="17" />
+        <state relative-caret-position="300">
+          <caret line="10" column="40" lean-forward="true" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="28" column="33" lean-forward="true" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
         </state>
       </provider>
     </entry>

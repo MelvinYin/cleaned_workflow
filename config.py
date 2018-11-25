@@ -2,7 +2,7 @@ from collections import namedtuple
 
 ExecutorDirectory = namedtuple(
     'ExecutorDirectory',
-    "file log trash input_seqs input_pdb fasta_for_pdb p2_7_env meme_dir "
+    "file log trash input_seqs input_seqdir input_pdb fasta_for_pdb p2_7_env meme_dir "
     "dhcl_exec bash_exec num_p output single_seq output_clusters output_logos "
     "output_mast")
 
@@ -22,9 +22,15 @@ class Directory:
     dhcl_exec = "./external_scripts/dhcl/executables/everything.py"
     bash_exec = "/bin/bash"
     meme_dir = "./external_scripts/meme/bin"
+    # Either input_seqs is provided, or it is created using input_seqdir.
+    # A path should still be set for input_seqs here, because it is used
+    # outside of Executor (Filter, etc) and is set here in config rather than
+    # in Executor.
+    # See merge_input in Executor
+    input_seqdir = f"{file}/sfld_datasets"
+    input_seqs = f"{file}/input_seqs.fasta"
     log = f"{file}/log.txt"
     trash = f"{file}/_trash"
-    input_seqs = f"{file}/input_seqs.fasta"
     single_seq = f"{file}/single_seq.fasta"
     input_pdb = f"{file}/input_pdb_test"
     fasta_for_pdb = f"{file}/input_fasta"
@@ -38,6 +44,7 @@ class Directory:
         log=log,
         trash=trash,
         input_seqs=input_seqs,
+        input_seqdir=input_seqdir,
         single_seq=single_seq,
         input_pdb=input_pdb,
         fasta_for_pdb=fasta_for_pdb,
