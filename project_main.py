@@ -52,7 +52,7 @@ class Executor:
         assert os.path.isdir(self.dir.input_seqdir)
         from create_input_seqs import main
         kwargs = dict(input_dir=self.dir.input_seqdir,
-                      output=self._dir.input_seqs)
+                      output=self.dir.input_seqs)
         main(kwargs)
         assert os.path.isfile(self.dir.input_seqs)
         return
