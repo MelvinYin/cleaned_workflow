@@ -55,13 +55,13 @@ def cluster_metric(dist_metric, n_clusters):
     return cluster_labels
 
 def main(kwargs):
-    input_fname = kwargs['input_fname']
+    input_mast = kwargs['input_mast']
     screen_threshold = kwargs['screen_threshold']
     pkl_path = kwargs['pkl_path']
     # Assemble full_df
     full_df = pd.DataFrame(columns=('combi', 'seqs', 'dist_metric',
                                'cluster_label', 'num_seqs'))
-    name_combi_map = parse_mast_txt(input_fname)
+    name_combi_map = parse_mast_txt(input_mast)
     full_df['combi'] = list(name_combi_map.keys())
     full_df['seqs'] = list(name_combi_map.values())
 

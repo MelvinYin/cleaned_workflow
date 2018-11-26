@@ -1,9 +1,11 @@
 from collections import namedtuple
+import re
 import os
 import shutil
 import subprocess
 
 from utils import move_replace
+
 
 ClusterIntDir = namedtuple(
     "ClusterIntDir", "full_param_pkl cluster_pkl motifs")
@@ -65,7 +67,7 @@ class Cluster:
         assert os.path.isfile(self._dir.full_param_pkl)
         from assemble_cluster_output import main
         kwargs = dict(cluster_threshold=50,
-                      pkl_path=self._dir.full_param_pkl,
+                      full_param_pkl=self._dir.full_param_pkl,
                       output=self.dir.description,
                       cluster_df_pkl=self._dir.cluster_pkl)
         main(kwargs)
@@ -98,7 +100,8 @@ class Cluster:
         self.to_trash(self.dir.logos)
         os.mkdir(self.dir.logos)
         for filename in os.listdir(self._dir.motifs):
-            cluster_i = filename[18:-4]
+            cluster_i = re.match("motifs_in_cluster_([0-9]+)\.txt",
+                                 filename).group(1)
             i = 1
             path = f"{self.dir.logos}/cluster_{cluster_i}"
             os.mkdir(path)

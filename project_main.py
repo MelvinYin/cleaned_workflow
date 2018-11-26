@@ -11,7 +11,7 @@ from utils import move_replace
 
 ExecIntDir = namedtuple(
     'ExecIntDir', 'dhcl_output consensus_seeds converge_seeds meme_full '
-                  'starter_meme converge_output converge_pssm '
+                  'starter_meme converge_output converge_pssm pssm '
                   'meme_merged meme_cleaned converge_meme converge_composition')
 
 class Executor:
@@ -31,32 +31,36 @@ class Executor:
             meme_merged=f"{self.dir.file}/meme_merged.txt",
             meme_cleaned=f"{self.dir.file}/meme_cleaned.txt",
             converge_meme=f"{self.dir.file}/converge_meme.txt",
-            converge_pssm=f"{self.dir.file}/converge_pssm",
-            converge_composition=f"{self.dir.file}/converge_composition")
+            converge_pssm=f"{self.dir.file}/converge_pssm.txt",
+            pssm=f"{self.dir.file}/pssm.txt",
+            converge_composition=f"{self.dir.file}/converge_composition.txt")
         return _dir
 
     def set_switches(self):
         switches = OrderedDict()
+        # Get input_seqs
         switches['MERGE_INPUT'] = (True, self.merge_input)
         switches['SHRINK_INPUT'] = (True, self.shrink_input)
+        # Get consensus_loops
         switches['RUN_DHCL'] = (True, self.run_dhcl)
         switches['EXTRACT_CONSENSUS'] = (True, self.extract_consensus)
         switches['REDUCE_CONSENSUS'] = (True, self.reduce_consensus)
-        # Either run this (using meme)
+        # Get PSSM using:
+        # Meme
         switches['BUILD_PSSM'] = (False, self.build_pssm)
         switches['BUILD_STARTER'] = (False, self.build_starter)
         switches['CLEAN_PSSM'] = (False, self.clean_pssm)
         switches['MERGE_PSSM'] = (False, self.merge_pssm)
         switches['SCREEN_PSSM'] = (False, self.screen_pssm)
-        # Or this (using converge)
+        # Or converge
         switches['BUILD_CONVERGE_SEEDS'] = (True, self.build_converge_seeds)
         switches['RUN_CONVERGE'] = (True, self.run_converge)
         switches['TO_MEME_FORMAT'] = (True, self.to_meme_format)
         switches['screen_converge_pssm'] = (True, self.screen_converge_pssm)
-
+        # Get combi
         switches['ASSEMBLE_COMBI'] = (True, self.assemble_combi)
         switches['CLUSTER'] = (True, self.cluster)
-        switches['DELETE_INTERMEDIATE'] = (True, self.delete_intermediate)
+        switches['DELETE_INTERMEDIATE'] = (False, self.delete_intermediate)
         return switches
 
     def merge_input(self):
@@ -117,7 +121,7 @@ class Executor:
         main(kwargs)
         assert os.path.isfile(self._dir.consensus_seeds)
         return
-
+################################################
     # Converge
     def build_converge_seeds(self):
         # Input: self._dir.consensus_seeds
@@ -183,7 +187,7 @@ class Executor:
                                 conv_filter.screen_non_combi])
         shutil.copy(self._dir.converge_meme, self._dir.meme_cleaned)
         return True
-
+################################################
     # Meme
     def build_pssm(self):
         # Input: self._dir.consensus_seeds | self.dir.input_seqs
@@ -247,10 +251,11 @@ class Executor:
         # Input: self._dir.meme_merged | self.dir.input_seqs |
         #        self.dir.single_seq
         # Output: self._dir.meme_cleaned
-        shutil.copy(self._dir.meme_cleaned, self._dir.meme_merged)
+        shutil.copy(self._dir.meme_merged, self._dir.meme_cleaned)
         filter_dir = Directory.filter_dir._replace(
             memefile=self._dir.meme_cleaned)
         Filter(filter_dir).run()
+        assert os.path.isfile(self._dir.meme_cleaned)
         return True
 
     # Resume
@@ -272,6 +277,8 @@ class Executor:
     def cluster(self):
         # Input:self.dir.output_mast | self._dir.meme_cleaned
         # Output: self.dir.output_clusters | self.dir.output_logos
+        assert os.path.isfile(self._dir.meme_cleaned)
+        assert os.path.isfile(f"{self.dir.output_mast}/mast.txt")
         cluster_dir = Directory.cluster_dir._replace(
             input_mast=f"{self.dir.output_mast}/mast.txt",
             input_meme=self._dir.meme_cleaned,

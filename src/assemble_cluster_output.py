@@ -1,8 +1,5 @@
 from collections import defaultdict, OrderedDict
 import re
-import numpy as np
-import difflib
-from sklearn.cluster import AgglomerativeClustering
 import pickle
 import pandas as pd
 import operator
@@ -20,7 +17,7 @@ def get_cluster_centroid(ind_df):
     centroid = ind_df.loc[min_i, 'combi']
     return centroid
 
-def get_seq_alloc_sorted(seqs):
+def get_seq_alloc(seqs):
     seq_alloc_unsorted = defaultdict(int)
     for merged_seq in seqs:
         for seq in merged_seq.split(" "):
@@ -30,38 +27,39 @@ def get_seq_alloc_sorted(seqs):
             group = match_obj.group(1)
             seq_alloc_unsorted[group] += 1
     seq_alloc = OrderedDict()
-    for key, value in sorted(seq_alloc_unsorted.items(),
-                             key=operator.itemgetter(1), reverse=True):
-        seq_alloc[key] = value
+    for group, num_seq_in_group in \
+            sorted(seq_alloc_unsorted.items(), key=operator.itemgetter(1),
+                   reverse=True):
+        seq_alloc[group] = num_seq_in_group
     return seq_alloc
 
 def main(kwargs):
     cluster_threshold = kwargs['cluster_threshold']
-    pkl_path = kwargs['pkl_path']
     output = kwargs['output']
+    full_param_pkl = kwargs['full_param_pkl']
     cluster_df_pkl = kwargs['cluster_df_pkl']
 
     # Load cluster_params
-    with open(pkl_path, 'rb') as file:
-        full_df = pickle.load(file)
+    with open(full_param_pkl, 'rb') as file:
+        full_param_df = pickle.load(file)
 
     # Assemble cluster_df
-    cluster_df = pd.DataFrame(index=set(full_df['cluster_label']),
+    cluster_df = pd.DataFrame(index=set(full_param_df['cluster_label']),
                               columns=['num_seqs', 'centroid', 'seq_alloc'])
-    for cluster_label, ind_df in full_df.groupby('cluster_label'):
+    for cluster_label, df_per_clust in full_param_df.groupby('cluster_label'):
         # Get num_seqs
-        num_seqs = sum(ind_df['num_seqs'])
-        cluster_df.at[cluster_label, 'num_seqs'] = num_seqs
+        clust_num_seq = sum(df_per_clust['num_seqs'])
+        cluster_df.at[cluster_label, 'num_seqs'] = clust_num_seq
 
         # Get centroid
-        centroid = get_cluster_centroid(ind_df)
+        centroid = get_cluster_centroid(df_per_clust)
         cluster_df.at[cluster_label, 'centroid'] = centroid
 
         # Get seq_alloc
         # seq_alloc may be less than what num_seqs indicate, because some
         # lines are dropped, from the "Uniprot" screen.
-        seq_alloc = get_seq_alloc_sorted(ind_df['seqs'])
-        cluster_df.at[cluster_label, 'seq_alloc'] = seq_alloc
+        seq_allocation = get_seq_alloc(df_per_clust['seqs'])
+        cluster_df.at[cluster_label, 'seq_alloc'] = seq_allocation
 
     # Drop small clusters
     to_drop = []
