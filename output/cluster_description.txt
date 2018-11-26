@@ -1,71 +1,102 @@
 Cluster 0
-Combination: (7, 10, 3, 5, 8, 4, 1)
-GCRD : 328
+Combination: (4, 6, 5)
+ENL : 1289
 
 
 Cluster 1
-Combination: (7, 1, 12, 11, 2)
-ENL : 139
+Combination: (6, 2, 3, 8, 5)
+CC : 140
+DE : 43
+NSART : 12
+DGD : 6
+LLD : 5
+OSBS : 3
+HB : 3
+XDT : 3
+CIS : 2
+LGD : 2
+AALG : 1
 
 
 Cluster 2
-Combination: (12, 5, 11, 6)
-DE : 275
-NSART : 23
-CC : 21
-OSBS : 20
-XDT : 10
-GLC : 3
-MD : 1
-HB : 1
-LGD : 1
+Combination: (1, 2, 3, 4, 5)
+GCRD : 324
 
 
-Cluster 3
-Combination: (5, 11, 6)
-OSBS : 142
-CC : 125
-DE : 76
-DGD : 58
-LTGD : 31
-LLD : 23
-LFD : 19
-AALG : 9
-LGD : 4
-NSAR : 2
-CIS : 2
+Cluster 4
+Combination: (6, 5)
+OSBS : 77
+DE : 2
+ENL : 1
+
+
+Cluster 7
+Combination: (3, 8)
+DGD : 147
+LFD : 30
+DTD : 23
+LGD : 12
+XDT : 6
+GLC : 5
+DE : 2
 DAD : 1
-MR : 1
-GLC : 1
-XDT : 1
 HB : 1
-
-
-Cluster 5
-Combination: (11, 6)
-OSBS : 170
-DGD : 94
-RD : 62
-DE : 38
-MD : 14
-MAL : 4
-GDD : 1
-LLD : 1
-XD : 1
-GCND : 1
-
-
-Cluster 6
-Combination: (10, 5, 11, 6, 12)
-LFD : 79
-DE : 12
-CC : 2
-AALG : 2
 OSBS : 1
 
 
 Cluster 8
-Combination: (12, 7, 1, 12, 11, 2, 9)
-ENL : 1082
+Combination: (6, 3, 8, 7)
+OSBS : 77
+DE : 8
+DGD : 1
+HB : 1
+GLC : 1
+
+
+Cluster 10
+Combination: (8, 5)
+OSBS : 31
+DE : 11
+MD : 4
+NSAR : 2
+ENL : 2
+RD : 2
+
+
+Cluster 11
+Combination: (6, 7, 8)
+DE : 69
+
+
+Cluster 14
+Combination: (4, 3, 8)
+LFD : 70
+LGD : 3
+HB : 1
+
+
+Cluster 15
+Combination: (6, 3, 8, 5)
+OSBS : 107
+DE : 21
+MD : 7
+
+
+Cluster 17
+Combination: (6, 7, 8, 5)
+DE : 264
+NSART : 12
+
+
+Cluster 18
+Combination: (3, 8, 5)
+OSBS : 42
+LTGD : 27
+LLD : 19
+AALG : 8
+DE : 5
+CC : 1
+LGD : 1
+MD : 1
 
 

@@ -88,7 +88,7 @@ def main(kwargs):
     return True
 
 if __name__ == "__main__":
-    kwargs = dict(input_fname = "../files/mast.txt",
+    kwargs = dict(input_mast = "../files/mast.txt",
                   screen_threshold = 5,
                   pkl_path="../files/clustering_df.pkl")
     main(kwargs)

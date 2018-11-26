@@ -15,7 +15,7 @@ def read_converge_mat(filename):
         for line in file:
             if line.startswith("BEGIN") and matrix_count != 0:
                 assert len(matrix) == length, len(matrix)
-                motif_name = filename + "_{}".format(matrix_count)
+                motif_name = "MEME-{}".format(matrix_count)
                 matrices[motif_name] = (nsite, matrix)
                 assert nsite != 0
                 matrix = []
@@ -55,8 +55,9 @@ def read_composition(filename):
     return composition_map
 
 def meme_format_writer(alphabets, composition_map,
-                       matrices, m_to_write, filename="files/meme_format.txt"):
-    with open(filename, 'w') as file:
+                       matrices, output):
+    m_to_write = list(range(len(matrices)))
+    with open(output, 'w') as file:
         file.write("MEME version 4\n")
         file.write("\n")
         file.write("ALPHABET= " + alphabets + "\n")
@@ -91,8 +92,14 @@ def meme_format_writer(alphabets, composition_map,
                 file.write("\n")
             file.write("\n")
 
-alphabets, matrices = read_converge_mat('files/output.4.matrix.0')
-composition_map = read_composition('files/composition.csv')
-m_to_write = list(range(len( matrices)))
-# m_to_write = [3, 19, 24, 29, 32, 35, 38]
-meme_format_writer(alphabets, composition_map, matrices, m_to_write)
+def main(kwargs):
+    # input_pssm=''output.4.matrix.0''
+    # composition='composition.txt'
+    # output="meme_format.txt"
+    input_pssm = kwargs['input_pssm']
+    composition = kwargs['composition']
+    output = kwargs['output']
+    alphabets, matrices = read_converge_mat(input_pssm)
+    composition_map = read_composition(composition)
+    meme_format_writer(alphabets, composition_map, matrices, output)
+

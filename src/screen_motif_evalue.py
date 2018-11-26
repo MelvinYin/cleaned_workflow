@@ -37,6 +37,6 @@ def write_memelines(to_write, output_filename):
 def main(kwargs):
     # meme = "./files/meme.txt"
     # output = "./files/meme_evalue_screened.txt"
-    memelines = get_cropped_memelines(kwargs['meme'])
-    write_memelines(memelines, kwargs['output'])
+    memelines = get_cropped_memelines(kwargs['memefile'])
+    write_memelines(memelines, kwargs['memefile'])
     return

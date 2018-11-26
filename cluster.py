@@ -17,9 +17,9 @@ class Cluster:
         # cluster_pkl only active when logo required but pkl not required.
         # This should then be deleted once cluster finish running.
         _dir = ClusterIntDir(
-            full_param_pkl='files/full_param.pkl',
-            cluster_pkl="files/_cluster.pkl",
-            motifs="files/motifs")
+            full_param_pkl=f"{self.dir.file}/full_param.pkl",
+            cluster_pkl=f"{self.dir.file}/_cluster.pkl",
+            motifs=f"{self.dir.file}/motifs")
         return _dir
 
     def run(self):
@@ -27,6 +27,7 @@ class Cluster:
         if self.dir.logos:
             to_run.append(self.create_cluster_motifs)
             to_run.append(self.create_cluster_logos)
+            to_run.append(self.rename_logos)
         for func in to_run:
             try:
                 print(f"Cluster/{func.__name__}:")
@@ -48,9 +49,9 @@ class Cluster:
     def get_cluster_params(self):
         # Input: ./files/mast_onlycombi/mast.txt
         # Output: ./files/clustering_df.pkl
-        assert os.path.isfile(self.dir.input_mast)
+        assert os.path.isfile(self.dir.input_mast), self.dir.input_mast
         from generate_cluster_params import main
-        kwargs = dict(input_fname=self.dir.input_mast,
+        kwargs = dict(input_mast=self.dir.input_mast,
                       screen_threshold=5,
                       pkl_path=self._dir.full_param_pkl)
         main(kwargs)
@@ -112,6 +113,12 @@ class Cluster:
                     .returncode
                 if returncode != 0:
                     break
+        assert os.path.isdir(self.dir.logos)
+        return
+
+    def rename_logos(self):
+        assert os.path.isdir(self.dir.logos)
+        assert os.path.isdir(self._dir.motifs)
         from rename_cluster_logos import main
         kwargs = dict(motif_filedir=self._dir.motifs,
                       output_logodir=self.dir.logos)

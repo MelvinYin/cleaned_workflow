@@ -14,9 +14,27 @@ def move_replace(input_path, output_dir):
     shutil.move(input_path, output_dir)
     return
 
-# def rename(path, new_name):
-#     assert os.path.isfile(path) or os.path.isdir(path)
-#     dir_path = path.rsplit("/", maxsplit=1)[0]
-#     new_path = dir_path + "/" + new_name
-#     os.rename(path, new_path)
-#     return
+def meme_rewritter(profiles, fname, to_keep = True):
+    motif_count = 0
+    to_write = []
+    with open(fname, 'r') as rfile:
+        deleting = False
+        for i, line in enumerate(rfile):
+            if line.startswith("MOTIF") and deleting:
+                deleting = False
+            if deleting:
+                continue
+            if line.startswith("MOTIF"):
+                motif_count += 1
+                if to_keep and motif_count not in profiles:
+                    deleting = True
+                    continue
+                elif not to_keep and motif_count in profiles:
+                    deleting = True
+                    continue
+            to_write.append(line)
+
+    with open(fname, 'w') as wfile:
+        for line in to_write:
+            wfile.write(line)
+    return

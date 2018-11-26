@@ -2,13 +2,15 @@ from collections import namedtuple
 
 ExecutorDirectory = namedtuple(
     'ExecutorDirectory',
-    "file log trash input_seqs input_seqdir input_pdb fasta_for_pdb p2_7_env meme_dir "
-    "dhcl_exec bash_exec num_p output single_seq output_clusters output_logos "
-    "output_mast")
+    "file log trash input_seqs input_seqdir input_pdb fasta_for_pdb p2_7_env "
+    "meme_dir "
+    "dhcl_exec bash_exec converge_dir converge_exec converge_composition "
+    "converge_output converge_discard num_p output single_seq output_clusters "
+    "output_logos output_mast")
 
 FilterDirectory = namedtuple(
     'FilterDirectory',
-    "file log trash meme_dir input_seqs single_seq bash_exec orig cleaned")
+    "file log trash meme_dir input_seqs single_seq bash_exec memefile")
 
 ClusterDirectory = namedtuple(
     "ClusterDirectory",
@@ -22,6 +24,12 @@ class Directory:
     dhcl_exec = "./external_scripts/dhcl/executables/everything.py"
     bash_exec = "/bin/bash"
     meme_dir = "./external_scripts/meme/bin"
+
+    converge_dir = "external_scripts/pipeline"
+    converge_exec = f"{converge_dir}/converge"
+    converge_composition = f"{converge_dir}/composition.txt"
+    converge_output = f"{converge_dir}/output.4.matrix.0"
+    converge_discard = f"{converge_dir}/output.1.matrix.0"
     # Either input_seqs is provided, or it is created using input_seqdir.
     # A path should still be set for input_seqs here, because it is used
     # outside of Executor (Filter, etc) and is set here in config rather than
@@ -51,6 +59,11 @@ class Directory:
         p2_7_env=p2_7_env,
         dhcl_exec=dhcl_exec,
         bash_exec=bash_exec,
+        converge_exec=converge_exec,
+        converge_dir=converge_dir,
+        converge_composition=converge_composition,
+        converge_output=converge_output,
+        converge_discard=converge_discard,
         num_p=num_processor,
         meme_dir=meme_dir,
         output=output,
@@ -78,5 +91,4 @@ class Directory:
         input_seqs=input_seqs,
         single_seq=single_seq,
         bash_exec=bash_exec,
-        orig=None,
-        cleaned=None)
+        memefile=None)

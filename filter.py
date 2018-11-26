@@ -16,11 +16,12 @@ class Filter:
     def __init__(self, dir):
         self.dir = dir
         self._dir = self.set_internal_dir()
+        self.cluster = None
 
-    def run(self):
-        to_run = (self.screen_evalue, self.screen_entropy,
-                        self.screen_correlated, self.screen_non_combi,
-                        self.delete_intermediate)
+    def run(self, to_run=None):
+        if not to_run:
+            to_run = (self.screen_evalue, self.screen_entropy,
+                        self.screen_correlated, self.screen_non_combi)
         for func in to_run:
             try:
                 print(f"Filter/{func.__name__}:")
@@ -52,40 +53,41 @@ class Filter:
     def screen_evalue(self):
         # Input: ./files/meme_merged.txt
         # Output: ./files/meme_evalue_screened.txt
-        assert os.path.isfile(self.dir.orig), self.dir.orig
+        assert os.path.isfile(self.dir.memefile)
         from screen_motif_evalue import main
-        kwargs = dict(meme=self.dir.orig,
-                      output=self._dir.post_evalue)
+        kwargs = dict(memefile=self.dir.memefile)
         main(kwargs)
+        shutil.copy(self.dir.memefile, self._dir.post_evalue)
         assert os.path.isfile(self._dir.post_evalue)
         return
 
     def screen_entropy(self):
         # Input: ./files/meme_evalue_screened.txt
         # Output: ./files/meme_format.txt
-        assert os.path.isfile(self._dir.post_evalue)
+        assert os.path.isfile(self.dir.memefile)
         from screen_motif_entropy import main
-        kwargs = dict(meme=self._dir.post_evalue,
-                      output=self._dir.post_entropy)
+        kwargs = dict(memefile=self.dir.memefile)
         main(kwargs)
+        shutil.copy(self.dir.memefile, self._dir.post_entropy)
         assert os.path.isfile(self._dir.post_entropy)
         return
 
     def screen_correlated(self):
         # Input: ./files/meme_format.txt    ./files/single_seq.fasta
         # Output: ./files/mast_single    ./files/meme_format2.txt
-        assert os.path.isfile(self._dir.post_entropy)
+        assert os.path.isfile(self.dir.memefile)
         assert os.path.isfile(self.dir.single_seq)
         if os.path.isdir(self._dir.mast_singleseq):
             shutil.rmtree(self._dir.mast_singleseq)
         command = f"{self.dir.meme_dir}/mast -remcorr " \
-                  f"{self._dir.post_entropy} {self.dir.single_seq} -o " \
+                  f"{self.dir.memefile} {self.dir.single_seq} -o " \
                   f"{self._dir.mast_singleseq}"
         subprocess.run(command, shell=True, executable=self.dir.bash_exec)
         from mast_remove_profiles import main
-        kwargs = dict(meme_in=self._dir.post_entropy,
-                      meme_out=self._dir.post_corr)
+        kwargs = dict(mast_in=f"{self._dir.mast_singleseq}/mast.txt",
+                      memefile=self.dir.memefile)
         main(kwargs)
+        shutil.copy(self.dir.memefile, self._dir.post_corr)
         assert os.path.isdir(self._dir.mast_singleseq)
         assert os.path.isfile(self._dir.post_corr)
         return
@@ -93,29 +95,23 @@ class Filter:
     def screen_non_combi(self):
         # Input: ./files/meme_format2.txt    ./files/input_seqs.fasta
         # Output: ./files/mast_nocorr    ./files/meme_format3.txt
-        assert os.path.isfile(self._dir.post_corr)
+        assert os.path.isfile(self.dir.memefile)
         assert os.path.isfile(self.dir.input_seqs)
         if os.path.isdir(self._dir.mast_postcorr):
             shutil.rmtree(self._dir.mast_postcorr, ignore_errors=True)
         command = f"{self.dir.meme_dir}/mast -remcorr " \
-                  f"{self._dir.post_corr} {self.dir.input_seqs} -o " \
+                  f"{self.dir.memefile} {self.dir.input_seqs} -o " \
                   f"{self._dir.mast_postcorr}"
         subprocess.run(command, shell=True, executable=self.dir.bash_exec)
         cluster_dir = Directory.cluster_dir._replace(
             input_mast=f"{self._dir.mast_postcorr}/mast.txt",
-            input_meme=self._dir.post_corr,
+            input_meme=self.dir.memefile,
             cluster_pkl=self._dir.cluster_pkl)
-        cluster = Cluster(cluster_dir)
-        cluster.run()
-        cluster.delete_intermediate()
+        Cluster(cluster_dir).run()
 
         from remove_noncentroid_profiles import main
         kwargs = dict(cluster_df_pkl=self._dir.cluster_pkl,
-                      input=self._dir.post_corr,
-                      output=self.dir.cleaned)
+                      memefile=self.dir.memefile)
         main(kwargs)
-        self.to_trash(self._dir.post_corr)
-        self.to_trash(self._dir.cluster_pkl)
-        assert os.path.isfile(self.dir.cleaned)
         assert os.path.isdir(self._dir.mast_postcorr)
         return

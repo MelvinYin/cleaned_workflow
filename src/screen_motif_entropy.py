@@ -38,6 +38,6 @@ def write_to_file(lines, output_filename):
 def main(kwargs):
     # meme = "./files/meme.txt"
     # output = "./files/meme_format.txt"
-    memelines = get_screened_memelines(kwargs['meme'])
-    write_to_file(memelines, kwargs['output'])
+    memelines = get_screened_memelines(kwargs['memefile'])
+    write_to_file(memelines, kwargs['memefile'])
     return
