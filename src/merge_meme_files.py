@@ -1,6 +1,7 @@
 import os
 import re
 import sys
+import shutil
 
 def get_memelines(meme_folder):
     meme_lines = []
@@ -19,14 +20,16 @@ def get_memelines(meme_folder):
                     meme_lines.append(line)
     return meme_lines
 
-def write_memelines(meme_lines, output_filename, meme_starter):
-    with open(output_filename, 'w') as wfile:
-        with open(meme_starter, 'r') as rfile:
+def write_memelines(meme_lines, memefile):
+    ref_file = shutil.copy(memefile, 'tmp')
+    with open(memefile, 'w') as wfile:
+        with open(ref_file, 'r') as rfile:
             for line in rfile:
                 if line.startswith("Stopped"):
                     for memeline in meme_lines:
                         wfile.write(memeline)
                 wfile.write(line)
+    os.remove('tmp')
     return
 
 def main(kwargs):
@@ -34,5 +37,5 @@ def main(kwargs):
     # output = "./files/meme_consolidated.txt"
     # meme_starter_file = "./files/meme_starter.txt"
     memelines = get_memelines(kwargs['meme_folder'])
-    write_memelines(memelines, kwargs['output'], kwargs['meme_starter'])
+    write_memelines(memelines, kwargs['memefile'])
     return

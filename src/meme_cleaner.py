@@ -61,7 +61,6 @@ def get_cleaned_lines(file):
     return cleaned_lines
 
 def main(kwargs):
-    # input output
     with open(kwargs['input'], 'r') as rfile:
         cleaned_lines = get_cleaned_lines(rfile)
     with open(kwargs['output'], 'w') as wfile:

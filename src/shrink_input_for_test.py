@@ -1,6 +1,6 @@
 import sys
 
-def select_to_keep(seqs_filename, divide_by):
+def cropped_seqs(seqs_filename, divisor):
     to_keep = []
     with open(seqs_filename, 'r') as file:
         selected = True
@@ -8,7 +8,7 @@ def select_to_keep(seqs_filename, divide_by):
         for line in file:
             if line.startswith(">"):
                 seq_count += 1
-                if seq_count % divide_by == 0:
+                if seq_count % divisor == 0:
                     selected = True
                 else:
                     selected = False
@@ -24,6 +24,6 @@ def write_to_file(filelines, output_filename):
     return
 
 def main(kwargs):
-    filelines = select_to_keep(kwargs['seqs'], int(kwargs['divideby']))
+    filelines = cropped_seqs(kwargs['seqs'], int(kwargs['divisor']))
     write_to_file(filelines, kwargs['output'])
     return

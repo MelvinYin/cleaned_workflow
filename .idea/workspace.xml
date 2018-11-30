@@ -2,56 +2,265 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="977e9f69-e7b2-4235-9856-6e88bdf80fc9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/merged_src.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/merged_src.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cluster.py" beforeDir="false" afterPath="$PROJECT_DIR$/cluster.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_0/logos_4.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/logos/cluster_0/logos_4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_0/logos_5.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/logos/cluster_0/logos_5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_0/logos_6.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/logos/cluster_0/logos_6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_1/logos_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/logos/cluster_1/logos_2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_1/logos_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/logos/cluster_1/logos_3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_1/logos_5.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/logos/cluster_1/logos_5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_1/logos_6.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/logos/cluster_1/logos_6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_1/logos_8.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/logos/cluster_1/logos_8.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_10/logos_5.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/logos/cluster_10/logos_5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_10/logos_8.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/logos/cluster_10/logos_8.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_11/logos_6.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/logos/cluster_11/logos_6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_11/logos_7.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/logos/cluster_11/logos_7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_11/logos_8.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/logos/cluster_11/logos_8.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_14/logos_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/logos/cluster_14/logos_3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_14/logos_4.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/logos/cluster_14/logos_4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_14/logos_8.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/logos/cluster_14/logos_8.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_15/logos_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/logos/cluster_15/logos_3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_15/logos_5.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/logos/cluster_15/logos_5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_15/logos_6.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/logos/cluster_15/logos_6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_15/logos_8.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/logos/cluster_15/logos_8.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_17/logos_5.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/logos/cluster_17/logos_5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_17/logos_6.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/logos/cluster_17/logos_6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_17/logos_7.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/logos/cluster_17/logos_7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_17/logos_8.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/logos/cluster_17/logos_8.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_18/logos_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/logos/cluster_18/logos_3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_18/logos_5.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/logos/cluster_18/logos_5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_18/logos_8.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/logos/cluster_18/logos_8.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_2/logos_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/logos/cluster_2/logos_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_2/logos_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/logos/cluster_2/logos_2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_2/logos_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/logos/cluster_2/logos_3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_2/logos_4.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/logos/cluster_2/logos_4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_2/logos_5.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/logos/cluster_2/logos_5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_4/logos_5.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/logos/cluster_4/logos_5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_4/logos_6.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/logos/cluster_4/logos_6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_7/logos_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/logos/cluster_7/logos_3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_7/logos_8.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/logos/cluster_7/logos_8.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_8/logos_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/logos/cluster_8/logos_3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_8/logos_6.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/logos/cluster_8/logos_6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_8/logos_7.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/logos/cluster_8/logos_7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_8/logos_8.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/logos/cluster_8/logos_8.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/mast/mast.html" beforeDir="false" afterPath="$PROJECT_DIR$/output/mast/mast.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/mast/mast.txt" beforeDir="false" afterPath="$PROJECT_DIR$/output/mast/mast.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/mast/mast.xml" beforeDir="false" afterPath="$PROJECT_DIR$/output/mast/mast.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cluster.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/bin/Fake_Data.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/bin/uniref (another copy).fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/bin/uniref.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/_cluster.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/_trash/_cluster.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/_trash/cluster_final.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/_trash/converge_seeds.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/_trash/from_dhcl/DE_3der.dhcl.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/_trash/from_dhcl/DE_3der.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/_trash/from_dhcl/EL_1bqg.dhcl.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/_trash/from_dhcl/EL_1bqg.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/_trash/full_param.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/_trash/init_seed_seqs.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/_trash/input_seqs.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/_trash/logos/cluster_0/logos_13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/_trash/logos/cluster_1/logos_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/_trash/logos/cluster_1/logos_11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/_trash/logos/cluster_1/logos_16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/_trash/logos/cluster_1/logos_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/_trash/logos/cluster_12/logos_11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/_trash/logos/cluster_12/logos_15.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/_trash/logos/cluster_2/logos_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/_trash/logos/cluster_2/logos_11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/_trash/logos/cluster_2/logos_16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/_trash/logos/cluster_2/logos_19.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/_trash/logos/cluster_2/logos_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/_trash/logos/cluster_4/logos_11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/_trash/logos/cluster_4/logos_12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/_trash/logos/cluster_4/logos_13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/_trash/logos/cluster_4/logos_14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/_trash/logos/cluster_4/logos_15.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/_trash/logos/cluster_5/logos_13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/_trash/logos/cluster_5/logos_16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/_trash/logos/cluster_6/logos_16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/_trash/logos/cluster_7/logos_15.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/_trash/logos/cluster_7/logos_16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/_trash/mast/mast.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/_trash/mast/mast.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/_trash/mast/mast.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/_trash/mast_nocorr/mast.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/_trash/mast_nocorr/mast.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/_trash/mast_nocorr/mast.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/_trash/mast_single/mast.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/_trash/mast_single/mast.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/_trash/mast_single/mast.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/_trash/meme_cleaned.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/_trash/meme_correlated_screened.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/_trash/meme_entropy_screened.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/_trash/meme_evalue_screened.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out5.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out6.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out7.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out8.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out9.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/_trash/meme_merged.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/_trash/meme_starter.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/_trash/motifs/motifs_in_cluster_0.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/_trash/motifs/motifs_in_cluster_1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/_trash/motifs/motifs_in_cluster_12.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/_trash/motifs/motifs_in_cluster_2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/_trash/motifs/motifs_in_cluster_4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/_trash/motifs/motifs_in_cluster_5.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/_trash/motifs/motifs_in_cluster_6.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/_trash/motifs/motifs_in_cluster_7.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/_trash/output.1.matrix.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/cluster_final.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/converge_composition" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/converge_meme.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/converge_pssm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/converge_seeds.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/from_dhcl/DE_3der.dhcl.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/from_dhcl/DE_3der.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/from_dhcl/EL_1bqg.dhcl.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/from_dhcl/EL_1bqg.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/full_param.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/init_seed_seqs.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/input_seqs.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/mast_nocorr/mast.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/mast_nocorr/mast.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/mast_nocorr/mast.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/mast_single/mast.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/mast_single/mast.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/mast_single/mast.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_cleaned.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/meme_correlated_screened.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/motifs/motifs_in_cluster_0.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/motifs/motifs_in_cluster_1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/motifs/motifs_in_cluster_10.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/motifs/motifs_in_cluster_11.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/motifs/motifs_in_cluster_14.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/motifs/motifs_in_cluster_15.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/motifs/motifs_in_cluster_17.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/motifs/motifs_in_cluster_18.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/motifs/motifs_in_cluster_2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/motifs/motifs_in_cluster_4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/motifs/motifs_in_cluster_7.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/motifs/motifs_in_cluster_8.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/filter.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/filter_converge.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/cluster_description.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_0/logos_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_0/logos_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_0/logos_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_1/logos_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_1/logos_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_1/logos_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_1/logos_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_1/logos_8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_10/logos_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_10/logos_8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_11/logos_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_11/logos_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_11/logos_8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_14/logos_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_14/logos_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_14/logos_8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_15/logos_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_15/logos_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_15/logos_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_15/logos_8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_17/logos_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_17/logos_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_17/logos_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_17/logos_8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_18/logos_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_18/logos_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_18/logos_8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_2/logos_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_2/logos_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_2/logos_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_2/logos_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_2/logos_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_4/logos_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_4/logos_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_7/logos_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_7/logos_8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_8/logos_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_8/logos_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_8/logos_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_8/logos_8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/mast/mast.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/mast/mast.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/mast/mast.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_converge/cluster_description.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_converge/logos/cluster_0/logos_11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_converge/logos/cluster_0/logos_14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_converge/logos/cluster_0/logos_16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_converge/logos/cluster_0/logos_25.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_converge/logos/cluster_0/logos_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_converge/logos/cluster_0/logos_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_converge/logos/cluster_0/logos_47.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_converge/logos/cluster_0/logos_9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_converge/logos/cluster_1/logos_14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_converge/logos/cluster_1/logos_26.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_converge/logos/cluster_1/logos_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_converge/logos/cluster_1/logos_38.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_converge/logos/cluster_1/logos_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_converge/logos/cluster_1/logos_51.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_converge/logos/cluster_1/logos_8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_converge/logos/cluster_1/logos_9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_converge/logos/cluster_10/logos_14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_converge/logos/cluster_10/logos_38.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_converge/logos/cluster_10/logos_44.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_converge/logos/cluster_10/logos_55.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_converge/logos/cluster_10/logos_64.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_converge/logos/cluster_10/logos_9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_converge/logos/cluster_12/logos_109.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_converge/logos/cluster_12/logos_110.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_converge/logos/cluster_12/logos_116.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_converge/logos/cluster_12/logos_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_converge/logos/cluster_12/logos_48.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_converge/logos/cluster_12/logos_9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_converge/logos/cluster_18/logos_11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_converge/logos/cluster_18/logos_14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_converge/logos/cluster_18/logos_25.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_converge/logos/cluster_18/logos_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_converge/logos/cluster_18/logos_35.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_converge/logos/cluster_18/logos_38.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_converge/logos/cluster_18/logos_39.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_converge/logos/cluster_18/logos_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_converge/logos/cluster_2/logos_22.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_converge/logos/cluster_2/logos_28.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_converge/logos/cluster_2/logos_51.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_converge/logos/cluster_2/logos_55.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_converge/logos/cluster_2/logos_56.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_converge/logos/cluster_3/logos_123.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_converge/logos/cluster_3/logos_127.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_converge/logos/cluster_3/logos_28.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_converge/logos/cluster_3/logos_43.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_converge/logos/cluster_3/logos_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_converge/logos/cluster_3/logos_51.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_converge/logos/cluster_3/logos_55.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_converge/logos/cluster_3/logos_56.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_converge/logos/cluster_4/logos_119.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_converge/logos/cluster_4/logos_14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_converge/logos/cluster_4/logos_15.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_converge/logos/cluster_4/logos_25.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_converge/logos/cluster_4/logos_47.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_converge/logos/cluster_4/logos_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_converge/logos/cluster_4/logos_66.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_converge/logos/cluster_4/logos_76.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_converge/logos/cluster_4/logos_86.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_converge/logos/cluster_6/logos_22.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_converge/logos/cluster_6/logos_28.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_converge/logos/cluster_6/logos_64.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_converge/logos/cluster_6/logos_70.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_converge/logos/cluster_6/logos_93.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_converge/logos/cluster_7/logos_11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_converge/logos/cluster_7/logos_129.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_converge/logos/cluster_7/logos_130.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_converge/logos/cluster_7/logos_16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_converge/logos/cluster_7/logos_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_converge/logos/cluster_7/logos_31.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_converge/logos/cluster_7/logos_43.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_converge/logos/cluster_7/logos_71.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_converge/logos/cluster_7/logos_79.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_converge/logos/cluster_8/logos_127.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_converge/logos/cluster_8/logos_22.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_converge/logos/cluster_8/logos_28.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_converge/logos/cluster_8/logos_38.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_converge/logos/cluster_8/logos_55.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_converge/logos/cluster_8/logos_56.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_converge/logos/cluster_9/logos_14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_converge/logos/cluster_9/logos_26.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_converge/logos/cluster_9/logos_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_converge/logos/cluster_9/logos_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_converge/logos/cluster_9/logos_40.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_converge/logos/cluster_9/logos_43.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_converge/logos/cluster_9/logos_47.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_converge/logos/cluster_9/logos_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_converge/mast/mast.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_converge/mast/mast.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_converge/mast/mast.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/project_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/project_main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assemble_cluster_output.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/assemble_cluster_output.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generate_cluster_params.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/generate_cluster_params.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/split_motifs_by_cluster.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/split_motifs_by_cluster.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seeds_to_converge_input.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assemble_cluster_output.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cluster_get_profiles.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/create_bash_script_for_meme.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dhcl_script.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generate_cluster_params.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mast_remove_profiles.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/meme_cleaner.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/meme_cleaner.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/merge_meme_files.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/merge_meme_files.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/process_dhcl_output.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reduce_dhcl_for_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/reduce_dhcl_for_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/remove_noncentroid_profiles.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rename_cluster_logos.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screen_motif_entropy.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screen_motif_evalue.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shrink_input_for_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/shrink_input_for_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/split_motifs_by_cluster.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -75,7 +284,7 @@
     <SUITE FILE_PATH="coverage/cleaned_workflow$create_input_seqs.coverage" NAME="create_input_seqs Coverage Results" MODIFIED="1543142665116" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="/media/melvin/My Book2/Backup/Backup/Files/Windows/Work_backup/Enolase_mast_process" />
     <SUITE FILE_PATH="coverage/cleaned_workflow$converge2meme.coverage" NAME="converge2meme Coverage Results" MODIFIED="1543176881657" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/external_scripts/pipeline" />
     <SUITE FILE_PATH="coverage/cleaned_workflow$ttt.coverage" NAME="ttt Coverage Results" MODIFIED="1542877380998" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/cleaned_workflow$project_main.coverage" NAME="project_main Coverage Results" MODIFIED="1543219033885" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cleaned_workflow$project_main.coverage" NAME="project_main Coverage Results" MODIFIED="1543572881635" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/cleaned_workflow$test.coverage" NAME="test Coverage Results" MODIFIED="1542169872568" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/cleaned_workflow$process_dhcl_output_meme.coverage" NAME="process_dhcl_output_meme Coverage Results" MODIFIED="1543006691302" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/cleaned_workflow$tes.coverage" NAME="tes Coverage Results" MODIFIED="1542607562897" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -85,20 +294,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1272">
-              <caret line="91" column="30" selection-start-line="91" selection-start-column="30" selection-end-line="91" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/project_main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3214">
-              <caret line="13" column="67" selection-start-line="13" selection-start-column="67" selection-end-line="13" selection-end-column="67" />
+            <state relative-caret-position="240">
+              <caret line="68" column="14" selection-start-line="68" selection-start-column="14" selection-end-line="68" selection-end-column="14" />
               <folding>
                 <element signature="e#0#47#0" expanded="true" />
               </folding>
@@ -107,34 +307,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cluster.py">
+        <entry file="file://$PROJECT_DIR$/src/shrink_input_for_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="274">
-              <caret line="102" column="32" selection-start-line="102" selection-start-column="27" selection-end-line="102" selection-end-column="32" />
-              <folding>
-                <element signature="e#0#34#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="210">
+              <caret line="16" column="36" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/split_motifs_by_cluster.py">
+        <entry file="file://$PROJECT_DIR$/src/reduce_dhcl_for_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="5" column="37" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
-              <folding>
-                <element signature="e#0#13#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="360">
+              <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/utils.py">
+        <entry file="file://$PROJECT_DIR$/src/merge_meme_files.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="870">
-              <caret line="38" column="20" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
+            <state relative-caret-position="930">
+              <caret line="31" column="20" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -143,37 +337,40 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/assemble_cluster_output.py">
+        <entry file="file://$PROJECT_DIR$/src/meme_cleaner.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-243">
-              <caret line="52" selection-start-line="52" selection-end-line="52" />
-              <folding>
-                <element signature="e#0#48#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="173">
+              <caret line="38" column="6" selection-start-line="38" selection-start-column="6" selection-end-line="38" selection-end-column="6" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/generate_cluster_params.py">
+        <entry file="file://$PROJECT_DIR$/src/create_input_seqs.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-660">
-              <caret line="63" column="46" selection-start-line="63" selection-start-column="46" selection-end-line="63" selection-end-column="46" />
-              <folding>
-                <element signature="e#0#35#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="510">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/filter.py">
+        <entry file="file://$PROJECT_DIR$/src/filter.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="87">
-              <caret line="103" column="46" selection-start-line="103" selection-start-column="46" selection-end-line="103" selection-end-column="46" />
+            <state relative-caret-position="220">
+              <caret line="123" column="26" selection-start-line="123" selection-start-column="26" selection-end-line="123" selection-end-column="26" />
               <folding>
                 <element signature="e#0#34#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/filter/remove_noncentroid_profiles.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -190,36 +387,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>load_fasta_sequences</find>
-      <find>Fina</find>
-      <find>BLOSUM</find>
-      <find>output_prefix</find>
-      <find>load_BLOSUM</find>
-      <find>convert_to_meme_format</find>
-      <find>E_value</find>
-      <find>to_meme_format</find>
-      <find>FP</find>
       <find>screen_converge_pssm</find>
       <find>rename_cl</find>
       <find>create_cluster_logos</find>
       <find>rename</find>
       <find>delete_</find>
       <find>mast_remove_profiles</find>
-      <find>post_corr</find>
       <find>Filter</find>
       <find>cleaned</find>
       <find>mast_remo</find>
       <find>filter_conv</find>
-      <find>filter_conver</find>
       <find>cluster_final</find>
       <find>interme</find>
       <find>meme_filt</find>
       <find>filter</find>
       <find>clust</find>
-      <find>self.cl</find>
       <find>cluster</find>
       <find>False</find>
       <find>screen_pssm</find>
+      <find>self.cl</find>
+      <find>self._dir.pssm</find>
+      <find>merge_pssm</find>
+      <find>os.remove</find>
+      <find>utils</find>
+      <find>cluster_get_profiles</find>
+      <find>python</find>
+      <find>filter_conver</find>
+      <find>post_corr</find>
+      <find>diviso</find>
+      <find>self.dir.meme</find>
+      <find>self.</find>
     </findStrings>
     <replaceStrings>
       <replace>False</replace>
@@ -246,10 +443,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test2.py" />
-        <option value="$PROJECT_DIR$/src/test.py" />
-        <option value="$PROJECT_DIR$/src/create_consolidated_test.py" />
-        <option value="$PROJECT_DIR$/src/full_script.ipynb" />
         <option value="$PROJECT_DIR$/full_script.ipynb" />
         <option value="$PROJECT_DIR$/full_script.py" />
         <option value="$PROJECT_DIR$/../ai4r_p3/testing_suite_ice_rover.py" />
@@ -264,7 +457,6 @@
         <option value="$PROJECT_DIR$/test_cluster.py" />
         <option value="$PROJECT_DIR$/dd.py" />
         <option value="$PROJECT_DIR$/src/process_dhcl_output.py" />
-        <option value="$PROJECT_DIR$/src/meme_cleaner.py" />
         <option value="$PROJECT_DIR$/src/remove_motifs_with_low_evalue.py" />
         <option value="$PROJECT_DIR$/sss.py" />
         <option value="$PROJECT_DIR$/src/split_motifs_into_cluster_motifs.py" />
@@ -274,7 +466,6 @@
         <option value="$PROJECT_DIR$/src/meme_merger.py" />
         <option value="$PROJECT_DIR$/src/reduce_dhcl_test.py" />
         <option value="$PROJECT_DIR$/src/cluster_final.py" />
-        <option value="$PROJECT_DIR$/src/shrink_input_for_test.py" />
         <option value="$PROJECT_DIR$/src/process_dhcl_output_meme.py" />
         <option value="$PROJECT_DIR$/src/memefile_cleaner.py" />
         <option value="/media/melvin/My Book2/Backup/Backup/Files/Windows/Work_backup/Enolase_mast_process/create_input_seqs.py" />
@@ -296,15 +487,20 @@
         <option value="$PROJECT_DIR$/src/split_motifs_by_cluster.py" />
         <option value="$PROJECT_DIR$/src/generate_cluster_params.py" />
         <option value="$PROJECT_DIR$/cluster.py" />
+        <option value="$PROJECT_DIR$/src/merge_meme_files.py" />
+        <option value="$PROJECT_DIR$/src/meme_cleaner.py" />
+        <option value="$PROJECT_DIR$/src/reduce_dhcl_for_test.py" />
+        <option value="$PROJECT_DIR$/src/config.py" />
+        <option value="$PROJECT_DIR$/src/shrink_input_for_test.py" />
+        <option value="$PROJECT_DIR$/src/filter.py" />
         <option value="$PROJECT_DIR$/project_main.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="684" />
-    <option name="y" value="27" />
-    <option name="width" value="940" />
-    <option name="height" value="741" />
+    <option name="y" value="25" />
+    <option name="width" value="960" />
+    <option name="height" value="990" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -492,7 +688,7 @@
     </configuration>
     <configuration name="project_main" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="merged_src" />
-      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="INTERPRETER_OPTIONS" value="-B" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
@@ -544,23 +740,26 @@
       <workItem from="1542991318871" duration="13803000" />
       <workItem from="1543135853474" duration="11005000" />
       <workItem from="1543168315876" duration="16311000" />
-      <workItem from="1543197676448" duration="17913000" />
+      <workItem from="1543197676448" duration="21425000" />
+      <workItem from="1543252224168" duration="56000" />
+      <workItem from="1543458767911" duration="828000" />
+      <workItem from="1543568360386" duration="5778000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95767000" />
+    <option name="totallyTimeSpent" value="105941000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1920" height="990" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49945235" visible="true" weight="0.19263607" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49945235" weight="0.17716116" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.50054765" side_tool="true" weight="0.3569904" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32894737" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33844468" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.34063527" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39868566" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -605,28 +804,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/subprocess.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="1461" column="34" lean-forward="true" selection-start-line="1461" selection-start-column="34" selection-end-line="1461" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/full_script.py" />
-    <entry file="file://$PROJECT_DIR$/tes.py" />
-    <entry file="file://$PROJECT_DIR$/../assignment_6-master/assignment_6-master_mine/hmm_submission.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="22" column="26" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ttt.py" />
     <entry file="file://$PROJECT_DIR$/src/cluster_get_profiles.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -647,40 +824,12 @@
     <entry file="file://$PROJECT_DIR$/src/test.py" />
     <entry file="file://$PROJECT_DIR$/src/test_python.py" />
     <entry file="file://$PROJECT_DIR$/src/tes.py" />
-    <entry file="file://$PROJECT_DIR$/src/shrink_input_for_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/process_dhcl_output_meme.py" />
     <entry file="file://$PROJECT_DIR$/src/mast_remove_profiles_using_pkl.py" />
     <entry file="file://$PROJECT_DIR$/src/cluster_final.py" />
     <entry file="file://$PROJECT_DIR$/src/memefile_cleaner.py" />
-    <entry file="file://$PROJECT_DIR$/src/merge_meme_files.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///media/melvin/My Book2/Backup/Backup/Files/Windows/Work_backup/Enolase_mast_process/merge_fasta.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="16" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///media/melvin/My Book2/Backup/Backup/Files/Windows/Work_backup/Enolase_mast_process/create_input_seqs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="16" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file:///media/melvin/My Book2/Backup/Backup/Files/Windows/Work_backup/Enolase_mast_process/merge_fasta.py" />
+    <entry file="file:///media/melvin/My Book2/Backup/Backup/Files/Windows/Work_backup/Enolase_mast_process/create_input_seqs.py" />
     <entry file="file://$PROJECT_DIR$/create_input_seqs.py" />
     <entry file="file://$PROJECT_DIR$/seeds_to_converge_input.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -693,13 +842,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2456">
           <caret line="296" column="16" selection-start-line="296" selection-start-column="5" selection-end-line="296" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/create_input_seqs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
@@ -728,13 +870,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="832" column="5" selection-start-line="832" selection-start-column="5" selection-end-line="832" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/meme_cleaner.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
         </state>
       </provider>
     </entry>
@@ -783,46 +918,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/filter_converge.py">
+    <entry file="file://$PROJECT_DIR$/config.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1173">
-          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/filter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="103" column="46" selection-start-line="103" selection-start-column="46" selection-end-line="103" selection-end-column="46" />
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assemble_cluster_output.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-243">
-          <caret line="52" selection-start-line="52" selection-end-line="52" />
-          <folding>
-            <element signature="e#0#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="870">
-          <caret line="38" column="20" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="2730">
+          <caret line="91" column="30" selection-start-line="91" selection-start-column="30" selection-end-line="91" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/split_motifs_by_cluster.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
+        <state relative-caret-position="120">
           <caret line="5" column="37" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
@@ -830,9 +935,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1110">
+          <caret line="38" column="20" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assemble_cluster_output.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1410">
+          <caret line="52" selection-start-line="52" selection-end-line="52" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/generate_cluster_params.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-660">
+        <state relative-caret-position="1710">
           <caret line="63" column="46" selection-start-line="63" selection-start-column="46" selection-end-line="63" selection-end-column="46" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
@@ -840,27 +965,108 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/dhcl_script.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1710">
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/cluster.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="102" column="32" selection-start-line="102" selection-start-column="27" selection-end-line="102" selection-end-column="32" />
+        <state relative-caret-position="-540">
+          <caret line="99" column="32" selection-start-line="99" selection-start-column="32" selection-end-line="99" selection-end-column="32" />
           <folding>
             <element signature="e#0#34#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config.py">
+    <entry file="file://$PROJECT_DIR$/filter.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1272">
-          <caret line="91" column="30" selection-start-line="91" selection-start-column="30" selection-end-line="91" selection-end-column="30" />
+        <state relative-caret-position="270">
+          <caret line="114" column="20" selection-start-line="114" selection-start-column="20" selection-end-line="114" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/filter_converge.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1110">
+          <caret line="44" column="44" lean-forward="true" selection-start-line="44" selection-start-column="44" selection-end-line="44" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/merge_meme_files.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="930">
+          <caret line="31" column="20" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/create_input_seqs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="75" column="31" selection-start-line="75" selection-start-column="31" selection-end-line="75" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reduce_dhcl_for_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/shrink_input_for_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="16" column="36" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/meme_cleaner.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="38" column="6" selection-start-line="38" selection-start-column="6" selection-end-line="38" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/filter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="123" column="26" selection-start-line="123" selection-start-column="26" selection-end-line="123" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/filter/remove_noncentroid_profiles.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/project_main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3214">
-          <caret line="13" column="67" selection-start-line="13" selection-start-column="67" selection-end-line="13" selection-end-column="67" />
+        <state relative-caret-position="240">
+          <caret line="68" column="14" selection-start-line="68" selection-start-column="14" selection-end-line="68" selection-end-column="14" />
           <folding>
             <element signature="e#0#47#0" expanded="true" />
           </folding>
