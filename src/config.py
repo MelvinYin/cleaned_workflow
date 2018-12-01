@@ -5,11 +5,11 @@ ExecutorDirectory = namedtuple(
     "file log trash input_seqs input_seqdir input_pdb fasta_for_pdb p2_7_env "
     "meme_dir dhcl_exec bash_exec converge_dir converge_exec "
     "converge_composition converge_output converge_discard num_p output "
-    "single_seq output_clusters output_logos output_mast seeds_divisor seq_divisor")
+    "output_clusters output_logos output_mast seeds_divisor seq_divisor")
 
 FilterDirectory = namedtuple(
     'FilterDirectory',
-    "file log trash meme_dir input_seqs single_seq bash_exec memefile")
+    "file log trash meme_dir input_seqs short_seq bash_exec memefile")
 
 ClusterDirectory = namedtuple(
     "ClusterDirectory",
@@ -38,8 +38,7 @@ class Directory:
     input_seqs = f"{file}/input_seqs.fasta"
     log = f"{file}/log.txt"
     trash = f"{file}/_trash"
-    single_seq = f"{file}/single_seq.fasta"
-    input_pdb = f"{file}/input_pdb_test"
+    input_pdb = f"{file}/input_pdb"
     fasta_for_pdb = f"{file}/input_fasta"
     output_clusters = f"{output}/cluster_description.txt"
     output_logos = f"{output}/logos"
@@ -55,7 +54,6 @@ class Directory:
         trash=trash,
         input_seqs=input_seqs,
         input_seqdir=input_seqdir,
-        single_seq=single_seq,
         input_pdb=input_pdb,
         fasta_for_pdb=fasta_for_pdb,
         p2_7_env=p2_7_env,
@@ -93,6 +91,6 @@ class Directory:
         trash=trash,
         meme_dir=meme_dir,
         input_seqs=input_seqs,
-        single_seq=single_seq,
         bash_exec=bash_exec,
+        short_seq=None,
         memefile=None)
