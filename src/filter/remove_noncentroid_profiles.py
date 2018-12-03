@@ -1,5 +1,6 @@
 import pickle
 from utils import meme_rewritter
+import sys
 
 def main(kwargs):
     cluster_df_pkl = kwargs['cluster_df_pkl']

@@ -52,25 +52,25 @@ class Executor:
     def set_switches(self):
         switches = OrderedDict()
         # Get input_seqs
-        switches['MERGE_INPUT'] = (True, self.merge_input)
-        switches['SHRINK_INPUT'] = (True, self.shrink_input)
-        switches['CREATE_SHORT_SEQS'] = (True, self.create_short_seqs)
+        switches['MERGE_INPUT'] = (False, self.merge_input)
+        switches['SHRINK_INPUT'] = (False, self.shrink_input)
+        switches['CREATE_SHORT_SEQS'] = (False, self.create_short_seqs)
         # Get consensus_loops
-        switches['RUN_DHCL'] = (True, self.run_dhcl)
-        switches['EXTRACT_CONSENSUS'] = (True, self.extract_consensus)
-        switches['REDUCE_CONSENSUS'] = (True, self.reduce_consensus)
+        switches['RUN_DHCL'] = (False, self.run_dhcl)
+        switches['EXTRACT_CONSENSUS'] = (False, self.extract_consensus)
+        switches['REDUCE_CONSENSUS'] = (False, self.reduce_consensus)
         # Get PSSM using:
         # Meme
-        switches['BUILD_PSSM'] = (True, self.build_pssm)
-        switches['BUILD_STARTER'] = (True, self.build_starter)
-        switches['CLEAN_PSSM'] = (True, self.clean_pssm)
-        switches['MERGE_PSSM'] = (True, self.merge_pssm)
-        switches['SCREEN_PSSM'] = (True, self.screen_pssm)
+        switches['BUILD_PSSM'] = (False, self.build_pssm)
+        switches['BUILD_STARTER'] = (False, self.build_starter)
+        switches['CLEAN_PSSM'] = (False, self.clean_pssm)
+        switches['MERGE_PSSM'] = (False, self.merge_pssm)
+        switches['SCREEN_PSSM'] = (False, self.screen_pssm)
         # Or converge
-        switches['BUILD_CONVERGE_SEEDS'] = (False, self.build_converge_seeds)
-        switches['RUN_CONVERGE'] = (False, self.run_converge)
-        switches['TO_MEME_FORMAT'] = (False, self.to_meme_format)
-        switches['SCREEN_CONVERGE_PSSM'] = (False, self.screen_converge_pssm)
+        switches['BUILD_CONVERGE_SEEDS'] = (True, self.build_converge_seeds)
+        switches['RUN_CONVERGE'] = (True, self.run_converge)
+        switches['TO_MEME_FORMAT'] = (True, self.to_meme_format)
+        switches['SCREEN_CONVERGE_PSSM'] = (True, self.screen_converge_pssm)
         # Get combi
         switches['ASSEMBLE_COMBI'] = (True, self.assemble_combi)
         switches['CLUSTER'] = (True, self.cluster)

@@ -39,13 +39,6 @@ class Cluster:
                 raise
         return
 
-    def delete_intermediate(self):
-        for file in self._dir:
-            self.to_trash(file)
-        return
-
-    def to_trash(self, file):
-        return move_replace(file, self.dir.trash)
 
     def get_cluster_params(self):
         # Input: ./files/mast_onlycombi/mast.txt
@@ -127,5 +120,13 @@ class Cluster:
         main(kwargs)
         assert os.path.isdir(self.dir.logos)
         return
+
+    def delete_intermediate(self):
+        for file in self._dir:
+            self.to_trash(file)
+        return
+
+    def to_trash(self, file):
+        return move_replace(file, self.dir.trash)
 
 

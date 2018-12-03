@@ -19,7 +19,7 @@ ClusterDirectory = namedtuple(
 class Directory:
     file = "files"
     output = "output"
-    p2_7_env = "/home/melvin/anaconda3/envs/p2.7/bin/python"
+    p2_7_env = "/home/melvin/anaconda3/envs/dhcl_p/bin/python"
     dhcl_exec = "./external_scripts/dhcl/executables/everything.py"
     bash_exec = "/bin/bash"
     meme_dir = "./external_scripts/meme/bin"
@@ -44,8 +44,8 @@ class Directory:
     output_logos = f"{output}/logos"
     output_mast = f"{output}/mast"
     num_processor = 7    # Memory use increases as well
-    seeds_divisor = 10
-    seq_divisor = 10
+    seeds_divisor = None
+    seq_divisor = None
 
 
     executor_dir = ExecutorDirectory(

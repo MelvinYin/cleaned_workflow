@@ -41,14 +41,6 @@ class Filter:
                 raise
         return
 
-    def delete_intermediate(self):
-        for file in self._dir:
-            self.to_trash(file)
-        return
-
-    def to_trash(self, file):
-        return move_replace(file, self.dir.trash)
-
     def set_internal_dir(self):
         _dir = FilterIntDir(
             post_evalue=f"{self.dir.file}/meme_evalue_screened.txt",
@@ -127,3 +119,11 @@ class Filter:
         main(kwargs)
         assert os.path.isfile(self.dir.memefile)
         return
+
+    def delete_intermediate(self):
+        for file in self._dir:
+            self.to_trash(file)
+        return
+
+    def to_trash(self, file):
+        return move_replace(file, self.dir.trash)

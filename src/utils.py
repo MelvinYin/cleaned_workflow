@@ -1,5 +1,6 @@
 import os
 import shutil
+import re
 
 def move_replace(input_path, output_dir):
     if not (os.path.isdir(input_path) or os.path.isfile(input_path)):
@@ -34,6 +35,8 @@ def meme_rewritter(profiles, fname, to_keep=True, output=None):
                 elif not to_keep and motif_count in profiles:
                     deleting = True
                     continue
+            line = re.sub("MEME-[0-9]+", "MEME-{}".format(motif_count),
+                          line)
             to_write.append(line)
 
     with open(output, 'w') as wfile:

@@ -2,16 +2,653 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="977e9f69-e7b2-4235-9856-6e88bdf80fc9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/cluster/ee.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/input_pdb_test/DE_3der.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/input_pdb_test/EL_1bqg.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/single_seq.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/dhcl/executables/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/dhcl/executables/.idea/executables.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/dhcl/executables/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/dhcl/executables/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/dhcl/executables/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/dhcl/executables/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/dhcl/executables/dhcl/hprep.py" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/dhcl/executables/dhcl/hprep.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/dhcl/executables/everything.py" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/dhcl/executables/everything.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/dhcl/executables/predict.py" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/dhcl/executables/predict.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/dhcl/executables/utdir" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/dhcl/pysrc/predict.py" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/dhcl/pysrc/predict.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/bin/ame" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/bin/ame" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/bin/centrimo" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/bin/centrimo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/bin/ceqlogo" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/bin/ceqlogo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/bin/dreme" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/bin/dreme" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/bin/dreme-py3" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/bin/dreme-py3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/bin/fimo" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/bin/fimo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/bin/glam2" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/bin/glam2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/bin/glam2scan" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/bin/glam2scan" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/bin/gomo" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/bin/gomo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/bin/mast" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/bin/mast" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/bin/mcast" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/bin/mcast" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/bin/meme" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/bin/meme" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/bin/meme-chip" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/bin/meme-chip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/bin/momo" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/bin/momo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/bin/spamo" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/bin/spamo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/bin/tomtom" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/bin/tomtom" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/lib/meme-5.0.2/perl/Alphabet.pm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/lib/meme-5.0.2/perl/CheckingSAX.pm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/lib/meme-5.0.2/perl/DremeSAX.pm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/lib/meme-5.0.2/perl/ExecUtils.pm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/lib/meme-5.0.2/perl/Globals.pm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/lib/meme-5.0.2/perl/HtmlMonolithWr.pm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/lib/meme-5.0.2/perl/JsonRdr.pm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/lib/meme-5.0.2/perl/JsonWr.pm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/lib/meme-5.0.2/perl/MastSAX.pm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/lib/meme-5.0.2/perl/MemeSAX.pm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/lib/meme-5.0.2/perl/MemeWebUtils.pm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/lib/meme-5.0.2/perl/MotifInDremeXML.pm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/lib/meme-5.0.2/perl/MotifInMemeXML.pm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/lib/meme-5.0.2/perl/MotifUtils.pm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/lib/meme-5.0.2/perl/PriorUtils.pm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/lib/meme-5.0.2/perl/ReadFastaFile.pm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/lib/meme-5.0.2/perl/StatusPage.pm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/lib/meme-5.0.2/perl/TomtomSAX.pm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/lib/meme-5.0.2/python/alphabet.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/lib/meme-5.0.2/python/alphabet_py3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/lib/meme-5.0.2/python/fasta-dinucleotide-shuffle-py3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/lib/meme-5.0.2/python/fasta-dinucleotide-shuffle.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/lib/meme-5.0.2/python/fasta-hamming-enrich-py3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/lib/meme-5.0.2/python/fasta-hamming-enrich.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/lib/meme-5.0.2/python/hypergeometric.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/lib/meme-5.0.2/python/hypergeometric_py3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/lib/meme-5.0.2/python/sequence.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/lib/meme-5.0.2/python/sequence_py3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/libexec/meme-5.0.2/alphtype" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/libexec/meme-5.0.2/ama" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/libexec/meme-5.0.2/ama-qvalues" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/libexec/meme-5.0.2/beeml2meme" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/libexec/meme-5.0.2/ceqlogo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/libexec/meme-5.0.2/chen2meme" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/libexec/meme-5.0.2/clustalw2fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/libexec/meme-5.0.2/clustalw2phylip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/libexec/meme-5.0.2/compute-prior-dist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/libexec/meme-5.0.2/compute-uniform-priors" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/libexec/meme-5.0.2/create-priors" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/libexec/meme-5.0.2/dreme_xml_to_html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/libexec/meme-5.0.2/dreme_xml_to_txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/libexec/meme-5.0.2/dtc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/libexec/meme-5.0.2/elm2meme" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/libexec/meme-5.0.2/fasta-center" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/libexec/meme-5.0.2/fasta-dinucleotide-shuffle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/libexec/meme-5.0.2/fasta-dinucleotide-shuffle-py3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/libexec/meme-5.0.2/fasta-fetch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/libexec/meme-5.0.2/fasta-get-markov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/libexec/meme-5.0.2/fasta-grep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/libexec/meme-5.0.2/fasta-hamming-enrich" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/libexec/meme-5.0.2/fasta-hamming-enrich-py3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/libexec/meme-5.0.2/fasta-make-index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/libexec/meme-5.0.2/fasta-most" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/libexec/meme-5.0.2/fasta-re-match" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/libexec/meme-5.0.2/fasta-shuffle-letters" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/libexec/meme-5.0.2/fasta-subsample" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/libexec/meme-5.0.2/fasta-unique-names" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/libexec/meme-5.0.2/fisher_exact" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/libexec/meme-5.0.2/fitevd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/libexec/meme-5.0.2/gendb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/libexec/meme-5.0.2/getsize" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/libexec/meme-5.0.2/glam2format" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/libexec/meme-5.0.2/glam2html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/libexec/meme-5.0.2/glam2mask" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/libexec/meme-5.0.2/glam2psfm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/libexec/meme-5.0.2/glam2scan2html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/libexec/meme-5.0.2/gomo_highlight" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/libexec/meme-5.0.2/hart2meme-bkg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/libexec/meme-5.0.2/hartemink2psp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/libexec/meme-5.0.2/import-html-template" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/libexec/meme-5.0.2/iupac2meme" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/libexec/meme-5.0.2/jaspar2meme" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/libexec/meme-5.0.2/llr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/libexec/meme-5.0.2/mast_xml_to_html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/libexec/meme-5.0.2/mast_xml_to_txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/libexec/meme-5.0.2/matrix2meme" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/libexec/meme-5.0.2/meme-chip_html_to_tsv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/libexec/meme-5.0.2/meme-get-motif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/libexec/meme-5.0.2/meme-rename" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/libexec/meme-5.0.2/meme2alph" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/libexec/meme-5.0.2/meme2images" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/libexec/meme-5.0.2/meme2meme" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/libexec/meme-5.0.2/meme_xml_to_html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/libexec/meme-5.0.2/motif-shuffle-columns" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/libexec/meme-5.0.2/motiph" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/libexec/meme-5.0.2/nmica2meme" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/libexec/meme-5.0.2/plotgen" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/libexec/meme-5.0.2/pmp_bf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/libexec/meme-5.0.2/priority2meme" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/libexec/meme-5.0.2/psp-gen" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/libexec/meme-5.0.2/qvalue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/libexec/meme-5.0.2/ramen" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/libexec/meme-5.0.2/ranksum_test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/libexec/meme-5.0.2/reconcile-tree-alignment" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/libexec/meme-5.0.2/reduce-alignment" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/libexec/meme-5.0.2/remove-alignment-gaps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/libexec/meme-5.0.2/rna2meme" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/libexec/meme-5.0.2/rsat-retrieve-seq" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/libexec/meme-5.0.2/rsat-supported-organisms" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/libexec/meme-5.0.2/scpd2meme" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/libexec/meme-5.0.2/sd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/libexec/meme-5.0.2/sites2meme" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/libexec/meme-5.0.2/taipale2meme" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/libexec/meme-5.0.2/tamo2meme" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/libexec/meme-5.0.2/tomtom_xml_to_html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/libexec/meme-5.0.2/transfac2meme" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/libexec/meme-5.0.2/uniprobe2meme" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/libexec/meme-5.0.2/xsltproc_lite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/meme2meme" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/alphabet_utilities.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/ame_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/ame_template.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/ame_template.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/ame_template.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/beadstring.xsl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/block_diagram.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/block_diagram.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/centrimo_graph.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/centrimo_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/centrimo_template.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/centrimo_template.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/centrimo_template.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/cisml-to-gff.xsl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/cisml-to-gff3.xsl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/cisml-to-html.xsl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/cisml-to-text.xsl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/cisml.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/constants.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/constants.js.xsl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/constants.xsl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/db_general.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/db_other_genomes.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/delay_draw.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/GLAM2_method.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/alphabet-format.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/alphabets.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/alphtype.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/ama-qvalues.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/ama.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/ame-output-format.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/ame-tutorial.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/ame.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/authors.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/beadstring.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/beeml2meme.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/bfile-format.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/centrimo-output-format.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/centrimo-tutorial.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/centrimo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/ceqlogo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/chen2meme.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/cite.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/clustalw-format.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/clustalw2fasta.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/clustalw2phylip.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/compute-prior-dist.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/compute-uniform-priors.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/copyright.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/create-priors.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/css/menu.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/dmix-format.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/download.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/draw-mhmm.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/dreme-tutorial.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/dreme.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/dust.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/elm2meme.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/ame_example_output_files/ame.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/ame_example_output_files/ame.tsv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/ame_example_output_files/sequences.tsv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/centrimo_example_output_files/centrimo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/centrimo_example_output_files/centrimo.tsv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/centrimo_example_output_files/site_counts.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/compute_prior_dist_example_output_files/prior.dist.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/dreme_example_output_files/dreme.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/dreme_example_output_files/dreme.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/dreme_example_output_files/dreme.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/dreme_example_output_files/m01nc_CCMCRCCC.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/dreme_example_output_files/m01rc_GGGYGKGG.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/dreme_example_output_files/m02nc_BTTATCW.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/dreme_example_output_files/m02rc_WGATAAV.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/dreme_example_output_files/m03nc_MCRCCCA.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/dreme_example_output_files/m03rc_TGGGYGK.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/dreme_example_output_files/m04nc_RARGAAA.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/dreme_example_output_files/m04rc_TTTCYTY.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/dreme_example_output_files/m05nc_AKAAAM.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/dreme_example_output_files/m05rc_KTTTMT.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/dreme_example_output_files/m06nc_CTGTSTS.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/dreme_example_output_files/m06rc_SASACAG.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/dreme_example_output_files/m07nc_AGGGCGK.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/dreme_example_output_files/m07rc_MCGCCCT.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/dreme_example_output_files/m08nc_CCTKCCY.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/dreme_example_output_files/m08rc_RGGMAGG.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/dreme_example_output_files/m09nc_TTAAAAW.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/dreme_example_output_files/m09rc_WTTTTAA.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/dreme_example_output_files/m10nc_AAATAH.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/dreme_example_output_files/m10rc_DTATTT.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/dreme_example_output_files/m11nc_CATYTCC.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/dreme_example_output_files/m11rc_GGARATG.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/dreme_example_output_files/m12nc_CAGMCAC.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/dreme_example_output_files/m12rc_GTGKCTG.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/dreme_example_output_files/m13nc_CACAGY.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/dreme_example_output_files/m13rc_RCTGTG.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/dreme_example_output_files/m14nc_CTGGRGA.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/dreme_example_output_files/m14rc_TCYCCAG.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/dreme_example_output_files/m15nc_SACGTGA.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/dreme_example_output_files/m15rc_TCACGTS.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/fimo_example_output_files/cisml.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/fimo_example_output_files/fimo.gff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/fimo_example_output_files/fimo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/fimo_example_output_files/fimo.tsv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/fimo_example_output_files/fimo.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/glam2-aa-alph.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/glam2-dna-alph.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/glam2_example_output_files/glam2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/glam2_example_output_files/glam2.meme" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/glam2_example_output_files/glam2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/glam2_example_output_files/logo1.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/glam2_example_output_files/logo1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/glam2_example_output_files/logo10.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/glam2_example_output_files/logo10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/glam2_example_output_files/logo2.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/glam2_example_output_files/logo2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/glam2_example_output_files/logo3.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/glam2_example_output_files/logo3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/glam2_example_output_files/logo4.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/glam2_example_output_files/logo4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/glam2_example_output_files/logo5.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/glam2_example_output_files/logo5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/glam2_example_output_files/logo6.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/glam2_example_output_files/logo6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/glam2_example_output_files/logo7.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/glam2_example_output_files/logo7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/glam2_example_output_files/logo8.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/glam2_example_output_files/logo8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/glam2_example_output_files/logo9.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/glam2_example_output_files/logo9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/glam2_example_output_files/logo_ssc1.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/glam2_example_output_files/logo_ssc1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/glam2_example_output_files/logo_ssc10.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/glam2_example_output_files/logo_ssc10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/glam2_example_output_files/logo_ssc2.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/glam2_example_output_files/logo_ssc2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/glam2_example_output_files/logo_ssc3.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/glam2_example_output_files/logo_ssc3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/glam2_example_output_files/logo_ssc4.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/glam2_example_output_files/logo_ssc4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/glam2_example_output_files/logo_ssc5.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/glam2_example_output_files/logo_ssc5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/glam2_example_output_files/logo_ssc6.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/glam2_example_output_files/logo_ssc6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/glam2_example_output_files/logo_ssc7.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/glam2_example_output_files/logo_ssc7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/glam2_example_output_files/logo_ssc8.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/glam2_example_output_files/logo_ssc8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/glam2_example_output_files/logo_ssc9.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/glam2_example_output_files/logo_ssc9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/glam2scan_example_output_files/glam2scan.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/glam2scan_example_output_files/glam2scan.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/gomo_example_output_files/gomo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/gomo_example_output_files/gomo.tsv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/gomo_example_output_files/gomo.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/gomo_example_output_files/res/logo1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/gomo_example_output_files/res/logo2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/gomo_example_output_files/res/logo3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/mast_example_output_files/mast.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/mast_example_output_files/mast.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/mast_example_output_files/mast.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/mcast_example_output_files/cisml.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/mcast_example_output_files/mcast.gff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/mcast_example_output_files/mcast.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/mcast_example_output_files/mcast.tsv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/mcast_example_output_files/mcast.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/meme_example_output_files/logo1.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/meme_example_output_files/logo1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/meme_example_output_files/logo2.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/meme_example_output_files/logo2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/meme_example_output_files/logo3.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/meme_example_output_files/logo3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/meme_example_output_files/logo_rc1.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/meme_example_output_files/logo_rc1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/meme_example_output_files/logo_rc2.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/meme_example_output_files/logo_rc2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/meme_example_output_files/logo_rc3.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/meme_example_output_files/logo_rc3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/meme_example_output_files/meme.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/meme_example_output_files/meme.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/meme_example_output_files/meme.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/memechip_example_output_files/Klf1.fna" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/memechip_example_output_files/align_msgs.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/memechip_example_output_files/background" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/memechip_example_output_files/centrimo_out/centrimo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/memechip_example_output_files/centrimo_out/centrimo.tsv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/memechip_example_output_files/centrimo_out/site_counts.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/memechip_example_output_files/combined.meme" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/memechip_example_output_files/dreme_out/dreme.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/memechip_example_output_files/dreme_out/dreme.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/memechip_example_output_files/dreme_out/dreme.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/memechip_example_output_files/dreme_out/m01nc_MCRCCCW.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/memechip_example_output_files/dreme_out/m01rc_WGGGYGK.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/memechip_example_output_files/dreme_out/m02nc_TTATCW.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/memechip_example_output_files/dreme_out/m02rc_WGATAA.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/memechip_example_output_files/dreme_tomtom_out/tomtom.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/memechip_example_output_files/dreme_tomtom_out/tomtom.tsv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/memechip_example_output_files/dreme_tomtom_out/tomtom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/memechip_example_output_files/fimo_out_1/cisml.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/memechip_example_output_files/fimo_out_1/fimo.gff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/memechip_example_output_files/fimo_out_1/fimo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/memechip_example_output_files/fimo_out_1/fimo.tsv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/memechip_example_output_files/fimo_out_1/fimo.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/memechip_example_output_files/fimo_out_2/cisml.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/memechip_example_output_files/fimo_out_2/fimo.gff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/memechip_example_output_files/fimo_out_2/fimo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/memechip_example_output_files/fimo_out_2/fimo.tsv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/memechip_example_output_files/fimo_out_2/fimo.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/memechip_example_output_files/fimo_out_3/cisml.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/memechip_example_output_files/fimo_out_3/fimo.gff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/memechip_example_output_files/fimo_out_3/fimo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/memechip_example_output_files/fimo_out_3/fimo.tsv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/memechip_example_output_files/fimo_out_3/fimo.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/memechip_example_output_files/fimo_out_4/cisml.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/memechip_example_output_files/fimo_out_4/fimo.gff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/memechip_example_output_files/fimo_out_4/fimo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/memechip_example_output_files/fimo_out_4/fimo.tsv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/memechip_example_output_files/fimo_out_4/fimo.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/memechip_example_output_files/fimo_out_5/cisml.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/memechip_example_output_files/fimo_out_5/fimo.gff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/memechip_example_output_files/fimo_out_5/fimo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/memechip_example_output_files/fimo_out_5/fimo.tsv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/memechip_example_output_files/fimo_out_5/fimo.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/memechip_example_output_files/fimo_out_6/cisml.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/memechip_example_output_files/fimo_out_6/fimo.gff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/memechip_example_output_files/fimo_out_6/fimo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/memechip_example_output_files/fimo_out_6/fimo.tsv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/memechip_example_output_files/fimo_out_6/fimo.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/memechip_example_output_files/meme-chip.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/memechip_example_output_files/meme_out/logo1.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/memechip_example_output_files/meme_out/logo1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/memechip_example_output_files/meme_out/logo2.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/memechip_example_output_files/meme_out/logo2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/memechip_example_output_files/meme_out/logo3.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/memechip_example_output_files/meme_out/logo3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/memechip_example_output_files/meme_out/logo_rc1.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/memechip_example_output_files/meme_out/logo_rc1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/memechip_example_output_files/meme_out/logo_rc2.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/memechip_example_output_files/meme_out/logo_rc2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/memechip_example_output_files/meme_out/logo_rc3.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/memechip_example_output_files/meme_out/logo_rc3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/memechip_example_output_files/meme_out/meme.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/memechip_example_output_files/meme_out/meme.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/memechip_example_output_files/meme_out/meme.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/memechip_example_output_files/meme_tomtom_out/tomtom.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/memechip_example_output_files/meme_tomtom_out/tomtom.tsv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/memechip_example_output_files/meme_tomtom_out/tomtom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/memechip_example_output_files/motif_alignment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/memechip_example_output_files/progress_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/memechip_example_output_files/seqs-centered" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/memechip_example_output_files/seqs-discarded" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/memechip_example_output_files/seqs-sampled" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/memechip_example_output_files/seqs-shuffled" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/memechip_example_output_files/spamo_out_1/spamo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/memechip_example_output_files/spamo_out_1/spamo.tsv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/memechip_example_output_files/spamo_out_2/spamo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/memechip_example_output_files/spamo_out_2/spamo.tsv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/memechip_example_output_files/spamo_out_3/spamo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/memechip_example_output_files/spamo_out_3/spamo.tsv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/memechip_example_output_files/spamo_out_4/spamo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/memechip_example_output_files/spamo_out_4/spamo.tsv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/memechip_example_output_files/spamo_out_5/spamo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/memechip_example_output_files/spamo_out_5/spamo.tsv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/memechip_example_output_files/spamo_out_6/spamo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/memechip_example_output_files/spamo_out_6/spamo.tsv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/memechip_example_output_files/summary.tsv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/momo_example_output_files/Kxxxxx_S79.9_Dxxxxx.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/momo_example_output_files/Kxxxxx_S79.9_Pxxxxx.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/momo_example_output_files/Kxxxxx_S79.9_xxxxxK.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/momo_example_output_files/Kxxxxx_Y79.9_xxxxxx.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/momo_example_output_files/RxxSxx_S79.9_xxxxxx.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/momo_example_output_files/momo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/momo_example_output_files/momo.tsv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/momo_example_output_files/momo.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/momo_example_output_files/xLxxxx_S79.9_xxxxxx.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/momo_example_output_files/xxKRxx_S79.9_xxxxxx.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/momo_example_output_files/xxLxxx_T79.9_xxxxxx.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/momo_example_output_files/xxxRxx_S79.9_xxxxxx.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/momo_example_output_files/xxxxNx_S79.9_xDExxx.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/momo_example_output_files/xxxxxG_S79.9_xxxxxx.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/momo_example_output_files/xxxxxH_S79.9_Dxxxxx.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/momo_example_output_files/xxxxxx_S79.9_DxExxx.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/momo_example_output_files/xxxxxx_S79.9_Dxxxxx.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/momo_example_output_files/xxxxxx_S79.9_NExxxx.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/momo_example_output_files/xxxxxx_S79.9_Pxxxxx.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/momo_example_output_files/xxxxxx_S79.9_xDxxKx.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/momo_example_output_files/xxxxxx_S79.9_xDxxxx.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/momo_example_output_files/xxxxxx_S79.9_xExxxx.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/momo_example_output_files/xxxxxx_S79.9_xNxxxx.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/momo_example_output_files/xxxxxx_T79.9_Pxxxxx.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/momo_example_output_files/xxxxxx_T79.9_xDxxxx.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/motiph_example_output_files/cisml-to-html.xsl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/motiph_example_output_files/cisml.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/motiph_example_output_files/motiph.gff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/motiph_example_output_files/motiph.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/motiph_example_output_files/motiph.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/motiph_example_output_files/motiph.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/sample-dna-aln.glam2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/sample-dna-motif.meme" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/sample-protein-aln.glam2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/sample-protein-motif.meme" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/sample_opal_scripts/FimoClient.pl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/sample_opal_scripts/FimoClient.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/sample_opal_scripts/MemeClient.pl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/sample_opal_scripts/MemeClient.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/sample_opal_scripts/crp0.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/sample_opal_scripts/crp0.meme.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/small-tide-mod.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/spamo_example_output_files/spamo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/spamo_example_output_files/spamo.tsv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/tomtom_example_output_files/tomtom.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/tomtom_example_output_files/tomtom.tsv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/examples/tomtom_example_output_files/tomtom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/fasta-fetch.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/fasta-format.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/fasta-get-markov.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/fasta-grep.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/fasta-hamming-enrich.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/fasta-io.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/fasta-make-index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/fasta-most.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/fasta-shuffle-letters.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/fasta-subsample.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/fasta-unique-names.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/fimo-output-format.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/fimo-tutorial.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/fimo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/fisher_exact.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/fitevd.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/gendb.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/general-faq.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/getsize.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/glam2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/glam2_alphabet.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/glam2_tut.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/glam2format.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/glam2mask.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/glam2scan.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/godag-format.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/gomo-output-format.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/gomo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/gomo_highlight.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/images/UWlogo150p.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/images/ame_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/images/centrimo_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/images/dreme_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/images/exp28b.1.anr.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/images/exp28b.1.oops.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/images/exp28b.1.zoops.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/images/exp28b.6.anr.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/images/exp28b.6.oops.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/images/exp28b.6.zoops.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/images/exp28d.kmers.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/images/exp28d.triples.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/images/fimo_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/images/glam2_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/images/glam2scan_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/images/gomo_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/images/gtscan_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/images/improved_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/images/mast_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/images/mcast_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/images/meme_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/images/memechip_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/images/memesuite_icon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/images/memesuite_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/images/momo_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/images/spamo_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/images/tomtom_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/images/ucsd_logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/images/uq_logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/images/webserver_schema.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/install.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/ismb94.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/iupac.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/iupac2meme.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/jaspar2meme.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/js/Markdown.Converter.LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/js/Markdown.Converter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/js/centrimo_graph.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/js/constants.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/js/constants.js.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/js/delay_draw.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/js/eps_context.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/js/manual.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/js/menu-configure.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/js/menu-data.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/js/menu-path.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/js/menu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/js/motif_logo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/js/shared-doc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/js/simple-shared-doc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/js/spamo_graph.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/js/utilities.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/log-hmm.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/mast.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/matrix2meme.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/mcast-output-format.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/mcast.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/meme-chip-output-format.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/meme-chip.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/meme-format.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/meme-get-motif.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/meme-rename.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/meme.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/meme2alph.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/meme2images.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/meme2meme.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/mhmm-format.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/mhmm.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/mhmm2html.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/mhmme.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/mhmms.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/mhmmscan-format.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/mhmmscan.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/momo-output-format.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/momo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/motif-consensus.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/motif-shuffle-columns.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/motif_conversion.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/motiph.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/nmica2meme.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/overview.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/pmp_bf.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/prior30.plib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/priority2meme.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/psm-format.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/psp-format.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/psp-gen.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/purge.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/qvalue.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/reconcile-tree-alignment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/reduce-alignment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/release-notes.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/remove-alignment-gaps.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/rna2meme.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/scpd2meme.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/scripting.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/shadow.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/sites2meme.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/spamo-output-format.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/spamo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/taipale2meme.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/tamo2meme.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/tomtom-output-format.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/tomtom.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/transfac-format.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/transfac2meme.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/uniprobe2meme.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/doc/update-sequence-db.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/dreme_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/dreme_template.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/dreme_template.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/dreme_template.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/eps_context.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/generate_js_wrapped_template.pl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/generate_xsl_icons.pl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/gomo-to-html.xsl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/hmm-text.xsl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/icons.xsl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/job_status.tmpl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/logging.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/mast_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/mast_template.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/mast_template.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/mast_template.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/mcast_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/mcast_template.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/mcast_template.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/mcast_template.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/meme-chip_template.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/meme-chip_template.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/meme-chip_template.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/meme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/meme.css.xsl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/meme_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/meme_template.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/meme_template.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/meme_template.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/memechip_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/motif_logo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/motif_logo_template.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/new_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/prior1.plib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/prior30.plib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/simple-shared-doc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/simple-shared-doc.js.xsl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/spamo_graph.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/spamo_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/spamo_template.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/spamo_template.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/spamo_template.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/template.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/tomtom_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/tomtom_template.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/tomtom_template.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/tomtom_template.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/utilities.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/share/meme-5.0.2/utilities.js.xsl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/input_seqs.fasta" beforeDir="false" afterPath="$PROJECT_DIR$/files/input_seqs.fasta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/sfld_datasets/README.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/project_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/project_main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cluster.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cluster.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cluster/generate_cluster_params.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cluster/generate_cluster_params.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cluster/split_motifs_by_cluster.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cluster/split_motifs_by_cluster.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/config.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/filter.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/filter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/filter/mast_remove_profiles.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/filter/mast_remove_profiles.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/filter/remove_noncentroid_profiles.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/filter/remove_noncentroid_profiles.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,6 +658,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/cleaned_workflow$create_input_seqs__2_.coverage" NAME="create_input_seqs (2) Coverage Results" MODIFIED="1543142801632" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/cleaned_workflow$ee.coverage" NAME="ee Coverage Results" MODIFIED="1543804959333" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/cluster" />
     <SUITE FILE_PATH="coverage/cleaned_workflow$meme_merger.coverage" NAME="meme_merger Coverage Results" MODIFIED="1542597330449" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/cleaned_workflow$create_input_seqs__1_.coverage" NAME="create_input_seqs (1) Coverage Results" MODIFIED="1543142718959" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/cleaned_workflow$generate_cluster_params.coverage" NAME="generate_cluster_params Coverage Results" MODIFIED="1542596956182" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
@@ -30,12 +668,13 @@
     <SUITE FILE_PATH="coverage/cleaned_workflow$tt.coverage" NAME="tt Coverage Results" MODIFIED="1542886538145" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/cleaned_workflow$tes__1_.coverage" NAME="tes (1) Coverage Results" MODIFIED="1542964383701" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/cleaned_workflow$cluster_final.coverage" NAME="cluster_final Coverage Results" MODIFIED="1542597332644" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/cleaned_workflow$project_main__1_.coverage" NAME="project_main (1) Coverage Results" MODIFIED="1543766181800" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../actual_again" />
     <SUITE FILE_PATH="coverage/cleaned_workflow$dd.coverage" NAME="dd Coverage Results" MODIFIED="1542960204036" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/merged_src$mast_remove_profiles.coverage" NAME="mast_remove_profiles Coverage Results" MODIFIED="1540454008157" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/cleaned_workflow$create_input_seqs.coverage" NAME="create_input_seqs Coverage Results" MODIFIED="1543142665116" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="/media/melvin/My Book2/Backup/Backup/Files/Windows/Work_backup/Enolase_mast_process" />
     <SUITE FILE_PATH="coverage/cleaned_workflow$converge2meme.coverage" NAME="converge2meme Coverage Results" MODIFIED="1543176881657" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/external_scripts/pipeline" />
     <SUITE FILE_PATH="coverage/cleaned_workflow$ttt.coverage" NAME="ttt Coverage Results" MODIFIED="1542877380998" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/cleaned_workflow$project_main.coverage" NAME="project_main Coverage Results" MODIFIED="1543572881635" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cleaned_workflow$project_main.coverage" NAME="project_main Coverage Results" MODIFIED="1543805306075" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/cleaned_workflow$test.coverage" NAME="test Coverage Results" MODIFIED="1542169872568" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/cleaned_workflow$process_dhcl_output_meme.coverage" NAME="process_dhcl_output_meme Coverage Results" MODIFIED="1543006691302" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/cleaned_workflow$tes.coverage" NAME="tes Coverage Results" MODIFIED="1542607562897" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -44,67 +683,73 @@
     <favorites_list name="cleaned_workflow" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.87375414">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/project_main.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="118">
-                  <caret line="356" column="27" selection-start-line="356" selection-start-column="27" selection-end-line="356" selection-end-column="27" />
-                  <folding>
-                    <element signature="e#0#47#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/config.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="324">
-                  <caret line="45" column="42" selection-start-line="45" selection-start-column="42" selection-end-line="45" selection-end-column="42" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/filter.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1410">
-                  <caret line="54" column="54" selection-start-line="54" selection-start-column="54" selection-end-line="54" selection-end-column="54" />
-                  <folding>
-                    <element signature="e#0#34#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/config.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="990">
-                  <caret line="33" column="23" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/external_scripts/pipeline/convergePSSM.h">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="30">
-                  <caret line="296" column="16" selection-start-line="296" selection-start-column="5" selection-end-line="296" selection-end-column="16" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/project_main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="426">
+              <caret line="210" column="21" selection-start-line="210" selection-start-column="21" selection-end-line="210" selection-end-column="21" />
+              <folding>
+                <element signature="e#0#47#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/create_input_seqs.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cluster/rename_cluster_logos.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cluster/assemble_cluster_output.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1401">
+              <caret line="71" column="45" selection-start-line="71" selection-start-column="45" selection-end-line="71" selection-end-column="45" />
+              <folding>
+                <element signature="e#0#48#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cluster/generate_cluster_params.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="351">
+              <caret line="42" column="27" selection-start-line="42" selection-start-column="27" selection-end-line="42" selection-end-column="27" />
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/config.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1050">
+              <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -116,16 +761,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>False</find>
-      <find>screen_pssm</find>
-      <find>self.cl</find>
-      <find>self._dir.pssm</find>
-      <find>merge_pssm</find>
-      <find>os.remove</find>
-      <find>utils</find>
-      <find>cluster_get_profiles</find>
-      <find>python</find>
-      <find>filter_conver</find>
       <find>post_corr</find>
       <find>diviso</find>
       <find>self.dir.meme</find>
@@ -146,6 +781,16 @@
       <find>30</find>
       <find>random_index_30</find>
       <find>seeds_divisor</find>
+      <find>build_pssm</find>
+      <find>rename_logos</find>
+      <find>delete_intermediate</find>
+      <find>rename</find>
+      <find>cluster_</find>
+      <find>descrip</find>
+      <find>print</find>
+      <find>meme_rewritter</find>
+      <find>sys.exit</find>
+      <find>remove</find>
     </findStrings>
     <replaceStrings>
       <replace>False</replace>
@@ -173,21 +818,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/tes.py" />
-        <option value="$PROJECT_DIR$/external_scripts/dhcl/executables/everything.py" />
-        <option value="$PROJECT_DIR$/src/__init__.py" />
-        <option value="$PROJECT_DIR$/../assignment_6-master/assignment_6-master_mine/hmm_submission.py" />
-        <option value="$PROJECT_DIR$/src/mast_remove_profiles_using_pkl.py" />
-        <option value="$PROJECT_DIR$/ttt.py" />
-        <option value="$PROJECT_DIR$/tt.py" />
-        <option value="$PROJECT_DIR$/test_cluster.py" />
-        <option value="$PROJECT_DIR$/dd.py" />
-        <option value="$PROJECT_DIR$/src/process_dhcl_output.py" />
-        <option value="$PROJECT_DIR$/src/remove_motifs_with_low_evalue.py" />
-        <option value="$PROJECT_DIR$/sss.py" />
-        <option value="$PROJECT_DIR$/src/split_motifs_into_cluster_motifs.py" />
-        <option value="$PROJECT_DIR$/src/tes.py" />
-        <option value="$PROJECT_DIR$/src/create_bash_script_for_meme.py" />
         <option value="$PROJECT_DIR$/src/run_meme_on_dhcl_loops.py" />
         <option value="$PROJECT_DIR$/src/meme_merger.py" />
         <option value="$PROJECT_DIR$/src/reduce_dhcl_test.py" />
@@ -209,7 +839,6 @@
         <option value="$PROJECT_DIR$/src/screen_motif_evalue.py" />
         <option value="$PROJECT_DIR$/filter.py" />
         <option value="$PROJECT_DIR$/src/assemble_cluster_output.py" />
-        <option value="$PROJECT_DIR$/src/utils.py" />
         <option value="$PROJECT_DIR$/src/split_motifs_by_cluster.py" />
         <option value="$PROJECT_DIR$/src/generate_cluster_params.py" />
         <option value="$PROJECT_DIR$/cluster.py" />
@@ -218,18 +847,34 @@
         <option value="$PROJECT_DIR$/src/reduce_dhcl_for_test.py" />
         <option value="$PROJECT_DIR$/src/shrink_input_for_test.py" />
         <option value="$PROJECT_DIR$/src/filter/mast_remove_profiles.py" />
-        <option value="$PROJECT_DIR$/src/filter/remove_noncentroid_profiles.py" />
         <option value="$PROJECT_DIR$/create_short_seqs.py" />
-        <option value="$PROJECT_DIR$/src/filter.py" />
-        <option value="$PROJECT_DIR$/src/config.py" />
         <option value="$PROJECT_DIR$/external_scripts/pipeline/convergePSSM.c" />
+        <option value="$PROJECT_DIR$/external_scripts/dhcl/executables/dhcl/hprep.py" />
+        <option value="$PROJECT_DIR$/external_scripts/dhcl/executables/everything.py" />
+        <option value="$PROJECT_DIR$/../actual_again/external_scripts/dhcl/executables/dhcl/hprep.py" />
+        <option value="$PROJECT_DIR$/../actual_again/src/config.py" />
+        <option value="$PROJECT_DIR$/../actual_again/external_scripts/dhcl/executables/everything.py" />
+        <option value="$PROJECT_DIR$/../actual_again/src/cluster.py" />
+        <option value="$PROJECT_DIR$/../actual_again/src/cluster/assemble_cluster_output.py" />
+        <option value="$PROJECT_DIR$/../actual_again/project_main.py" />
+        <option value="$PROJECT_DIR$/../actual_again/src/cluster/split_motifs_by_cluster.py" />
+        <option value="$PROJECT_DIR$/../folder2/project_main.py" />
+        <option value="$PROJECT_DIR$/src/cluster/generate_cluster_params.py" />
+        <option value="$PROJECT_DIR$/src/filter.py" />
+        <option value="$PROJECT_DIR$/src/filter/remove_noncentroid_profiles.py" />
+        <option value="$PROJECT_DIR$/src/cluster.py" />
+        <option value="$PROJECT_DIR$/src/cluster/assemble_cluster_output.py" />
+        <option value="$PROJECT_DIR$/src/cluster/ee.py" />
+        <option value="$PROJECT_DIR$/src/cluster/split_motifs_by_cluster.py" />
+        <option value="$PROJECT_DIR$/src/utils.py" />
+        <option value="$PROJECT_DIR$/src/config.py" />
         <option value="$PROJECT_DIR$/project_main.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="750" />
-    <option name="y" value="157" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="231" />
+    <option name="y" value="27" />
     <option name="width" value="950" />
     <option name="height" value="741" />
   </component>
@@ -282,7 +927,31 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="cleaned_workflow" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cleaned_workflow" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cleaned_workflow" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cleaned_workflow" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cleaned_workflow" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cleaned_workflow" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="cluster" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="jump to&#9;ACTION&#9;JumpToColorsAndFonts" />
@@ -333,28 +1002,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="create_input_seqs (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="merged_src" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/create_input_seqs.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="create_input_seqs (2)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="merged_src" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -377,7 +1024,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="create_input_seqs" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="ee" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="merged_src" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -385,12 +1032,34 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="/media/melvin/My Book2/Backup/Backup/Files/Windows/Work_backup/Enolase_mast_process" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/cluster" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/cluster/ee.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="project_main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="merged_src" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../actual_again" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="/media/melvin/My Book2/Backup/Backup/Files/Windows/Work_backup/Enolase_mast_process/create_input_seqs.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../actual_again/project_main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -423,18 +1092,18 @@
     </configuration>
     <list>
       <item itemvalue="Python.project_main" />
-      <item itemvalue="Python.create_input_seqs" />
-      <item itemvalue="Python.create_input_seqs (1)" />
       <item itemvalue="Python.create_input_seqs (2)" />
       <item itemvalue="Python.converge2meme" />
+      <item itemvalue="Python.project_main (1)" />
+      <item itemvalue="Python.ee" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.project_main" />
+        <item itemvalue="Python.ee" />
+        <item itemvalue="Python.project_main (1)" />
         <item itemvalue="Python.converge2meme" />
         <item itemvalue="Python.create_input_seqs (2)" />
-        <item itemvalue="Python.create_input_seqs (1)" />
-        <item itemvalue="Python.create_input_seqs" />
       </list>
     </recent_temporary>
   </component>
@@ -460,22 +1129,28 @@
       <workItem from="1543592957691" duration="3631000" />
       <workItem from="1543647378933" duration="7501000" />
       <workItem from="1543663533531" duration="2278000" />
+      <workItem from="1543752239068" duration="1423000" />
+      <workItem from="1543763332130" duration="5762000" />
+      <workItem from="1543791848248" duration="666000" />
+      <workItem from="1543793666994" duration="10000" />
+      <workItem from="1543793679129" duration="3685000" />
+      <workItem from="1543802732299" duration="5709000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="119642000" />
+    <option name="totallyTimeSpent" value="136897000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="750" y="157" width="950" height="741" extended-state="0" />
+    <frame x="0" y="25" width="1920" height="990" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49945235" weight="0.36761487" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49945235" visible="true" weight="0.18089648" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.50054765" side_tool="true" weight="0.3569904" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32894737" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.34063527" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.20043811" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39868566" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -520,42 +1195,8 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/remove_motifs_with_low_evalue.py" />
-    <entry file="file://$PROJECT_DIR$/src/meme_merger.py" />
-    <entry file="file://$PROJECT_DIR$/src/run_meme_on_dhcl_loops.py" />
-    <entry file="file://$PROJECT_DIR$/src/reduce_dhcl_test.py" />
-    <entry file="file://$PROJECT_DIR$/src/split_motifs_into_cluster_motifs.py" />
-    <entry file="file://$PROJECT_DIR$/src/test.py" />
-    <entry file="file://$PROJECT_DIR$/src/test_python.py" />
-    <entry file="file://$PROJECT_DIR$/src/tes.py" />
-    <entry file="file://$PROJECT_DIR$/src/process_dhcl_output_meme.py" />
-    <entry file="file://$PROJECT_DIR$/src/mast_remove_profiles_using_pkl.py" />
-    <entry file="file://$PROJECT_DIR$/src/cluster_final.py" />
-    <entry file="file://$PROJECT_DIR$/src/memefile_cleaner.py" />
-    <entry file="file:///media/melvin/My Book2/Backup/Backup/Files/Windows/Work_backup/Enolase_mast_process/merge_fasta.py" />
-    <entry file="file:///media/melvin/My Book2/Backup/Backup/Files/Windows/Work_backup/Enolase_mast_process/create_input_seqs.py" />
-    <entry file="file://$PROJECT_DIR$/create_input_seqs.py" />
-    <entry file="file://$PROJECT_DIR$/seeds_to_converge_input.py" />
-    <entry file="file://$PROJECT_DIR$/external_scripts/pipeline/converge2meme.py" />
-    <entry file="file://$PROJECT_DIR$/src/rename_cluster_logos.py" />
-    <entry file="file://$PROJECT_DIR$/src/run_meme_on_cons.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/remove_noncentroid_profiles.py" />
-    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/shutil.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="119" selection-start-line="119" selection-end-line="119" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/shutil.py" />
     <entry file="file://$PROJECT_DIR$/src/mast_remove_profiles.py" />
     <entry file="file://$PROJECT_DIR$/src/screen_motif_entropy.py" />
     <entry file="file://$PROJECT_DIR$/src/screen_motif_evalue.py" />
@@ -574,26 +1215,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/filter/remove_noncentroid_profiles.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="5" column="24" lean-forward="true" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/create_short_seqs.py" />
     <entry file="file://$PROJECT_DIR$/src/shrink_input_for_test.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -606,20 +1227,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="13" column="30" lean-forward="true" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/converge2meme.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="102" column="40" selection-start-line="102" selection-start-column="40" selection-end-line="102" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/create_input_seqs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
@@ -666,23 +1273,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/filter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1410">
-          <caret line="54" column="54" selection-start-line="54" selection-start-column="54" selection-end-line="54" selection-end-column="54" />
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/external_scripts/pipeline/convergePSSM.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="296" column="16" selection-start-line="296" selection-start-column="5" selection-end-line="296" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/external_scripts/pipeline/convergePSSM.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-14">
@@ -690,17 +1280,217 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/external_scripts/pipeline/convergePSSM.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="304" column="12" selection-start-line="296" selection-start-column="5" selection-end-line="296" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/external_scripts/dhcl/executables/everything.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="3" column="31" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
+          <folding>
+            <element signature="e#216#239#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../actual_again/external_scripts/dhcl/executables/dhcl/hprep.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../actual_again/external_scripts/dhcl/executables/everything.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="13" column="34" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
+          <folding>
+            <element signature="e#216#239#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../actual_again/src/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="33" column="53" selection-start-line="33" selection-start-column="53" selection-end-line="33" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/external_scripts/dhcl/executables/dhcl/hprep.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1020">
+          <caret line="34" column="20" lean-forward="true" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
+          <folding>
+            <element signature="e#430#459#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../actual_again/project_main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2181">
+          <caret line="355" column="25" lean-forward="true" selection-start-line="355" selection-start-column="25" selection-end-line="355" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../actual_again/src/cluster.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="801">
+          <caret line="33" column="21" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../actual_again/src/cluster/split_motifs_by_cluster.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="12" column="55" selection-start-line="12" selection-start-column="55" selection-end-line="12" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../actual_again/src/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="801">
+          <caret line="30" column="52" selection-start-line="30" selection-start-column="52" selection-end-line="30" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../actual_again/src/cluster/assemble_cluster_output.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="801">
+          <caret line="68" column="55" selection-start-line="68" selection-start-column="55" selection-end-line="68" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../folder2/project_main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="71" column="41" lean-forward="true" selection-start-line="71" selection-start-column="41" selection-end-line="71" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../enolase/project_main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2160">
+          <caret line="77" column="23" selection-start-line="77" selection-start-column="23" selection-end-line="77" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../enolase/src/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1089">
+          <caret line="13" column="30" lean-forward="true" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/converge2meme.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="17" column="52" selection-start-line="17" selection-start-column="52" selection-end-line="17" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cluster/assemble_cluster_output.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1401">
+          <caret line="71" column="45" selection-start-line="71" selection-start-column="45" selection-end-line="71" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cluster/rename_cluster_logos.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/filter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="557">
+          <caret line="113" column="10" selection-start-line="113" selection-start-column="10" selection-end-line="113" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cluster.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="76" column="27" selection-start-line="76" selection-start-column="27" selection-end-line="76" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cluster/ee.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/filter/remove_noncentroid_profiles.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="14" column="41" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cluster/split_motifs_by_cluster.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="10" column="38" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cluster/generate_cluster_params.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="42" column="27" selection-start-line="42" selection-start-column="27" selection-end-line="42" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/create_input_seqs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/config.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="45" column="42" selection-start-line="45" selection-start-column="42" selection-end-line="45" selection-end-column="42" />
+        <state relative-caret-position="-1050">
+          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/project_main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="356" column="27" selection-start-line="356" selection-start-column="27" selection-end-line="356" selection-end-column="27" />
+        <state relative-caret-position="426">
+          <caret line="210" column="21" selection-start-line="210" selection-start-column="21" selection-end-line="210" selection-end-column="21" />
           <folding>
             <element signature="e#0#47#0" expanded="true" />
           </folding>

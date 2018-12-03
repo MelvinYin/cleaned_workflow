@@ -53,8 +53,7 @@ if __name__=='__main__':
     if opts.dir:
         if not os.path.isdir(opts.dir):
             raise IOError, ''' Isn\'t a directory: %s ''' % opts.dir
-        orig_fnames = [ os.path.join(opts.dir, fname) for fname in
-                        os.listdir(opts.dir) if opts.suffix is None or fname.endswith(opts.suffix) ]
+        orig_fnames = [ os.path.join(opts.dir, fname) for fname in os.listdir(opts.dir) if opts.suffix is None or fname.endswith(opts.suffix) ]
     elif opts.listfname is None:
         orig_fnames = [ a for a in args]
     else:

@@ -1,0 +1,134 @@
+
+Illegal character `o' in sequence NSARTUniprot|None|EFDID|3794649|DOMAIN.
+Change alphabet or fix data file.
+
+Illegal character `o' in sequence NSARTUniprot|None|EFDID|3794649|DOMAIN.
+Change alphabet or fix data file.
+
+Illegal character `o' in sequence NSARTUniprot|None|EFDID|3794649|DOMAIN.
+Change alphabet or fix data file.
+
+Illegal character `o' in sequence NSARTUniprot|None|EFDID|3794649|DOMAIN.
+Change alphabet or fix data file.
+
+Illegal character `o' in sequence NSARTUniprot|None|EFDID|3794649|DOMAIN.
+Change alphabet or fix data file.
+
+Illegal character `o' in sequence NSARTUniprot|None|EFDID|3794649|DOMAIN.
+Change alphabet or fix data file.
+
+Illegal character `o' in sequence NSARTUniprot|None|EFDID|3794649|DOMAIN.
+Change alphabet or fix data file.
+-------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code.. Per user-direction, the job has been aborted.
+-------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[22877,1],0]
+  Exit code:    1
+--------------------------------------------------------------------------
+
+Illegal character `o' in sequence NSARTUniprot|None|EFDID|3794649|DOMAIN.
+Change alphabet or fix data file.
+
+Illegal character `o' in sequence NSARTUniprot|None|EFDID|3794649|DOMAIN.
+Change alphabet or fix data file.
+
+Illegal character `o' in sequence NSARTUniprot|None|EFDID|3794649|DOMAIN.
+Change alphabet or fix data file.
+
+Illegal character `o' in sequence NSARTUniprot|None|EFDID|3794649|DOMAIN.
+Change alphabet or fix data file.
+
+Illegal character `o' in sequence NSARTUniprot|None|EFDID|3794649|DOMAIN.
+Change alphabet or fix data file.
+
+Illegal character `o' in sequence NSARTUniprot|None|EFDID|3794649|DOMAIN.
+Change alphabet or fix data file.
+
+Illegal character `o' in sequence NSARTUniprot|None|EFDID|3794649|DOMAIN.
+Change alphabet or fix data file.
+-------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code.. Per user-direction, the job has been aborted.
+-------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[23149,1],0]
+  Exit code:    1
+--------------------------------------------------------------------------
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.0.1 (Release date: Thu Jul 26 17:15:19 2018 -0700)
+
+For further information on how to interpret these results or to get
+a copy of the MEME software please access http://meme-suite.org .
+
+This file may be used as input to the MAST algorithm for searching
+sequence databases for matches to groups of motifs.  MAST is available
+for interactive use and downloading at http://meme-suite.org .
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= files/input_seqs.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACDEFGHIKLMNPQRSTVWY
+
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme files/input_seqs.fasta -text -protein -w 30 -nmotifs 2 -nostatus 
+
+model:  mod=         zoops    nmotifs=         2    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+width:  minw=           30    maxw=           30
+nsites: minsites=        2    maxsites=    33461    wnsites=       0.8
+theta:  spmap=         pam    spfuzz=        120
+em:     prior=       megap    b=        6.67329e+07    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=        13347854    N=           33461
+sample: seed=            0    hsfrac=          0
+        searchsize= 100000    norand=         no    csites=       1000
+Dirichlet mixture priors file: prior30.plib
+Letter frequencies in dataset:
+A 0.113 C 0.0105 D 0.0638 E 0.0702 F 0.0297 G 0.0889 H 0.0205 I 0.0614 K 0.0495 
+L 0.0963 M 0.0246 N 0.036 P 0.0427 Q 0.0317 R 0.0509 S 0.0508 T 0.0505 V 0.0702 
+W 0.0129 Y 0.0257 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.113 C 0.0105 D 0.0638 E 0.0702 F 0.0297 G 0.0889 H 0.0205 I 0.0614 K 0.0495 
+L 0.0963 M 0.0246 N 0.036 P 0.0427 Q 0.0317 R 0.0509 S 0.0508 T 0.0505 V 0.0702 
+W 0.0129 Y 0.0257 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************

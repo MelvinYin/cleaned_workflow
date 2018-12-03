@@ -11,8 +11,10 @@ dhcl requires p2.7 to build and run, so that will need to be installed as a sepa
 # Skip Start
 If using anaconda, a p2.7 env can be added by:
 conda create --name dhcl_p python=2.7
-The new conda env will be called dhcl_p. If using your own env, please change the exec path in the build process below, and in config.py in src. 
-If conda does not work, try source instead.
+conda activate dhcl_p
+conda install biopython
+conda deactivate
+The new conda env will be called dhcl_p. If using your own env, please change the exec path in the build process below, and in config.py in src. Remember to install biopython as well, tried on 1.70. 
 
 Once the new env is installed, find the path to the python exec, it is usually in the form /home/<YOUR_USR>/anaconda3/envs/dhcl_p/bin/python, depending on where your anaconda is installed. 
 # Skip End
@@ -23,10 +25,12 @@ First, cd to the project folder/external_scripts, there should be three zip file
 
 > Build meme
 tar xzf meme-5.0.1_1.tar.gz
-cd meme-5.0.1
+mv meme-5.0.1 meme
+cd meme
 ./configure --prefix=$PWD --with-url=http://meme-suite.org/ --enable-build-libxml2 --enable-build-libxslt
 make
 make install
+mv src/ceqlogo bin/ceqlogo
 cd ..
 
 > Build converge
@@ -41,11 +45,26 @@ cd dhcl
 /home/<YOUR_USR>/anaconda3/envs/dhcl_p/bin/python build.py
 cd ..
 
+Edits to dhcl:
+1. everything.py
+delete <from dhcl.pdb import *>
+add
+<
+import warnings
+from Bio.PDB.PDBExceptions import PDBConstructionWarning
+warnings.simplefilter("ignore", PDBConstructionWarning)
+>
+2. executables/hprep.py
+change:
+from Bio.PDB import to_one_letter_code
+to
+from Bio.Data.SCOPData import protein_letters_3to1 as to_one_letter_code
+
 The build process is now complete. The remainder of the program are done in python, and does not require compilation.
 # BUILD END
 
 # Set Parameters
-Next, if this is not done, go to config.py and edit p2_7_env such that it points to your p2.7 exec. If you are not sure, simply paste the path into your bash and see if a python console is launched. 
+Next, if this is not done, go to config.py and edit p2_7_env such that it points to your dhcl_p exec. If you are not sure, simply paste the path into your bash and see if a python console is launched. 
 
 While there, change num_processor used if you wish. This affects runtime for the motif-finding part (both meme and converge). Memory use also increases at least linearly for meme at least, so do adjust accordingly. 
 
@@ -64,6 +83,8 @@ For now, labelled superfamily sequence data is used, to assess classification ac
 For the former, go to sfld website, and download the sequence .fasta files for each family. Label the files with their family initials (Enolase => EL.fasta), then place them in files/sfld_datasets.
 
 For the latter, go to sfld website, and copy a few pdb IDs from as many families as possible in the superfamily. Then, go to pdb website and download the .pdb and corresponding .fasta files. Move the .pdb files into input_pdb and fasta into input_fasta. 
+
+When testing, one can reduce the number of .pdb files in the pdb folder, so dhcl doesn't have to process all of them. The fasta files can remain, only the relevant ones will be called. 
 # Add End
 
 # Run
@@ -72,6 +93,8 @@ The program requires an env of p3.6+. Activate the env, go to project folder (wi
 # Ignore subsequent if the above works for you, and if you're just using it as it is. 
 
 # Notes
+BUG: Logos currently don't correspond to the combination profiles when using MEME.
+
 > Edits made to external_scripts are:
 In converge_pssm.c, change delta=30 in all occurrences, so profiles are generated in blocks of 30, without overlap.
 
@@ -93,6 +116,12 @@ Reason why pipeline needs to be cd-ed in to run using bash, instead of running f
 > dhcl
 There are times when dhcl simply returns very few loops (2-4 instead of usual ~20) for a particular structure, no idea why and not that interested in finding out, just take note when running with very few .pdb files. 
 
+Ediitng dhcl is necessary because dhcl is apparently written for a version of Biopython I cannot install. Don't bother attempting to get it to work as well, biopython apparently changes its api even at the 0.01 versioning level, making it troublesome to find out when the change actually takes place.
+
+Be careful when installing older versions of biopython as well, I have not replicated this but doing a pip install biopython==1.60 on a p3 conda env leads to a successful install (not supposed to since biopython should work only on p2=>p3.5, if documentation is accurate), but this leads to a corruption of conda paths, and trying to call conda leads to ImportError on conda.cli. This necessitates a reinstallation of the entire conda and not only that particular env. 
+
+Manual editing of dhcl is a temporary measure, once it is verified that dhcl can be pre-built, or that the changes can be implemented in src without needing to change the code post-build, the edits can be removed. 
+
 > meme
 mast output changes in mast.txt depending on how many input sequences are used. The additional content (at low seq numbers) are irrelevant to us, and are cropped out in clean_pssm.py.
 
@@ -100,6 +129,12 @@ Instructions as per meme_suite documentation in building, is to run make test in
 
 > Generic
 gcc required for meme_suite, pipeline, and possibly dhcl compilation, not yet tested on a fresh Ubuntu to see which minimal version works. pipeline requires gcc, c99, known to fail on Visual and/or Clang. 
+
+> REQUIREMENT LIST
+main: p3.7
+dhcl_p: p2.7
+conda biopython==1.70
+
 
 
 

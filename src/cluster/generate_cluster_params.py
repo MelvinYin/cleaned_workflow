@@ -24,7 +24,6 @@ def parse_mast_txt(input_fname):
                 name, remainder = line.split(" ", maxsplit=1)
                 combi = re.findall("\[[0-9]+\]", remainder)
                 combi_int = tuple([int(term[1:-1]) for term in combi])
-
                 name_combi[combi_int] += name + " "
     name_combi = dict(name_combi)
     return name_combi
