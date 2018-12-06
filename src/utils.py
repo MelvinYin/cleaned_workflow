@@ -15,7 +15,7 @@ def move_replace(input_path, output_dir):
     shutil.move(input_path, output_dir)
     return
 
-def meme_rewritter(profiles, fname, to_keep=True, output=None):
+def meme_rewritter(profiles, fname, to_keep=True, output=None, sub=False):
     if output is None:
         output = fname
     motif_count = 0
@@ -35,11 +35,23 @@ def meme_rewritter(profiles, fname, to_keep=True, output=None):
                 elif not to_keep and motif_count in profiles:
                     deleting = True
                     continue
-            line = re.sub("MEME-[0-9]+", "MEME-{}".format(motif_count),
-                          line)
+            if sub:
+                line = re.sub("MEME-[0-9]+", "MEME-{}".format(motif_count), line)
             to_write.append(line)
 
     with open(output, 'w') as wfile:
         for line in to_write:
             wfile.write(line)
+    return
+
+def check_fasta_validity(filename):
+    assert os.path.isfile(filename)
+    with open(filename) as file:
+        try:
+            first_line = next(file)
+        except StopIteration:
+            print(f"Empty fasta file in {filename}")
+            raise
+        assert first_line.startswith(">")
+        assert first_line.strip()[1:]
     return

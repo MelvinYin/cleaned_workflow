@@ -17,7 +17,7 @@ sys.path.append(filter_)
 from cluster import Cluster
 from config import Directory
 from filter import Filter
-from utils import move_replace
+from utils import move_replace, check_fasta_validity
 
 ExecIntDir = namedtuple(
     'ExecIntDir', 'dhcl_output consensus_seeds converge_seeds meme_full '
@@ -52,13 +52,13 @@ class Executor:
     def set_switches(self):
         switches = OrderedDict()
         # Get input_seqs
-        switches['MERGE_INPUT'] = (False, self.merge_input)
-        switches['SHRINK_INPUT'] = (False, self.shrink_input)
-        switches['CREATE_SHORT_SEQS'] = (False, self.create_short_seqs)
+        switches['MERGE_INPUT'] = (True, self.merge_input)
+        switches['SHRINK_INPUT'] = (True, self.shrink_input)
+        switches['CREATE_SHORT_SEQS'] = (True, self.create_short_seqs)
         # Get consensus_loops
-        switches['RUN_DHCL'] = (False, self.run_dhcl)
-        switches['EXTRACT_CONSENSUS'] = (False, self.extract_consensus)
-        switches['REDUCE_CONSENSUS'] = (False, self.reduce_consensus)
+        switches['RUN_DHCL'] = (True, self.run_dhcl)
+        switches['EXTRACT_CONSENSUS'] = (True, self.extract_consensus)
+        switches['REDUCE_CONSENSUS'] = (True, self.reduce_consensus)
         # Get PSSM using:
         # Meme
         switches['BUILD_PSSM'] = (False, self.build_pssm)
@@ -92,13 +92,12 @@ class Executor:
     def shrink_input(self):
         # Input: self.dir.input_seqs
         # Output: self.dir.input_seqs
-        assert os.path.isfile(self.dir.input_seqs)
         if self.dir.seq_divisor:
             from shrink_input_for_test import main
             kwargs = dict(seqs=self.dir.input_seqs, output=self.dir.input_seqs,
                           divisor=self.dir.seq_divisor)
             main(kwargs)
-        assert os.path.isfile(self.dir.input_seqs)
+        check_fasta_validity(self.dir.input_seqs)
         return
 
     def create_short_seqs(self):
@@ -110,7 +109,7 @@ class Executor:
                       output=self._dir.short_seq,
                       length=self._dir.short_seq_len)
         main(kwargs)
-        assert os.path.isfile(self._dir.short_seq)
+        check_fasta_validity(self._dir.short_seq)
         return
 
     def run_dhcl(self):
