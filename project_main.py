@@ -15,7 +15,6 @@ sys.path.append(filter_)
 
 from cluster import Cluster
 from config import Directory
-from filter import Filter
 from utils import move_replace, check_fasta_validity
 
 ExecIntDir = namedtuple(
@@ -51,29 +50,24 @@ class Executor:
     def set_switches(self):
         switches = OrderedDict()
         # Get input_seqs
-        switches['MERGE_INPUT'] = (True, self.merge_input)
-        switches['SHRINK_INPUT'] = (True, self.shrink_input)
-        switches['CREATE_SHORT_SEQS'] = (True, self.create_short_seqs)
+        switches['MERGE_INPUT'] = (False, self.merge_input)
+        switches['SHRINK_INPUT'] = (False, self.shrink_input)
+        switches['CREATE_SHORT_SEQS'] = (False, self.create_short_seqs)
         # Get consensus_loops
-        switches['RUN_DHCL'] = (True, self.run_dhcl)
-        switches['EXTRACT_CONSENSUS'] = (True, self.extract_consensus)
-        switches['REDUCE_CONSENSUS'] = (True, self.reduce_consensus)
+        switches['RUN_DHCL'] = (False, self.run_dhcl)
+        switches['EXTRACT_CONSENSUS'] = (False, self.extract_consensus)
+        switches['REDUCE_CONSENSUS'] = (False, self.reduce_consensus)
         # Get PSSM using:
         # Meme
-        switches['BUILD_PSSM'] = (True, self.build_pssm)
-        switches['BUILD_STARTER'] = (True, self.build_starter)
-        switches['CLEAN_PSSM'] = (True, self.clean_pssm)
+        switches['BUILD_PSSM'] = (False, self.build_pssm)
+        switches['BUILD_STARTER'] = (False, self.build_starter)
+        switches['CLEAN_PSSM'] = (False, self.clean_pssm)
         switches['MERGE_PSSM'] = (True, self.merge_pssm)
-        switches['SCREEN_PSSM'] = (True, self.screen_pssm)
-        # Or converge
-        switches['BUILD_CONVERGE_SEEDS'] = (False, self.build_converge_seeds)
-        switches['RUN_CONVERGE'] = (False, self.run_converge)
-        switches['TO_MEME_FORMAT'] = (False, self.to_meme_format)
-        switches['SCREEN_CONVERGE_PSSM'] = (False, self.screen_converge_pssm)
+        switches['SCREEN_PSSM'] = (False, self.screen_pssm)
         # Get combi
-        switches['ASSEMBLE_COMBI'] = (True, self.assemble_combi)
-        switches['CLUSTER'] = (True, self.cluster)
-        switches['DELETE_INTERMEDIATE'] = (True, self.delete_intermediate)
+        switches['ASSEMBLE_COMBI'] = (False, self.assemble_combi)
+        switches['CLUSTER'] = (False, self.cluster)
+        switches['DELETE_INTERMEDIATE'] = (False, self.delete_intermediate)
         return switches
 
     def merge_input(self):
@@ -150,84 +144,6 @@ class Executor:
         return
 
 ################################################
-    # Converge
-    def build_converge_seeds(self):
-        # Input: self._dir.consensus_seeds
-        # Output: self._dir.converge_seeds
-        assert os.path.isfile(self._dir.consensus_seeds)
-        from seeds_to_converge_input import main
-        kwargs = dict(seed_seqs=self._dir.consensus_seeds,
-                      output=self._dir.converge_seeds)
-        main(kwargs)
-        assert os.path.isfile(self._dir.converge_seeds)
-        return
-
-    def run_converge(self):
-        # Input: self._dir.converge_seeds
-        # Output: self._dir.pssm | self._dir.converge_composition
-        assert os.path.isfile(self._dir.converge_seeds)
-
-        seeds = self._dir.converge_seeds.rsplit("/", maxsplit=1)[-1]
-        input_seqs = self.dir.input_seqs.rsplit("/", maxsplit=1)[-1]
-        composition = self.dir.converge_composition.rsplit("/", maxsplit=1)[-1]
-        converge_exec = self.dir.converge_exec.rsplit("/", maxsplit=1)[-1]
-
-        shutil.copy(self._dir.converge_seeds, self.dir.converge_dir)
-        shutil.copy(self.dir.input_seqs, self.dir.converge_dir)
-
-        command = f"cd {self.dir.converge_dir} && " \
-            f"mpirun -allow-run-with-root -np {self.dir.num_p} " \
-            f"./{converge_exec} -B -E 1 -r 1 -f 1 -c {composition} " \
-            f"-i {seeds} -p {input_seqs}"
-        subprocess.run(command, shell=True, executable=self.dir.bash_exec,
-                       stdout=subprocess.DEVNULL)
-        if os.path.isfile(self._dir.pssm):
-            self.to_trash(self._dir.pssm)
-        if os.path.isfile(self._dir.converge_composition):
-            self.to_trash(self._dir.converge_composition)
-        shutil.move(self.dir.converge_output, self._dir.pssm)
-        shutil.move(self.dir.converge_composition,
-                    self._dir.converge_composition)
-        self.to_trash(self.dir.converge_discard)
-        self.to_trash(f"{self.dir.converge_dir}/{seeds}")
-        self.to_trash(f"{self.dir.converge_dir}/{input_seqs}")
-        if __debug__:
-            shutil.copy(self._dir.pssm, self._dir.converge_pssm)
-        assert os.path.isfile(self._dir.pssm)
-        assert os.path.isfile(self._dir.converge_composition)
-        return
-
-    def to_meme_format(self):
-        # Input: self._dir.pssm | self._dir.converge_composition
-        # Output: self._dir.pssm
-        assert os.path.isfile(self._dir.pssm)
-        assert os.path.isfile(self._dir.converge_composition)
-        from converge2meme import main
-        kwargs = dict(input_pssm=self._dir.pssm,
-                      composition=self._dir.converge_composition,
-                      output=self._dir.pssm)
-        main(kwargs)
-        if __debug__:
-            shutil.copy(self._dir.pssm, self._dir.converge_meme)
-        assert os.path.isfile(self._dir.pssm)
-        return
-
-    def screen_converge_pssm(self):
-        # Input: self._dir.pssm
-        # Output: self._dir.pssm
-        assert os.path.isfile(self._dir.pssm)
-        from filter import Filter
-        filter_dir = Directory.filter_dir._replace(
-            memefile=self._dir.pssm,
-            short_seq=self._dir.short_seq)
-        conv_filter = Filter(filter_dir)
-        conv_filter.run(to_run=['correlated', 'noncombi'])
-        if __debug__:
-            shutil.copy(self._dir.pssm, self._dir.meme_cleaned)
-        assert os.path.isfile(self._dir.pssm)
-        return True
-
-################################################
     # Meme
     def build_pssm(self):
         # Input: self._dir.consensus_seeds | self.dir.input_seqs
@@ -297,6 +213,7 @@ class Executor:
         #        self._dir.short_seq
         # Output: self._dir.meme_cleaned
         assert os.path.isfile(self._dir.pssm)
+        from filter import Filter
         filter_dir = Directory.filter_dir._replace(
             memefile=self._dir.pssm,
             short_seq=self._dir.short_seq)

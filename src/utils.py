@@ -15,6 +15,36 @@ def move_replace(input_path, output_dir):
     shutil.move(input_path, output_dir)
     return
 
+def meme_rewritter_for_meme(profiles, fname, to_keep=True, output=None, sub=False):
+    if output is None:
+        output = fname
+    motif_count = 0
+    to_write = []
+    with open(fname, 'r') as rfile:
+        deleting = False
+        for i, line in enumerate(rfile):
+            if line.startswith("MOTIF") and deleting:
+                deleting = False
+            if deleting:
+                continue
+            if line.startswith("MOTIF"):
+                motif_count += 1
+                if to_keep and motif_count not in profiles:
+                    deleting = True
+                    continue
+                elif not to_keep and motif_count in profiles:
+                    deleting = True
+                    continue
+            if sub:
+                line = re.sub("MEME-[0-9]+", "MEME-{}".format(motif_count), line)
+            to_write.append(line)
+
+    with open(output, 'w') as wfile:
+        for line in to_write:
+            wfile.write(line)
+    return
+
+
 def meme_rewritter(profiles, fname, to_keep=True, output=None, sub=False):
     if output is None:
         output = fname
@@ -86,15 +116,17 @@ def meme_format_parser(filename):
     start = []
     pssms = []
     end = []
+    at_start = True
     at_pssm = False
     at_end = False
     with open(filename, 'r') as file:
         current_pssm = []
         for line in file:
             # Check if we are in start
-            if line.startswith("MOTIF") and not at_pssm:
+            if line.startswith("MOTIF") and at_start:
+                at_start = False
                 at_pssm = True
-            if not at_pssm:
+            if at_start:
                 start.append(line)
 
             # Split into pssms
@@ -102,21 +134,42 @@ def meme_format_parser(filename):
                 assert len(current_pssm) > 30
                 pssms.append(current_pssm)
                 current_pssm = [line]
+            elif line.startswith("Stopped"):
+                at_end = True
+                at_pssm = False
+                assert len(current_pssm) > 30
+                pssms.append(current_pssm)
             elif at_pssm:
                 current_pssm.append(line)
 
             # Check if we are at end
-            if line.startswith("Stopped"):
-                at_pssm = False
-                assert len(current_pssm) > 30
-                pssms.append(current_pssm)
-                at_end = True
             if at_end:
                 end.append(line)
     assert start
     assert pssms
     assert end
     return start, pssms, end
+
+def meme_pssm_get_evalue(pssm):
+    evalue = None
+    for line in pssm:
+        if line.startswith("MOTIF"):
+            evalue = re.search("E-value = ([0-9]+[\.]?[0-9]?e[+-][0-9]+)", line)
+            evalue = float(evalue.group(1))
+            break
+    # evalue can be == 0 so avoid assert evalue
+    assert evalue is not None
+    return evalue
+
+def meme_pssm_get_entropy_bits(pssm):
+    entropy = None
+    for line in pssm:
+        if re.match("\(([0-9]+\.[0-9]+) bits\)", line):
+            entropy = float(re.match("\(([0-9]+\.[0-9]+) bits\)",line)
+                            .group(1))
+            break
+    assert entropy is not None
+    return entropy
 
 def get_composition_meme(start_lines):
     assert start_lines
@@ -151,4 +204,11 @@ def get_composition_conv(start_lines):
                     composition.append(float(freq))
     assert len(composition) == 20   # num alphabets
     return composition
+
+def relabel_meme_pssm(pssm, label):
+    for i, line in enumerate(pssm):
+        if re.search("MEME-[0-9]+", line):
+            line = re.sub("MEME-[0-9]+", f"MEME-{label}", line)
+        pssm[i] = line
+    return pssm
 

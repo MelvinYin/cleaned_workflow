@@ -76,7 +76,6 @@ def main(kwargs):
     for i, pssm_lines in enumerate(pssms):
         pssm = extract_pssm(pssm_lines)
         entropy = measure_entropy(pssm, composition)
-        print("{} | {}".format(i, entropy))
         if entropy > entropy_threshold:
             lines_to_keep += pssm_lines
     with open(pssm_fname, 'w') as file:

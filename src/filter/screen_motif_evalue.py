@@ -1,42 +1,22 @@
-import re
-import sys
+from utils import meme_format_parser, meme_pssm_get_evalue
 
-def get_cropped_memelines(meme_filename):
-    to_write = []
+def main(kwargs):
     evalue_threshold = 0.5
-    count_hit = 0
-    count_tot = 0
-    with open(meme_filename, 'r') as meme_file:
-        opening = True
-        closing = False
-        to_keep = False
-        for line in meme_file:
-            if closing:
-                to_write.append(line)
-                continue
-            if line.startswith('MOTIF'):
-                count_tot += 1
-                opening = False
-                evalue = re.search("E-value = ([0-9]+[\.]?[0-9]?e[+-][0-9]+)", line)
-                evalue = float(evalue.group(1))
-                if evalue > evalue_threshold:
-                    to_keep = False
-                else:
-                    count_hit += 1
-                    to_keep = True
-            if opening or to_keep:
-                to_write.append(line)
-    return to_write
-
-def write_memelines(to_write, output_filename):
-    with open(output_filename, 'w') as file:
-        for line in to_write:
+    start, pssms, end = meme_format_parser(kwargs['memefile'])
+    to_del = []
+    for i, pssm in enumerate(pssms):
+        evalue = meme_pssm_get_evalue(pssm)
+        if evalue > evalue_threshold:
+            to_del.append(i)
+    for i in to_del[::-1]:
+        del pssms[i]
+    with open(kwargs['memefile'], 'w') as file:
+        for line in start:
+            file.write(line)
+        for pssm in pssms:
+            for line in pssm:
+                file.write(line)
+        for line in end:
             file.write(line)
     return
 
-def main(kwargs):
-    # meme = "./files/meme.txt"
-    # output = "./files/meme_evalue_screened.txt"
-    memelines = get_cropped_memelines(kwargs['memefile'])
-    write_memelines(memelines, kwargs['memefile'])
-    return

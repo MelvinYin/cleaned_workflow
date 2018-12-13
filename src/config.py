@@ -9,7 +9,8 @@ ExecutorDirectory = namedtuple(
 
 FilterDirectory = namedtuple(
     'FilterDirectory',
-    "bash_exec file input_seqs log meme_dir memefile short_seq trash")
+    "bash_exec file input_seqs log meme_dir memefile short_seq trash "
+    "evalue_threshold entropy_bits_threshold")
 
 ClusterDirectory = namedtuple(
     "ClusterDirectory",
@@ -40,6 +41,8 @@ class Directory:
     num_processor = 7    # Memory use increases as well
     seeds_divisor = 10
     seq_divisor = 10
+    evalue_threshold = 0.5
+    entropy_bits_threshold = 40
 
     executor_dir = ExecutorDirectory(
         file=file,
@@ -86,4 +89,6 @@ class Directory:
         input_seqs=input_seqs,
         bash_exec=bash_exec,
         short_seq=None,
-        memefile=None)
+        memefile=None,
+        evalue_threshold=evalue_threshold,
+        entropy_bits_threshold=entropy_bits_threshold)

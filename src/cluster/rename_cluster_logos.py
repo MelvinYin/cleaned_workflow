@@ -3,7 +3,6 @@ from collections import defaultdict
 import re
 
 def main(kwargs):
-    # motif_filedir output_logodir
     motif_filedir = kwargs['motif_filedir']
     output_logodir = kwargs['output_logodir']
     motif_filename_profile_no_map = defaultdict(list)

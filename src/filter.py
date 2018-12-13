@@ -1,4 +1,4 @@
-from collections import namedtuple
+from collections import namedtuple, OrderedDict
 import os
 import shutil
 import subprocess
@@ -16,29 +16,27 @@ class Filter:
         self.dir = dir
         self._dir = self.set_internal_dir()
         self.cluster = None
+        self.switches = self.set_switches()
 
-    def run(self, to_run=None):
-        if not to_run:
-            _to_run = [self.screen_evalue, self.screen_entropy,
-                      self.screen_correlated, self.screen_non_combi]
-        else:
-            _to_run = []
-            if 'evalue' in to_run:
-                _to_run.append(self.screen_evalue)
-            if 'entropy' in to_run:
-                _to_run.append(self.screen_entropy)
-            if 'correlated' in to_run:
-                _to_run.append(self.screen_correlated)
-            if 'noncombi' in to_run:
-                _to_run.append(self.screen_non_combi)
-        for func in _to_run:
-            try:
-                print(f"Filter/{func.__name__}:")
-                func()
-                print("Filter/Success!\n")
-            except:
-                print("Filter/Error: {}".format(func.__name__))
-                raise
+    def set_switches(self):
+        switches = OrderedDict()
+        # Get input_seqs
+        switches['EVALUE'] = (False, self.screen_evalue)
+        switches['ENTROPY'] = (False, self.screen_entropy)
+        switches['CORRELATED'] = (False, self.screen_correlated)
+        switches['NON_COMBI'] = (False, self.screen_non_combi)
+        return switches
+
+    def run(self):
+        for (to_run, func) in self.switches.values():
+            if to_run:
+                try:
+                    print(f"Filter/{func.__name__}:")
+                    func()
+                    print("Filter/Success!\n")
+                except:
+                    print("Filter/Error: {}".format(func.__name__))
+                    raise
         return
 
     def set_internal_dir(self):
@@ -55,8 +53,9 @@ class Filter:
         # Input: self.dir.memefile
         # Output: self.dir.memefile
         assert os.path.isfile(self.dir.memefile)
-        from screen_motif_evalue import main
-        kwargs = dict(memefile=self.dir.memefile)
+        from screen_meme_for import main
+        kwargs = dict(memefile=self.dir.memefile,
+                      evalue_threshold=self.dir.evalue_threshold)
         main(kwargs)
         if __debug__:
             shutil.copy(self.dir.memefile, self._dir.post_evalue)
@@ -67,21 +66,9 @@ class Filter:
         # Input: self.dir.memefile
         # Output: self.dir.memefile
         assert os.path.isfile(self.dir.memefile)
-        from screen_motif_entropy import main
-        kwargs = dict(memefile=self.dir.memefile)
-        main(kwargs)
-        if __debug__:
-            shutil.copy(self.dir.memefile, self._dir.post_entropy)
-        assert os.path.isfile(self.dir.memefile)
-        return
-
-    def screen_entropy_conv(self):
-        # Input: self.dir.memefile
-        # Output: self.dir.memefile
-        assert os.path.isfile(self.dir.memefile)
-        from screen_entropy_conv import main
-        kwargs = dict(pssm=self.dir.memefile,
-                      entropy_threshold=40)
+        from screen_meme_for import main
+        kwargs = dict(memefile=self.dir.memefile,
+                      entropy_bits_threshold=self.dir.entropy_bits_threshold)
         main(kwargs)
         if __debug__:
             shutil.copy(self.dir.memefile, self._dir.post_entropy)
@@ -125,8 +112,7 @@ class Filter:
             input_meme=self.dir.memefile,
             cluster_pkl=self._dir.cluster_pkl)
         Cluster(cluster_dir).run()
-
-        from remove_noncentroid_profiles import main
+        from remove_noncentroid_profiles_meme import main
         kwargs = dict(cluster_df_pkl=self._dir.cluster_pkl,
                       memefile=self.dir.memefile)
         main(kwargs)

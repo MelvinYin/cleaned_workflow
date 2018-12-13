@@ -13,5 +13,6 @@ def main(kwargs):
     for centroid in centroids:
         for profile in centroid:
             profiles_to_keep.add(profile)
+
     meme_rewritter(profiles_to_keep, memefile, to_keep=True)
     return True
