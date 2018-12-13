@@ -75,6 +75,19 @@ class Filter:
         assert os.path.isfile(self.dir.memefile)
         return
 
+    def screen_entropy_conv(self):
+        # Input: self.dir.memefile
+        # Output: self.dir.memefile
+        assert os.path.isfile(self.dir.memefile)
+        from screen_entropy_conv import main
+        kwargs = dict(pssm=self.dir.memefile,
+                      entropy_threshold=40)
+        main(kwargs)
+        if __debug__:
+            shutil.copy(self.dir.memefile, self._dir.post_entropy)
+        assert os.path.isfile(self.dir.memefile)
+        return
+
     def screen_correlated(self):
         # Input: self.dir.memefile | self.dir.short_seq
         # Output: self.dir.memefile | self._dir.mast_shortseq

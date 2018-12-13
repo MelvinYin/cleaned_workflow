@@ -55,3 +55,100 @@ def check_fasta_validity(filename):
         assert first_line.startswith(">")
         assert first_line.strip()[1:]
     return
+
+def conv_meme_parser(fname):
+    assert os.path.isfile(fname)
+    start = []
+    pssms = []
+    pssm_start = False
+    current_pssm = []
+    with open(fname, 'r') as file:
+        for line in file:
+            if line.startswith("MOTIF"):
+                pssm_start = True
+            if not pssm_start:
+                start.append(line)
+                continue
+            if line.startswith('MOTIF') and current_pssm:
+                assert len(current_pssm) > 30, current_pssm
+                pssms.append(current_pssm)
+                current_pssm = [line]
+                continue
+            current_pssm.append(line)
+        assert len(current_pssm) > 30  # width of motif
+        pssms.append(current_pssm)
+    assert start
+    assert pssms
+    return start, pssms
+
+def meme_format_parser(filename):
+    assert os.path.isfile(filename)
+    start = []
+    pssms = []
+    end = []
+    at_pssm = False
+    at_end = False
+    with open(filename, 'r') as file:
+        current_pssm = []
+        for line in file:
+            # Check if we are in start
+            if line.startswith("MOTIF") and not at_pssm:
+                at_pssm = True
+            if not at_pssm:
+                start.append(line)
+
+            # Split into pssms
+            if line.startswith("MOTIF") and current_pssm:
+                assert len(current_pssm) > 30
+                pssms.append(current_pssm)
+                current_pssm = [line]
+            elif at_pssm:
+                current_pssm.append(line)
+
+            # Check if we are at end
+            if line.startswith("Stopped"):
+                at_pssm = False
+                assert len(current_pssm) > 30
+                pssms.append(current_pssm)
+                at_end = True
+            if at_end:
+                end.append(line)
+    assert start
+    assert pssms
+    assert end
+    return start, pssms, end
+
+def get_composition_meme(start_lines):
+    assert start_lines
+    composition = []
+    at_composition = False
+    for line in start_lines:
+        # Check if we are in composition
+        if line.startswith("Letter frequencies in dataset"):
+            at_composition = True
+        if line.startswith("Background letter frequencies"):
+            break
+        if at_composition:
+            freq_re = re.findall("(1.[0]+)|(0.[0-9]+)", line)
+            for (f1, f2) in freq_re:
+                composition.append(float(f1) if f1 else float(f2))
+    assert len(composition) == 20   # num alphabets
+    return composition
+
+def get_composition_conv(start_lines):
+    assert start_lines
+    composition = []
+    at_composition = False
+    for line in start_lines:
+        if line.startswith("Background"):
+            at_composition = True
+            continue
+        if at_composition:
+            freq_re = re.findall("(1.[0]+)|(0.[0-9]+)", line)
+            if freq_re: # skip any \n after frequencies
+                for (f1, f2) in freq_re:
+                    freq = f1 if f1 else f2
+                    composition.append(float(freq))
+    assert len(composition) == 20   # num alphabets
+    return composition
+

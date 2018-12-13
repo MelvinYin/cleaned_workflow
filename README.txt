@@ -60,6 +60,8 @@ from Bio.PDB import to_one_letter_code
 to
 from Bio.Data.SCOPData import protein_letters_3to1 as to_one_letter_code
 
+<TODO: REMOVE IMPORT BIO.PDB FROM HPREP.PY
+
 The build process is now complete. The remainder of the program are done in python, and does not require compilation.
 # BUILD END
 

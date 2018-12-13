@@ -2,790 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="977e9f69-e7b2-4235-9856-6e88bdf80fc9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/screen_entropy_meme.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README_for_myself.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/pipeline/composition.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/pipeline/converge_seeds.fasta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/pipeline/input_seqs.fasta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/pipeline/output.1.matrix.0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/pipeline/output.4.matrix.0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/_cluster.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/files/_trash/_cluster.pkl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/cluster_final.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/files/_trash/cluster_final.pkl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/full_param.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/files/_trash/full_param.pkl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/mast_nocorr/mast.html" beforeDir="false" afterPath="$PROJECT_DIR$/files/_trash/mast_nocorr/mast.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/mast_nocorr/mast.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/_trash/mast_nocorr/mast.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/mast_nocorr/mast.xml" beforeDir="false" afterPath="$PROJECT_DIR$/files/_trash/mast_nocorr/mast.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/mast_single/mast.html" beforeDir="false" afterPath="$PROJECT_DIR$/files/_trash/mast_single/mast.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/mast_single/mast.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/_trash/mast_single/mast.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/mast_single/mast.xml" beforeDir="false" afterPath="$PROJECT_DIR$/files/_trash/mast_single/mast.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_cleaned.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/_trash/meme_cleaned.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_correlated_screened.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/_trash/meme_correlated_screened.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_entropy_screened.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_evalue_screened.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out10.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out100.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out101.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out102.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out103.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out104.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out105.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out106.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out107.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out108.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out109.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out11.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out110.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out111.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out112.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out113.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out114.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out115.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out116.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out117.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out118.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out119.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out12.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out120.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out121.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out122.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out123.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out124.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out125.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out126.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out127.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out128.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out129.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out13.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out130.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out131.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out132.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out133.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out134.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out135.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out136.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out137.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out138.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out139.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out14.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out140.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out141.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out142.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out143.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out144.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out145.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out146.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out147.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out148.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out149.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out15.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out150.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out151.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out152.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out153.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out154.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out155.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out156.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out157.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out158.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out159.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out16.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out160.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out161.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out162.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out163.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out164.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out165.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out166.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out167.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out168.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out169.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out17.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out170.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out171.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out172.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out173.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out174.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out175.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out176.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out177.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out178.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out179.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out18.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out180.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out181.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out182.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out183.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out184.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out185.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out186.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out187.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out188.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out189.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out19.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out190.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out191.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out192.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out193.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out194.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out195.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out196.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out197.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out198.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out199.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out20.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out200.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out201.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out202.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out203.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out204.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out205.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out206.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out207.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out208.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out209.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out21.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out210.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out211.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out212.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out213.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out214.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out215.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out216.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out217.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out218.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out219.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out22.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out220.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out221.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out222.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out223.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out224.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out225.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out226.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out227.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out228.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out229.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out23.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out230.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out231.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out232.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out233.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out234.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out235.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out236.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out237.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out238.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out239.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out24.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out240.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out241.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out242.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out243.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out244.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out245.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out246.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out247.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out248.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out249.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out25.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out250.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out251.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out252.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out253.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out254.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out255.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out256.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out257.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out258.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out259.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out26.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out260.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out261.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out262.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out263.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out264.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out265.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out266.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out267.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out268.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out269.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out27.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out270.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out271.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out272.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out273.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out274.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out275.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out276.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out277.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out278.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out279.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out28.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out280.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out281.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out282.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out283.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out284.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out285.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out286.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out287.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out288.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out289.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out29.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out290.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out291.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out292.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out293.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out294.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out295.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out296.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out297.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out298.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out299.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out3.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out30.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out300.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out301.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out302.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out303.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out304.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out305.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out306.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out307.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out308.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out309.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out31.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out310.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out311.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out312.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out313.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out314.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out315.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out316.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out317.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out318.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out319.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out32.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out320.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out321.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out322.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out323.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out324.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out325.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out326.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out327.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out328.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out329.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out33.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out330.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out331.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out332.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out333.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out334.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out335.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out336.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out337.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out338.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out339.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out34.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out340.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out341.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out342.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out343.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out344.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out345.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out346.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out347.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out348.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out349.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out35.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out350.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out351.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out352.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out353.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out354.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out355.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out356.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out357.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out358.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out359.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out36.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out360.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out361.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out362.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out363.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out364.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out365.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out366.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out367.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out368.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out369.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out37.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out370.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out371.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out372.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out373.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out374.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out375.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out376.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out377.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out378.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out379.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out38.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out380.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out381.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out382.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out383.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out384.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out385.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out386.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out387.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out388.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out389.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out39.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out390.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out391.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out392.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out393.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out394.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out395.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out396.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out397.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out398.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out399.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out4.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out40.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out400.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out401.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out402.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out403.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out404.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out405.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out406.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out407.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out408.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out409.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out41.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out410.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out411.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out412.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out413.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out414.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out415.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out416.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out417.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out418.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out419.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out42.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out420.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out421.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out422.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out423.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out424.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out425.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out426.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out427.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out428.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out429.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out43.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out430.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out431.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out432.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out433.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out434.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out435.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out436.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out437.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out438.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out439.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out44.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out440.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out441.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out442.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out443.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out444.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out445.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out446.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out447.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out448.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out449.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out45.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out450.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out451.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out452.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out453.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out454.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out455.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out456.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out457.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out458.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out459.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out46.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out460.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out461.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out462.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out463.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out464.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out465.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out466.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out467.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out468.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out469.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out47.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out470.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out471.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out472.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out473.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out474.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out475.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out476.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out477.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out478.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out479.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out48.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out480.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out481.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out482.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out483.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out484.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out485.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out486.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out487.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out488.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out489.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out49.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out490.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out491.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out492.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out493.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out494.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out495.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out496.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out497.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out498.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out499.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out5.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out50.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out500.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out501.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out502.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out503.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out504.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out505.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out506.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out507.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out508.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out509.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out51.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out510.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out511.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out512.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out513.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out514.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out515.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out516.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out517.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out518.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out519.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out52.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out520.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out521.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out522.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out523.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out524.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out525.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out526.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out527.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out528.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out529.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out53.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out530.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out531.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out532.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out533.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out534.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out535.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out536.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out537.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out538.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out539.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out54.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out540.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out541.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out542.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out543.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out544.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out545.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out546.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out547.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out548.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out549.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out55.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out550.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out551.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out552.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out553.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out554.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out555.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out556.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out557.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out558.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out559.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out56.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out560.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out561.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out562.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out563.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out564.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out565.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out566.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out567.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out568.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out569.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out57.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out570.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out571.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out572.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out573.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out574.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out575.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out576.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out577.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out578.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out579.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out58.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out580.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out581.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out582.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out583.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out584.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out585.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out586.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out587.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out588.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out589.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out59.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out590.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out591.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out592.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out593.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out594.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out595.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out596.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out597.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out598.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out599.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out6.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out60.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out600.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out601.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out602.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out603.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out604.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out605.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out606.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out607.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out608.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out609.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out61.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out610.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out611.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out612.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out613.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out614.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out615.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out616.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out617.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out618.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out619.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out62.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out620.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out621.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out622.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out623.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out624.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out625.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out626.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out627.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out628.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out629.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out63.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out630.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out631.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out632.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out633.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out634.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out635.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out636.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out637.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out638.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out639.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out64.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out640.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out641.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out642.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out643.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out644.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out645.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out646.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out647.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out648.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out649.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out65.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out650.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out651.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out652.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out653.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out654.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out655.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out656.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out657.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out658.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out66.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out67.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out68.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out69.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out7.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out70.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out71.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out72.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out73.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out74.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out75.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out76.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out77.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out78.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out79.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out8.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out80.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out81.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out82.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out83.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out84.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out85.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out86.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out87.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out88.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out89.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out9.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out90.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out91.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out92.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out93.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out94.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out95.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out96.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out97.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out98.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_full/meme_out99.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_merged.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/meme_starter.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/motifs/motifs_in_cluster_0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/_trash/motifs/motifs_in_cluster_0.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/motifs/motifs_in_cluster_1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/_trash/motifs/motifs_in_cluster_1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/motifs/motifs_in_cluster_11.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/motifs/motifs_in_cluster_12.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/motifs/motifs_in_cluster_13.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/_trash/motifs/motifs_in_cluster_13.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/motifs/motifs_in_cluster_14.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/motifs/motifs_in_cluster_15.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/_trash/motifs/motifs_in_cluster_15.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/motifs/motifs_in_cluster_16.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/motifs/motifs_in_cluster_17.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/_trash/motifs/motifs_in_cluster_17.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/motifs/motifs_in_cluster_18.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/motifs/motifs_in_cluster_19.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/motifs/motifs_in_cluster_2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/_trash/motifs/motifs_in_cluster_2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/motifs/motifs_in_cluster_3.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/motifs/motifs_in_cluster_4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/_trash/motifs/motifs_in_cluster_4.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/motifs/motifs_in_cluster_5.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/_trash/motifs/motifs_in_cluster_5.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/motifs/motifs_in_cluster_7.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/_trash/motifs/motifs_in_cluster_7.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/motifs/motifs_in_cluster_8.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/_trash/motifs/motifs_in_cluster_8.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/motifs/motifs_in_cluster_9.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/_trash/pssm.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/_trash/pssm.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/converge_seeds.fasta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/from_dhcl/DE_3der.dhcl.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/from_dhcl/DE_3der.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/from_dhcl/DGD_3rra.dhcl.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/from_dhcl/DGD_3rra.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/from_dhcl/DTD_2dw6.dhcl.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/from_dhcl/DTD_2dw6.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/from_dhcl/EL_1bqg.dhcl.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/from_dhcl/EL_1bqg.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/from_dhcl/GD2_3hpf.dhcl.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/from_dhcl/GD2_3hpf.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/from_dhcl/GD_1bqg.dhcl.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/from_dhcl/GD_1bqg.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/from_dhcl/LFD_2hxu.dhcl.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/from_dhcl/LFD_2hxu.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/from_dhcl/LTGD_2pp3.dhcl.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/from_dhcl/LTGD_2pp3.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/from_dhcl/MAL_3zvi.dhcl.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/from_dhcl/MAL_3zvi.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/from_dhcl/MCANTI_3dg6.dhcl.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/from_dhcl/MCANTI_3dg6.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/from_dhcl/MCSL_2chr.dhcl.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/from_dhcl/MCSL_2chr.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/from_dhcl/MD_3vcn.dhcl.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/from_dhcl/MD_3vcn.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/from_dhcl/MR_4hnc.dhcl.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/from_dhcl/MR_4hnc.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/from_dhcl/NSAR2_2p8b.dhcl.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/from_dhcl/NSAR2_2p8b.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/from_dhcl/NSAR_2ggi.dhcl.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/from_dhcl/NSAR_2ggi.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/from_dhcl/OSS_4a6g.dhcl.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/from_dhcl/OSS_4a6g.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/from_dhcl/RD_2i5q.dhcl.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/from_dhcl/RD_2i5q.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/init_seed_seqs.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/input_pdb/DE_3der.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/input_pdb/DGD_3rra.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/input_pdb/DTD_2dw6.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/input_pdb/GD_1bqg.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/input_pdb/LFD_2hxu.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/input_pdb/LTGD_2pp3.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/input_pdb/MAL_3zvi.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/input_pdb/MCANTI_3dg6.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/input_pdb/MCSL_2chr.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/input_pdb/MR_4hnc.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/input_pdb/NSAR2_2p8b.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/input_pdb/NSAR_2ggi.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/input_pdb/OSS_4a6g.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/input_pdb/RD_2i5q.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/input_seqs.fasta" beforeDir="false" afterPath="$PROJECT_DIR$/files/input_seqs.fasta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/sfld_description.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/short_seq.fasta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files_template/input_fasta/DE_3der.fasta.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files_template/input_fasta/DGD_3rra.fasta.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files_template/input_fasta/DTD_2dw6.fasta.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files_template/input_fasta/EL_1bqg.fasta.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files_template/input_fasta/GD2_3hpf.fasta.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files_template/input_fasta/GD_1bqg.fasta.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files_template/input_fasta/LFD_2hxu.fasta.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files_template/input_fasta/LTGD_2pp3.fasta.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files_template/input_fasta/MAL_3zvi.fasta.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files_template/input_fasta/MCANTI_3dg6.fasta.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files_template/input_fasta/MCSL_2chr.fasta.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files_template/input_fasta/MD_3vcn.fasta.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files_template/input_fasta/MR_4hnc.fasta.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files_template/input_fasta/NSAR2_2p8b.fasta.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files_template/input_fasta/NSAR_2ggi.fasta.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files_template/input_fasta/OSS_4a6g.fasta.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files_template/input_fasta/RD_2i5q.fasta.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files_template/input_pdb_test/DE_3der.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files_template/input_pdb_test/EL_1bqg.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files_template/input_seqs.fasta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files_template/single_seq.fasta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/cluster_description.txt" beforeDir="false" afterPath="$PROJECT_DIR$/output/cluster_description.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_0/logos_38.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_0/logos_4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_0/logos_43.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_0/logos_7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/mast/mast.html" beforeDir="false" afterPath="$PROJECT_DIR$/output/mast/mast.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/mast/mast.txt" beforeDir="false" afterPath="$PROJECT_DIR$/output/mast/mast.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/mast/mast.xml" beforeDir="false" afterPath="$PROJECT_DIR$/output/mast/mast.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_scripts/meme/config.log" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/config.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/project_main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cluster/split_motifs_by_cluster.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cluster/split_motifs_by_cluster.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cluster.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cluster.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cluster/ee.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/filter.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/filter.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -795,39 +19,42 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/cleaned_workflow$create_input_seqs__2_.coverage" NAME="create_input_seqs (2) Coverage Results" MODIFIED="1543142801632" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/cleaned_workflow$ee.coverage" NAME="ee Coverage Results" MODIFIED="1543804959333" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/cluster" />
     <SUITE FILE_PATH="coverage/cleaned_workflow$ai_final_prob.coverage" NAME="ai_final_prob Coverage Results" MODIFIED="1543998123175" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/cleaned_workflow$meme_merger.coverage" NAME="meme_merger Coverage Results" MODIFIED="1542597330449" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/cleaned_workflow$create_input_seqs__1_.coverage" NAME="create_input_seqs (1) Coverage Results" MODIFIED="1543142718959" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/cleaned_workflow$generate_cluster_params.coverage" NAME="generate_cluster_params Coverage Results" MODIFIED="1542596956182" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/cleaned_workflow$remove_motifs_with_low_evalue.coverage" NAME="remove_motifs_with_low_evalue Coverage Results" MODIFIED="1541731354918" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
-    <SUITE FILE_PATH="coverage/cleaned_workflow$utils.coverage" NAME="utils Coverage Results" MODIFIED="1542965375200" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
-    <SUITE FILE_PATH="coverage/cleaned_workflow$create_consolidated_test.coverage" NAME="create_consolidated_test Coverage Results" MODIFIED="1542168688314" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/cleaned_workflow$tt.coverage" NAME="tt Coverage Results" MODIFIED="1542886538145" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/cleaned_workflow$tes__1_.coverage" NAME="tes (1) Coverage Results" MODIFIED="1542964383701" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/cleaned_workflow$cluster_final.coverage" NAME="cluster_final Coverage Results" MODIFIED="1542597332644" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/cleaned_workflow$project_main__1_.coverage" NAME="project_main (1) Coverage Results" MODIFIED="1543766181800" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../actual_again" />
-    <SUITE FILE_PATH="coverage/cleaned_workflow$dd.coverage" NAME="dd Coverage Results" MODIFIED="1542960204036" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/merged_src$mast_remove_profiles.coverage" NAME="mast_remove_profiles Coverage Results" MODIFIED="1540454008157" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/cleaned_workflow$create_input_seqs.coverage" NAME="create_input_seqs Coverage Results" MODIFIED="1543142665116" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="/media/melvin/My Book2/Backup/Backup/Files/Windows/Work_backup/Enolase_mast_process" />
     <SUITE FILE_PATH="coverage/cleaned_workflow$converge2meme.coverage" NAME="converge2meme Coverage Results" MODIFIED="1543176881657" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/external_scripts/pipeline" />
-    <SUITE FILE_PATH="coverage/cleaned_workflow$ttt.coverage" NAME="ttt Coverage Results" MODIFIED="1542877380998" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/cleaned_workflow$project_main.coverage" NAME="project_main Coverage Results" MODIFIED="1543824504920" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cleaned_workflow$project_main.coverage" NAME="project_main Coverage Results" MODIFIED="1544368725925" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/cleaned_workflow$test.coverage" NAME="test Coverage Results" MODIFIED="1542169872568" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
-    <SUITE FILE_PATH="coverage/cleaned_workflow$process_dhcl_output_meme.coverage" NAME="process_dhcl_output_meme Coverage Results" MODIFIED="1543006691302" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/cleaned_workflow$pytest_in_test_entropy_py.coverage" NAME="pytest in test_entropy.py Coverage Results" MODIFIED="1544610253842" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/cleaned_workflow$tes.coverage" NAME="tes Coverage Results" MODIFIED="1542607562897" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cleaned_workflow$create_input_seqs__2_.coverage" NAME="create_input_seqs (2) Coverage Results" MODIFIED="1543142801632" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/cleaned_workflow$generate_cluster_params.coverage" NAME="generate_cluster_params Coverage Results" MODIFIED="1542596956182" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/cleaned_workflow$ai_final_prob__1_.coverage" NAME="ai_final_prob (1) Coverage Results" MODIFIED="1544345077946" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
+    <SUITE FILE_PATH="coverage/cleaned_workflow$utils.coverage" NAME="utils Coverage Results" MODIFIED="1544679749782" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/cleaned_workflow$create_consolidated_test.coverage" NAME="create_consolidated_test Coverage Results" MODIFIED="1542168688314" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/cleaned_workflow$dd.coverage" NAME="dd Coverage Results" MODIFIED="1542960204036" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cleaned_workflow$entropy.coverage" NAME="entropy Coverage Results" MODIFIED="1544616329798" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cleaned_workflow$create_input_seqs.coverage" NAME="create_input_seqs Coverage Results" MODIFIED="1543142665116" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="/media/melvin/My Book2/Backup/Backup/Files/Windows/Work_backup/Enolase_mast_process" />
+    <SUITE FILE_PATH="coverage/cleaned_workflow$ttt.coverage" NAME="ttt Coverage Results" MODIFIED="1542877380998" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cleaned_workflow$process_dhcl_output_meme.coverage" NAME="process_dhcl_output_meme Coverage Results" MODIFIED="1543006691302" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
   </component>
   <component name="FavoritesManager">
     <favorites_list name="cleaned_workflow" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/project_main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1200">
-              <caret line="61" column="25" lean-forward="true" selection-start-line="61" selection-start-column="25" selection-end-line="61" selection-end-column="25" />
+            <state relative-caret-position="527">
+              <caret line="222" column="26" selection-start-line="222" selection-start-column="26" selection-end-line="222" selection-end-column="26" />
               <folding>
                 <element signature="e#0#47#0" expanded="true" />
               </folding>
@@ -836,68 +63,78 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/utils.py">
+        <entry file="file://$PROJECT_DIR$/src/filter.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1230">
-              <caret line="41" column="36" selection-start-line="41" selection-start-column="36" selection-end-line="41" selection-end-column="36" />
+            <state relative-caret-position="625">
+              <caret line="106" column="28" selection-start-line="106" selection-start-column="28" selection-end-line="106" selection-end-column="28" />
               <folding>
-                <element signature="e#0#9#0" expanded="true" />
+                <element signature="e#0#34#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/create_input_seqs.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cluster/rename_cluster_logos.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cluster/split_motifs_by_cluster.py">
+        <entry file="file://$PROJECT_DIR$/src/screen_entropy_meme.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="300">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+              <caret line="52" selection-start-line="52" selection-end-line="52" />
               <folding>
-                <element signature="e#0#13#0" expanded="true" />
+                <element signature="e#0#18#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cluster/assemble_cluster_output.py">
+        <entry file="file://$PROJECT_DIR$/src/filter/screen_motif_evalue.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-180">
-              <caret line="51" column="62" selection-start-line="51" selection-start-column="62" selection-end-line="51" selection-end-column="62" />
+            <state relative-caret-position="690">
+              <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
               <folding>
-                <element signature="e#0#48#0" expanded="true" />
+                <element signature="e#0#9#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cluster/generate_cluster_params.py">
+        <entry file="file://$PROJECT_DIR$/src/utils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1260">
-              <caret line="42" column="27" selection-start-line="42" selection-start-column="27" selection-end-line="42" selection-end-column="27" />
+            <state relative-caret-position="3360">
+              <caret line="112" column="29" lean-forward="true" selection-start-line="112" selection-start-column="29" selection-end-line="112" selection-end-column="29" />
               <folding>
-                <element signature="e#0#35#0" expanded="true" />
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/filter/screen_motif_entropy.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cluster.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/screen_entropy_conv.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="3" column="56" lean-forward="true" selection-start-line="3" selection-start-column="56" selection-end-line="3" selection-end-column="56" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -906,8 +143,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/config.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1380">
-              <caret line="46" column="20" lean-forward="true" selection-start-line="46" selection-start-column="20" selection-end-line="46" selection-end-column="20" />
+            <state relative-caret-position="180">
+              <caret line="6" column="40" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cluster/generate_cluster_params.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1230">
+              <caret line="47" column="19" selection-start-line="47" selection-start-column="19" selection-end-line="47" selection-end-column="19" />
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -924,8 +173,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>diviso</find>
-      <find>self.dir.meme</find>
       <find>self.</find>
       <find>remove_</find>
       <find>mast_remove</find>
@@ -954,6 +201,8 @@
       <find>sys.exit</find>
       <find>remove</find>
       <find>True False</find>
+      <find>(2, 2)</find>
+      <find>np</find>
     </findStrings>
     <replaceStrings>
       <replace>False</replace>
@@ -969,6 +218,7 @@
       <replace>&quot;</replace>
       <replace>True</replace>
       <replace>short_seq</replace>
+      <replace>_G1</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/../cleaned_workflow_full_meme/external_scripts/dhcl/executables</dir>
@@ -981,15 +231,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/meme_merger.py" />
-        <option value="$PROJECT_DIR$/src/reduce_dhcl_test.py" />
-        <option value="$PROJECT_DIR$/src/cluster_final.py" />
-        <option value="$PROJECT_DIR$/src/process_dhcl_output_meme.py" />
-        <option value="$PROJECT_DIR$/src/memefile_cleaner.py" />
-        <option value="/media/melvin/My Book2/Backup/Backup/Files/Windows/Work_backup/Enolase_mast_process/create_input_seqs.py" />
-        <option value="$PROJECT_DIR$/create_input_seqs.py" />
-        <option value="$PROJECT_DIR$/src/create_input_seqs.py" />
-        <option value="$PROJECT_DIR$/seeds_to_converge_input.py" />
         <option value="$PROJECT_DIR$/external_scripts/pipeline/converge2meme.py" />
         <option value="$PROJECT_DIR$/src/rename_cluster_logos.py" />
         <option value="$PROJECT_DIR$/src/converge2meme.py" />
@@ -1022,22 +263,31 @@
         <option value="$PROJECT_DIR$/../actual_again/src/cluster/split_motifs_by_cluster.py" />
         <option value="$PROJECT_DIR$/../folder2/project_main.py" />
         <option value="$PROJECT_DIR$/src/cluster/generate_cluster_params.py" />
-        <option value="$PROJECT_DIR$/src/filter.py" />
         <option value="$PROJECT_DIR$/src/filter/remove_noncentroid_profiles.py" />
-        <option value="$PROJECT_DIR$/src/cluster.py" />
         <option value="$PROJECT_DIR$/src/cluster/assemble_cluster_output.py" />
         <option value="$PROJECT_DIR$/src/cluster/ee.py" />
         <option value="$PROJECT_DIR$/src/cluster/split_motifs_by_cluster.py" />
-        <option value="$PROJECT_DIR$/src/utils.py" />
         <option value="$PROJECT_DIR$/ai_final_prob.py" />
-        <option value="$PROJECT_DIR$/project_main.py" />
+        <option value="$PROJECT_DIR$/../ai_final_prob.py" />
         <option value="$PROJECT_DIR$/src/config.py" />
+        <option value="$PROJECT_DIR$/../cleaned_workflow_/project_main.py" />
+        <option value="$PROJECT_DIR$/../cleaned_workflow_/src/config.py" />
+        <option value="$PROJECT_DIR$/project_main.py" />
+        <option value="$PROJECT_DIR$/../workflow/project_main.py" />
+        <option value="$PROJECT_DIR$/src/cluster.py" />
+        <option value="$PROJECT_DIR$/test_entropy.py" />
+        <option value="$PROJECT_DIR$/entropy.py" />
+        <option value="$PROJECT_DIR$/src/filter.py" />
+        <option value="$PROJECT_DIR$/src/screen_entropy_meme.py" />
+        <option value="$PROJECT_DIR$/src/filter/meme_format_parser.py" />
+        <option value="$PROJECT_DIR$/src/screen_entropy_conv.py" />
+        <option value="$PROJECT_DIR$/src/utils.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="25" />
-    <option name="width" value="1920" />
+    <option name="width" value="960" />
     <option name="height" value="990" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -1089,7 +339,31 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="cleaned_workflow" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cleaned_workflow" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cleaned_workflow" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cleaned_workflow" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cleaned_workflow" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cleaned_workflow" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="filter" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="jump to&#9;ACTION&#9;JumpToColorsAndFonts" />
@@ -1117,8 +391,30 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.ai_final_prob">
-    <configuration name="ai_final_prob" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.utils">
+    <configuration name="ai_final_prob (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="merged_src" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.." />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../ai_final_prob.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="entropy" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="merged_src" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -1131,73 +427,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ai_final_prob.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="converge2meme" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="merged_src" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/external_scripts/pipeline" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/external_scripts/pipeline/converge2meme.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="ee" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="merged_src" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/cluster" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/cluster/ee.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="project_main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="merged_src" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../actual_again" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../actual_again/project_main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/entropy.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -1228,20 +458,58 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="utils" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="merged_src" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/utils.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest in test_entropy.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="merged_src" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test_entropy.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Python.project_main" />
-      <item itemvalue="Python.converge2meme" />
-      <item itemvalue="Python.project_main (1)" />
-      <item itemvalue="Python.ee" />
-      <item itemvalue="Python.ai_final_prob" />
+      <item itemvalue="Python.ai_final_prob (1)" />
+      <item itemvalue="Python.entropy" />
+      <item itemvalue="Python tests.pytest in test_entropy.py" />
+      <item itemvalue="Python.utils" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.ai_final_prob" />
+        <item itemvalue="Python.utils" />
+        <item itemvalue="Python.entropy" />
+        <item itemvalue="Python tests.pytest in test_entropy.py" />
         <item itemvalue="Python.project_main" />
-        <item itemvalue="Python.ee" />
-        <item itemvalue="Python.project_main (1)" />
-        <item itemvalue="Python.converge2meme" />
+        <item itemvalue="Python.ai_final_prob (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -1278,23 +546,50 @@
       <workItem from="1543890498345" duration="786000" />
       <workItem from="1543893881047" duration="9714000" />
       <workItem from="1543976984991" duration="11712000" />
-      <workItem from="1544060316185" duration="760000" />
+      <workItem from="1544060316185" duration="1580000" />
+      <workItem from="1544074605823" duration="793000" />
+      <workItem from="1544083983546" duration="4989000" />
+      <workItem from="1544144978148" duration="90000" />
+      <workItem from="1544161081411" duration="10507000" />
+      <workItem from="1544180330781" duration="1126000" />
+      <workItem from="1544249012376" duration="1280000" />
+      <workItem from="1544253749209" duration="599000" />
+      <workItem from="1544292850689" duration="9923000" />
+      <workItem from="1544342613493" duration="2002000" />
+      <workItem from="1544365406899" duration="1817000" />
+      <workItem from="1544368682543" duration="2000" />
+      <workItem from="1544368709279" duration="19000" />
+      <workItem from="1544377168077" duration="1821000" />
+      <workItem from="1544431264430" duration="2637000" />
+      <workItem from="1544440978378" duration="1200000" />
+      <workItem from="1544497757161" duration="4469000" />
+      <workItem from="1544600363899" duration="764000" />
+      <workItem from="1544607816246" duration="6691000" />
+      <workItem from="1544675825139" duration="4168000" />
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="pytest_in_test_entropy_py - 2018.12.12 at 18h 24m 12s.xml">
+      <configuration name="pytest in test_entropy.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_test_entropy_py - 2018.12.12 at 18h 24m 14s.xml">
+      <configuration name="pytest in test_entropy.py" configurationId="tests" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="163007000" />
+    <option name="totallyTimeSpent" value="218724000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1920" height="990" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49945235" weight="0.38814318" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49945235" weight="0.79321665" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.50054765" side_tool="true" weight="0.3569904" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32894737" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.41949618" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.08214677" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39868566" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1312,12 +607,12 @@
       <window_info anchor="right" id="Database" order="4" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49945235" visible="true" weight="0.19263607" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49945235" weight="0.79321665" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.50054765" side_tool="true" weight="0.3569904" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32894737" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.36144578" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.08214677" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39868566" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1339,39 +634,7 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/mast_remove_profiles.py" />
-    <entry file="file://$PROJECT_DIR$/src/screen_motif_entropy.py" />
-    <entry file="file://$PROJECT_DIR$/src/screen_motif_evalue.py" />
-    <entry file="file://$PROJECT_DIR$/config.py" />
-    <entry file="file://$PROJECT_DIR$/src/split_motifs_by_cluster.py" />
-    <entry file="file://$PROJECT_DIR$/src/assemble_cluster_output.py" />
-    <entry file="file://$PROJECT_DIR$/src/generate_cluster_params.py" />
-    <entry file="file://$PROJECT_DIR$/src/dhcl_script.py" />
-    <entry file="file://$PROJECT_DIR$/cluster.py" />
-    <entry file="file://$PROJECT_DIR$/filter.py" />
-    <entry file="file://$PROJECT_DIR$/filter_converge.py" />
-    <entry file="file://$PROJECT_DIR$/src/filter/mast_remove_profiles.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/create_short_seqs.py" />
-    <entry file="file://$PROJECT_DIR$/src/shrink_input_for_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="2" column="41" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../fresh2/src/config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="13" column="30" lean-forward="true" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../fresh2/src/config.py" />
     <entry file="file://$PROJECT_DIR$/src/dhcl_output_to_consensus.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1439,92 +702,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../actual_again/external_scripts/dhcl/executables/dhcl/hprep.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../actual_again/external_scripts/dhcl/executables/everything.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="13" column="34" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
-          <folding>
-            <element signature="e#216#239#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../actual_again/src/config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="33" column="53" selection-start-line="33" selection-start-column="53" selection-end-line="33" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/external_scripts/dhcl/executables/dhcl/hprep.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
-          <caret line="34" column="20" lean-forward="true" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
-          <folding>
-            <element signature="e#430#459#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../actual_again/project_main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2181">
-          <caret line="355" column="25" lean-forward="true" selection-start-line="355" selection-start-column="25" selection-end-line="355" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../actual_again/src/cluster.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="801">
-          <caret line="33" column="21" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../actual_again/src/cluster/split_motifs_by_cluster.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="12" column="55" selection-start-line="12" selection-start-column="55" selection-end-line="12" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../actual_again/src/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="801">
-          <caret line="30" column="52" selection-start-line="30" selection-start-column="52" selection-end-line="30" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../actual_again/src/cluster/assemble_cluster_output.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="801">
-          <caret line="68" column="55" selection-start-line="68" selection-start-column="55" selection-end-line="68" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../folder2/project_main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="71" column="41" lean-forward="true" selection-start-line="71" selection-start-column="41" selection-end-line="71" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../enolase/project_main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2160">
-          <caret line="77" column="23" selection-start-line="77" selection-start-column="23" selection-end-line="77" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../enolase/src/config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1089">
-          <caret line="13" column="30" lean-forward="true" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../actual_again/external_scripts/dhcl/executables/dhcl/hprep.py" />
+    <entry file="file://$PROJECT_DIR$/../actual_again/external_scripts/dhcl/executables/everything.py" />
+    <entry file="file://$PROJECT_DIR$/../actual_again/src/config.py" />
+    <entry file="file://$PROJECT_DIR$/../actual_again/project_main.py" />
+    <entry file="file://$PROJECT_DIR$/../actual_again/src/cluster.py" />
+    <entry file="file://$PROJECT_DIR$/../actual_again/src/cluster/split_motifs_by_cluster.py" />
+    <entry file="file://$PROJECT_DIR$/../actual_again/src/utils.py" />
+    <entry file="file://$PROJECT_DIR$/../actual_again/src/cluster/assemble_cluster_output.py" />
+    <entry file="file://$PROJECT_DIR$/../folder2/project_main.py" />
+    <entry file="file://$PROJECT_DIR$/../enolase/project_main.py" />
+    <entry file="file://$PROJECT_DIR$/../enolase/src/config.py" />
     <entry file="file://$PROJECT_DIR$/src/converge2meme.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
@@ -1532,30 +720,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/filter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="557">
-          <caret line="113" column="10" selection-start-line="113" selection-start-column="10" selection-end-line="113" selection-end-column="10" />
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cluster.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="76" column="27" selection-start-line="76" selection-start-column="27" selection-end-line="76" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cluster/ee.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cluster/ee.py" />
     <entry file="file://$PROJECT_DIR$/src/filter/remove_noncentroid_profiles.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
@@ -1569,17 +734,20 @@
     <entry file="file://$PROJECT_DIR$/src/seeds_to_converge_input.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/ai_final_prob.py">
+    <entry file="file://$PROJECT_DIR$/ai_final_prob.py" />
+    <entry file="file://$PROJECT_DIR$/src/cluster/split_motifs_by_cluster.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1560">
-          <caret line="133" column="43" selection-start-line="133" selection-start-column="43" selection-end-line="133" selection-end-column="43" />
+        <state relative-caret-position="300">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils.py">
+    <entry file="file://$PROJECT_DIR$/src/cluster/rename_cluster_logos.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1230">
-          <caret line="41" column="36" selection-start-line="41" selection-start-column="36" selection-end-line="41" selection-end-column="36" />
+        <state>
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
@@ -1593,35 +761,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cluster/rename_cluster_logos.py">
+    <entry file="file://$PROJECT_DIR$/../ai_final_prob.py" />
+    <entry file="file://$PROJECT_DIR$/../partA.py" />
+    <entry file="file://$PROJECT_DIR$/../workflow_stripped/src/config.py" />
+    <entry file="file://$PROJECT_DIR$/../cleaned_workflow_/project_main.py" />
+    <entry file="file://$PROJECT_DIR$/../cleaned_workflow_/src/config.py" />
+    <entry file="file://$PROJECT_DIR$/../workflow/project_main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="120">
+          <caret line="4" column="10" lean-forward="true" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
           <folding>
-            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#0#47#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/config.py">
+    <entry file="file://$PROJECT_DIR$/external_scripts/dhcl/executables/dhcl/hprep.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1380">
-          <caret line="46" column="20" lean-forward="true" selection-start-line="46" selection-start-column="20" selection-end-line="46" selection-end-column="20" />
+        <state relative-caret-position="210">
+          <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+          <folding>
+            <element signature="e#430#459#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cluster/generate_cluster_params.py">
+    <entry file="file://$PROJECT_DIR$/test_entropy.py" />
+    <entry file="file://$PROJECT_DIR$/../workflow/src/config.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1260">
-          <caret line="42" column="27" selection-start-line="42" selection-start-column="27" selection-end-line="42" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="150">
+          <caret line="5" column="48" selection-start-line="5" selection-start-column="48" selection-end-line="5" selection-end-column="48" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cluster/assemble_cluster_output.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-180">
+        <state relative-caret-position="1380">
           <caret line="51" column="62" selection-start-line="51" selection-start-column="62" selection-end-line="51" selection-end-column="62" />
           <folding>
             <element signature="e#0#48#0" expanded="true" />
@@ -1629,23 +804,107 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cluster/split_motifs_by_cluster.py">
+    <entry file="file://$PROJECT_DIR$/src/cluster/generate_cluster_params.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="1230">
+          <caret line="47" column="19" selection-start-line="47" selection-start-column="19" selection-end-line="47" selection-end-column="19" />
           <folding>
-            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/entropy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/project_main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1200">
-          <caret line="61" column="25" lean-forward="true" selection-start-line="61" selection-start-column="25" selection-end-line="61" selection-end-column="25" />
+        <state relative-caret-position="527">
+          <caret line="222" column="26" selection-start-line="222" selection-start-column="26" selection-end-line="222" selection-end-column="26" />
           <folding>
             <element signature="e#0#47#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="6" column="40" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/filter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="625">
+          <caret line="106" column="28" selection-start-line="106" selection-start-column="28" selection-end-line="106" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/filter/meme_format_parser.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/screen_entropy_meme.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="52" selection-start-line="52" selection-end-line="52" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/filter/screen_motif_evalue.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/screen_entropy_conv.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="3" column="56" lean-forward="true" selection-start-line="3" selection-start-column="56" selection-end-line="3" selection-end-column="56" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cluster.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3360">
+          <caret line="112" column="29" lean-forward="true" selection-start-line="112" selection-start-column="29" selection-end-line="112" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/filter/screen_motif_entropy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
         </state>
       </provider>
     </entry>

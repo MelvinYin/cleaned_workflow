@@ -39,7 +39,6 @@ class Cluster:
                 raise
         return
 
-
     def get_cluster_params(self):
         # Input: ./files/mast_onlycombi/mast.txt
         # Output: ./files/clustering_df.pkl

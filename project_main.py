@@ -3,7 +3,6 @@ import os
 import shutil
 import subprocess
 import sys
-import numpy as np
 
 # Add src folders to sys.path so import is straightforward
 cwd = os.getcwd()
@@ -61,16 +60,16 @@ class Executor:
         switches['REDUCE_CONSENSUS'] = (True, self.reduce_consensus)
         # Get PSSM using:
         # Meme
-        switches['BUILD_PSSM'] = (False, self.build_pssm)
-        switches['BUILD_STARTER'] = (False, self.build_starter)
-        switches['CLEAN_PSSM'] = (False, self.clean_pssm)
-        switches['MERGE_PSSM'] = (False, self.merge_pssm)
-        switches['SCREEN_PSSM'] = (False, self.screen_pssm)
+        switches['BUILD_PSSM'] = (True, self.build_pssm)
+        switches['BUILD_STARTER'] = (True, self.build_starter)
+        switches['CLEAN_PSSM'] = (True, self.clean_pssm)
+        switches['MERGE_PSSM'] = (True, self.merge_pssm)
+        switches['SCREEN_PSSM'] = (True, self.screen_pssm)
         # Or converge
-        switches['BUILD_CONVERGE_SEEDS'] = (True, self.build_converge_seeds)
-        switches['RUN_CONVERGE'] = (True, self.run_converge)
-        switches['TO_MEME_FORMAT'] = (True, self.to_meme_format)
-        switches['SCREEN_CONVERGE_PSSM'] = (True, self.screen_converge_pssm)
+        switches['BUILD_CONVERGE_SEEDS'] = (False, self.build_converge_seeds)
+        switches['RUN_CONVERGE'] = (False, self.run_converge)
+        switches['TO_MEME_FORMAT'] = (False, self.to_meme_format)
+        switches['SCREEN_CONVERGE_PSSM'] = (False, self.screen_converge_pssm)
         # Get combi
         switches['ASSEMBLE_COMBI'] = (True, self.assemble_combi)
         switches['CLUSTER'] = (True, self.cluster)
@@ -177,8 +176,9 @@ class Executor:
         shutil.copy(self.dir.input_seqs, self.dir.converge_dir)
 
         command = f"cd {self.dir.converge_dir} && " \
-            f"mpirun -np {self.dir.num_p} ./{converge_exec} -B -E 1 -r 1 -f 1 " \
-            f"-c {composition} -i {seeds} -p {input_seqs}"
+            f"mpirun -allow-run-with-root -np {self.dir.num_p} " \
+            f"./{converge_exec} -B -E 1 -r 1 -f 1 -c {composition} " \
+            f"-i {seeds} -p {input_seqs}"
         subprocess.run(command, shell=True, executable=self.dir.bash_exec,
                        stdout=subprocess.DEVNULL)
         if os.path.isfile(self._dir.pssm):
