@@ -20,3 +20,16 @@ def main(kwargs):
             new_filename = folder_dir + "logos_{}.png".format(logo_no)
             os.rename(orig_filename, new_filename)
     return
+
+
+
+
+
+
+
+
+
+
+
+
+

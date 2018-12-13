@@ -7,7 +7,6 @@ def main(kwargs):
     memefile = kwargs['memefile']
     with open(cluster_df_pkl, 'rb') as file:
         cluster_df = pickle.load(file)
-
     centroids = cluster_df['centroid']
     profiles_to_keep = set()
     for centroid in centroids:

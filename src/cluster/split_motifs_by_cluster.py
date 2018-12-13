@@ -8,7 +8,6 @@ def main(kwargs):
     motifs = kwargs['motifs']
     with open(centroid_pkl, 'rb') as file:
         cluster_centroids = pickle.load(file)
-
     for label, centroid in cluster_centroids['centroid'].items():
         output = f"{motifs}/motifs_in_cluster_{label}.txt"
         meme_rewritter(centroid, input_meme, output=output, to_keep=True,

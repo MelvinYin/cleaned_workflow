@@ -6,6 +6,9 @@ import subprocess
 from cluster import Cluster
 from config import Directory
 from utils import move_replace
+from pssm_class import PSSM_meme, PSSM_conv
+import pickle
+import re
 
 FilterIntDir = namedtuple(
     'FilterIntDir', "post_evalue post_entropy post_corr mast_shortseq "
@@ -53,12 +56,16 @@ class Filter:
         # Input: self.dir.memefile
         # Output: self.dir.memefile
         assert os.path.isfile(self.dir.memefile)
-        from screen_meme_for import main
-        kwargs = dict(memefile=self.dir.memefile,
-                      evalue_threshold=self.dir.evalue_threshold)
-        main(kwargs)
+        pssm_obj = PSSM_meme(filename=self.dir.memefile)
+        to_delete = []
+        evalues = pssm_obj.get_evalue()
+        for i, evalue in enumerate(evalues):
+            if evalue > self.dir.evalue_threshold:
+                to_delete.append(i)
+        pssm_obj.delete_pssm(to_delete)
+        pssm_obj.output()
         if __debug__:
-            shutil.copy(self.dir.memefile, self._dir.post_evalue)
+            pssm_obj.output(self._dir.post_evalue)
         assert os.path.isfile(self.dir.memefile)
         return
 
@@ -66,12 +73,16 @@ class Filter:
         # Input: self.dir.memefile
         # Output: self.dir.memefile
         assert os.path.isfile(self.dir.memefile)
-        from screen_meme_for import main
-        kwargs = dict(memefile=self.dir.memefile,
-                      entropy_bits_threshold=self.dir.entropy_bits_threshold)
-        main(kwargs)
+        pssm_obj = PSSM_meme(filename=self.dir.memefile)
+        to_delete = []
+        entropy_bits = pssm_obj.get_entropy_bits()
+        for i, entropy in enumerate(entropy_bits):
+            if entropy < self.dir.entropy_bits_threshold:
+                to_delete.append(i)
+        pssm_obj.delete_pssm(to_delete)
+        pssm_obj.output()
         if __debug__:
-            shutil.copy(self.dir.memefile, self._dir.post_entropy)
+            pssm_obj.output(self._dir.post_entropy)
         assert os.path.isfile(self.dir.memefile)
         return
 
@@ -86,12 +97,13 @@ class Filter:
                   f"{self.dir.memefile} {self.dir.short_seq} -o " \
                   f"{self._dir.mast_shortseq}"
         subprocess.run(command, shell=True, executable=self.dir.bash_exec)
-        from mast_remove_profiles import main
-        kwargs = dict(mast_in=f"{self._dir.mast_shortseq}/mast.txt",
-                      memefile=self.dir.memefile)
-        main(kwargs)
+
+        to_delete = get_correlated_motifs(f"{self._dir.mast_shortseq}/mast.txt")
+        pssm_obj = PSSM_meme(filename=self.dir.memefile)
+        pssm_obj.delete_pssm(to_delete)
+        pssm_obj.output()
         if __debug__:
-            shutil.copy(self.dir.memefile, self._dir.post_corr)
+            pssm_obj.output(self._dir.post_corr)
         assert os.path.isdir(self._dir.mast_shortseq)
         assert os.path.isfile(self.dir.memefile)
         return
@@ -112,10 +124,17 @@ class Filter:
             input_meme=self.dir.memefile,
             cluster_pkl=self._dir.cluster_pkl)
         Cluster(cluster_dir).run()
-        from remove_noncentroid_profiles_meme import main
-        kwargs = dict(cluster_df_pkl=self._dir.cluster_pkl,
-                      memefile=self.dir.memefile)
-        main(kwargs)
+
+        with open(self._dir.cluster_pkl, 'rb') as file:
+            cluster_df = pickle.load(file)
+        centroids = cluster_df['centroid']
+        profiles_to_keep = set()
+        for centroid in centroids:
+            for profile in centroid:
+                profiles_to_keep.add(profile)
+        pssm_obj = PSSM_meme(filename=self.dir.memefile)
+        pssm_obj.keep_pssm(profiles_to_keep)
+        pssm_obj.output()
         assert os.path.isfile(self.dir.memefile)
         return
 
@@ -126,3 +145,15 @@ class Filter:
 
     def to_trash(self, file):
         return move_replace(file, self.dir.trash)
+
+
+def get_correlated_motifs(fname):
+    to_remove = []
+    with open(fname, 'r') as file:
+        for line in file:
+            if re.search("Removed motifs", line):
+                motifs1 = re.findall("([0-9]+)\, ", line)
+                motifs2 = list(re.findall("([0-9]+) and ([0-9]+)", line)[0])
+                to_remove = list(int(i) for i in (motifs1 + motifs2))
+                break
+    return to_remove

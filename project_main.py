@@ -21,7 +21,7 @@ ExecIntDir = namedtuple(
     'ExecIntDir', 'dhcl_output consensus_seeds converge_seeds meme_full '
                   'starter_meme converge_output converge_pssm pssm '
                   'meme_merged meme_cleaned converge_meme '
-                  'converge_composition short_seq short_seq_len')
+                  'converge_composition short_seq minimal_merged short_seq_len')
 
 class Executor:
     def __init__(self):
@@ -44,6 +44,7 @@ class Executor:
             pssm=f"{self.dir.file}/pssm.txt",
             converge_composition=f"{self.dir.file}/converge_composition.txt",
             short_seq=f"{self.dir.file}/short_seq.fasta",
+            minimal_merged=f"{self.dir.file}/minimal_merged.fasta",
             short_seq_len=3)
         return _dir
 
@@ -63,6 +64,7 @@ class Executor:
         switches['BUILD_STARTER'] = (False, self.build_starter)
         switches['CLEAN_PSSM'] = (False, self.clean_pssm)
         switches['MERGE_PSSM'] = (True, self.merge_pssm)
+        switches['TO_MINIMAL'] = (True, self.to_minimal)
         switches['SCREEN_PSSM'] = (False, self.screen_pssm)
         # Get combi
         switches['ASSEMBLE_COMBI'] = (False, self.assemble_combi)
@@ -205,6 +207,17 @@ class Executor:
         main(kwargs)
         if __debug__:
             shutil.copy(self._dir.pssm, self._dir.meme_merged)
+        assert os.path.isfile(self._dir.pssm)
+        return
+
+    def to_minimal(self):
+        assert os.path.isfile(self._dir.pssm)
+        from meme_to_minimal_converter import main
+        kwargs = dict(input=self._dir.pssm,
+                      output=self._dir.pssm)
+        main(kwargs)
+        if __debug__:
+            shutil.copy(self._dir.pssm, self._dir.minimal_merged)
         assert os.path.isfile(self._dir.pssm)
         return
 

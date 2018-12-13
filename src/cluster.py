@@ -5,6 +5,8 @@ import shutil
 import subprocess
 
 from utils import move_replace
+import pickle
+from pssm_class import PSSM_meme
 
 ClusterIntDir = namedtuple(
     "ClusterIntDir", "full_param_pkl cluster_pkl motifs")
@@ -76,11 +78,18 @@ class Cluster:
         from split_motifs_by_cluster import main
         self.to_trash(self._dir.motifs)
         os.mkdir(self._dir.motifs)
-        kwargs = dict()
-        kwargs['centroid_pkl'] = self._dir.cluster_pkl
-        kwargs['input_meme'] = self.dir.input_meme
-        kwargs['motifs'] = self._dir.motifs
-        main(kwargs)
+
+        centroid_pkl = kwargs['centroid_pkl']
+        input_meme = kwargs['input_meme']
+        motifs = kwargs['motifs']
+        with open(self._dir.cluster_pkl, 'rb') as file:
+            cluster_centroids = pickle.load(file)
+        for label, centroid in cluster_centroids['centroid'].items():
+            output = f"{self._dir.motifs}/motifs_in_cluster_{label}.txt"
+            pssm_obj = PSSM_meme(filename=self.dir.input_meme)
+            pssm_obj.keep_pssm(centroid)
+            pssm_obj.relabel_pssms()
+            pssm_obj.output(output)
         assert os.path.isdir(self._dir.motifs)
         return
 

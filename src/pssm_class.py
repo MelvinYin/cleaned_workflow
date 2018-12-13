@@ -3,7 +3,7 @@ import re
 
 
 class PSSM_meme:
-    def __init__(self, kwargs):
+    def __init__(self, **kwargs):
         self.fname = kwargs['filename']
         self.start, self.pssms, self.end = self.meme_format_parser()
 
@@ -104,6 +104,12 @@ class PSSM_meme:
         # Deletion is only by order and not label
         for i in sorted(to_delete, reverse=True):
             del self.pssms[i]
+        return
+
+    def keep_pssm(self, to_keep):
+        for i in range(len(self.pssms))[::-1]:
+            if i not in to_keep:
+                del self.pssms[i]
         return
 
     def output(self, fname=None):
