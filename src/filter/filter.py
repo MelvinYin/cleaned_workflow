@@ -6,7 +6,7 @@ import subprocess
 from cluster import Cluster
 from config import Directory
 from utils import move_replace
-from tmp_pssm_class import PSSM
+from pssm_class import PSSM
 import pickle
 import re
 

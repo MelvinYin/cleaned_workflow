@@ -2,73 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="977e9f69-e7b2-4235-9856-6e88bdf80fc9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/tmp_pssm_class.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out10.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out11.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out12.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out13.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out3.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out4.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out5.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out6.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out7.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out8.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/meme_full/meme_out9.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/meme_merged.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/pssm (copy).txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/pssm.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/cluster_description.txt" beforeDir="false" afterPath="$PROJECT_DIR$/output/cluster_description.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_1/logos_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_1/logos_13.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_11/logos_13.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_11/logos_7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_13/logos_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_13/logos_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_13/logos_11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_13/logos_4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_15/logos_12.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_15/logos_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_15/logos_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_15/logos_5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_15/logos_6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_15/logos_7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_15/logos_8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_18/logos_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_2/logos_7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_3/logos_12.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_3/logos_7.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/logos/cluster_3/logos_7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_5/logos_12.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/logos/cluster_5/logos_12.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_5/logos_13.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/logos/cluster_5/logos_13.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_5/logos_7.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/logos/cluster_5/logos_7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_5/logos_8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_5/logos_9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_6/logos_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_6/logos_13.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_6/logos_9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_7/logos_13.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_7/logos_5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_7/logos_7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_7/logos_9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/mast/mast.html" beforeDir="false" afterPath="$PROJECT_DIR$/output/mast/mast.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/mast/mast.txt" beforeDir="false" afterPath="$PROJECT_DIR$/output/mast/mast.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/mast/mast.xml" beforeDir="false" afterPath="$PROJECT_DIR$/output/mast/mast.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/project_main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cluster.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cluster.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cluster/converge_meme.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cluster/meme_merged.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cluster/meme_to_mininal_converter.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cluster/output.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cluster/pssm.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/converge2meme.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/converge2meme.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/filter.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/filter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/filter/converge_meme.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/filter/meme_format_parser.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/filter/meme_to_minimal_converter.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/filter/meme_to_minimal_converter.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pssm_class.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/pssm_class.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tmp_pssm_class.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -115,11 +52,11 @@
     <splitter split-orientation="horizontal" split-proportion="0.6035219">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/project_main.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="7529">
-                  <caret line="278" column="45" lean-forward="true" selection-start-line="278" selection-start-column="45" selection-end-line="278" selection-end-column="45" />
+                <state relative-caret-position="297">
+                  <caret line="55" column="55" lean-forward="true" selection-start-line="55" selection-start-column="55" selection-end-line="55" selection-end-column="55" />
                   <folding>
                     <element signature="e#0#47#0" expanded="true" />
                   </folding>
@@ -127,11 +64,23 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/cluster.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="300">
+                  <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+                  <folding>
+                    <element signature="e#0#34#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/filter.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="369">
-                  <caret line="83" column="50" lean-forward="true" selection-start-line="83" selection-start-column="50" selection-end-line="83" selection-end-column="50" />
+                <state relative-caret-position="270">
+                  <caret line="27" column="35" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
                   <folding>
                     <element signature="e#0#47#0" expanded="true" />
                   </folding>
@@ -147,8 +96,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/config.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="189">
-                  <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
+                <state relative-caret-position="279">
+                  <caret line="39" column="34" lean-forward="true" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="34" />
                 </state>
               </provider>
             </entry>
@@ -170,18 +119,6 @@
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/tmp_pssm_class.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="219">
-                  <caret line="160" column="41" lean-forward="true" selection-start-line="160" selection-start-column="41" selection-end-line="160" selection-end-column="41" />
-                  <folding>
-                    <element signature="e#0#9#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/converge2meme.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="1650">
@@ -204,7 +141,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>descrip</find>
       <find>print</find>
       <find>sys.exit</find>
       <find>remove</find>
@@ -234,6 +170,7 @@
       <find>get_en</find>
       <find>screen_pssm</find>
       <find>run_con</find>
+      <find>tmp_pssm</find>
     </findStrings>
     <replaceStrings>
       <replace>False</replace>
@@ -299,7 +236,6 @@
         <option value="$PROJECT_DIR$/src/filter_meme.py" />
         <option value="$PROJECT_DIR$/src/filter/dd.py" />
         <option value="$PROJECT_DIR$/src/merge_meme_files.py" />
-        <option value="$PROJECT_DIR$/src/config.py" />
         <option value="$PROJECT_DIR$/src/filter/screen_meme_for.py" />
         <option value="$PROJECT_DIR$/src/filter/remove_noncentroid_profiles_meme.py" />
         <option value="$PROJECT_DIR$/src/filter/mast_remove_profiles.py" />
@@ -311,16 +247,18 @@
         <option value="$PROJECT_DIR$/src/pssm_class.py" />
         <option value="$PROJECT_DIR$/src/tmp_pssm_class.py" />
         <option value="$PROJECT_DIR$/src/filter/meme_to_minimal_converter.py" />
-        <option value="$PROJECT_DIR$/src/cluster.py" />
         <option value="$PROJECT_DIR$/project_main.py" />
+        <option value="$PROJECT_DIR$/src/config.py" />
         <option value="$PROJECT_DIR$/src/filter.py" />
+        <option value="$PROJECT_DIR$/src/cluster.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="4">
+    <option name="x" value="960" />
     <option name="y" value="25" />
     <option name="width" value="960" />
-    <option name="height" value="741" />
+    <option name="height" value="990" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -610,7 +548,7 @@
       <workItem from="1544772925627" duration="7565000" />
       <workItem from="1544984900653" duration="600000" />
       <workItem from="1545014436966" duration="5090000" />
-      <workItem from="1545019891260" duration="10219000" />
+      <workItem from="1545019891260" duration="10539000" />
     </task>
     <servers />
   </component>
@@ -623,7 +561,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="265143000" />
+    <option name="totallyTimeSpent" value="265463000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1920" height="990" extended-state="6" />
@@ -932,16 +870,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cluster.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-61">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/run_meme_on_cons.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -952,22 +880,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/create_short_seqs.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/project_main.py">
+    <entry file="file://$PROJECT_DIR$/src/filter.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7529">
-          <caret line="278" column="45" lean-forward="true" selection-start-line="278" selection-start-column="45" selection-end-line="278" selection-end-column="45" />
+        <state relative-caret-position="270">
+          <caret line="27" column="35" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
           <folding>
             <element signature="e#0#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cluster.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="39" column="34" lean-forward="true" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tmp_pssm_class.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="156" column="25" lean-forward="true" selection-start-line="156" selection-start-column="25" selection-end-line="156" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -979,20 +927,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/tmp_pssm_class.py">
+    <entry file="file://$PROJECT_DIR$/project_main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="160" column="41" lean-forward="true" selection-start-line="160" selection-start-column="41" selection-end-line="160" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/filter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="83" column="50" lean-forward="true" selection-start-line="83" selection-start-column="50" selection-end-line="83" selection-end-column="50" />
+        <state relative-caret-position="297">
+          <caret line="55" column="55" lean-forward="true" selection-start-line="55" selection-start-column="55" selection-end-line="55" selection-end-column="55" />
           <folding>
             <element signature="e#0#47#0" expanded="true" />
           </folding>
