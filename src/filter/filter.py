@@ -6,7 +6,7 @@ import subprocess
 from cluster import Cluster
 from config import Directory
 from utils import move_replace
-from pssm_class import PSSM
+from pssm_parser import PSSM
 import pickle
 import re
 
@@ -75,13 +75,11 @@ class Filter:
     def screen_entropy(self):
         # Input: self.dir.memefile
         # Output: self.dir.memefile
-        # TODO: entropy calculator
         assert os.path.isfile(self.dir.memefile)
         pssm_obj = PSSM(filename=self.dir.memefile)
         pssm_obj.relabel_pssms()
         to_delete = []
         _entrophies = pssm_obj.get_entropy()
-        print("entrophies: {}".format(_entrophies))
         for i, _entropy in enumerate(_entrophies):
             if _entropy < self.dir.entropy_bits_threshold:
                 to_delete.append(i+1)

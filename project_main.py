@@ -129,11 +129,11 @@ class Executor:
         # Output: self._dir.consensus_seeds
         assert os.path.isdir(self._dir.dhcl_output)
         assert os.path.isdir(self.dir.fasta_for_pdb)
-        from dhcl_output_to_consensus import main
+        from converters import dhcl_to_cons
         kwargs = dict(dhcl_dir=self._dir.dhcl_output,
                       fasta_dir=self.dir.fasta_for_pdb,
                       output=self._dir.consensus_seeds)
-        main(kwargs)
+        dhcl_to_cons(kwargs)
         assert os.path.isfile(self._dir.consensus_seeds)
         return
 
@@ -156,10 +156,10 @@ class Executor:
         # Input: self._dir.consensus_seeds
         # Output: self._dir.converge_seeds
         assert os.path.isfile(self._dir.consensus_seeds)
-        from seeds_to_converge_input import main
+        from converters import cons_to_conv_input
         kwargs = dict(seed_seqs=self._dir.consensus_seeds,
                       output=self._dir.converge_seeds)
-        main(kwargs)
+        cons_to_conv_input(kwargs)
         assert os.path.isfile(self._dir.converge_seeds)
         return
 
@@ -203,11 +203,11 @@ class Executor:
         # Output: self._dir.pssm
         assert os.path.isfile(self._dir.pssm)
         assert os.path.isfile(self._dir.converge_composition)
-        from converge2meme import main
+        from converters import converge_to_minimal
         kwargs = dict(input_pssm=self._dir.pssm,
                       composition=self._dir.converge_composition,
                       output=self._dir.pssm)
-        main(kwargs)
+        converge_to_minimal(kwargs)
         if __debug__:
             shutil.copy(self._dir.pssm, self._dir.converge_meme)
         assert os.path.isfile(self._dir.pssm)
@@ -295,10 +295,10 @@ class Executor:
 
     def to_minimal(self):
         assert os.path.isfile(self._dir.pssm)
-        from meme_to_minimal_converter import main
+        from converters import meme_to_minimal
         kwargs = dict(input=self._dir.pssm,
                       output=self._dir.pssm)
-        main(kwargs)
+        meme_to_minimal(kwargs)
         if __debug__:
             shutil.copy(self._dir.pssm, self._dir.minimal_merged)
         assert os.path.isfile(self._dir.pssm)
@@ -375,5 +375,6 @@ class Executor:
         Cluster(Directory.cluster_dir).delete_intermediate()
         return
 
-executor = Executor()
-executor.run()
+if __name__ == "__main__":
+    executor = Executor()
+    executor.run()

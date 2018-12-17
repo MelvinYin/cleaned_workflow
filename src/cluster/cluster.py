@@ -6,7 +6,7 @@ import subprocess
 
 from utils import move_replace
 import pickle
-from pssm_class import PSSM
+from pssm_parser import PSSM
 
 ClusterIntDir = namedtuple(
     "ClusterIntDir", "full_param_pkl cluster_pkl motifs")
