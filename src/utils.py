@@ -165,8 +165,7 @@ def meme_pssm_get_entropy_bits(pssm):
     entropy = None
     for line in pssm:
         if re.match("\(([0-9]+\.[0-9]+) bits\)", line):
-            entropy = float(re.match("\(([0-9]+\.[0-9]+) bits\)",line)
-                            .group(1))
+            entropy = float(re.match("\(([0-9]+\.[0-9]+) bits\)",line).group(1))
             break
     assert entropy is not None
     return entropy

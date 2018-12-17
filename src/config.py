@@ -42,7 +42,7 @@ class Directory:
     seeds_divisor = 10
     seq_divisor = 10
     evalue_threshold = 0.5
-    entropy_bits_threshold = 40
+    entropy_bits_threshold = 30
 
     executor_dir = ExecutorDirectory(
         file=file,

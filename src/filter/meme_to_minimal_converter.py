@@ -23,7 +23,7 @@ def obtain_lines(fname):
                 current_pssm = []
                 continue
             if current_pssm:
-                current_pssm.append(line)
+                current_pssm.append(line[1:])   # remove an initial space
     return composition, pssms
 
 def format_output_lines(composition, pssms):
@@ -34,7 +34,7 @@ def format_output_lines(composition, pssms):
     output += composition
     output.append("\n")
     for i, pssm in enumerate(pssms):
-        output.append(f"MOTIF MEME-{i}\n")
+        output.append(f"MOTIF MEME-{i+1}\n")
         output += pssm
         output.append("\n")
     return output

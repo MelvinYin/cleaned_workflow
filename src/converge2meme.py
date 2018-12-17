@@ -80,7 +80,7 @@ def meme_format_writer(alphabets, composition_map,
             file.write("MOTIF {}".format(motif_name))
             file.write("\n")
             file.write("letter-probability matrix: alength= 20 w= 30 nsites= {} "
-                       "E= 0.000001".format(nsite))  # alength = len(alphabets)
+                       "E= 0.000".format(nsite))  # alength = len(alphabets)
             # E is just some random number for now
             # w = width of motif
             file.write("\n")

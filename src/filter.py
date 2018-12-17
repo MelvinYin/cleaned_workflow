@@ -6,7 +6,7 @@ import subprocess
 from cluster import Cluster
 from config import Directory
 from utils import move_replace
-from pssm_class import PSSM_meme, PSSM_conv
+from tmp_pssm_class import PSSM
 import pickle
 import re
 
@@ -24,10 +24,10 @@ class Filter:
     def set_switches(self):
         switches = OrderedDict()
         # Get input_seqs
-        switches['EVALUE'] = (False, self.screen_evalue)
-        switches['ENTROPY'] = (False, self.screen_entropy)
-        switches['CORRELATED'] = (False, self.screen_correlated)
-        switches['NON_COMBI'] = (False, self.screen_non_combi)
+        switches['EVALUE'] = (True, self.screen_evalue)
+        switches['ENTROPY'] = (True, self.screen_entropy)
+        switches['CORRELATED'] = (True, self.screen_correlated)
+        switches['NON_COMBI'] = (True, self.screen_non_combi)
         return switches
 
     def run(self):
@@ -55,14 +55,17 @@ class Filter:
     def screen_evalue(self):
         # Input: self.dir.memefile
         # Output: self.dir.memefile
+        # TODO: evalue calculator
         assert os.path.isfile(self.dir.memefile)
-        pssm_obj = PSSM_meme(filename=self.dir.memefile)
+        pssm_obj = PSSM(filename=self.dir.memefile)
+        pssm_obj.relabel_pssms()
         to_delete = []
         evalues = pssm_obj.get_evalue()
         for i, evalue in enumerate(evalues):
             if evalue > self.dir.evalue_threshold:
-                to_delete.append(i)
-        pssm_obj.delete_pssm(to_delete)
+                to_delete.append(i+1)
+        pssm_obj.delete(to_delete)
+        pssm_obj.relabel_pssms()
         pssm_obj.output()
         if __debug__:
             pssm_obj.output(self._dir.post_evalue)
@@ -72,14 +75,18 @@ class Filter:
     def screen_entropy(self):
         # Input: self.dir.memefile
         # Output: self.dir.memefile
+        # TODO: entropy calculator
         assert os.path.isfile(self.dir.memefile)
-        pssm_obj = PSSM_meme(filename=self.dir.memefile)
+        pssm_obj = PSSM(filename=self.dir.memefile)
+        pssm_obj.relabel_pssms()
         to_delete = []
-        entropy_bits = pssm_obj.get_entropy_bits()
-        for i, entropy in enumerate(entropy_bits):
-            if entropy < self.dir.entropy_bits_threshold:
-                to_delete.append(i)
-        pssm_obj.delete_pssm(to_delete)
+        _entrophies = pssm_obj.get_entropy()
+        print("entrophies: {}".format(_entrophies))
+        for i, _entropy in enumerate(_entrophies):
+            if _entropy < self.dir.entropy_bits_threshold:
+                to_delete.append(i+1)
+        pssm_obj.delete(to_delete)
+        pssm_obj.relabel_pssms()
         pssm_obj.output()
         if __debug__:
             pssm_obj.output(self._dir.post_entropy)
@@ -99,8 +106,9 @@ class Filter:
         subprocess.run(command, shell=True, executable=self.dir.bash_exec)
 
         to_delete = get_correlated_motifs(f"{self._dir.mast_shortseq}/mast.txt")
-        pssm_obj = PSSM_meme(filename=self.dir.memefile)
-        pssm_obj.delete_pssm(to_delete)
+        pssm_obj = PSSM(filename=self.dir.memefile)
+        pssm_obj.delete(to_delete)
+        pssm_obj.relabel_pssms()
         pssm_obj.output()
         if __debug__:
             pssm_obj.output(self._dir.post_corr)
@@ -113,6 +121,9 @@ class Filter:
         # Output: self.dir.memefile | self._dir.mast_postcorr
         assert os.path.isfile(self.dir.memefile)
         assert os.path.isfile(self.dir.input_seqs)
+        pssm_obj = PSSM(filename=self.dir.memefile)
+        pssm_obj.relabel_pssms()
+        pssm_obj.output()
         if os.path.isdir(self._dir.mast_postcorr):
             shutil.rmtree(self._dir.mast_postcorr, ignore_errors=True)
         command = f"{self.dir.meme_dir}/mast -remcorr " \
@@ -132,8 +143,9 @@ class Filter:
         for centroid in centroids:
             for profile in centroid:
                 profiles_to_keep.add(profile)
-        pssm_obj = PSSM_meme(filename=self.dir.memefile)
-        pssm_obj.keep_pssm(profiles_to_keep)
+        pssm_obj = PSSM(filename=self.dir.memefile)
+        pssm_obj.keep(profiles_to_keep)
+        pssm_obj.relabel_pssms()
         pssm_obj.output()
         assert os.path.isfile(self.dir.memefile)
         return
