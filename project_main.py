@@ -52,20 +52,20 @@ class Executor:
     def set_switches(self):
         switches = OrderedDict()
         # Get input_seqs
-        switches['MERGE_INPUT'] = (True, self.merge_input)
-        switches['SHRINK_INPUT'] = (True, self.shrink_input)
-        switches['CREATE_SHORT_SEQS'] = (True, self.create_short_seqs)
+        switches['MERGE_INPUT'] = (False, self.merge_input)
+        switches['SHRINK_INPUT'] = (False, self.shrink_input)
+        switches['CREATE_SHORT_SEQS'] = (False, self.create_short_seqs)
         # Get consensus_loops
-        switches['RUN_DHCL'] = (True, self.run_dhcl)
-        switches['EXTRACT_CONSENSUS'] = (True, self.extract_consensus)
-        switches['REDUCE_CONSENSUS'] = (True, self.reduce_consensus)
+        switches['RUN_DHCL'] = (False, self.run_dhcl)
+        switches['EXTRACT_CONSENSUS'] = (False, self.extract_consensus)
+        switches['REDUCE_CONSENSUS'] = (False, self.reduce_consensus)
         # Get PSSM using:
         # Meme
         switches['BUILD_PSSM'] = (True, self.build_pssm)
-        switches['BUILD_STARTER'] = (True, self.build_starter)
+        # switches['BUILD_STARTER'] = (True, self.build_starter)
         switches['CLEAN_PSSM'] = (True, self.clean_pssm)
-        switches['MERGE_PSSM'] = (True, self.merge_pssm)
         switches['TO_MINIMAL'] = (True, self.to_minimal)
+        switches['MERGE_PSSM'] = (True, self.merge_pssm)
         switches['SCREEN_PSSM'] = (True, self.screen_pssm)
         # Or converge
         switches['BUILD_CONVERGE_SEEDS'] = (False, self.build_converge_seeds)
@@ -246,44 +246,54 @@ class Executor:
         main(kwargs)
         assert os.path.isdir(self._dir.meme_full)
         return
-
-    def build_starter(self):
-        # Input: self.dir.input_seqs
-        # Output: self._dir.starter_meme
-        assert os.path.isfile(self.dir.input_seqs)
-        command = f'{self.dir.meme_dir}/meme {self.dir.input_seqs} ' \
-                  f'-text -protein -w 30 -p {self.dir.num_p} -nmotifs 2 ' \
-                  f'-nostatus &>> {self._dir.pssm}'
-        subprocess.run(command, shell=True, executable=self.dir.bash_exec)
-        if __debug__:
-            shutil.copy(self._dir.pssm, self._dir.starter_meme)
-        assert os.path.isfile(self._dir.pssm)
-        return
+    #
+    # def build_starter(self):
+    #     # Input: self.dir.input_seqs
+    #     # Output: self._dir.starter_meme
+    #     assert os.path.isfile(self.dir.input_seqs)
+    #     command = f'{self.dir.meme_dir}/meme {self.dir.input_seqs} ' \
+    #               f'-text -protein -w 30 -p {self.dir.num_p} -nmotifs 2 ' \
+    #               f'-nostatus &>> {self._dir.pssm}'
+    #     subprocess.run(command, shell=True, executable=self.dir.bash_exec)
+    #     if __debug__:
+    #         shutil.copy(self._dir.pssm, self._dir.starter_meme)
+    #     assert os.path.isfile(self._dir.pssm)
+    #     return
 
     def clean_pssm(self):
         # Input: self._dir.meme_full | self._dir.starter_meme
         # Output: self._dir.meme_full | self._dir.starter_meme
         assert os.path.isdir(self._dir.meme_full)
-        assert os.path.isfile(self._dir.pssm)
         from meme_cleaner import main
-        kwargs = dict(input=self._dir.pssm,
-                      output=self._dir.pssm)
-        main(kwargs)
+        # kwargs = dict(input=self._dir.pssm,
+        #               output=self._dir.pssm)
+        # main(kwargs)
         for filename in os.listdir(self._dir.meme_full):
             kwargs = dict(input=f"{self._dir.meme_full}/{filename}",
                           output=f"{self._dir.meme_full}/{filename}")
             main(kwargs)
-        if __debug__:
-            shutil.copy(self._dir.pssm, self._dir.starter_meme)
+        # if __debug__:
+        #     shutil.copy(self._dir.pssm, self._dir.starter_meme)
         assert os.path.isdir(self._dir.meme_full)
-        assert os.path.isfile(self._dir.pssm)
+        # assert os.path.isfile(self._dir.pssm)
+        return
+
+    def to_minimal(self):
+        assert os.path.isdir(self._dir.meme_full)
+        from converters import meme_to_minimal
+
+        for _fname in os.listdir(self._dir.meme_full):
+            filename = f"{self._dir.meme_full}/{_fname}"
+            kwargs = dict(input=filename,
+                          output=filename)
+            meme_to_minimal(kwargs)
+        assert os.path.isdir(self._dir.meme_full)
         return
 
     def merge_pssm(self):
         # Input: self._dir.meme_full | self._dir.starter_meme
         # Output: self._dir.meme_merged
         assert os.path.isdir(self._dir.meme_full)
-        assert os.path.isfile(self._dir.pssm)
         from merge_meme_files import main
         kwargs = dict(meme_folder=self._dir.meme_full,
                       memefile=self._dir.pssm)
@@ -293,16 +303,6 @@ class Executor:
         assert os.path.isfile(self._dir.pssm)
         return
 
-    def to_minimal(self):
-        assert os.path.isfile(self._dir.pssm)
-        from converters import meme_to_minimal
-        kwargs = dict(input=self._dir.pssm,
-                      output=self._dir.pssm)
-        meme_to_minimal(kwargs)
-        if __debug__:
-            shutil.copy(self._dir.pssm, self._dir.minimal_merged)
-        assert os.path.isfile(self._dir.pssm)
-        return
 
     def screen_pssm(self):
         # Input: self._dir.meme_merged | self.dir.input_seqs |

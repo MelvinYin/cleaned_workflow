@@ -7,14 +7,12 @@ import pandas as pd
 class PSSM:
     def __init__(self, **kwargs):
         self.fname = kwargs['filename']
-        self.start, self.pssm_lines = self.extract_pssm_lines()
-        self.composition = self.parse_composition(self.start)
-        self.pssm_properties = self.extract_pssm_properties(self.pssm_lines)
+        start, pssm_lines = self.extract_pssm_lines()
+        self.composition = self.parse_composition(start)
+        self.pssm_properties = self.extract_pssm_properties(pssm_lines)
 
     def extract_pssm_properties(self, pssms):
-        # todo: converge2meme needs to be called for converge,
-        #  and meme_to_minimal need to be called for meme.
-        full_df = pd.DataFrame(columns=('pssm_index', 'evalue', 'entropy',
+        full_df = pd.DataFrame(columns=('label', 'evalue', 'entropy',
                                         'pssm', 'nsites'))
         for i, pssm_lines in enumerate(pssms):
             label = None
@@ -45,18 +43,28 @@ class PSSM:
             pssm = np.array(pssm, dtype=float)
             assert pssm.shape == (30, 20)
             _entropy = sum([entropy(line, self.composition) for line in pssm])
-            full_df.loc[i, 'pssm_index'] = label
+            full_df.loc[i, 'label'] = label
             full_df.loc[i, 'evalue'] = evalue
             full_df.loc[i, 'entropy'] = _entropy
             full_df.loc[i, 'nsites'] = nsites
             full_df.at[i, 'pssm'] = pssm
-        full_df = full_df.set_index("pssm_index")
         return full_df
+
+    def merge_with(self, pssm_instance):
+    #     assumption that composition, start is same for both
+        self.pssm_properties = self.pssm_properties.append(
+        pssm_instance.pssm_properties)
+        # check if duplicates exist?
+        return
+
+    # todo: have a merge pandas df function here, for meme_merged.
 
     def relabel_pssms(self):
         length = len(self.pssm_properties)
-        new_index = np.array(range(1, length+1))    # Fail if is list
-        self.pssm_properties.set_index(new_index, inplace=True)
+        new_labels = np.array(range(1, length+1))    # Fail if is list
+        self.pssm_properties['label'] = new_labels
+        new_index = np.array(range(len(self.pssm_properties)))
+        self.pssm_properties = self.pssm_properties.set_index(new_index)
         return
 
     def parse_composition(self, start):
@@ -117,10 +125,11 @@ class PSSM:
             if (i != 0) and (i % 9 == 0):
                 lines.append("\n")
         lines.append("\n\n")
-        for motif_i, values in self.pssm_properties.iterrows():
+        for _i, values in self.pssm_properties.iterrows():
+            label = values.label
             evalue = "{:.6f}".format(values.evalue)
             nsites = int(values.nsites)
-            lines.append("MOTIF MEME-{}\n".format(motif_i))
+            lines.append("MOTIF MEME-{}\n".format(label))
             lines.append(f"letter-probability matrix: alength= 20 w= 30 "
                          f"nsites= {nsites} E= {evalue}\n")
             for line in values.pssm:
@@ -142,16 +151,13 @@ class PSSM:
         return
 
     def delete(self, i_to_delete):
-        self.pssm_properties = self.pssm_properties.drop(i_to_delete)
+        bool_mask = ~self.pssm_properties.label.isin(i_to_delete)
+        self.pssm_properties = self.pssm_properties[bool_mask]
         return
 
     def keep(self, i_to_keep):
-        indices = list(self.pssm_properties.index.values)
-        to_delete = []
-        for index in indices[::-1]:
-            if index not in i_to_keep:
-                to_delete.append(index)
-        self.delete(to_delete)
+        bool_mask = self.pssm_properties.label.isin(i_to_keep)
+        self.pssm_properties = self.pssm_properties[bool_mask]
         return
 
     def get_evalue(self):
