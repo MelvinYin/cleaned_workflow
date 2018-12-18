@@ -108,8 +108,7 @@ def _parse_converge_composition(filename):
         composition_map[key] = value / summed_composition
     return composition_map
 
-def _format_minimal_output_conv(alphabets, composition_map,
-                       matrices, output):
+def _format_minimal_from_conv(alphabets, composition_map, matrices, output):
     m_to_write = list(range(len(matrices)))
     with open(output, 'w') as file:
         file.write("MEME version 4\n")
@@ -135,7 +134,7 @@ def _format_minimal_output_conv(alphabets, composition_map,
             file.write("\n")
             file.write("letter-probability matrix: alength= 20 w= 30 nsites= {} "
                        "E= 0.000".format(nsite))  # alength = len(alphabets)
-            # E is just some random number for now
+            # E is just some random number, filled in by subsequent eval calc.
             # w = width of motif
             file.write("\n")
             for line in matrix:
@@ -155,7 +154,7 @@ def converge_to_minimal(kwargs):
     output = kwargs['output']
     alphabets, matrices = _parse_converge_output(input_pssm)
     composition_map = _parse_converge_composition(composition)
-    _format_minimal_output_conv(alphabets, composition_map, matrices, output)
+    _format_minimal_from_conv(alphabets, composition_map, matrices, output)
 
 # cons_to_conv_input
 # Convert dhcl seed sequences to converge input seqs

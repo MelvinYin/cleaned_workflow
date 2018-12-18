@@ -51,13 +51,11 @@ class PSSM:
         return full_df
 
     def merge_with(self, pssm_instance):
-    #     assumption that composition, start is same for both
+        # Assume that composition, start is same for both
         self.pssm_properties = self.pssm_properties.append(
         pssm_instance.pssm_properties)
         # check if duplicates exist?
         return
-
-    # todo: have a merge pandas df function here, for meme_merged.
 
     def relabel_pssms(self):
         length = len(self.pssm_properties)
@@ -165,55 +163,3 @@ class PSSM:
 
     def get_entropy(self):
         return self.pssm_properties.entropy.values
-
-
-
-# def get_evalue(self):
-#     # todo
-#     evalues = []
-#     for pssm in self.pssm_properties.pssm:
-#         evalue = None
-#         for line in pssm:
-#             if line.startswith("MOTIF"):
-#                 evalue = re.search(
-#                     "E= ([0-9]+[\.]?[0-9]?e?[+-]?[0-9]*)", line)
-#                 evalue = float(evalue.group(1))
-#                 break
-#         # evalue can be == 0 so avoid assert evalue
-#         assert evalue is not None
-#         evalues.append(evalue)
-#     return evalues
-
-# def delete_pssm(self, to_delete):
-#     self.pssm_properties = self.pssm_properties.drop(to_delete)
-#     return
-#
-#
-# def relabel_pssms(self, pssm):
-#     for j, line in enumerate(pssm):
-#         if re.search("MEME-[0-9]+", line):
-#             # mast labels their meme starting from 1, so need to match
-#             line = re.sub("MEME-[0-9]+", f"MEME-{i + 1}", line)
-#         pssm[j] = line
-#     return pssm
-
-
-# def get_composition(self):
-#     assert self.start
-#     composition = []
-#     at_composition = False
-#     for line in self.start:
-#         # Check if we are in composition
-#         if line.startswith("Background letter frequencies"):
-#             at_composition = True
-#             continue
-#         if line.startswith("MOTIF"):
-#             break
-#         if at_composition:
-#             freq_re = re.findall("(1.[0]+)|(0.[0-9]+)", line)
-#             if freq_re:
-#                 for (f1, f2) in freq_re:
-#                     # if f1=1.0, the rest == 0, hence f1 first otherwise f2
-#                     composition.append(float(f1) if f1 else float(f2))
-#     assert len(composition) == 20  # num alphabets
-#     return composition
