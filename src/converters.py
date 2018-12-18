@@ -1,3 +1,7 @@
+from collections import OrderedDict
+import os
+import re
+
 # meme to minimal
 def _parse_meme(fname):
     composition = ""
@@ -53,9 +57,6 @@ def meme_to_minimal(kwargs):
 # Converge output to minimal
 # Converts converge motif format to minimal meme format
 # see http://meme-suite.org/doc/examples/sample-protein-motif.meme
-
-import re
-from collections import OrderedDict
 
 def _parse_converge_output(filename):
     alphabets = ""
@@ -177,8 +178,6 @@ def cons_to_conv_input(kwargs):
 
 # dhcl_to_cons
 # Convert dhcl output to consensus seed sequences
-import os
-import re
 
 def _get_loop_endpoints(midpoint, seq_len):
     if midpoint <= 15:

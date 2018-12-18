@@ -86,7 +86,7 @@ class Directory:
         log=log,
         trash=trash,
         meme_dir=meme_dir,
-        input_seqs=input_seqs,
+        input_seqs=None,
         bash_exec=bash_exec,
         short_seq=None,
         memefile=None,

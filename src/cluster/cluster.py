@@ -25,12 +25,16 @@ class Cluster:
             motifs=f"{self.dir.file}/motifs")
         return _dir
 
-    def run(self):
-        to_run = [self.get_cluster_params, self.cluster_combi]
-        if self.dir.logos:
-            to_run.append(self.create_cluster_motifs)
-            to_run.append(self.create_cluster_logos)
-            to_run.append(self.rename_logos)
+    def run(self, make_logo=False):
+        if make_logo:
+            assert os.path.isdir(self.dir.logos)
+            to_run = [self.get_cluster_params,
+                      self.cluster_combi,
+                      self.create_cluster_motifs,
+                      self.create_cluster_logos,
+                      self.rename_logos]
+        else:
+            to_run = [self.get_cluster_params, self.cluster_combi]
         for func in to_run:
             try:
                 print(f"Cluster/{func.__name__}:")
@@ -75,13 +79,9 @@ class Cluster:
         # Output: multiple ./files/motifs/motifs_in_cluster_{}.txt
         assert os.path.isfile(self.dir.input_meme)
         assert os.path.isfile(self._dir.cluster_pkl)
-        from split_motifs_by_cluster import main
         self.to_trash(self._dir.motifs)
         os.mkdir(self._dir.motifs)
 
-        # centroid_pkl = kwargs['centroid_pkl']
-        # input_meme = kwargs['input_meme']
-        # motifs = kwargs['motifs']
         with open(self._dir.cluster_pkl, 'rb') as file:
             cluster_centroids = pickle.load(file)
         for label, centroid in cluster_centroids['centroid'].items():

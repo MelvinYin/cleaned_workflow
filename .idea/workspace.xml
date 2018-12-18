@@ -2,14 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="977e9f69-e7b2-4235-9856-6e88bdf80fc9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/pssm_parser_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/from_dhcl/GD2_3hpf.dhcl.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/from_dhcl/GD2_3hpf.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/short_seq.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/converters.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_src/converge2meme.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_src/dhcl2consensus.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_src/filter_conv.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_src/mast_remove_profiles.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_src/pssm_class.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_src/remove_noncentroid_profiles_meme.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_src/screen_entropy_conv.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_src/screen_entropy_meme.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_src/screen_meme_for.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_src/screen_motif_entropy.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_src/screen_motif_evalue.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_src/seeds2conv_input.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/project_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/project_main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cluster/cluster.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cluster/cluster.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cluster/split_motifs_by_cluster.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/filter/remove_noncentroid_profiles.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/merge_meme_files.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/merge_meme_files.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pssm_parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/pssm_parser.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -54,88 +66,118 @@
     <favorites_list name="cleaned_workflow" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/project_main.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="369">
-              <caret line="64" selection-start-line="64" selection-end-line="64" selection-end-column="64" />
-              <folding>
-                <element signature="e#0#47#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pssm_parser.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2061">
-              <caret line="110" column="38" selection-start-line="110" selection-start-column="38" selection-end-line="110" selection-end-column="38" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pssm_parser_test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/merge_meme_files.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="45" column="20" selection-start-line="45" selection-start-column="20" selection-end-line="45" selection-end-column="20" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/converters.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5430">
-              <caret line="182" column="24" selection-start-line="182" selection-start-column="24" selection-end-line="182" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/filter/filter.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="76" column="35" selection-start-line="76" selection-start-column="35" selection-end-line="76" selection-end-column="35" />
-              <folding>
-                <element signature="e#0#47#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cluster/cluster.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#0#34#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.6814301">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/project_main.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="203">
+                  <caret line="301" column="29" selection-start-line="301" selection-start-column="23" selection-end-line="301" selection-end-column="29" />
+                  <folding>
+                    <element signature="e#0#47#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/converters.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="420">
+                  <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
+                  <folding>
+                    <element signature="e#1#36#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/utils.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="291">
+                  <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+                  <folding>
+                    <element signature="e#0#9#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/run_meme_on_cons.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="30">
+                  <caret line="3" column="16" lean-forward="true" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+                  <folding>
+                    <element signature="e#0#10#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/meme_cleaner.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-69">
+                  <caret line="43" column="34" selection-start-line="43" selection-start-column="34" selection-end-line="43" selection-end-column="34" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/cluster/cluster.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-519">
+                  <caret line="27" column="35" lean-forward="true" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
+                  <folding>
+                    <element signature="e#0#34#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/config.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="287">
+                  <caret line="28" column="4" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/merge_meme_files.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="120">
+                  <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+                  <folding>
+                    <element signature="e#0#9#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/project_main.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="58">
+                  <caret line="262" column="14" lean-forward="true" selection-start-line="262" selection-start-column="14" selection-end-line="262" selection-end-column="14" />
+                  <folding>
+                    <element signature="e#0#47#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -147,29 +189,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>pssm</find>
-      <find>rename_logos</find>
-      <find>get_en</find>
-      <find>screen_pssm</find>
-      <find>run_con</find>
-      <find>tmp_pssm</find>
-      <find>seeds_to</find>
-      <find>dhcl_output_to_consensus</find>
-      <find>mast_remove_profiles</find>
-      <find>meme_to_minimal_converter</find>
-      <find>remove_noncentroid_profiles_meme</find>
-      <find>screen_entropy_conv</find>
-      <find>screen_entropy_meme</find>
-      <find>screen_meme_for</find>
-      <find>screen_motif_entropy</find>
-      <find>screen_motif_evalue</find>
-      <find>meme_to</find>
-      <find>pssm_class</find>
-      <find>p</find>
-      <find>converge2meme</find>
-      <find>format_output_lines</find>
-      <find>cons_to_</find>
-      <find>converge2</find>
       <find>dhcl_to_</find>
       <find>self.pssm</find>
       <find>self.start</find>
@@ -177,6 +196,29 @@
       <find>clean_pssm</find>
       <find>merge_pssm</find>
       <find>relabel</find>
+      <find>Filter</find>
+      <find>converge_seeds</find>
+      <find>minimal_merged</find>
+      <find>converge_meme</find>
+      <find>converge_pssm</find>
+      <find>converge_output</find>
+      <find>remove_noncentr</find>
+      <find>filter_conv</find>
+      <find>filter_</find>
+      <find>remove_non</find>
+      <find>meme_rewritter_for_meme</find>
+      <find>split_motifs</find>
+      <find>split_motif</find>
+      <find>meme_rewritter</find>
+      <find>conv_meme_parser</find>
+      <find>meme_format_parser</find>
+      <find>meme_pssm_get_evalue</find>
+      <find>meme_pssm_get_entropy_bits</find>
+      <find>get_composition_meme</find>
+      <find>get_composition_conv</find>
+      <find>relabel_meme_pssm</find>
+      <find>remove</find>
+      <find>import</find>
     </findStrings>
     <replaceStrings>
       <replace>False</replace>
@@ -206,7 +248,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../actual_again/src/config.py" />
         <option value="$PROJECT_DIR$/../actual_again/external_scripts/dhcl/executables/everything.py" />
         <option value="$PROJECT_DIR$/../actual_again/src/cluster.py" />
         <option value="$PROJECT_DIR$/../actual_again/src/cluster/assemble_cluster_output.py" />
@@ -241,22 +282,23 @@
         <option value="$PROJECT_DIR$/src/cluster/split_motifs_by_cluster.py" />
         <option value="$PROJECT_DIR$/src/cluster/rename_cluster_logos.py" />
         <option value="$PROJECT_DIR$/src/cluster/meme_to_mininal_converter.py" />
-        <option value="$PROJECT_DIR$/src/utils.py" />
         <option value="$PROJECT_DIR$/src/converge2meme.py" />
         <option value="$PROJECT_DIR$/src/pssm_class.py" />
         <option value="$PROJECT_DIR$/src/tmp_pssm_class.py" />
         <option value="$PROJECT_DIR$/src/filter/meme_to_minimal_converter.py" />
-        <option value="$PROJECT_DIR$/src/config.py" />
         <option value="$PROJECT_DIR$/src/filter.py" />
         <option value="$PROJECT_DIR$/src/cluster.py" />
-        <option value="$PROJECT_DIR$/src/cluster/cluster.py" />
         <option value="$PROJECT_DIR$/converters.py" />
         <option value="$PROJECT_DIR$/src/filter/filter.py" />
         <option value="$PROJECT_DIR$/src/tes.py" />
         <option value="$PROJECT_DIR$/src/pssm_parser_test.py" />
         <option value="$PROJECT_DIR$/src/pssm_parser.py" />
+        <option value="$PROJECT_DIR$/src/config.py" />
         <option value="$PROJECT_DIR$/src/merge_meme_files.py" />
+        <option value="$PROJECT_DIR$/src/utils.py" />
+        <option value="$PROJECT_DIR$/src/converters.py" />
         <option value="$PROJECT_DIR$/project_main.py" />
+        <option value="$PROJECT_DIR$/src/cluster/cluster.py" />
       </list>
     </option>
   </component>
@@ -264,50 +306,6 @@
     <option name="y" value="25" />
     <option name="width" value="960" />
     <option name="height" value="990" />
-  </component>
-  <component name="ProjectInspectionProfilesVisibleTreeState">
-    <entry key="Project Default">
-      <profile-state>
-        <expanded-state>
-          <State />
-          <State>
-            <id>CSS</id>
-          </State>
-          <State>
-            <id>Code quality toolsJavaScript</id>
-          </State>
-          <State>
-            <id>GeneralJavaScript</id>
-          </State>
-          <State>
-            <id>JavaScript</id>
-          </State>
-          <State>
-            <id>JavaScript validity issuesJavaScript</id>
-          </State>
-          <State>
-            <id>Potentially confusing code constructsJavaScript</id>
-          </State>
-          <State>
-            <id>Probable bugsCSS</id>
-          </State>
-          <State>
-            <id>Pyramid</id>
-          </State>
-          <State>
-            <id>Python</id>
-          </State>
-          <State>
-            <id>RELAX NG</id>
-          </State>
-        </expanded-state>
-        <selected-state>
-          <State>
-            <id>Angular</id>
-          </State>
-        </selected-state>
-      </profile-state>
-    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -353,7 +351,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Console Font" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -560,7 +558,7 @@
       <workItem from="1544984900653" duration="600000" />
       <workItem from="1545014436966" duration="5090000" />
       <workItem from="1545019891260" duration="14141000" />
-      <workItem from="1545109699739" duration="6164000" />
+      <workItem from="1545109699739" duration="10917000" />
     </task>
     <servers />
   </component>
@@ -573,19 +571,19 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="275229000" />
+    <option name="totallyTimeSpent" value="279982000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1920" height="990" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49945235" weight="0.21184632" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49945235" visible="true" weight="0.21184632" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.50054765" side_tool="true" weight="0.3569904" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32894737" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.40744796" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.14895947" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.14895947" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -640,7 +638,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/screen_entropy_meme.py" />
     <entry file="file://$PROJECT_DIR$/src/screen_entropy_conv.py" />
     <entry file="file://$PROJECT_DIR$/src/filter/screen_motif_entropy.py" />
     <entry file="file://$PROJECT_DIR$/src/filter/screen_entropy_meme.py" />
@@ -652,9 +649,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret selection-end-line="18" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -675,13 +669,6 @@
     <entry file="file://$PROJECT_DIR$/src/dhcl_output_to_consensus.py" />
     <entry file="file://$PROJECT_DIR$/src/reduce_dhcl_for_test.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/meme_cleaner.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-228">
-          <caret line="43" column="34" selection-start-line="43" selection-start-column="34" selection-end-line="43" selection-end-column="34" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/filter/screen_meme_for.py" />
     <entry file="file://$PROJECT_DIR$/src/cluster/split_motifs_by_cluster.py">
@@ -706,16 +693,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/filter/screen_entropy_conv.py" />
-    <entry file="file://$PROJECT_DIR$/src/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5610">
-          <caret line="189" selection-start-line="189" selection-end-line="204" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/seeds_to_converge_input.py" />
     <entry file="file://$PROJECT_DIR$/src/filter/filter_conv.py" />
     <entry file="file://$PROJECT_DIR$/src/pssm_class.py" />
@@ -767,23 +744,6 @@
     <entry file="file://$PROJECT_DIR$/src/create_short_seqs.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/run_meme_on_cons.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="3" column="16" lean-forward="true" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9">
-          <caret line="39" column="34" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/tes.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -791,15 +751,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5430">
           <caret line="182" column="24" selection-start-line="182" selection-start-column="24" selection-end-line="182" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cluster/cluster.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -823,16 +774,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/merge_meme_files.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="45" column="20" selection-start-line="45" selection-start-column="20" selection-end-line="45" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pssm_parser.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2061">
@@ -843,10 +784,74 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/run_meme_on_cons.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="3" column="16" lean-forward="true" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="28" column="4" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/merge_meme_files.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/converters.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
+          <folding>
+            <element signature="e#1#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/meme_cleaner.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-69">
+          <caret line="43" column="34" selection-start-line="43" selection-start-column="34" selection-end-line="43" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cluster/cluster.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-519">
+          <caret line="27" column="35" lean-forward="true" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/project_main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="64" selection-start-line="64" selection-end-line="64" selection-end-column="64" />
+        <state relative-caret-position="203">
+          <caret line="301" column="29" selection-start-line="301" selection-start-column="23" selection-end-line="301" selection-end-column="29" />
           <folding>
             <element signature="e#0#47#0" expanded="true" />
           </folding>
