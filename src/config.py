@@ -39,7 +39,7 @@ class Directory:
     output_logos = f"{output}/logos"
     output_mast = f"{output}/mast"
     num_processor = 7    # Memory use increases as well
-    seeds_divisor = 10
+    seeds_divisor = 3
     seq_divisor = 10
     evalue_threshold = 0.5
     entropy_bits_threshold = 30

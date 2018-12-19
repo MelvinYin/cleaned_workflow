@@ -17,12 +17,12 @@ from cluster import Cluster
 from filter import Filter
 from config import Directory
 from utils import move_replace, check_fasta_validity
+from pssm_parser import PSSM
 
 ExecIntDir = namedtuple(
     'ExecIntDir', 'dhcl_output consensus_seeds converge_seeds meme_full '
-                  'converge_output pssm '
-                  'meme_merged meme_cleaned converge_meme '
-                  'converge_composition short_seq short_seq_len')
+                  'converge_output pssm meme_merged meme_cleaned '
+                  'converge_meme converge_composition short_seq short_seq_len')
 
 class Executor:
     def __init__(self):
@@ -49,13 +49,13 @@ class Executor:
     def set_switches(self):
         switches = OrderedDict()
         # Get input_seqs
-        switches['MERGE_INPUT'] = (False, self.merge_input)
-        switches['SHRINK_INPUT'] = (False, self.shrink_input)
-        switches['CREATE_SHORT_SEQS'] = (False, self.create_short_seqs)
+        switches['MERGE_INPUT'] = (True, self.merge_input)
+        switches['SHRINK_INPUT'] = (True, self.shrink_input)
+        switches['CREATE_SHORT_SEQS'] = (True, self.create_short_seqs)
         # Get consensus_loops
-        switches['RUN_DHCL'] = (False, self.run_dhcl)
-        switches['EXTRACT_CONSENSUS'] = (False, self.extract_consensus)
-        switches['REDUCE_CONSENSUS'] = (False, self.reduce_consensus)
+        switches['RUN_DHCL'] = (True, self.run_dhcl)
+        switches['EXTRACT_CONSENSUS'] = (True, self.extract_consensus)
+        switches['REDUCE_CONSENSUS'] = (True, self.reduce_consensus)
         # Get PSSM using:
         # Meme
         switches['BUILD_PSSM'] = (True, self.build_pssm)
@@ -67,7 +67,7 @@ class Executor:
         switches['RUN_CONVERGE'] = (False, self.run_converge)
         switches['CONV_TO_MINIMAL'] = (False, self.conv_to_minimal)
         # Get combi
-        switches['SCREEN_PSSM'] = (True, self.screen_pssm)
+        switches['SCREEN_PSSM'] = (False, self.screen_pssm)
         switches['ASSEMBLE_COMBI'] = (True, self.assemble_combi)
         switches['CLUSTER'] = (True, self.cluster)
         switches['DELETE_INTERMEDIATE'] = (True, self.delete_intermediate)
@@ -253,10 +253,15 @@ class Executor:
         # Input: self._dir.meme_full
         # Output: self._dir.meme_merged
         assert os.path.isdir(self._dir.meme_full)
-        from merge_meme_files import main
-        kwargs = dict(pssm_folder=self._dir.meme_full,
-                      output=self._dir.pssm)
-        main(kwargs)
+        main_instance = None
+        for _fname in os.listdir(self._dir.meme_full):
+            pssm_instance = PSSM(filename=f"{self._dir.meme_full}/{_fname}")
+            if not main_instance:
+                main_instance = pssm_instance
+                continue
+            main_instance.merge_with(pssm_instance)
+        main_instance.relabel_pssms()
+        main_instance.output(self._dir.pssm)
         if __debug__:
             shutil.copy(self._dir.pssm, self._dir.meme_merged)
         assert os.path.isfile(self._dir.pssm)

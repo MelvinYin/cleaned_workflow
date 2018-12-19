@@ -27,7 +27,7 @@ class Cluster:
 
     def run(self, make_logo=False):
         if make_logo:
-            assert os.path.isdir(self.dir.logos)
+            assert self.dir.logos
             to_run = [self.get_cluster_params,
                       self.cluster_combi,
                       self.create_cluster_motifs,
