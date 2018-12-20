@@ -18,31 +18,33 @@ ClusterDirectory = namedtuple(
     "meme_dir trash")
 
 class Directory:
+    bash_exec = "/bin/bash"
+    converge_dir = "external_scripts/pipeline"
+    dhcl_exec = "external_scripts/dhcl/executables/everything.py"
     file = "files"
+    meme_dir = "external_scripts/meme/bin"
     output = "output"
     p2_7_env = "/home/melvin/anaconda3/envs/dhcl_p/bin/python"
-    dhcl_exec = "external_scripts/dhcl/executables/everything.py"
-    bash_exec = "/bin/bash"
-    meme_dir = "external_scripts/meme/bin"
-    converge_dir = "external_scripts/pipeline"
-    converge_exec = f"{converge_dir}/converge"
+
     converge_composition = f"{converge_dir}/composition.txt"
-    converge_output = f"{converge_dir}/output.4.matrix.0"
     converge_discard = f"{converge_dir}/output.1.matrix.0"
+    converge_exec = f"{converge_dir}/converge"
+    converge_output = f"{converge_dir}/output.4.matrix.0"
+    fasta_for_pdb = f"{file}/input_fasta"
+    input_pdb = f"{file}/input_pdb"
     input_seqdir = f"{file}/sfld_datasets"
     input_seqs = f"{file}/input_seqs.fasta"
     log = f"{file}/log.txt"
-    trash = f"{file}/_trash"
-    input_pdb = f"{file}/input_pdb"
-    fasta_for_pdb = f"{file}/input_fasta"
     output_clusters = f"{output}/cluster_description.txt"
     output_logos = f"{output}/logos"
     output_mast = f"{output}/mast"
-    num_processor = 7    # Memory use increases as well
-    seeds_divisor = 3
-    seq_divisor = 10
-    evalue_threshold = 0.5
+    trash = f"{file}/_trash"
+
     entropy_bits_threshold = 30
+    evalue_threshold = 0.5
+    num_processor = 7    # Memory use increases as well
+    seeds_divisor = 10
+    seq_divisor = 10
 
     executor_dir = ExecutorDirectory(
         file=file,
@@ -70,11 +72,11 @@ class Directory:
         seq_divisor=seq_divisor)
 
     cluster_dir = ClusterDirectory(
+        bash_exec=bash_exec,
         file=file,
         log=log,
-        trash=trash,
         meme_dir=meme_dir,
-        bash_exec=bash_exec,
+        trash=trash,
         input_mast=None,    # Necessary
         input_meme=None,    # Necessary
         description=None,   # Optional
@@ -82,13 +84,13 @@ class Directory:
         cluster_pkl=None)   # Optional
 
     filter_dir = FilterDirectory(
+        bash_exec=bash_exec,
+        entropy_bits_threshold=entropy_bits_threshold,
+        evalue_threshold = evalue_threshold,
         file=file,
         log=log,
-        trash=trash,
         meme_dir=meme_dir,
+        trash=trash,
         input_seqs=None,
-        bash_exec=bash_exec,
-        short_seq=None,
         memefile=None,
-        evalue_threshold=evalue_threshold,
-        entropy_bits_threshold=entropy_bits_threshold)
+        short_seq=None)

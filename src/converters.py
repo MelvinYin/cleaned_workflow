@@ -146,13 +146,13 @@ def _format_minimal_from_conv(alphabets, composition_map, matrices, output):
             file.write("\n")
 
 def converge_to_minimal(kwargs):
-    # input_pssm=''output.4.matrix.0''
+    # input_conv=''output.4.matrix.0''
     # composition='composition.txt'
     # output="meme_format.txt"
-    input_pssm = kwargs['input_pssm']
+    input_conv = kwargs['input_conv']
     composition = kwargs['composition']
     output = kwargs['output']
-    alphabets, matrices = _parse_converge_output(input_pssm)
+    alphabets, matrices = _parse_converge_output(input_conv)
     composition_map = _parse_converge_composition(composition)
     _format_minimal_from_conv(alphabets, composition_map, matrices, output)
 

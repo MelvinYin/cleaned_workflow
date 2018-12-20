@@ -17,12 +17,11 @@ from cluster import Cluster
 from filter import Filter
 from config import Directory
 from utils import move_replace, check_fasta_validity
-from pssm_parser import PSSM
 
 ExecIntDir = namedtuple(
-    'ExecIntDir', 'dhcl_output consensus_seeds converge_seeds meme_full '
-                  'converge_output pssm meme_merged meme_cleaned '
-                  'converge_meme converge_composition short_seq short_seq_len')
+    'ExecIntDir', 'dhcl_output consensus_seeds converge_seeds converge_output '
+                  'pssm pssm_screened converge_meme converge_composition '
+                  'short_seq short_seq_len meme_raw meme_cleaned pssm_raw')
 
 class Executor:
     def __init__(self):
@@ -32,16 +31,17 @@ class Executor:
 
     def set_internal_dir(self):
         _dir = ExecIntDir(
+            converge_composition=f"{self.dir.file}/converge_composition.txt",
+            converge_meme=f"{self.dir.file}/converge_meme.txt",
             converge_output=f"{self.dir.file}/converge_output",
+            consensus_seeds=f"{self.dir.file}/init_seed_seqs.txt",
             converge_seeds=f"{self.dir.file}/converge_seeds.fasta",
             dhcl_output=f"{self.dir.file}/from_dhcl",
-            consensus_seeds=f"{self.dir.file}/init_seed_seqs.txt",
-            meme_full=f"{self.dir.file}/meme_full",
-            meme_merged=f"{self.dir.file}/meme_merged.txt",
             meme_cleaned=f"{self.dir.file}/meme_cleaned.txt",
-            converge_meme=f"{self.dir.file}/converge_meme.txt",
+            meme_raw=f"{self.dir.file}/meme_raw.txt",
             pssm=f"{self.dir.file}/pssm.txt",
-            converge_composition=f"{self.dir.file}/converge_composition.txt",
+            pssm_raw=f"{self.dir.file}/pssm_raw.txt",
+            pssm_screened=f"{self.dir.file}/pssm_screened.txt",
             short_seq=f"{self.dir.file}/short_seq.fasta",
             short_seq_len=3)
         return _dir
@@ -58,16 +58,15 @@ class Executor:
         switches['REDUCE_CONSENSUS'] = (True, self.reduce_consensus)
         # Get PSSM using:
         # Meme
-        switches['BUILD_PSSM'] = (True, self.build_pssm)
-        switches['CLEAN_PSSM'] = (True, self.clean_pssm)
-        switches['TO_MINIMAL'] = (True, self.to_minimal)
-        switches['MERGE_PSSM'] = (True, self.merge_pssm)
+        switches['BUILD_PSSM'] = (False, self.build_pssm)
+        switches['CLEAN_PSSM'] = (False, self.clean_pssm)
+        switches['TO_MINIMAL'] = (False, self.to_minimal)
         # Or converge
-        switches['BUILD_CONVERGE_SEEDS'] = (False, self.build_converge_seeds)
-        switches['RUN_CONVERGE'] = (False, self.run_converge)
-        switches['CONV_TO_MINIMAL'] = (False, self.conv_to_minimal)
+        switches['BUILD_CONVERGE_SEEDS'] = (True, self.build_converge_seeds)
+        switches['RUN_CONVERGE'] = (True, self.run_converge)
+        switches['CONV_TO_MINIMAL'] = (True, self.conv_to_minimal)
         # Get combi
-        switches['SCREEN_PSSM'] = (False, self.screen_pssm)
+        switches['SCREEN_PSSM'] = (True, self.screen_pssm)
         switches['ASSEMBLE_COMBI'] = (True, self.assemble_combi)
         switches['CLUSTER'] = (True, self.cluster)
         switches['DELETE_INTERMEDIATE'] = (True, self.delete_intermediate)
@@ -77,10 +76,10 @@ class Executor:
         # Input: self.dir.input_seqdir
         # Output: self.dir.input_seqs
         assert os.path.isdir(self.dir.input_seqdir)
-        from create_input_seqs import main
+        from create_input_seqs import create_seqs
         kwargs = dict(input_dir=self.dir.input_seqdir,
                       output=self.dir.input_seqs)
-        main(kwargs)
+        create_seqs(kwargs)
         assert os.path.isfile(self.dir.input_seqs)
         return
 
@@ -136,12 +135,11 @@ class Executor:
         # Input: self._dir.consensus_seeds
         # Output: self._dir.consensus_seeds
         assert os.path.isfile(self._dir.consensus_seeds)
-        if self.dir.seeds_divisor:
-            from reduce_dhcl_for_test import main
-            kwargs = dict(input=self._dir.consensus_seeds,
-                          divisor=self.dir.seeds_divisor,
-                          output=self._dir.consensus_seeds)
-            main(kwargs)
+        from reduce_dhcl_for_test import reduce_dhcl
+        kwargs = dict(input=self._dir.consensus_seeds,
+                      divisor=self.dir.seeds_divisor,
+                      output=self._dir.consensus_seeds)
+        reduce_dhcl(kwargs)
         assert os.path.isfile(self._dir.consensus_seeds)
         return
 
@@ -175,10 +173,6 @@ class Executor:
             f"-f 1 -c {composition} -i {seeds} -p {input_seqs}"
         subprocess.run(command, shell=True, executable=self.dir.bash_exec,
                        stdout=subprocess.DEVNULL)
-        if os.path.isfile(self._dir.pssm):
-            self.to_trash(self._dir.pssm)
-        if os.path.isfile(self._dir.converge_composition):
-            self.to_trash(self._dir.converge_composition)
         # Moving this to files folder instead of pipeline folder
         shutil.move(self.dir.converge_output, self._dir.converge_output)
         shutil.move(self.dir.converge_composition,
@@ -196,12 +190,12 @@ class Executor:
         assert os.path.isfile(self._dir.converge_output)
         assert os.path.isfile(self._dir.converge_composition)
         from converters import converge_to_minimal
-        kwargs = dict(input_pssm=self._dir.converge_output,
+        kwargs = dict(input_conv=self._dir.converge_output,
                       composition=self._dir.converge_composition,
                       output=self._dir.pssm)
         converge_to_minimal(kwargs)
         if __debug__:
-            shutil.copy(self._dir.pssm, self._dir.converge_meme)
+            shutil.copy(self._dir.pssm, self._dir.pssm_raw)
         assert os.path.isfile(self._dir.pssm)
         return
 
@@ -209,62 +203,45 @@ class Executor:
     # Meme
     def build_pssm(self):
         # Input: self._dir.consensus_seeds | self.dir.input_seqs
-        # Output: self._dir.meme_full
+        # Output: self._dir.pssm
         assert os.path.isfile(self._dir.consensus_seeds)
         assert os.path.isfile(self.dir.input_seqs)
-        shutil.rmtree(self._dir.meme_full, ignore_errors=True)
-        os.mkdir(self._dir.meme_full)
-        from run_meme_on_cons import main
+        from run_meme_on_cons import run_meme
         kwargs = dict(consensus=self._dir.consensus_seeds,
                       seqs=self.dir.input_seqs,
-                      output_folder=self._dir.meme_full,
                       num_p=self.dir.num_p,
-                      meme_dir=self.dir.meme_dir)
-        main(kwargs)
-        assert os.path.isdir(self._dir.meme_full)
+                      meme_dir=self.dir.meme_dir,
+                      output=self._dir.pssm)
+        run_meme(kwargs)
+        if __debug__:
+            shutil.copy(self._dir.pssm, self._dir.meme_raw)
+        assert os.path.isfile(self._dir.pssm)
         return
 
     def clean_pssm(self):
-        # Input: self._dir.meme_full
-        # Output: self._dir.meme_full
-        assert os.path.isdir(self._dir.meme_full)
-        from meme_cleaner import main
-        for filename in os.listdir(self._dir.meme_full):
-            kwargs = dict(input=f"{self._dir.meme_full}/{filename}",
-                          output=f"{self._dir.meme_full}/{filename}")
-            main(kwargs)
-        assert os.path.isdir(self._dir.meme_full)
+        # Input: self._dir.pssm
+        # Output: self._dir.pssm
+        assert os.path.isfile(self._dir.pssm)
+        from meme_cleaner import clean
+        kwargs = dict(input=self._dir.pssm,
+                      output=self._dir.pssm)
+        clean(kwargs)
+        assert os.path.isfile(self._dir.pssm)
+        if __debug__:
+            shutil.copy(self._dir.pssm, self._dir.meme_cleaned)
         return
 
     def to_minimal(self):
-        # Input: self._dir.meme_full
-        # Output: self._dir.meme_full
-        assert os.path.isdir(self._dir.meme_full)
-        from converters import meme_to_minimal
-        for _fname in os.listdir(self._dir.meme_full):
-            filename = f"{self._dir.meme_full}/{_fname}"
-            kwargs = dict(input=filename,
-                          output=filename)
-            meme_to_minimal(kwargs)
-        assert os.path.isdir(self._dir.meme_full)
-        return
-
-    def merge_pssm(self):
-        # Input: self._dir.meme_full
-        # Output: self._dir.meme_merged
-        assert os.path.isdir(self._dir.meme_full)
-        main_instance = None
-        for _fname in os.listdir(self._dir.meme_full):
-            pssm_instance = PSSM(filename=f"{self._dir.meme_full}/{_fname}")
-            if not main_instance:
-                main_instance = pssm_instance
-                continue
-            main_instance.merge_with(pssm_instance)
-        main_instance.relabel_pssms()
-        main_instance.output(self._dir.pssm)
-        if __debug__:
-            shutil.copy(self._dir.pssm, self._dir.meme_merged)
+        # Input: self._dir.pssm
+        # Output: self._dir.pssm
         assert os.path.isfile(self._dir.pssm)
+        from converters import meme_to_minimal
+        kwargs = dict(input=self._dir.pssm,
+                      output=self._dir.pssm)
+        meme_to_minimal(kwargs)
+        assert os.path.isfile(self._dir.pssm)
+        if __debug__:
+            shutil.copy(self._dir.pssm, self._dir.pssm_raw)
         return
 
     ###############################################
@@ -272,7 +249,7 @@ class Executor:
     def screen_pssm(self):
         # Input: self._dir.pssm | self.dir.input_seqs |
         #        self._dir.short_seq
-        # Output: self._dir.meme_cleaned
+        # Output: self._dir.pssm_screened
         assert os.path.isfile(self._dir.pssm)
         from filter import Filter
         filter_dir = Directory.filter_dir._replace(
@@ -281,7 +258,7 @@ class Executor:
             short_seq=self._dir.short_seq)
         Filter(filter_dir).run()
         if __debug__:
-            shutil.copy(self._dir.pssm, self._dir.meme_cleaned)
+            shutil.copy(self._dir.pssm, self._dir.pssm_screened)
         assert os.path.isfile(self._dir.pssm)
         return True
 

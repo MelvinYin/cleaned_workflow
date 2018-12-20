@@ -27,6 +27,11 @@ First, cd to the project folder/external_scripts, there should be three zip file
 tar xzf meme-5.0.1_1.tar.gz
 mv meme-5.0.1 meme
 cd meme
+# to turn off erasing of seen motifs
+cd src
+nano meme.c
+Remove erase(dataset, model);
+save, cd ..
 ./configure --prefix=$PWD --with-url=http://meme-suite.org/ --enable-build-libxml2 --enable-build-libxslt
 make
 make install

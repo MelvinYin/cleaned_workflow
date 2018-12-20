@@ -60,7 +60,7 @@ def get_cleaned_lines(file):
             cleaned_lines.append(line)
     return cleaned_lines
 
-def main(kwargs):
+def clean(kwargs):
     with open(kwargs['input'], 'r') as rfile:
         cleaned_lines = get_cleaned_lines(rfile)
     with open(kwargs['output'], 'w') as wfile:

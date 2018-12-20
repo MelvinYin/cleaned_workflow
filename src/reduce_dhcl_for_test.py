@@ -15,7 +15,3 @@ def reduce_dhcl(kwargs):
             wfile.write(line)
     return True
 
-def main(kwargs):
-    # consensus denominator output
-    reduce_dhcl(kwargs)
-    return

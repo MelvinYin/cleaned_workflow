@@ -1,11 +1,11 @@
 import os
 
-def main(kwargs):
+def create_seqs(kwargs):
     dataset_dir = kwargs['input_dir']
     output = kwargs['output']
     edited_lines = []
     for filename in os.listdir(dataset_dir):
-        header = filename.split(".")[0]
+        header = str(filename.split(".")[0])
         with open(f"{dataset_dir}/{filename}") as file:
             for line in file:
                 if line.startswith(">"):
