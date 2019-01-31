@@ -344,8 +344,8 @@ int meme_main(
     // ERASE the site and starts 
 #ifdef DEBUG_PARALLEL
     fprintf(stderr, "%d: at erase\n", mpMyID()); fflush(stderr);
-#endif
-// erase(dataset, model);
+#endif 
+    // erase(dataset, model);
 #ifdef DEBUG_PARALLEL
     fprintf(stderr, "%d: past erase\n", mpMyID()); fflush(stderr);
 #endif 

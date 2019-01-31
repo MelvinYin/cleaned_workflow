@@ -1,0 +1,5 @@
+#define MEME_DIR "/home/melvin/Desktop/cleaned_workflow/external_scripts/meme"
+#define DATA_DIR "/home/melvin/Desktop/cleaned_workflow/external_scripts/meme/share/meme-5.0.1" 
+#define BIN_DIR "/home/melvin/Desktop/cleaned_workflow/external_scripts/meme/bin" 
+#define LIBEXEC_DIR "/home/melvin/Desktop/cleaned_workflow/external_scripts/meme/libexec/meme-5.0.1" 
+#define TEMP_DIR "" 

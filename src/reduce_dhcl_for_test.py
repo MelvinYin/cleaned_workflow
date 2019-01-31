@@ -11,7 +11,6 @@ def reduce_dhcl(kwargs):
                 cons_seqs.append(line)
 
     with open(output, 'w') as wfile:
-        for line in cons_seqs:
-            wfile.write(line)
+        wfile.writelines(cons_seqs)
     return True
 

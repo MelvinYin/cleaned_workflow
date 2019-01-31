@@ -170,8 +170,8 @@ am__DIST_COMMON = $(srcdir)/Makefile.in $(srcdir)/config.h.in \
 	$(top_srcdir)/config/missing \
 	$(top_srcdir)/config/mkinstalldirs AUTHORS COPYING ChangeLog \
 	INSTALL NEWS README config/compile config/config.guess \
-	config/config.sub config/install-sh config/ltmain.sh \
-	config/missing config/mkinstalldirs
+	config/config.sub config/depcomp config/install-sh \
+	config/ltmain.sh config/missing config/mkinstalldirs
 DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
 top_distdir = $(distdir)
 am__remove_distdir = \
@@ -287,7 +287,7 @@ MPIINC = -DMPI -I/usr/include
 MPILIBDIR = /usr/lib
 MPIRUN = /usr/bin/mpirun
 MPITYPE = mpich
-MPI_CMD = /usr/bin/mpirun -np
+MPI_CMD = /usr/bin/mpirun --allow-run-as-root -np
 NEWS_URL = ./news.txt
 NM = /usr/bin/nm -B
 NMEDIT = 
@@ -310,7 +310,7 @@ PATH_SEPARATOR = :
 PERL = /usr/bin/perl
 PREV_URL = 
 PREV_VER = 
-PYTHON = /home/melvin/anaconda3/bin/python
+PYTHON = /home/melvin/anaconda3/envs/dhcl_p/bin/python
 PYTHON3 = /home/melvin/anaconda3/bin/python3
 QUOTA = 
 RANLIB = ranlib
@@ -368,6 +368,7 @@ pdfdir = ${docdir}
 prefix = /home/melvin/Desktop/cleaned_workflow/external_scripts/meme
 program_transform_name = s,x,x,
 psdir = ${docdir}
+runstatedir = ${localstatedir}/run
 sbindir = ${exec_prefix}/sbin
 sharedstatedir = ${prefix}/com
 srcdir = .

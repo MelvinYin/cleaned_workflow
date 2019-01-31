@@ -13,5 +13,4 @@ def create_seqs(kwargs):
                 edited_lines.append(line)
 
     with open(output, "w") as file:
-        for line in edited_lines:
-            file.write(line)
+        file.writelines(edited_lines)

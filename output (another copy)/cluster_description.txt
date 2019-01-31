@@ -1,0 +1,66 @@
+Cluster 0
+Combination: (62, 2, 10, 67, 44, 7, 64, 68, 69)
+DGD : 1482
+RD : 711
+LTGD : 260
+LLD : 194
+MD : 130
+AALG : 87
+GDD : 81
+XDT : 75
+GLC : 42
+GCND : 2
+
+
+Cluster 1
+Combination: (45, 53, 25)
+OSBS : 535
+
+
+Cluster 2
+Combination: (26, 48, 31, 32, 44, 72, 13, 9)
+DE : 1554
+CC : 1381
+OSBS : 647
+NSART : 171
+HB : 23
+MR : 9
+NSAR : 1
+
+
+Cluster 3
+Combination: (17, 59, 11, 31, 63, 14, 33, 4, 23, 51)
+ENL : 12565
+
+
+Cluster 4
+Combination: (47, 46, 21, 49, 72, 73)
+DE : 1840
+
+
+Cluster 5
+Combination: (54, 55, 56, 57, 12, 52, 8, 60, 61, 9)
+GCRD : 3183
+
+
+Cluster 6
+Combination: (26, 58, 33, 53, 27)
+OSBS : 1149
+
+
+Cluster 7
+Combination: (16, 18, 19, 20, 22, 7, 24)
+MAL : 128
+
+
+Cluster 8
+Combination: (37, 1, 38, 39, 3, 21, 49, 7, 41, 42)
+LFD : 1172
+LGD : 196
+
+
+Cluster 9
+Combination: (70, 71, 5, 33, 43, 42)
+DTD : 257
+
+

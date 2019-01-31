@@ -50,8 +50,7 @@ def meme_to_minimal(kwargs):
     composition, pssms = _parse_meme(input_fname)
     output_lines = _format_minimal_output_meme(composition, pssms)
     with open(output, 'w') as file:
-        for line in output_lines:
-            file.write(line)
+        file.writelines(output_lines)
     return
 
 # Converge output to minimal
@@ -144,6 +143,7 @@ def _format_minimal_from_conv(alphabets, composition_map, matrices, output):
                 file.write(to_write)
                 file.write("\n")
             file.write("\n")
+    return
 
 def converge_to_minimal(kwargs):
     # input_conv=''output.4.matrix.0''
@@ -155,6 +155,7 @@ def converge_to_minimal(kwargs):
     alphabets, matrices = _parse_converge_output(input_conv)
     composition_map = _parse_converge_composition(composition)
     _format_minimal_from_conv(alphabets, composition_map, matrices, output)
+    return
 
 # cons_to_conv_input
 # Convert dhcl seed sequences to converge input seqs
@@ -174,6 +175,7 @@ def cons_to_conv_input(kwargs):
             wfile.write(to_write[i*60:(i+1)*60] + "\n")
         if not (len(to_write) % 60 == 0):
             wfile.write(to_write[(len(to_write) // 60) * 60:])
+    return
 
 # dhcl_to_cons
 # Convert dhcl output to consensus seed sequences
@@ -254,7 +256,8 @@ def dhcl_to_cons(kwargs):
 
     with open(output, "w") as file:
         for loop_seq in loops:
-            file.write("{}\n".format(loop_seq))
+            file.write(f"{loop_seq}\n")
+    return
 
 
 

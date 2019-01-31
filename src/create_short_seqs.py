@@ -13,6 +13,5 @@ def main(kwargs):
             lines_to_copy.append(line)
 
     with open(output, 'w') as wfile:
-        for line in lines_to_copy:
-            wfile.write(line)
+        wfile.writelines(lines_to_copy)
     return

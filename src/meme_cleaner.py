@@ -64,6 +64,5 @@ def clean(kwargs):
     with open(kwargs['input'], 'r') as rfile:
         cleaned_lines = get_cleaned_lines(rfile)
     with open(kwargs['output'], 'w') as wfile:
-        for line in cleaned_lines:
-            wfile.write(line)
+        wfile.writelines(cleaned_lines)
     return

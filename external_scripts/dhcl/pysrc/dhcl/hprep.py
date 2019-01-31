@@ -30,7 +30,7 @@ def isAtomToCleanup(atom):
     else:
         return False
 
-from Bio.PDB import to_one_letter_code
+from Bio.Data.SCOPData import protein_letters_3to1 as to_one_letter_code
 def isResidueToCleanup(residue):
     # Strips water and hetero residues, as well as inserted residues
     if (residue.resname in to_one_letter_code):

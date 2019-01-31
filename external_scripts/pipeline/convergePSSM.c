@@ -563,7 +563,7 @@ int main (int argc, char *argv[]) {
 								S += 0; // ATTN: X gives a zero score (which is not bad)
 							} else {
 								if (length == 30) {
-								    S += Information[random_index_30[randomization][i]] * PSSM[random_index_30[randomization][i]][q-'A'];
+								    S += Information[random_index_50[randomization][i]] * PSSM[random_index_50[randomization][i]][q-'A'];
 								} else { //50
 								    S += Information[random_index_50[randomization][i]] * PSSM[random_index_50[randomization][i]][q-'A'];
 								}

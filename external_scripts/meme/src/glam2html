@@ -1,4 +1,4 @@
-#!/home/melvin/anaconda3/bin/python
+#!/home/melvin/anaconda3/envs/dhcl_p/bin/python
 # Read GLAM2 output: write an HTML version of it 
 import fileinput, os, tempfile, sys
 from string import replace

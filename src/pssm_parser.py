@@ -12,7 +12,7 @@ class PSSM:
         self.pssm_properties = self.extract_pssm_properties(pssm_lines)
 
     def extract_pssm_properties(self, pssms):
-        full_df = pd.DataFrame(columns=('label', 'evalue', 'entropy',
+        full_df = pd.DataFrame(columns=('label', 'evalue', 'entropy', 'kldiv',
                                         'pssm', 'nsites'))
         for i, pssm_lines in enumerate(pssms):
             label = None
@@ -42,10 +42,12 @@ class PSSM:
             assert nsites > 0
             pssm = np.array(pssm, dtype=float)
             assert pssm.shape == (30, 20)
-            _entropy = sum([entropy(line, self.composition) for line in pssm])
+            kldiv = sum([entropy(line, self.composition) for line in pssm])
+            _entropy = sum([entropy(line) for line in pssm])
             full_df.loc[i, 'label'] = label
             full_df.loc[i, 'evalue'] = evalue
             full_df.loc[i, 'entropy'] = _entropy
+            full_df.loc[i, 'kldiv'] = kldiv
             full_df.loc[i, 'nsites'] = nsites
             full_df.at[i, 'pssm'] = pssm
         return full_df
@@ -144,8 +146,7 @@ class PSSM:
             fname = self.fname
         with open(fname, "w") as file:
             lines = self.get_output_lines()
-            for line in lines:
-                file.write(line)
+            file.writelines(lines)
         return
 
     def delete(self, i_to_delete):
@@ -163,3 +164,6 @@ class PSSM:
 
     def get_entropy(self):
         return self.pssm_properties.entropy.values
+
+    def get_kldiv(self):
+        return self.pssm_properties.kldiv.values

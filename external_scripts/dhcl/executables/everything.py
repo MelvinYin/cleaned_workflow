@@ -8,11 +8,10 @@ from optparse import OptionParser
 from dhcl.pipeline import *
 from dhcl.decomposition import *
 from dhcl.utils import *
-import logging
 import warnings
 from Bio.PDB.PDBExceptions import PDBConstructionWarning
 warnings.simplefilter("ignore", PDBConstructionWarning)
-
+import logging
 
 if __name__=='__main__':
     # Define a parser for command-line options and use it

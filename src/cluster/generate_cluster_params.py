@@ -55,8 +55,9 @@ def cluster_metric(dist_metric, n_clusters):
 
 def main(kwargs):
     input_mast = kwargs['input_mast']
-    screen_threshold = kwargs['screen_threshold']
+    combi_minsize = kwargs['combi_minsize']
     pkl_path = kwargs['pkl_path']
+    num_cluster = kwargs['num_cluster']
     # Assemble full_df
     full_df = pd.DataFrame(columns=('combi', 'seqs', 'dist_metric',
                                'cluster_label', 'num_seqs'))
@@ -70,7 +71,7 @@ def main(kwargs):
     # Drop small combi
     to_drop = []
     for i, num_seq in full_df['num_seqs'].iteritems():
-        if num_seq < screen_threshold:
+        if num_seq < combi_minsize:
             to_drop.append(i)
     full_df = full_df.drop(to_drop, axis='index').reset_index()
 
@@ -78,7 +79,7 @@ def main(kwargs):
     for i in range(len(dist_metric)):
         full_df.at[i, 'dist_metric'] = dist_metric[i]
 
-    cluster_labels = cluster_metric(dist_metric, n_clusters=20)
+    cluster_labels = cluster_metric(dist_metric, n_clusters=num_cluster)
     full_df['cluster_label'] = cluster_labels
 
     # Dump
@@ -89,5 +90,6 @@ def main(kwargs):
 if __name__ == "__main__":
     kwargs = dict(input_mast = "../files/mast.txt",
                   screen_threshold = 5,
-                  pkl_path="../files/clustering_df.pkl")
+                  pkl_path="../files/clustering_df.pkl",
+                  num_cluster=20)
     main(kwargs)

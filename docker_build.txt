@@ -1,0 +1,97 @@
+<Local>
+docker pull ubuntu
+docker run -it ubuntu
+
+<Local, another terminal>
+docker cp workflow.zip <Docker_ID:faeefe9cd697>:/
+
+<Optional, for faster apt updates>
+# We find the mirror with the lowest latency on the local machine, and update source.list on the docker ubuntu to that.
+<Local>
+# From here: https://linuxconfig.org/how-to-select-the-fastest-apt-mirror-on-ubuntu-linux
+sudo apt-get install wget
+wget http://ftp.au.debian.org/debian/pool/main/n/netselect/netselect_0.3.ds1-26_amd64.deb
+sudo dpkg -i netselect_0.3.ds1-26_amd64.deb
+sudo netselect -s 20 -t 40 $(wget -qO - mirrors.ubuntu.com/mirrors.txt)
+# See which mirror has the lowest latency. 
+<Docker>
+cd etc/apt
+# Replace mirror.nus.edu.sg with own fastest mirror
+sed -i "s/archive.ubuntu.com/mirror.nus.edu.sg/" sources.list
+cd ../..
+then run the rest as usual
+<Optional End>
+
+<Docker>
+# Set up system
+apt update
+apt upgrade => y
+apt install --upgrade build-essential expat openmpi-bin openmpi-doc libopenmpi-dev perl ssh default-jre zlib* ghostscript nano automake libexpat-dev curl
+cpan XML::Simple => yes to auto-config
+
+# Set up conda
+curl -O https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
+bash Miniconda3-latest-Linux-x86_64.sh  => yes => yes => no VS
+rm Miniconda3-latest-Linux-x86_64.sh	
+cd root/miniconda3/bin
+./conda update conda
+cd ../../..
+. ~/.bashrc
+source activate base
+conda install numpy pandas scikit-learn
+conda deactivate
+conda create --name dhcl_p python=2.7
+conda activate dhcl_p
+conda install biopython
+conda deactivate
+
+# Import files
+mkdir my_files
+mv workflow.zip my_files
+cd my_files
+unzip workflow.zip
+cd workflow
+cd external_scripts
+
+# Build pipeline
+unzip pipeline
+cd pipeline
+make converge
+cd ..
+
+# Build dhcl
+unzip dhcl.zip
+cd dhcl
+conda activate dhcl_p
+python build.py
+conda deactivate
+cd ..
+
+# Build meme
+unzip meme.zip
+cd meme
+./configure --prefix=$PWD --with-url=http://meme-suite.org/ --enable-build-libxml2 --enable-build-libxslt
+make
+make install
+mv src/ceqlogo bin/ceqlogo
+cd ../..
+
+# Set config
+cd src
+nano config.py
+<edit if necessary>
+cd ..
+
+# Final run
+conda activate base
+python -B project_main.py
+
+# Safe to remove
+apt remove build-essential default-jre
+apt autoremove
+
+# verified to break if removed
+ghostscript
+
+
+

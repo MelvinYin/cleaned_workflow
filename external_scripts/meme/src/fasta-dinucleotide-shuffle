@@ -1,4 +1,4 @@
-#!/home/melvin/anaconda3/bin/python
+#!/home/melvin/anaconda3/envs/dhcl_p/bin/python
 
 import copy, random, string, sys
 # MEME Suite libraries

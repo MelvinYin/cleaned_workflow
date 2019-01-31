@@ -4,7 +4,7 @@ import os
 import shutil
 import subprocess
 
-from utils import move_replace
+from utils import move_into
 import pickle
 from pssm_parser import PSSM
 
@@ -48,11 +48,12 @@ class Cluster:
     def get_cluster_params(self):
         # Input: ./files/mast_onlycombi/mast.txt
         # Output: ./files/clustering_df.pkl
-        assert os.path.isfile(self.dir.input_mast), self.dir.input_mast
+        assert os.path.isfile(self.dir.input_mast)
         from generate_cluster_params import main
         kwargs = dict(input_mast=self.dir.input_mast,
-                      screen_threshold=5,
-                      pkl_path=self._dir.full_param_pkl)
+                      combi_minsize=self.dir.combi_minsize,
+                      pkl_path=self._dir.full_param_pkl,
+                      num_cluster=self.dir.num_cluster)
         main(kwargs)
         assert os.path.isfile(self._dir.full_param_pkl)
         return
@@ -63,7 +64,7 @@ class Cluster:
         #         (optional) files/cluster_centroids.pkl
         assert os.path.isfile(self._dir.full_param_pkl)
         from assemble_cluster_output import main
-        kwargs = dict(cluster_threshold=50,
+        kwargs = dict(cluster_threshold=self.dir.cluster_minsize,
                       full_param_pkl=self._dir.full_param_pkl,
                       output=self.dir.description,
                       cluster_df_pkl=self._dir.cluster_pkl)
@@ -121,10 +122,10 @@ class Cluster:
     def rename_logos(self):
         assert os.path.isdir(self.dir.logos)
         assert os.path.isdir(self._dir.motifs)
-        from rename_cluster_logos import main
+        from rename_cluster_logos import rename
         kwargs = dict(motif_filedir=self._dir.motifs,
                       output_logodir=self.dir.logos)
-        main(kwargs)
+        rename(kwargs)
         assert os.path.isdir(self.dir.logos)
         return
 
@@ -134,6 +135,8 @@ class Cluster:
         return
 
     def to_trash(self, file):
-        return move_replace(file, self.dir.trash)
+        if not (os.path.isdir(file) or os.path.isfile(file)):
+            return
+        return move_into(file, self.dir.trash)
 
 

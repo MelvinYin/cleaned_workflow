@@ -7,8 +7,10 @@ from optparse import OptionParser
 #from collections import defaultdict
 from dhcl.pipeline import *
 from dhcl.decomposition import *
-from dhcl.pdb import *
 from dhcl.utils import *
+import warnings
+from Bio.PDB.PDBExceptions import PDBConstructionWarning
+warnings.simplefilter("ignore", PDBConstructionWarning)
 import logging
 
 if __name__=='__main__':

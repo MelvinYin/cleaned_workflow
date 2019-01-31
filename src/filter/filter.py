@@ -5,14 +5,14 @@ import subprocess
 
 from cluster import Cluster
 from config import Directory
-from utils import move_replace
+from utils import move_into
 from pssm_parser import PSSM
 import pickle
 import re
 
 FilterIntDir = namedtuple(
     'FilterIntDir', "post_evalue post_entropy post_corr mast_shortseq "
-                    "mast_postcorr cluster_pkl")
+                    "post_kldiv mast_postcorr cluster_pkl")
 
 class Filter:
     def __init__(self, dir):
@@ -26,6 +26,7 @@ class Filter:
         # Get input_seqs
         switches['EVALUE'] = (True, self.screen_evalue)
         switches['ENTROPY'] = (True, self.screen_entropy)
+        switches['KLDIV'] = (True, self.screen_kldiv)
         switches['CORRELATED'] = (True, self.screen_correlated)
         switches['NON_COMBI'] = (True, self.screen_non_combi)
         return switches
@@ -45,6 +46,7 @@ class Filter:
     def set_internal_dir(self):
         _dir = FilterIntDir(
             post_evalue=f"{self.dir.file}/meme_evalue_screened.txt",
+            post_kldiv=f"{self.dir.file}/meme_kldiv_screened.txt",
             post_entropy=f"{self.dir.file}/meme_entropy_screened.txt",
             post_corr=f"{self.dir.file}/meme_correlated_screened.txt",
             mast_shortseq=f"{self.dir.file}/mast_single",
@@ -55,20 +57,38 @@ class Filter:
     def screen_evalue(self):
         # Input: self.dir.memefile
         # Output: self.dir.memefile
-        # TODO: evalue calculator
         assert os.path.isfile(self.dir.memefile)
         pssm_obj = PSSM(filename=self.dir.memefile)
         pssm_obj.relabel_pssms()
         to_delete = []
         evalues = pssm_obj.get_evalue()
         for i, evalue in enumerate(evalues):
-            if evalue > self.dir.evalue_threshold:
+            if evalue > self.dir.evalue_ceiling:
                 to_delete.append(i+1)
         pssm_obj.delete(to_delete)
         pssm_obj.relabel_pssms()
         pssm_obj.output()
         if __debug__:
             pssm_obj.output(self._dir.post_evalue)
+        assert os.path.isfile(self.dir.memefile)
+        return
+
+    def screen_kldiv(self):
+        # Input: self.dir.memefile
+        # Output: self.dir.memefile
+        assert os.path.isfile(self.dir.memefile)
+        pssm_obj = PSSM(filename=self.dir.memefile)
+        pssm_obj.relabel_pssms()
+        to_delete = []
+        kldivs = pssm_obj.get_kldiv()
+        for i, kldiv in enumerate(kldivs):
+            if kldiv < self.dir.kldiv_threshold:
+                to_delete.append(i+1)
+        pssm_obj.delete(to_delete)
+        pssm_obj.relabel_pssms()
+        pssm_obj.output()
+        if __debug__:
+            pssm_obj.output(self._dir.post_kldiv)
         assert os.path.isfile(self.dir.memefile)
         return
 
@@ -81,7 +101,7 @@ class Filter:
         to_delete = []
         _entrophies = pssm_obj.get_entropy()
         for i, _entropy in enumerate(_entrophies):
-            if _entropy < self.dir.entropy_bits_threshold:
+            if _entropy < self.dir.entropy_threshold:
                 to_delete.append(i+1)
         pssm_obj.delete(to_delete)
         pssm_obj.relabel_pssms()
@@ -131,7 +151,8 @@ class Filter:
         cluster_dir = Directory.cluster_dir._replace(
             input_mast=f"{self._dir.mast_postcorr}/mast.txt",
             input_meme=self.dir.memefile,
-            cluster_pkl=self._dir.cluster_pkl)
+            cluster_pkl=self._dir.cluster_pkl,
+            num_cluster=self.dir.num_cluster_screening)
         Cluster(cluster_dir).run()
 
         with open(self._dir.cluster_pkl, 'rb') as file:
@@ -154,7 +175,9 @@ class Filter:
         return
 
     def to_trash(self, file):
-        return move_replace(file, self.dir.trash)
+        if not (os.path.isdir(file) or os.path.isfile(file)):
+            return
+        return move_into(file, self.dir.trash)
 
 
 def get_correlated_motifs(fname):

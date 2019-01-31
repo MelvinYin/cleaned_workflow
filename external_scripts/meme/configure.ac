@@ -268,7 +268,7 @@ if test "$parallel" = "yes"; then
       MPITYPE="lam"
       LAMBIN="$mpidir/bin"
    else
-      MPI_CMD="${MPIRUN} -np";
+      MPI_CMD="${MPIRUN} --allow-run-as-root -np";
       MPITYPE="mpich"
    fi
 else

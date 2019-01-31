@@ -210,7 +210,7 @@
 #define PERL "/usr/bin/perl"
 
 /* Path to Python */
-#define PYTHON "/home/melvin/anaconda3/bin/python"
+#define PYTHON "/home/melvin/anaconda3/envs/dhcl_p/bin/python"
 
 /* Path to Python 3 */
 #define PYTHON3 "/home/melvin/anaconda3/bin/python3"

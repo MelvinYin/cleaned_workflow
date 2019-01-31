@@ -2,7 +2,7 @@ import os
 from collections import defaultdict
 import re
 
-def main(kwargs):
+def rename(kwargs):
     motif_filedir = kwargs['motif_filedir']
     output_logodir = kwargs['output_logodir']
     motif_filename_profile_no_map = defaultdict(list)

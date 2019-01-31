@@ -75,8 +75,8 @@ def main(kwargs):
     if output:
         with open(output, 'w') as file:
             for cluster_label, ind_df in cluster_df.iterrows():
-                file.write("Cluster {}\n".format(cluster_label))
-                file.write("Combination: {}\n".format(ind_df['centroid']))
+                file.write(f"Cluster {cluster_label}\n")
+                file.write(f"Combination: {ind_df['centroid']}\n")
                 for group_name, seq_len in ind_df['seq_alloc'].items():
                     file.write("{} : {}\n".format(group_name, seq_len))
                 file.write("\n\n")

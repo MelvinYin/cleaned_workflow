@@ -16,7 +16,7 @@ sys.path.append(filter_)
 from cluster import Cluster
 from filter import Filter
 from config import Directory
-from utils import move_replace, check_fasta_validity
+from utils import move_into, move_replace, check_fasta_validity, check_inout
 
 ExecIntDir = namedtuple(
     'ExecIntDir', 'dhcl_output consensus_seeds converge_seeds converge_output '
@@ -28,6 +28,20 @@ class Executor:
         self.switches = self.set_switches()
         self.dir = Directory.executor_dir
         self._dir = self.set_internal_dir()
+        self.check_corefiles()
+
+    def check_corefiles(self):
+        assert os.path.isfile(self.dir.bash_exec)
+        assert os.path.isdir(self.dir.converge_dir)
+        assert os.path.isfile(self.dir.dhcl_exec)
+        assert os.path.isdir(self.dir.file)
+        assert os.path.isdir(self.dir.meme_dir)
+        assert os.path.isfile(self.dir.p2_7_env)
+        assert os.path.isfile(self.dir.converge_exec)
+        assert os.path.isdir(self.dir.fasta_for_pdb)
+        assert os.path.isdir(self.dir.input_pdb)
+        assert self.dir.num_p
+        return
 
     def set_internal_dir(self):
         _dir = ExecIntDir(
@@ -49,22 +63,22 @@ class Executor:
     def set_switches(self):
         switches = OrderedDict()
         # Get input_seqs
-        switches['MERGE_INPUT'] = (True, self.merge_input)
-        switches['SHRINK_INPUT'] = (True, self.shrink_input)
-        switches['CREATE_SHORT_SEQS'] = (True, self.create_short_seqs)
+        switches['MERGE_INPUT'] = (False, self.merge_input)
+        switches['SHRINK_INPUT'] = (False, self.shrink_input)
+        switches['CREATE_SHORT_SEQS'] = (False, self.create_short_seqs)
         # Get consensus_loops
-        switches['RUN_DHCL'] = (True, self.run_dhcl)
-        switches['EXTRACT_CONSENSUS'] = (True, self.extract_consensus)
-        switches['REDUCE_CONSENSUS'] = (True, self.reduce_consensus)
+        switches['RUN_DHCL'] = (False, self.run_dhcl)
+        switches['EXTRACT_CONSENSUS'] = (False, self.extract_consensus)
+        switches['REDUCE_CONSENSUS'] = (False, self.reduce_consensus)
         # Get PSSM using:
         # Meme
         switches['BUILD_PSSM'] = (False, self.build_pssm)
         switches['CLEAN_PSSM'] = (False, self.clean_pssm)
-        switches['TO_MINIMAL'] = (False, self.to_minimal)
+        switches['MEME_TO_MINIMAL'] = (False, self.meme_to_minimal)
         # Or converge
-        switches['BUILD_CONVERGE_SEEDS'] = (True, self.build_converge_seeds)
-        switches['RUN_CONVERGE'] = (True, self.run_converge)
-        switches['CONV_TO_MINIMAL'] = (True, self.conv_to_minimal)
+        switches['BUILD_CONVERGE_SEEDS'] = (False, self.build_converge_seeds)
+        switches['RUN_CONVERGE'] = (False, self.run_converge)
+        switches['CONV_TO_MINIMAL'] = (False, self.conv_to_minimal)
         # Get combi
         switches['SCREEN_PSSM'] = (True, self.screen_pssm)
         switches['ASSEMBLE_COMBI'] = (True, self.assemble_combi)
@@ -76,28 +90,32 @@ class Executor:
         # Input: self.dir.input_seqdir
         # Output: self.dir.input_seqs
         assert os.path.isdir(self.dir.input_seqdir)
+        assert os.listdir(self.dir.input_seqdir)
+        for file in os.listdir(self.dir.input_seqdir):
+            file_path = f"{self.dir.input_seqdir}/{file}"
+            check_fasta_validity(file_path)
         from create_input_seqs import create_seqs
         kwargs = dict(input_dir=self.dir.input_seqdir,
                       output=self.dir.input_seqs)
         create_seqs(kwargs)
-        assert os.path.isfile(self.dir.input_seqs)
+        check_fasta_validity(self.dir.input_seqs)
         return
 
     def shrink_input(self):
         # Input: self.dir.input_seqs
         # Output: self.dir.input_seqs
-        if self.dir.seq_divisor:
-            from shrink_input_for_test import main
-            kwargs = dict(seqs=self.dir.input_seqs, output=self.dir.input_seqs,
-                          divisor=self.dir.seq_divisor)
-            main(kwargs)
+        check_fasta_validity(self.dir.input_seqs)
+        from shrink_input_for_test import main
+        kwargs = dict(seqs=self.dir.input_seqs, output=self.dir.input_seqs,
+                      divisor=self.dir.seq_divisor)
+        main(kwargs)
         check_fasta_validity(self.dir.input_seqs)
         return
 
     def create_short_seqs(self):
         # Input: self.dir.input_seqs
         # Output: self._dir.short_seq
-        assert os.path.isfile(self.dir.input_seqs)
+        check_fasta_validity(self.dir.input_seqs)
         from create_short_seqs import main
         kwargs = dict(input=self.dir.input_seqs,
                       output=self._dir.short_seq,
@@ -122,7 +140,9 @@ class Executor:
         # Input: self._dir.dhcl_output | self.dir.fasta_for_pdb
         # Output: self._dir.consensus_seeds
         assert os.path.isdir(self._dir.dhcl_output)
+        assert os.listdir(self._dir.dhcl_output)
         assert os.path.isdir(self.dir.fasta_for_pdb)
+        assert os.listdir(self.dir.fasta_for_pdb)
         from converters import dhcl_to_cons
         kwargs = dict(dhcl_dir=self._dir.dhcl_output,
                       fasta_dir=self.dir.fasta_for_pdb,
@@ -158,14 +178,12 @@ class Executor:
 
     def run_converge(self):
         # Input: self._dir.converge_seeds
-        # Output: self._dir.pssm | self._dir.converge_composition
+        # Output: self._dir.converge_output | self._dir.converge_composition
         assert os.path.isfile(self._dir.converge_seeds)
-
         seeds = self._dir.converge_seeds.rsplit("/", maxsplit=1)[-1]
         input_seqs = self.dir.input_seqs.rsplit("/", maxsplit=1)[-1]
         composition = self.dir.converge_composition.rsplit("/", maxsplit=1)[-1]
         converge_exec = self.dir.converge_exec.rsplit("/", maxsplit=1)[-1]
-
         shutil.copy(self._dir.converge_seeds, self.dir.converge_dir)
         shutil.copy(self.dir.input_seqs, self.dir.converge_dir)
         command = f"cd {self.dir.converge_dir} && " \
@@ -174,9 +192,9 @@ class Executor:
         subprocess.run(command, shell=True, executable=self.dir.bash_exec,
                        stdout=subprocess.DEVNULL)
         # Moving this to files folder instead of pipeline folder
-        shutil.move(self.dir.converge_output, self._dir.converge_output)
-        shutil.move(self.dir.converge_composition,
+        move_replace(self.dir.converge_composition,
                     self._dir.converge_composition)
+        move_replace(self.dir.converge_output, self._dir.converge_output)
         self.to_trash(self.dir.converge_discard)
         self.to_trash(f"{self.dir.converge_dir}/{seeds}")
         self.to_trash(f"{self.dir.converge_dir}/{input_seqs}")
@@ -229,9 +247,10 @@ class Executor:
         assert os.path.isfile(self._dir.pssm)
         if __debug__:
             shutil.copy(self._dir.pssm, self._dir.meme_cleaned)
+        assert os.path.isfile(self._dir.pssm)
         return
 
-    def to_minimal(self):
+    def meme_to_minimal(self):
         # Input: self._dir.pssm
         # Output: self._dir.pssm
         assert os.path.isfile(self._dir.pssm)
@@ -242,6 +261,7 @@ class Executor:
         assert os.path.isfile(self._dir.pssm)
         if __debug__:
             shutil.copy(self._dir.pssm, self._dir.pssm_raw)
+        assert os.path.isfile(self._dir.pssm_raw)
         return
 
     ###############################################
@@ -287,7 +307,8 @@ class Executor:
             input_mast=f"{self.dir.output_mast}/mast.txt",
             input_meme=self._dir.pssm,
             description=self.dir.output_clusters,
-            logos=self.dir.output_logos)
+            logos=self.dir.output_logos,
+            num_cluster=self.dir.num_cluster_final)
         Cluster(cluster_dir).run(make_logo=True)
         return True
 
@@ -308,7 +329,9 @@ class Executor:
         return
 
     def to_trash(self, file):
-        return move_replace(file, self.dir.trash)
+        if not (os.path.isdir(file) or os.path.isfile(file)):
+            return
+        return move_into(file, self.dir.trash)
 
     def delete_intermediate(self):
         for file in self._dir:
