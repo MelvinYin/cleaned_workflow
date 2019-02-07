@@ -3,277 +3,165 @@
   <component name="ChangeListManager">
     <list default="true" id="977e9f69-e7b2-4235-9856-6e88bdf80fc9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/dhcl/executables/dhcl/hprep.py" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/dhcl/executables/dhcl/hprep.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/dhcl/executables/everything.py" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/dhcl/executables/everything.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/dhcl/pysrc/dhcl/hprep.py" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/dhcl/pysrc/dhcl/hprep.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/dhcl/pysrc/everything.py" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/dhcl/pysrc/everything.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/Makefile.in" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/Makefile.in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/bin/ame" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/bin/ame" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/bin/centrimo" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/bin/centrimo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/bin/dreme" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/bin/dreme" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/bin/fimo" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/bin/fimo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/bin/gomo" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/bin/gomo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/bin/meme" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/bin/meme" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/bin/spamo" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/bin/spamo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/bin/tomtom" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/bin/tomtom" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/config.h" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/config.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/config.log" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/config.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/config.status" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/config.status" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/configure" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/configure" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/configure.ac" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/configure.ac" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/doc/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/doc/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/doc/Makefile.in" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/doc/Makefile.in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/doc/css/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/doc/css/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/doc/css/Makefile.in" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/doc/css/Makefile.in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/doc/examples/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/doc/examples/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/doc/examples/Makefile.in" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/doc/examples/Makefile.in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/doc/examples/compute_prior_dist_example_output_files/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/doc/examples/compute_prior_dist_example_output_files/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/doc/examples/compute_prior_dist_example_output_files/Makefile.in" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/doc/examples/compute_prior_dist_example_output_files/Makefile.in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/doc/examples/sample_opal_scripts/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/doc/examples/sample_opal_scripts/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/doc/examples/sample_opal_scripts/Makefile.in" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/doc/examples/sample_opal_scripts/Makefile.in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/doc/images/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/doc/images/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/doc/images/Makefile.in" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/doc/images/Makefile.in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/doc/js/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/doc/js/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/doc/js/Makefile.in" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/doc/js/Makefile.in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/etc/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/etc/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/etc/Makefile.in" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/etc/Makefile.in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/lib/meme-5.0.1/python/fasta-dinucleotide-shuffle.py" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/lib/meme-5.0.1/python/fasta-dinucleotide-shuffle.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/lib/meme-5.0.1/python/fasta-hamming-enrich.py" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/lib/meme-5.0.1/python/fasta-hamming-enrich.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/libexec/meme-5.0.1/fasta-dinucleotide-shuffle" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/libexec/meme-5.0.1/fasta-dinucleotide-shuffle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/libexec/meme-5.0.1/fasta-hamming-enrich" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/libexec/meme-5.0.1/fasta-hamming-enrich" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/libexec/meme-5.0.1/glam2html" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/libexec/meme-5.0.1/glam2html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/libexec/meme-5.0.1/glam2psfm" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/libexec/meme-5.0.1/glam2psfm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/libexec/meme-5.0.1/glam2scan2html" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/libexec/meme-5.0.1/glam2scan2html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/libexec/meme-5.0.1/ramen" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/libexec/meme-5.0.1/ramen" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/scripts/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/scripts/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/scripts/Makefile.in" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/scripts/Makefile.in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/scripts/dreme" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/scripts/dreme" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/scripts/fasta-dinucleotide-shuffle" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/scripts/fasta-dinucleotide-shuffle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/scripts/fasta-dinucleotide-shuffle.py" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/scripts/fasta-dinucleotide-shuffle.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/scripts/fasta-hamming-enrich" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/scripts/fasta-hamming-enrich" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/scripts/fasta-hamming-enrich.py" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/scripts/fasta-hamming-enrich.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/scripts/glam2html" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/scripts/glam2html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/scripts/glam2psfm" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/scripts/glam2psfm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/scripts/glam2scan2html" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/scripts/glam2scan2html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/src/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/src/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/src/Makefile.in" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/src/Makefile.in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/src/ame" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/src/ame" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/src/ame-ame.o" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/src/ame-ame.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/src/centrimo" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/src/centrimo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/src/centrimo-centrimo.o" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/src/centrimo-centrimo.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/src/dreme" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/src/dreme" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/src/fasta-dinucleotide-shuffle" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/src/fasta-dinucleotide-shuffle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/src/fasta-hamming-enrich" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/src/fasta-hamming-enrich" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/src/filters/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/src/filters/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/src/filters/Makefile.in" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/src/filters/Makefile.in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/src/filters/dust/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/src/filters/dust/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/src/filters/dust/Makefile.in" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/src/filters/dust/Makefile.in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/src/filters/purge/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/src/filters/purge/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/src/filters/purge/Makefile.in" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/src/filters/purge/Makefile.in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/src/fimo" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/src/fimo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/src/fimo-fimo-output.o" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/src/fimo-fimo-output.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/src/glam2html" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/src/glam2html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/src/glam2psfm" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/src/glam2psfm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/src/glam2scan2html" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/src/glam2scan2html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/src/gomo" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/src/gomo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/src/gomo-gomo.o" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/src/gomo-gomo.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/src/libexslt/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/src/libexslt/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/src/libexslt/Makefile.in" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/src/libexslt/Makefile.in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/src/libxml2/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/src/libxml2/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/src/libxml2/Makefile.in" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/src/libxml2/Makefile.in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/src/libxml2/include/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/src/libxml2/include/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/src/libxml2/include/Makefile.in" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/src/libxml2/include/Makefile.in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/src/libxml2/include/libxml/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/src/libxml2/include/libxml/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/src/libxml2/include/libxml/Makefile.in" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/src/libxml2/include/libxml/Makefile.in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/src/libxslt/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/src/libxslt/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/src/libxslt/Makefile.in" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/src/libxslt/Makefile.in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/src/meme-exec_parallel.o" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/src/meme-exec_parallel.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/src/meme.c" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/src/meme.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/src/parallel/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/src/parallel/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/src/parallel/Makefile.in" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/src/parallel/Makefile.in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/src/parallel/meme" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/src/parallel/meme" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/src/ramen" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/src/ramen" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/src/ramen-ramen.o" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/src/ramen-ramen.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/src/spamo" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/src/spamo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/src/spamo-spamo.o" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/src/spamo-spamo.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/src/tomtom" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/src/tomtom" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/src/tomtom-tomtom.o" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/src/tomtom-tomtom.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/tests/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/tests/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/tests/Makefile.in" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/tests/Makefile.in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/tests/ame/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/tests/ame/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/tests/ame/Makefile.in" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/tests/ame/Makefile.in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/tests/centrimo/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/tests/centrimo/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/tests/centrimo/Makefile.in" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/tests/centrimo/Makefile.in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/tests/clustalw2fasta/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/tests/clustalw2fasta/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/tests/clustalw2fasta/Makefile.in" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/tests/clustalw2fasta/Makefile.in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/tests/common/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/tests/common/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/tests/common/Makefile.in" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/tests/common/Makefile.in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/tests/common/motif.Puf3p/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/tests/common/motif.Puf3p/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/tests/common/motif.Puf3p/Makefile.in" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/tests/common/motif.Puf3p/Makefile.in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/tests/common/motif.crp0/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/tests/common/motif.crp0/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/tests/common/motif.crp0/Makefile.in" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/tests/common/motif.crp0/Makefile.in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/tests/create-priors/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/tests/create-priors/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/tests/create-priors/Makefile.in" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/tests/create-priors/Makefile.in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/tests/draw-mhmm/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/tests/draw-mhmm/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/tests/draw-mhmm/Makefile.in" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/tests/draw-mhmm/Makefile.in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/tests/dreme/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/tests/dreme/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/tests/dreme/Makefile.in" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/tests/dreme/Makefile.in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/tests/fasta-center/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/tests/fasta-center/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/tests/fasta-center/Makefile.in" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/tests/fasta-center/Makefile.in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/tests/fimo/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/tests/fimo/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/tests/fimo/Makefile.in" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/tests/fimo/Makefile.in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/tests/glam2/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/tests/glam2/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/tests/glam2/Makefile.in" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/tests/glam2/Makefile.in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/tests/glam2scan/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/tests/glam2scan/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/tests/glam2scan/Makefile.in" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/tests/glam2scan/Makefile.in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/tests/gomo/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/tests/gomo/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/tests/gomo/Makefile.in" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/tests/gomo/Makefile.in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/tests/mast/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/tests/mast/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/tests/mast/Makefile.in" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/tests/mast/Makefile.in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/tests/mcast/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/tests/mcast/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/tests/mcast/Makefile.in" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/tests/mcast/Makefile.in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/tests/meme-chip/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/tests/meme-chip/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/tests/meme-chip/Makefile.in" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/tests/meme-chip/Makefile.in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/tests/meme/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/tests/meme/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/tests/meme/Makefile.in" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/tests/meme/Makefile.in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/tests/mhmm/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/tests/mhmm/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/tests/mhmm/Makefile.in" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/tests/mhmm/Makefile.in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/tests/mhmms/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/tests/mhmms/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/tests/mhmms/Makefile.in" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/tests/mhmms/Makefile.in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/tests/mhmmscan/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/tests/mhmmscan/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/tests/mhmmscan/Makefile.in" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/tests/mhmmscan/Makefile.in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/tests/momo/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/tests/momo/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/tests/momo/Makefile.in" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/tests/momo/Makefile.in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/tests/motiph/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/tests/motiph/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/tests/motiph/Makefile.in" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/tests/motiph/Makefile.in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/tests/psp-gen/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/tests/psp-gen/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/tests/psp-gen/Makefile.in" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/tests/psp-gen/Makefile.in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/tests/qvalue/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/tests/qvalue/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/tests/qvalue/Makefile.in" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/tests/qvalue/Makefile.in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/tests/scaffold/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/tests/scaffold/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/tests/scaffold/Makefile.in" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/tests/scaffold/Makefile.in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/tests/scripts/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/tests/scripts/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/tests/scripts/Makefile.in" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/tests/scripts/Makefile.in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/tests/spamo/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/tests/spamo/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/tests/spamo/Makefile.in" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/tests/spamo/Makefile.in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/tests/tomtom/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/tests/tomtom/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/tests/tomtom/Makefile.in" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/tests/tomtom/Makefile.in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/tests/web/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/tests/web/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme/tests/web/Makefile.in" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/meme/tests/web/Makefile.in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/meme_5.0.1_1.tar.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/pipeline/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/pipeline/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/pipeline/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/pipeline/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/pipeline/.idea/pipeline.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/pipeline/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/pipeline/converge" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/pipeline/converge" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external_scripts/pipeline/convergePSSM.c" beforeDir="false" afterPath="$PROJECT_DIR$/external_scripts/pipeline/convergePSSM.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/from_dhcl/GD2_3hpf.dhcl.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/from_dhcl/GD2_3hpf.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/from_dhcl/MD_3vcn.dhcl.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/from_dhcl/MD_3vcn.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/input_seqs.fasta" beforeDir="false" afterPath="$PROJECT_DIR$/files/input_seqs.fasta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/short_seq.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README (copy).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/input_fasta/DE_3der.fasta.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/input_fasta/DGD_3rra.fasta.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/input_fasta/DTD_2dw6.fasta.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/input_fasta/EL_1bqg.fasta.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/input_fasta/GD2_3hpf.fasta.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/input_fasta/GD_1bqg.fasta.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/input_fasta/LFD_2hxu.fasta.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/input_fasta/LTGD_2pp3.fasta.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/input_fasta/MAL_3zvi.fasta.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/input_fasta/MCANTI_3dg6.fasta.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/input_fasta/MCSL_2chr.fasta.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/input_fasta/MD_3vcn.fasta.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/input_fasta/MR_4hnc.fasta.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/input_fasta/NSAR2_2p8b.fasta.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/input_fasta/NSAR_2ggi.fasta.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/input_fasta/OSS_4a6g.fasta.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/input_fasta/RD_2i5q.fasta.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/input_pdb/DE_3der.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/input_pdb/DGD_3rra.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/input_pdb/DTD_2dw6.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/input_pdb/EL_1bqg.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/input_pdb/GD2_3hpf.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/input_pdb/GD_1bqg.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/input_pdb/LFD_2hxu.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/input_pdb/LTGD_2pp3.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/input_pdb/MAL_3zvi.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/input_pdb/MCANTI_3dg6.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/input_pdb/MCSL_2chr.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/input_pdb/MD_3vcn.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/input_pdb/MR_4hnc.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/input_pdb/NSAR2_2p8b.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/input_pdb/NSAR_2ggi.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/input_pdb/OSS_4a6g.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/input_pdb/RD_2i5q.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/input_pdb_full/DE_3der.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/input_pdb_full/DGD_3rra.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/input_pdb_full/DTD_2dw6.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/input_pdb_full/EL_1bqg.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/input_pdb_full/GD2_3hpf.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/input_pdb_full/GD_1bqg.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/input_pdb_full/LFD_2hxu.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/input_pdb_full/LTGD_2pp3.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/input_pdb_full/MAL_3zvi.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/input_pdb_full/MCANTI_3dg6.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/input_pdb_full/MCSL_2chr.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/input_pdb_full/MD_3vcn.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/input_pdb_full/MR_4hnc.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/input_pdb_full/NSAR2_2p8b.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/input_pdb_full/NSAR_2ggi.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/input_pdb_full/OSS_4a6g.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/input_pdb_full/RD_2i5q.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/input_seqs.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/sfld_datasets/AALG.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/sfld_datasets/CC.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/sfld_datasets/CIS.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/sfld_datasets/DAD.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/sfld_datasets/DE.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/sfld_datasets/DGD.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/sfld_datasets/DTD.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/sfld_datasets/ENL.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/sfld_datasets/GCND.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/sfld_datasets/GCRD.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/sfld_datasets/GDD.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/sfld_datasets/GLC.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/sfld_datasets/HB.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/sfld_datasets/LFD.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/sfld_datasets/LGD.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/sfld_datasets/LLD.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/sfld_datasets/LTGD.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/sfld_datasets/MAL.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/sfld_datasets/MCanti.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/sfld_datasets/MD.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/sfld_datasets/MR.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/sfld_datasets/NSAR.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/sfld_datasets/NSART.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/sfld_datasets/OSBS.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/sfld_datasets/RD.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/sfld_datasets/XD.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/sfld_datasets/XDT.fasta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/cluster_description.txt" beforeDir="false" afterPath="$PROJECT_DIR$/output/cluster_description.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_0/logos_31.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_0/logos_32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_0/logos_43.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_0/logos_46.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_0/logos_47.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_0/logos_71.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_0/logos_72.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_1/logos_10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_1/logos_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_1/logos_43.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_1/logos_61.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_1/logos_63.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_1/logos_66.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_1/logos_67.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_1/logos_68.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_1/logos_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_2/logos_21.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/logos/cluster_2/logos_21.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_2/logos_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_2/logos_37.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_2/logos_38.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_2/logos_39.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_2/logos_41.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_2/logos_42.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_2/logos_48.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_2/logos_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_3/logos_26.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_3/logos_27.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_3/logos_33.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_3/logos_52.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_3/logos_57.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_4/logos_12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_4/logos_51.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_4/logos_53.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_4/logos_54.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_4/logos_55.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_4/logos_56.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_4/logos_59.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_4/logos_60.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_4/logos_8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_4/logos_9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_5/logos_16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_5/logos_18.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_5/logos_19.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_5/logos_20.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/logos/cluster_5/logos_20.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_5/logos_22.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/logos/cluster_5/logos_22.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_5/logos_24.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_5/logos_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_6/logos_33.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_6/logos_42.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_6/logos_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_6/logos_69.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_6/logos_70.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_7/logos_11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_7/logos_14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_7/logos_17.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_7/logos_23.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_7/logos_31.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_7/logos_33.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_7/logos_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_7/logos_50.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_7/logos_58.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_7/logos_62.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_8/logos_25.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_8/logos_44.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_8/logos_52.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_9/logos_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_9/logos_28.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_9/logos_29.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_9/logos_30.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_9/logos_32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_9/logos_33.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/logos/cluster_9/logos_33.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_9/logos_34.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/logos/cluster_9/logos_34.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_9/logos_35.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/logos/cluster_9/logos_35.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/logos/cluster_9/logos_36.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/mast/mast.html" beforeDir="false" afterPath="$PROJECT_DIR$/output/mast/mast.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/mast/mast.txt" beforeDir="false" afterPath="$PROJECT_DIR$/output/mast/mast.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/mast/mast.xml" beforeDir="false" afterPath="$PROJECT_DIR$/output/mast/mast.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/project_main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_data/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/sample_data/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_data/converge_output/cluster_description.txt" beforeDir="false" afterPath="$PROJECT_DIR$/sample_data/converge_output/cluster_description.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_data/converge_output/logos/cluster_0/logos_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_data/converge_output/logos/cluster_0/logos_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_data/converge_output/logos/cluster_1/logos_12.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_data/converge_output/logos/cluster_1/logos_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_data/converge_output/logos/cluster_1/logos_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_data/converge_output/logos/cluster_13/logos_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_data/converge_output/logos/cluster_13/logos_12.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_data/converge_output/logos/cluster_13/logos_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_data/converge_output/logos/cluster_13/logos_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_data/converge_output/logos/cluster_15/logos_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_data/converge_output/logos/cluster_15/logos_12.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_data/converge_output/logos/cluster_15/logos_5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_data/converge_output/logos/cluster_15/logos_6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_data/converge_output/logos/cluster_15/logos_7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_data/converge_output/logos/cluster_15/logos_8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_data/converge_output/logos/cluster_15/logos_9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_data/converge_output/logos/cluster_17/logos_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_data/converge_output/logos/cluster_17/logos_12.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_data/converge_output/logos/cluster_17/logos_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_data/converge_output/logos/cluster_17/logos_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_data/converge_output/logos/cluster_17/logos_5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_data/converge_output/logos/cluster_17/logos_9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_data/converge_output/logos/cluster_2/logos_11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_data/converge_output/logos/cluster_2/logos_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_data/converge_output/logos/cluster_2/logos_4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_data/converge_output/logos/cluster_2/logos_9.png" beforeDir="false" afterPath="$PROJECT_DIR$/sample_data/converge_output/logos/cluster_2/logos_9.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_data/converge_output/logos/cluster_4/logos_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_data/converge_output/logos/cluster_4/logos_12.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_data/converge_output/logos/cluster_4/logos_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_data/converge_output/logos/cluster_4/logos_9.png" beforeDir="false" afterPath="$PROJECT_DIR$/sample_data/converge_output/logos/cluster_4/logos_9.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_data/converge_output/logos/cluster_5/logos_11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_data/converge_output/logos/cluster_5/logos_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_data/converge_output/logos/cluster_5/logos_4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_data/converge_output/logos/cluster_5/logos_7.png" beforeDir="false" afterPath="$PROJECT_DIR$/sample_data/converge_output/logos/cluster_5/logos_7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_data/converge_output/logos/cluster_5/logos_9.png" beforeDir="false" afterPath="$PROJECT_DIR$/sample_data/converge_output/logos/cluster_5/logos_9.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_data/converge_output/logos/cluster_6/logos_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_data/converge_output/logos/cluster_6/logos_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_data/converge_output/logos/cluster_7/logos_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_data/converge_output/logos/cluster_7/logos_11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_data/converge_output/logos/cluster_7/logos_12.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_data/converge_output/logos/cluster_7/logos_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/sample_data/converge_output/logos/cluster_7/logos_2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_data/converge_output/logos/cluster_7/logos_5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_data/converge_output/logos/cluster_8/logos_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_data/converge_output/logos/cluster_8/logos_11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_data/converge_output/logos/cluster_8/logos_12.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_data/converge_output/logos/cluster_8/logos_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_data/converge_output/logos/cluster_8/logos_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_data/converge_output/mast/mast.html" beforeDir="false" afterPath="$PROJECT_DIR$/sample_data/converge_output/mast/mast.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_data/converge_output/mast/mast.txt" beforeDir="false" afterPath="$PROJECT_DIR$/sample_data/converge_output/mast/mast.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_data/converge_output/mast/mast.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sample_data/converge_output/mast/mast.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_data/meme_output/cluster_description.txt" beforeDir="false" afterPath="$PROJECT_DIR$/sample_data/meme_output/cluster_description.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_data/meme_output/logos/cluster_0/logos_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_data/meme_output/logos/cluster_0/logos_9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_data/meme_output/logos/cluster_1/logos_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/sample_data/meme_output/logos/cluster_1/logos_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_data/meme_output/logos/cluster_1/logos_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/sample_data/meme_output/logos/cluster_1/logos_2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_data/meme_output/logos/cluster_1/logos_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_data/meme_output/logos/cluster_1/logos_6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_data/meme_output/logos/cluster_10/logos_9.png" beforeDir="false" afterPath="$PROJECT_DIR$/sample_data/meme_output/logos/cluster_10/logos_9.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_data/meme_output/logos/cluster_2/logos_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_data/meme_output/logos/cluster_2/logos_11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_data/meme_output/logos/cluster_2/logos_9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_data/meme_output/logos/cluster_3/logos_11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_data/meme_output/logos/cluster_3/logos_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/sample_data/meme_output/logos/cluster_3/logos_3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_data/meme_output/logos/cluster_4/logos_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/sample_data/meme_output/logos/cluster_4/logos_3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_data/meme_output/logos/cluster_5/logos_11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_data/meme_output/logos/cluster_5/logos_7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_data/meme_output/logos/cluster_5/logos_9.png" beforeDir="false" afterPath="$PROJECT_DIR$/sample_data/meme_output/logos/cluster_5/logos_9.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_data/meme_output/logos/cluster_6/logos_11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_data/meme_output/logos/cluster_6/logos_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_data/meme_output/logos/cluster_6/logos_7.png" beforeDir="false" afterPath="$PROJECT_DIR$/sample_data/meme_output/logos/cluster_6/logos_7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_data/meme_output/logos/cluster_9/logos_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_data/meme_output/logos/cluster_9/logos_4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_data/meme_output/logos/cluster_9/logos_5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_data/meme_output/logos/cluster_9/logos_7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_data/meme_output/logos/cluster_9/logos_8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_data/meme_output/logos/cluster_9/logos_9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_data/meme_output/mast/mast.html" beforeDir="false" afterPath="$PROJECT_DIR$/sample_data/meme_output/mast/mast.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_data/meme_output/mast/mast.txt" beforeDir="false" afterPath="$PROJECT_DIR$/sample_data/meme_output/mast/mast.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_data/meme_output/mast/mast.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sample_data/meme_output/mast/mast.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cluster/assemble_cluster_output.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cluster/assemble_cluster_output.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cluster/cluster.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cluster/cluster.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cluster/generate_cluster_params.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cluster/generate_cluster_params.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cluster/rename_cluster_logos.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cluster/rename_cluster_logos.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/converters.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/converters.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/create_input_seqs.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/create_input_seqs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/create_short_seqs.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/create_short_seqs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/filter/filter.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/filter/filter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/meme_cleaner.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/meme_cleaner.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pssm_parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/pssm_parser.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reduce_dhcl_for_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/reduce_dhcl_for_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shrink_input_for_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/shrink_input_for_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -298,7 +186,7 @@
     <SUITE FILE_PATH="coverage/merged_src$mast_remove_profiles.coverage" NAME="mast_remove_profiles Coverage Results" MODIFIED="1540454008157" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/cleaned_workflow$converge2meme.coverage" NAME="converge2meme Coverage Results" MODIFIED="1543176881657" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/external_scripts/pipeline" />
     <SUITE FILE_PATH="coverage/cleaned_workflow$tmp_pssm_class.coverage" NAME="tmp_pssm_class Coverage Results" MODIFIED="1545039614114" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
-    <SUITE FILE_PATH="coverage/cleaned_workflow$project_main.coverage" NAME="project_main Coverage Results" MODIFIED="1545463724208" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cleaned_workflow$project_main.coverage" NAME="project_main Coverage Results" MODIFIED="1548937152455" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/cleaned_workflow$test.coverage" NAME="test Coverage Results" MODIFIED="1542169872568" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/cleaned_workflow$pytest_in_test_entropy_py.coverage" NAME="pytest in test_entropy.py Coverage Results" MODIFIED="1544610253842" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/cleaned_workflow$tes.coverage" NAME="tes Coverage Results" MODIFIED="1545562447540" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -320,11 +208,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/project_main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="122" column="20" selection-start-line="122" selection-start-column="20" selection-end-line="122" selection-end-column="20" />
+            <state relative-caret-position="360">
+              <caret line="75" column="52" lean-forward="true" selection-start-line="75" selection-start-column="52" selection-end-line="75" selection-end-column="52" />
               <folding>
                 <element signature="e#0#47#0" expanded="true" />
               </folding>
@@ -332,11 +220,32 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/utils.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="351">
+              <caret line="30" column="68" selection-start-line="30" selection-start-column="68" selection-end-line="30" selection-end-column="68" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/converters.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="236" column="4" selection-start-line="236" selection-start-column="4" selection-end-line="236" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/filter/filter.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4350">
-              <caret line="155" column="12" selection-start-line="155" selection-start-column="12" selection-end-line="155" selection-end-column="12" />
+            <state relative-caret-position="3792">
+              <caret line="140" column="42" selection-start-line="140" selection-start-column="42" selection-end-line="140" selection-end-column="42" />
               <folding>
                 <element signature="e#0#47#0" expanded="true" />
               </folding>
@@ -347,7 +256,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cluster/cluster.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2904">
+            <state relative-caret-position="2670">
               <caret line="110" column="51" selection-start-line="110" selection-start-column="51" selection-end-line="110" selection-end-column="51" />
               <folding>
                 <element signature="e#0#34#0" expanded="true" />
@@ -383,8 +292,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/config.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1560">
-              <caret line="52" column="17" selection-start-line="52" selection-start-column="4" selection-end-line="52" selection-end-column="17" />
+            <state relative-caret-position="591">
+              <caret line="54" column="26" lean-forward="true" selection-start-line="54" selection-start-column="26" selection-end-line="54" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -401,7 +310,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>run_meme_</find>
       <find>merge_pssm</find>
       <find>meme_merged</find>
       <find>mast</find>
@@ -431,6 +339,7 @@
       <find>num_clu</find>
       <find>combi_minsize</find>
       <find>cluster_min</find>
+      <find>fasta_for_</find>
     </findStrings>
     <replaceStrings>
       <replace>False</replace>
@@ -495,7 +404,6 @@
         <option value="$PROJECT_DIR$/../workflow/project_main.py" />
         <option value="$PROJECT_DIR$/../workflow/src/config.py" />
         <option value="$PROJECT_DIR$/src/cluster/rename_cluster_logos.py" />
-        <option value="$PROJECT_DIR$/src/utils.py" />
         <option value="$PROJECT_DIR$/rfr.py" />
         <option value="$PROJECT_DIR$/tes.py" />
         <option value="$PROJECT_DIR$/src/pssm_parser.py" />
@@ -507,17 +415,18 @@
         <option value="$PROJECT_DIR$/src/create_short_seqs.py" />
         <option value="$PROJECT_DIR$/src/converters.py" />
         <option value="$PROJECT_DIR$/src/filter/filter.py" />
-        <option value="$PROJECT_DIR$/project_main.py" />
         <option value="$PROJECT_DIR$/src/cluster/generate_cluster_params.py" />
         <option value="$PROJECT_DIR$/src/cluster/cluster.py" />
         <option value="$PROJECT_DIR$/src/config.py" />
+        <option value="$PROJECT_DIR$/project_main.py" />
+        <option value="$PROJECT_DIR$/src/utils.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="126" />
-    <option name="y" value="27" />
-    <option name="width" value="1910" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="60" />
+    <option name="y" value="580" />
+    <option name="width" value="1900" />
     <option name="height" value="741" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -554,7 +463,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.tes">
+  <component name="RunManager" selected="Python.project_main">
     <configuration name="project_main" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="merged_src" />
       <option name="INTERPRETER_OPTIONS" value="-B" />
@@ -667,16 +576,16 @@
     </configuration>
     <list>
       <item itemvalue="Python.project_main" />
-      <item itemvalue="Python.pssm_parser_test" />
-      <item itemvalue="Python.rfr" />
-      <item itemvalue="Python.tes" />
       <item itemvalue="Python.tmp_pssm_class" />
+      <item itemvalue="Python.pssm_parser_test" />
+      <item itemvalue="Python.tes" />
+      <item itemvalue="Python.rfr" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.project_main" />
         <item itemvalue="Python.tes" />
         <item itemvalue="Python.rfr" />
-        <item itemvalue="Python.project_main" />
         <item itemvalue="Python.pssm_parser_test" />
         <item itemvalue="Python.tmp_pssm_class" />
       </list>
@@ -756,6 +665,13 @@
       <workItem from="1546828452220" duration="42000" />
       <workItem from="1546829413460" duration="808000" />
       <workItem from="1548842827478" duration="211000" />
+      <workItem from="1548934981051" duration="2287000" />
+      <workItem from="1548994134986" duration="281000" />
+      <workItem from="1548994813645" duration="1367000" />
+      <workItem from="1549000591761" duration="620000" />
+      <workItem from="1549122439095" duration="469000" />
+      <workItem from="1549094688213" duration="14000" />
+      <workItem from="1549525957631" duration="308000" />
     </task>
     <servers />
   </component>
@@ -768,7 +684,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="330219000" />
+    <option name="totallyTimeSpent" value="335565000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1920" height="990" extended-state="6" />
@@ -779,7 +695,7 @@
       <window_info id="Favorites" order="2" sideWeight="0.50054765" side_tool="true" weight="0.3569904" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32894737" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.19277108" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.48849946" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.14895947" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -835,7 +751,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/dhcl_output_to_consensus.py" />
     <entry file="file://$PROJECT_DIR$/src/filter/screen_meme_for.py" />
     <entry file="file://$PROJECT_DIR$/src/cluster/split_motifs_by_cluster.py" />
     <entry file="file://$PROJECT_DIR$/src/filter/remove_noncentroid_profiles_meme.py" />
@@ -872,20 +787,8 @@
     <entry file="file://$PROJECT_DIR$/external_scripts/dhcl/pysrc/dhcl/hprep.py" />
     <entry file="file://$PROJECT_DIR$/../cleaned_workflow (copy)/src/config.py" />
     <entry file="file://$PROJECT_DIR$/../cleaned_workflow (copy)/project_main.py" />
-    <entry file="file://$PROJECT_DIR$/../workflow/project_main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="172" column="14" selection-start-line="172" selection-start-column="14" selection-end-line="172" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../workflow/src/config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="30" column="35" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../workflow/project_main.py" />
+    <entry file="file://$PROJECT_DIR$/../workflow/src/config.py" />
     <entry file="file://$PROJECT_DIR$/src/run_meme_on_cons.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -901,13 +804,6 @@
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/.cache/.fr-UWkBBX/workflow/project_main.py" />
-    <entry file="file://$PROJECT_DIR$/src/converters.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="147" column="4" selection-start-line="147" selection-start-column="4" selection-end-line="147" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/create_input_seqs.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -941,16 +837,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tes.py" />
-    <entry file="file://$PROJECT_DIR$/src/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/cluster/rename_cluster_logos.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -961,13 +847,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/filter/filter.py">
+    <entry file="file:///media/melvin/CACA386ECA3858C1/Users/WHITE/Desktop/desktop/Work/Predictive-Protein-Modelling/src/descr_demo.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4350">
-          <caret line="155" column="12" selection-start-line="155" selection-start-column="12" selection-end-line="155" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#47#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="240">
+          <caret line="16" column="28" lean-forward="true" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -993,14 +876,41 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/config.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1560">
-          <caret line="52" column="17" selection-start-line="52" selection-start-column="4" selection-end-line="52" selection-end-column="17" />
+        <state relative-caret-position="591">
+          <caret line="54" column="26" lean-forward="true" selection-start-line="54" selection-start-column="26" selection-end-line="54" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project_main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="75" column="52" lean-forward="true" selection-start-line="75" selection-start-column="52" selection-end-line="75" selection-end-column="52" />
+          <folding>
+            <element signature="e#0#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/converters.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="236" column="4" selection-start-line="236" selection-start-column="4" selection-end-line="236" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/filter/filter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3792">
+          <caret line="140" column="42" selection-start-line="140" selection-start-column="42" selection-end-line="140" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#47#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cluster/cluster.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2904">
+        <state relative-caret-position="2670">
           <caret line="110" column="51" selection-start-line="110" selection-start-column="51" selection-end-line="110" selection-end-column="51" />
           <folding>
             <element signature="e#0#34#0" expanded="true" />
@@ -1008,12 +918,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project_main.py">
+    <entry file="file://$PROJECT_DIR$/src/utils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="122" column="20" selection-start-line="122" selection-start-column="20" selection-end-line="122" selection-end-column="20" />
+        <state relative-caret-position="351">
+          <caret line="30" column="68" selection-start-line="30" selection-start-column="68" selection-end-line="30" selection-end-column="68" />
           <folding>
-            <element signature="e#0#47#0" expanded="true" />
+            <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>

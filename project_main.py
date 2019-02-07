@@ -63,12 +63,12 @@ class Executor:
     def set_switches(self):
         switches = OrderedDict()
         # Get input_seqs
-        switches['MERGE_INPUT'] = (False, self.merge_input)
+        switches['MERGE_INPUT'] = (True, self.merge_input)
         switches['SHRINK_INPUT'] = (False, self.shrink_input)
-        switches['CREATE_SHORT_SEQS'] = (False, self.create_short_seqs)
+        switches['CREATE_SHORT_SEQS'] = (True, self.create_short_seqs)
         # Get consensus_loops
-        switches['RUN_DHCL'] = (False, self.run_dhcl)
-        switches['EXTRACT_CONSENSUS'] = (False, self.extract_consensus)
+        switches['RUN_DHCL'] = (True, self.run_dhcl)
+        switches['EXTRACT_CONSENSUS'] = (True, self.extract_consensus)
         switches['REDUCE_CONSENSUS'] = (False, self.reduce_consensus)
         # Get PSSM using:
         # Meme
@@ -76,9 +76,9 @@ class Executor:
         switches['CLEAN_PSSM'] = (False, self.clean_pssm)
         switches['MEME_TO_MINIMAL'] = (False, self.meme_to_minimal)
         # Or converge
-        switches['BUILD_CONVERGE_SEEDS'] = (False, self.build_converge_seeds)
-        switches['RUN_CONVERGE'] = (False, self.run_converge)
-        switches['CONV_TO_MINIMAL'] = (False, self.conv_to_minimal)
+        switches['BUILD_CONVERGE_SEEDS'] = (True, self.build_converge_seeds)
+        switches['RUN_CONVERGE'] = (True, self.run_converge)
+        switches['CONV_TO_MINIMAL'] = (True, self.conv_to_minimal)
         # Get combi
         switches['SCREEN_PSSM'] = (True, self.screen_pssm)
         switches['ASSEMBLE_COMBI'] = (True, self.assemble_combi)
