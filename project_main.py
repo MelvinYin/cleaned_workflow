@@ -16,7 +16,7 @@ sys.path.append(filter_)
 from cluster import Cluster
 from filter import Filter
 from config import Directory
-from utils import move_into, move_replace, check_fasta_validity, check_inout
+from utils import move_into, move_replace, check_fasta_validity, check_inout 
 
 ExecIntDir = namedtuple(
     'ExecIntDir', 'dhcl_output consensus_seeds converge_seeds converge_output '

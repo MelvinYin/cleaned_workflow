@@ -1,5 +1,5 @@
 from collections import defaultdict
-import difflib
+import leven
 import numpy as np
 import pandas as pd
 import pickle
@@ -29,8 +29,10 @@ def parse_mast_txt(input_fname):
     return name_combi
 
 def _lev_metric(x, y):
-    sm = difflib.SequenceMatcher(None, x, y)
-    return 1 - sm.ratio()
+    x_str = "".join([str(i) for i in x])
+    y_str = "".join([str(i) for i in y])
+    dist = leven.levenshtein(x_str, y_str)
+    return dist
 
 def get_dist_metric(combinations):
     metric = []
