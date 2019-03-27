@@ -6,6 +6,10 @@ from bokeh.models.widgets.inputs import TextAreaInput
 from bokeh.plotting import figure
 from bokeh.models import WheelZoomTool
 
+from scipy.ndimage import imread
+import numpy as np
+
+
 class SingleImageComponent:
     def __init__(self, specs):
         self.figure = self._set_figure(specs)
@@ -17,18 +21,51 @@ class SingleImageComponent:
                       y=specs.img_xy[1], w=specs.img_wh[0], h=specs.img_wh[1])
         return fig
 
+class RBGImageComponent:
+    def __init__(self, specs):
+        self.figure = self._set_figure(specs)
+
+    def _set_figure(self, specs):
+        fig = figure(x_range=(0, 30), y_range=(0, 6),
+                     width=specs.width, height=specs.height)
+        img = imread(specs.image_fname)
+        img = np.flip(img, axis=0)
+        img = img[35:, 58:]
+        scaling = img.shape[1] / 30
+        fig.image_rgba(image=[img], x=0,
+                       y=0, dw=img.shape[1] / scaling,
+                       dh=img.shape[0] / scaling)
+        fig.image_url(url=[specs.image_fname], x=0, y=0, w=30, h=6)
+        return fig
+
+
 class MultiImageComponent:
     def __init__(self, specs):
         self.figure = self._set_figure(specs)
 
     def _set_figure(self, specs):
-        fig = figure(x_range=specs.x_range, y_range=specs.y_range,
+        fig = figure(x_range=(0, 30), y_range=(0, 6),
                      width=specs.width, height=specs.height,
                      active_scroll='wheel_zoom')
+        # print(specs.images[0])
+        # specs.images = ['./static/logos_1.png']
+
+        # cv2.imshow(' ', x)
+        # cv2.waitKey(10000)
+        # x = x.reshape(x.shape[1], x.shape[0], 3)
+
+
         for i in range(len(specs.images)):
-            fig.image_url(url=[specs.images[i]], x=specs.img_xys[i][0],
-                          y=specs.img_xys[i][1], w=specs.img_wh[0],
-                          h=specs.img_wh[1])
+            img = imread(specs.images[i])
+            img = np.flip(img, axis=0)
+            img = img[35:, 58:]
+            scaling = img.shape[1] / 30
+            fig.image_rgba(image=[img], x=0,
+                           y=5*i, dw=img.shape[1]/scaling,
+                           dh=img.shape[0]/scaling)
+            # fig.image_url(url=[specs.images[i]], x=specs.img_xys[i][0],
+            #               y=specs.img_xys[i][1], w=specs.img_wh[0],
+            #               h=specs.img_wh[1])
         return fig
 
 class TextBoxComponent:
