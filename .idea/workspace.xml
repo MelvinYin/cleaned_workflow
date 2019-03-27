@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="977e9f69-e7b2-4235-9856-6e88bdf80fc9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UI/bokeh_ui/figures.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UI/utils/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/merged_src.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/merged_src.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/project_main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cluster/generate_cluster_params.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cluster/generate_cluster_params.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,6 +28,7 @@
     <SUITE FILE_PATH="coverage/cleaned_workflow$pssm_class.coverage" NAME="pssm_class Coverage Results" MODIFIED="1544774356086" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/cleaned_workflow$project_main__1_.coverage" NAME="project_main (1) Coverage Results" MODIFIED="1543766181800" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../actual_again" />
     <SUITE FILE_PATH="coverage/cleaned_workflow$merge_meme_files2.coverage" NAME="merge_meme_files2 Coverage Results" MODIFIED="1544690620765" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/cleaned_workflow$main.coverage" NAME="main Coverage Results" MODIFIED="1553666139024" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/UI" />
     <SUITE FILE_PATH="coverage/merged_src$mast_remove_profiles.coverage" NAME="mast_remove_profiles Coverage Results" MODIFIED="1540454008157" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/cleaned_workflow$converge2meme.coverage" NAME="converge2meme Coverage Results" MODIFIED="1543176881657" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/external_scripts/pipeline" />
     <SUITE FILE_PATH="coverage/cleaned_workflow$tmp_pssm_class.coverage" NAME="tmp_pssm_class Coverage Results" MODIFIED="1545039614114" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
@@ -46,6 +47,7 @@
     <SUITE FILE_PATH="coverage/cleaned_workflow$entropy.coverage" NAME="entropy Coverage Results" MODIFIED="1544616329798" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/cleaned_workflow$create_input_seqs.coverage" NAME="create_input_seqs Coverage Results" MODIFIED="1543142665116" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="/media/melvin/My Book2/Backup/Backup/Files/Windows/Work_backup/Enolase_mast_process" />
     <SUITE FILE_PATH="coverage/cleaned_workflow$ttt.coverage" NAME="ttt Coverage Results" MODIFIED="1542877380998" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cleaned_workflow$ui_config.coverage" NAME="ui_config Coverage Results" MODIFIED="1553587102660" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/UI" />
     <SUITE FILE_PATH="coverage/cleaned_workflow$rfr.coverage" NAME="rfr Coverage Results" MODIFIED="1545559889392" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/cleaned_workflow$process_dhcl_output_meme.coverage" NAME="process_dhcl_output_meme Coverage Results" MODIFIED="1543006691302" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
   </component>
@@ -53,98 +55,76 @@
     <favorites_list name="cleaned_workflow" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/project_main.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="67" column="45" selection-start-line="67" selection-start-column="45" selection-end-line="67" selection-end-column="45" />
-              <folding>
-                <element signature="e#0#47#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/utils.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/converters.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="149" column="9" selection-start-line="149" selection-start-column="9" selection-end-line="149" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/filter/filter.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3900">
-              <caret line="140" column="42" selection-start-line="140" selection-start-column="42" selection-end-line="140" selection-end-column="42" />
-              <folding>
-                <element signature="e#0#47#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cluster/cluster.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="471">
-              <caret line="51" column="27" selection-start-line="51" selection-start-column="27" selection-end-line="51" selection-end-column="27" />
-              <folding>
-                <element signature="e#0#34#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cluster/generate_cluster_params.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="78">
-              <caret line="30" column="22" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
-              <folding>
-                <element signature="e#0#35#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cluster/assemble_cluster_output.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="930">
-              <caret line="36" column="14" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="14" />
-              <folding>
-                <element signature="e#0#48#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/config.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1200">
-              <caret line="40" column="36" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.63553894">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/UI/main.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="240">
+                  <caret line="8" column="17" lean-forward="true" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+                  <folding>
+                    <element signature="e#1#48#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/UI/bokeh_ui/ui.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-210">
+                  <caret line="29" column="31" lean-forward="true" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
+                  <folding>
+                    <element signature="e#0#45#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/UI/ui_config.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-1189">
+                  <caret line="106" column="23" lean-forward="true" selection-start-line="106" selection-start-column="23" selection-end-line="106" selection-end-column="23" />
+                  <folding>
+                    <element signature="e#0#34#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/UI/bokeh_ui/figures.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="193">
+                  <caret line="45" column="8" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="8" />
+                  <folding>
+                    <element signature="e#0#37#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/UI/ui_config.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="492">
+                  <caret line="140" column="29" selection-start-line="140" selection-start-column="13" selection-end-line="140" selection-end-column="29" />
+                  <folding>
+                    <element signature="e#0#34#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -156,24 +136,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>meme_merged</find>
-      <find>mast</find>
-      <find>meme_full</find>
-      <find>meme_clean</find>
-      <find>screened_pssm</find>
-      <find>converge_composition</find>
-      <find>entropy_bit</find>
-      <find>main</find>
-      <find>entropy_</find>
-      <find>evalue</find>
-      <find>move_replaceo</find>
-      <find>move_replace</find>
-      <find>screen_threshold</find>
-      <find>to_trash</find>
-      <find>clus</find>
-      <find>to_minimal</find>
-      <find>num_proces</find>
-      <find>Cluster</find>
       <find>num_processor</find>
       <find>write</find>
       <find>Filter</find>
@@ -186,11 +148,26 @@
       <find>cluster_min</find>
       <find>fasta_for_</find>
       <find>levensh</find>
+      <find>style</find>
+      <find>TextAreaInput</find>
+      <find>con_text_con</find>
+      <find>mast</find>
+      <find>font-size</find>
+      <find>logo</find>
+      <find>quantity</find>
+      <find>logos</find>
+      <find>quan</find>
+      <find>.png</find>
+      <find>textarea</find>
+      <find>font</find>
+      <find>out_alignment_header_style</find>
+      <find>TextInputSpecs</find>
+      <find>ButtonSpecs</find>
+      <find>TextBoxSpecs</find>
+      <find>_header_4</find>
+      <find>label</find>
     </findStrings>
     <replaceStrings>
-      <replace>False</replace>
-      <replace>print</replace>
-      <replace>./files/</replace>
       <replace>self.move_replace</replace>
       <replace>)</replace>
       <replace>self.dir.trash</replace>
@@ -203,6 +180,24 @@
       <replace>short_seq</replace>
       <replace>_G1</replace>
       <replace>lines.append</replace>
+      <replace>app_title_style</replace>
+      <replace>input_header_style</replace>
+      <replace>result_prob_header</replace>
+      <replace>result_prob_header_style</replace>
+      <replace>out_prob_header_style</replace>
+      <replace>out_alignment_style</replace>
+      <replace>out_logos_header_style</replace>
+      <replace>out_alignment_header_style</replace>
+      <replace>app_title</replace>
+      <replace>input_header</replace>
+      <replace>logos_header_style</replace>
+      <replace>prob_header_style</replace>
+      <replace>alignment_header_style</replace>
+      <replace>_app_title</replace>
+      <replace>_input_header</replace>
+      <replace>_prob_header</replace>
+      <replace>_alignment_header</replace>
+      <replace>text</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/../cleaned_workflow_full_meme/external_scripts/dhcl/executables</dir>
@@ -215,21 +210,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/screen_entropy_conv.py" />
-        <option value="$PROJECT_DIR$/src/filter/screen_motif_evalue.py" />
-        <option value="$PROJECT_DIR$/src/filter/screen_motif_entropy.py" />
-        <option value="$PROJECT_DIR$/src/filter/screen_entropy_meme.py" />
-        <option value="$PROJECT_DIR$/src/filter_conv.py" />
-        <option value="$PROJECT_DIR$/src/rs.py" />
-        <option value="$PROJECT_DIR$/src/merge_meme_files2.py" />
-        <option value="$PROJECT_DIR$/src/filter/remove_noncentroid_profiles.py" />
-        <option value="$PROJECT_DIR$/src/filter_meme.py" />
-        <option value="$PROJECT_DIR$/src/filter/dd.py" />
-        <option value="$PROJECT_DIR$/src/filter/screen_meme_for.py" />
-        <option value="$PROJECT_DIR$/src/filter/remove_noncentroid_profiles_meme.py" />
-        <option value="$PROJECT_DIR$/src/filter/mast_remove_profiles.py" />
-        <option value="$PROJECT_DIR$/src/cluster/split_motifs_by_cluster.py" />
-        <option value="$PROJECT_DIR$/src/cluster/meme_to_mininal_converter.py" />
         <option value="$PROJECT_DIR$/src/converge2meme.py" />
         <option value="$PROJECT_DIR$/src/pssm_class.py" />
         <option value="$PROJECT_DIR$/src/tmp_pssm_class.py" />
@@ -266,13 +246,27 @@
         <option value="$PROJECT_DIR$/src/cluster/yy.py" />
         <option value="$PROJECT_DIR$/src/cluster/generate_cluster_params.py" />
         <option value="$PROJECT_DIR$/project_main.py" />
+        <option value="$PROJECT_DIR$/src/UI/new_UI.py" />
+        <option value="$PROJECT_DIR$/src/UI/bokeh_ui/widgets/individual.py" />
+        <option value="$PROJECT_DIR$/src/UI/config/global_config.py" />
+        <option value="$PROJECT_DIR$/src/UI/config/figure.py" />
+        <option value="$PROJECT_DIR$/src/UI/utils/__init__.py" />
+        <option value="$PROJECT_DIR$/src/UI/bokeh_ui/widgets/widgetset.py" />
+        <option value="$PROJECT_DIR$/src/UI/config/widget.py" />
+        <option value="$PROJECT_DIR$/src/UI/ui_interface.py" />
+        <option value="$PROJECT_DIR$/src/UI/bokeh_ui/config.py" />
+        <option value="$PROJECT_DIR$/src/UI/bokeh_ui/figures/figureset.py" />
+        <option value="$PROJECT_DIR$/src/UI/bokeh_ui/figures/individual_figure.py" />
+        <option value="$PROJECT_DIR$/src/UI/ui_config.py" />
+        <option value="$PROJECT_DIR$/src/UI/bokeh_ui/figures.py" />
+        <option value="$PROJECT_DIR$/src/UI/main.py" />
+        <option value="$PROJECT_DIR$/src/UI/bokeh_ui/ui.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="206" />
-    <option name="y" value="547" />
-    <option name="width" value="1890" />
+    <option name="y" value="25" />
+    <option name="width" value="960" />
     <option name="height" value="741" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -280,7 +274,20 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="cleaned_workflow" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cleaned_workflow" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="jump to&#9;ACTION&#9;JumpToColorsAndFonts" />
@@ -309,7 +316,29 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.yy">
+  <component name="RunManager" selected="Python.main">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="merged_src" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/UI" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/UI/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="project_main" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="merged_src" />
       <option name="INTERPRETER_OPTIONS" value="-B" />
@@ -324,28 +353,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/project_main.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="rfr" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="merged_src" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/rfr.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -376,7 +383,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="tes" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="ui_config" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="merged_src" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -384,12 +391,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/UI" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tes.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/UI/ui_config.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -400,7 +407,7 @@
     </configuration>
     <configuration name="yy" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="merged_src" />
-      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="INTERPRETER_OPTIONS" value="-B" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
@@ -422,18 +429,18 @@
     </configuration>
     <list>
       <item itemvalue="Python.project_main" />
-      <item itemvalue="Python.rfr" />
-      <item itemvalue="Python.tes" />
       <item itemvalue="Python.ss" />
       <item itemvalue="Python.yy" />
+      <item itemvalue="Python.main" />
+      <item itemvalue="Python.ui_config" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.main" />
+        <item itemvalue="Python.ui_config" />
         <item itemvalue="Python.yy" />
         <item itemvalue="Python.project_main" />
         <item itemvalue="Python.ss" />
-        <item itemvalue="Python.tes" />
-        <item itemvalue="Python.rfr" />
       </list>
     </recent_temporary>
   </component>
@@ -524,7 +531,17 @@
       <workItem from="1549967408352" duration="188000" />
       <workItem from="1552275388043" duration="1440000" />
       <workItem from="1552282098266" duration="483000" />
-      <workItem from="1552619617615" duration="5601000" />
+      <workItem from="1552619617615" duration="5654000" />
+      <workItem from="1552635172125" duration="606000" />
+      <workItem from="1552666938978" duration="599000" />
+      <workItem from="1552710452017" duration="10000" />
+      <workItem from="1553516607130" duration="1140000" />
+      <workItem from="1553526055971" duration="3068000" />
+      <workItem from="1553534743365" duration="2442000" />
+      <workItem from="1553566103783" duration="5178000" />
+      <workItem from="1553584067462" duration="11139000" />
+      <workItem from="1553611299534" duration="4540000" />
+      <workItem from="1553658200615" duration="4229000" />
     </task>
     <servers />
   </component>
@@ -537,18 +554,17 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="346794000" />
+    <option name="totallyTimeSpent" value="379798000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1920" height="990" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49945235" weight="0.21504803" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49945235" visible="true" weight="0.4493063" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.1189968" />
       <window_info id="Favorites" order="2" sideWeight="0.50054765" side_tool="true" weight="0.3569904" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32894737" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.48849946" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.24096386" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.14895947" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -604,78 +620,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/filter/mast_remove_profiles.py" />
-    <entry file="file://$PROJECT_DIR$/../cleaned_workflow_FOR_CONV/project_main.py" />
-    <entry file="file://$PROJECT_DIR$/src/filter/screen_entropy_conv.py" />
-    <entry file="file://$PROJECT_DIR$/src/seeds_to_converge_input.py" />
-    <entry file="file://$PROJECT_DIR$/src/filter/filter_conv.py" />
-    <entry file="file://$PROJECT_DIR$/src/pssm_class.py" />
-    <entry file="file://$USER_HOME$/anaconda3/lib/python3.7/site-packages/pandas/core/indexes/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="4403" selection-start-line="4403" selection-end-line="4403" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/filter/meme_to_minimal_converter.py" />
-    <entry file="file://$PROJECT_DIR$/src/tmp_pssm_class.py" />
-    <entry file="file://$PROJECT_DIR$/src/filter.py" />
-    <entry file="file://$PROJECT_DIR$/src/cluster.py" />
-    <entry file="file://$PROJECT_DIR$/src/meme2minimal.py" />
-    <entry file="file://$PROJECT_DIR$/src/converge2meme.py" />
-    <entry file="file://$PROJECT_DIR$/src/dhcl2consensus.py" />
-    <entry file="file://$PROJECT_DIR$/src/seeds2conv_input.py" />
-    <entry file="file://$PROJECT_DIR$/src/tes.py" />
-    <entry file="file://$PROJECT_DIR$/converters.py" />
-    <entry file="file://$PROJECT_DIR$/src/pssm_parser_test.py" />
-    <entry file="file://$PROJECT_DIR$/src/merge_meme_files.py" />
-    <entry file="file://$PROJECT_DIR$/external_scripts/meme/src/meme.h" />
-    <entry file="file://$PROJECT_DIR$/external_scripts/meme/src/meme.c" />
-    <entry file="file://$PROJECT_DIR$/external_scripts/dhcl/pysrc/everything.py" />
-    <entry file="file://$PROJECT_DIR$/external_scripts/dhcl/pysrc/dhcl/hprep.py" />
-    <entry file="file://$PROJECT_DIR$/../cleaned_workflow (copy)/src/config.py" />
-    <entry file="file://$PROJECT_DIR$/../cleaned_workflow (copy)/project_main.py" />
-    <entry file="file://$PROJECT_DIR$/../workflow/project_main.py" />
-    <entry file="file://$PROJECT_DIR$/../workflow/src/config.py" />
-    <entry file="file://$PROJECT_DIR$/src/run_meme_on_cons.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/reduce_dhcl_for_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.cache/.fr-UWkBBX/workflow/project_main.py" />
-    <entry file="file://$PROJECT_DIR$/src/create_input_seqs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="2" column="15" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/create_short_seqs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pssm_parser.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="801">
-          <caret line="115" column="31" selection-start-line="115" selection-start-column="31" selection-end-line="115" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/rfr.py" />
     <entry file="file://$PROJECT_DIR$/src/meme_cleaner.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -703,12 +647,65 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../GT_HPC/GT_6220_HPC/lab2_test_before_changing_to_body/p_barnes_hut.py" />
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.7/difflib.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="415">
+          <caret line="160" lean-forward="true" selection-start-line="160" selection-end-line="160" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cluster/ss.py" />
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.7/site-packages/leven/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="30" selection-start-column="30" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cluster/yy.py" />
+    <entry file="file://$PROJECT_DIR$/project_main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1830">
+          <caret line="65" column="58" selection-start-line="65" selection-start-column="58" selection-end-line="65" selection-end-column="58" />
+          <folding>
+            <element signature="e#0#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/converters.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4410">
+          <caret line="149" column="9" selection-start-line="149" selection-start-column="9" selection-end-line="149" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/filter/filter.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3900">
           <caret line="140" column="42" selection-start-line="140" selection-start-column="42" selection-end-line="140" selection-end-column="42" />
           <folding>
             <element signature="e#0#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cluster/cluster.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1290">
+          <caret line="51" column="27" selection-start-line="51" selection-start-column="27" selection-end-line="51" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -723,87 +720,158 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1200">
-          <caret line="40" column="36" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cluster/cluster.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="471">
-          <caret line="51" column="27" selection-start-line="51" selection-start-column="27" selection-end-line="51" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda3/lib/python3.7/difflib.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="160" lean-forward="true" selection-start-line="160" selection-end-line="160" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cluster/ss.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="9" column="16" lean-forward="true" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
-          <folding>
-            <element signature="e#1#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda3/lib/python3.7/site-packages/leven/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="30" selection-start-column="30" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/converters.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="149" column="9" selection-start-line="149" selection-start-column="9" selection-end-line="149" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cluster/yy.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="1" column="49" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/cluster/generate_cluster_params.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="30" column="22" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
+        <state relative-caret-position="18">
+          <caret line="28" column="21" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project_main.py">
+    <entry file="file://$PROJECT_DIR$/src/UI/bokeh_ui/widgets/test.py" />
+    <entry file="file://$PROJECT_DIR$/src/UI/new_UI.py" />
+    <entry file="file://$PROJECT_DIR$/src/UI/config/properties.py" />
+    <entry file="file://$PROJECT_DIR$/src/UI/config/init_values.py" />
+    <entry file="file://$PROJECT_DIR$/src/UI/config/gs_data_construct.py" />
+    <entry file="file://$PROJECT_DIR$/src/UI/utils/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UI/ui_interface.py" />
+    <entry file="file://$PROJECT_DIR$/src/UI/config/base.py" />
+    <entry file="file://$PROJECT_DIR$/src/UI/config/figure.py" />
+    <entry file="file://$PROJECT_DIR$/src/UI/config/widget.py" />
+    <entry file="file://$PROJECT_DIR$/src/UI/bokeh_ui/config.py" />
+    <entry file="file://$PROJECT_DIR$/src/UI/config/global_config.py" />
+    <entry file="file://$PROJECT_DIR$/src/UI/config.py" />
+    <entry file="file://$PROJECT_DIR$/src/UI/main.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/config.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="67" column="45" selection-start-line="67" selection-start-column="45" selection-end-line="67" selection-end-column="45" />
+        <state relative-caret-position="570">
+          <caret line="40" column="36" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UI/utils/sys_path_adder.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UI/bokeh_ui/figures/figureset.py" />
+    <entry file="file://$PROJECT_DIR$/src/UI/bokeh_ui/widgets/widgetset.py" />
+    <entry file="file://$PROJECT_DIR$/src/UI/bokeh_ui/figures/individual_figure.py" />
+    <entry file="file://$PROJECT_DIR$/src/UI/bokeh_ui/widgets/individual.py" />
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.7/site-packages/bokeh/layouts.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="83" selection-start-line="83" selection-end-line="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.7/site-packages/bokeh/model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-138">
+          <caret line="251" column="6" selection-start-line="251" selection-start-column="6" selection-end-line="251" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.7/site-packages/bokeh/models/layouts.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="52" column="18" lean-forward="true" selection-start-line="52" selection-start-column="18" selection-end-line="52" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.7/site-packages/bokeh/models/widgets/markups.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="82" column="13" lean-forward="true" selection-start-line="82" selection-start-column="13" selection-end-line="82" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.7/site-packages/bokeh/models/widgets/widget.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="54" column="19" selection-start-line="54" selection-start-column="19" selection-end-line="54" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.7/site-packages/bokeh/models/widgets/inputs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2910">
+          <caret line="99" column="6" selection-start-line="99" selection-start-column="6" selection-end-line="99" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.7/site-packages/bokeh/models/widgets/buttons.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2460">
+          <caret line="84" column="6" selection-start-line="84" selection-start-column="6" selection-end-line="84" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.7/site-packages/bokeh/plotting/helpers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="757" column="4" selection-start-line="757" selection-start-column="4" selection-end-line="757" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.7/site-packages/bokeh/models/glyphs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-48">
+          <caret line="564" column="6" selection-start-line="564" selection-start-column="6" selection-end-line="564" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.7/site-packages/bokeh/plotting/figure.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="391" column="45" lean-forward="true" selection-start-line="391" selection-start-column="45" selection-end-line="391" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UI/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="8" column="17" lean-forward="true" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
           <folding>
-            <element signature="e#0#47#0" expanded="true" />
+            <element signature="e#1#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UI/bokeh_ui/figures.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="45" column="8" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UI/bokeh_ui/ui.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-210">
+          <caret line="29" column="31" lean-forward="true" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UI/ui_config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1189">
+          <caret line="106" column="23" lean-forward="true" selection-start-line="106" selection-start-column="23" selection-end-line="106" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
           </folding>
         </state>
       </provider>
