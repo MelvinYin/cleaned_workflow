@@ -1,4 +1,3 @@
-from collections import namedtuple
 from enum import Enum, auto
 
 def _convert_url_to_bokeh(url):

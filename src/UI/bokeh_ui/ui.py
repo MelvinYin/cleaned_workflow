@@ -1,7 +1,6 @@
 from bokeh.layouts import column, row, Spacer
 from figures import ConsoleOutput, TextInputComponent, ButtonComponent, \
     TextBoxComponent, ConsoleTextConsoleRow, SingleImageComponent, MultiImageComponent
-from bokeh.models import Image
 
 class UI:
     def __init__(self, callback, specs):
