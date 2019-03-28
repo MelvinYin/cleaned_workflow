@@ -1,0 +1,45 @@
+Cluster 0
+Combination: (15, 6, 21, 17, 18)
+ENL : 934
+
+
+Cluster 1
+Combination: (15, 2, 13)
+CC : 42
+RD : 28
+
+
+Cluster 2
+Combination: (1, 4)
+OSBS : 102
+DE : 90
+CC : 30
+MAL : 2
+
+
+Cluster 3
+Combination: (2, 13, 14)
+DGD : 114
+NSART : 17
+LTGD : 14
+GDD : 9
+CC : 7
+MD : 2
+
+
+Cluster 4
+Combination: (9, 19, 2, 20, 11, 12, 5)
+GCRD : 272
+
+
+Cluster 5
+Combination: (16, 10, 7, 13, 8)
+LFD : 87
+LGD : 2
+
+
+Cluster 6
+Combination: (15, 10, 6, 21, 17, 18)
+ENL : 99
+
+

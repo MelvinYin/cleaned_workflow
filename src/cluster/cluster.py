@@ -90,6 +90,11 @@ class Cluster:
             pssm_obj = PSSM(filename=self.dir.input_meme)
             pssm_obj.keep(centroid)
             pssm_obj.output(output)
+        os.mkdir(f"{self.dir.output}/motifs")
+        for file in os.listdir(self._dir.motifs):
+            src_path = f"{self._dir.motifs}/{file}"
+            dst_path = f"{self.dir.output}/motifs"
+            shutil.copy(src_path, dst_path)
         assert os.path.isdir(self._dir.motifs)
         return
 

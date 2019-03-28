@@ -9,3 +9,4 @@ __pycache__/
 *.html
 *.xml
 .idea/workspace.xml
+src/UI/tes.py

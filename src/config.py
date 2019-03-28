@@ -16,8 +16,7 @@ FilterDirectory = namedtuple(
 ClusterDirectory = namedtuple(
     "ClusterDirectory",
     "bash_exec cluster_pkl combi_minsize cluster_minsize description "
-    "input_mast input_meme num_cluster "
-    "file log logos "
+    "input_mast input_meme num_cluster output file log logos "
     "meme_dir trash")
 
 class Directory:
@@ -88,6 +87,7 @@ class Directory:
         trash=trash,
         cluster_minsize=cluster_minsize,
         combi_minsize=combi_minsize,
+        output=output,
         num_cluster=None,   # Necessary
         input_mast=None,    # Necessary
         input_meme=None,    # Necessary
