@@ -6,3 +6,6 @@ files/README.txt
 TODO.txt
 discussion notes.txt
 __pycache__/
+*.html
+*.xml
+.idea/workspace.xml

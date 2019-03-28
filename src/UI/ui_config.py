@@ -37,33 +37,33 @@ class GenericSpecs:
             # self.style = dict(border='2px solid rgb(200, 200, 200)')
             self.style = dict()
 
-class MastSpecs:
-    def __init__(self, width=500, height=100,
-                 image_fname='mast_alignment.png', style=None):
-        image_fname = _convert_url_to_bokeh(image_fname)
-        self.width = width
-        self.height = height
-        self.image_fname = image_fname
-        self.x_range = (0, 10)
-        self.y_range = (0, 5)
-        self.img_xy = (0, 4)
-        self.img_wh = (10, 4)
-        if style is not None:
-            self.style = style
-        else:
-            self.style = dict()
-
 
 class LogosSpecs:
-    def __init__(self, width=500, height=120,
-                 image_fname='logos_1.png'):
-        image_fname = _convert_url_to_bokeh(image_fname)
+    def __init__(self, width=500, height=400,
+                 images=('logos_1.png', 'logos_2.png', 'logos_3.png',
+                         'logos_4.png', 'logos_5.png', 'logos_6.png')):
+        images = tuple([_convert_url_to_bokeh(url) for url in images])
         self.width = width
         self.height = height
-        self.image_fname = image_fname
-        self.x_range = (-1, 31)
+        self.images = images
+        self.x_range = (-1, 11)
         self.y_range = (-1, 26)
-        self.img_wh = (30, 12)
+        template_img_xy = (0, 4)
+        self.img_wh = (10, 4)
+        self.img_xys = list([(template_img_xy[0],
+                              self.img_wh[1]*i+template_img_xy[1])
+                             for i in range(len(images))])
+
+# class LogosSpecs:
+#     def __init__(self, width=500, height=120,
+#                  image_fname='logos_1.png'):
+#         image_fname = _convert_url_to_bokeh(image_fname)
+#         self.width = width
+#         self.height = height
+#         self.image_fname = image_fname
+#         self.x_range = (-1, 31)
+#         self.y_range = (-1, 26)
+#         self.img_wh = (30, 12)
 
 class SingleLineConsoleSpecs:
     def __init__(self, textbox_width=100, textbox_height=10,
@@ -160,27 +160,26 @@ class UISpecs:
         self.con_text_con_3 = ConsoleTextConsoleSpecs(c31, t1, c32)
         self.con_text_con_4 = ConsoleTextConsoleSpecs(c41, t1, c42)
         self.con_text_con_5 = ConsoleTextConsoleSpecs(c51, t1, c52)
-        self.mast_img = MastSpecs()
+        self.mast_img = GenericSpecs(width=100, height=100, text="Show "
+                                                                 "Alignment")
+
+        self.tmp_output_header = GenericSpecs(width=200, height=10,
+                                        text="OUTPUT_PLACEHOLDER")
         self.width = 100
         self.height = 100
-        self.logo_descr_1 = GenericSpecs(width=200, height=10,
+        self.logo_descr_1 = GenericSpecs(width=60, height=10,
                                          text="Profile 1: INSERT")
-        self.logo_fig_1 = LogosSpecs(image_fname='logos_1.png')
-        self.logo_descr_2 = GenericSpecs(width=200, height=10,
+        self.logos_fig = LogosSpecs()
+        self.logo_descr_2 = GenericSpecs(width=60, height=10,
                                          text="Profile 2: INSERT")
-        self.logo_fig_2 = LogosSpecs(image_fname='logos_2.png')
-        self.logo_descr_3 = GenericSpecs(width=200, height=10,
+        self.logo_descr_3 = GenericSpecs(width=60, height=10,
                                          text="Profile 3: INSERT")
-        self.logo_fig_3 = LogosSpecs(image_fname='logos_3.png')
-        self.logo_descr_4 = GenericSpecs(width=200, height=10,
+        self.logo_descr_4 = GenericSpecs(width=60, height=10,
                                          text="Profile 4: INSERT")
-        self.logo_fig_4 = LogosSpecs(image_fname='logos_4.png')
-        self.logo_descr_5 = GenericSpecs(width=200, height=10,
+        self.logo_descr_5 = GenericSpecs(width=60, height=10,
                                          text="Profile 5: INSERT")
-        self.logo_fig_5 = LogosSpecs(image_fname='logos_5.png')
-        self.logo_descr_6 = GenericSpecs(width=200, height=10,
+        self.logo_descr_6 = GenericSpecs(width=60, height=10,
                                          text="Profile 6: INSERT")
-        self.logo_fig_6 = LogosSpecs(image_fname='logos_6.png')
 
 
 

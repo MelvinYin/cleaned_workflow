@@ -4,10 +4,11 @@ from bokeh.models.layouts import WidgetBox, Spacer
 from bokeh.models.widgets import Button
 from bokeh.models.widgets.inputs import TextAreaInput
 from bokeh.plotting import figure
-from bokeh.models import WheelZoomTool
+from bokeh.models import WheelZoomTool, OpenURL
 
 from scipy.ndimage import imread
 import numpy as np
+from ui_config import _convert_url_to_bokeh
 
 
 class SingleImageComponent:
@@ -21,22 +22,22 @@ class SingleImageComponent:
                       y=specs.img_xy[1], w=specs.img_wh[0], h=specs.img_wh[1])
         return fig
 
-class RBGImageComponent:
-    def __init__(self, specs):
-        self.figure = self._set_figure(specs)
-
-    def _set_figure(self, specs):
-        fig = figure(x_range=(0, 30), y_range=(0, 6),
-                     width=specs.width, height=specs.height)
-        img = imread(specs.image_fname)
-        img = np.flip(img, axis=0)
-        img = img[35:, 58:]
-        scaling = img.shape[1] / 30
-        fig.image_rgba(image=[img], x=0,
-                       y=0, dw=img.shape[1] / scaling,
-                       dh=img.shape[0] / scaling)
-        fig.image_url(url=[specs.image_fname], x=0, y=0, w=30, h=6)
-        return fig
+# class RBGImageComponent:
+#     def __init__(self, specs):
+#         self.figure = self._set_figure(specs)
+#
+#     def _set_figure(self, specs):
+#         fig = figure(x_range=(0, 30), y_range=(0, 6),
+#                      width=specs.width, height=specs.height)
+#         img = imread(specs.image_fname)
+#         img = np.flip(img, axis=0)
+#         img = img[35:, 58:]
+#         scaling = img.shape[1] / 30
+#         fig.image_rgba(image=[img], x=0,
+#                        y=0, dw=img.shape[1] / scaling,
+#                        dh=img.shape[0] / scaling)
+#         fig.image_url(url=[specs.image_fname], x=0, y=0, w=30, h=6)
+#         return fig
 
 
 class MultiImageComponent:
@@ -44,16 +45,9 @@ class MultiImageComponent:
         self.figure = self._set_figure(specs)
 
     def _set_figure(self, specs):
-        fig = figure(x_range=(0, 30), y_range=(0, 6),
+        fig = figure(x_range=(0, 30), y_range=(0, 6*len(specs.images)),
                      width=specs.width, height=specs.height,
                      active_scroll='wheel_zoom')
-        # print(specs.images[0])
-        # specs.images = ['./static/logos_1.png']
-
-        # cv2.imshow(' ', x)
-        # cv2.waitKey(10000)
-        # x = x.reshape(x.shape[1], x.shape[0], 3)
-
 
         for i in range(len(specs.images)):
             img = imread(specs.images[i])
@@ -61,11 +55,8 @@ class MultiImageComponent:
             img = img[35:, 58:]
             scaling = img.shape[1] / 30
             fig.image_rgba(image=[img], x=0,
-                           y=5*i, dw=img.shape[1]/scaling,
+                           y=6*(len(specs.images)-i-1), dw=img.shape[1]/scaling,
                            dh=img.shape[0]/scaling)
-            # fig.image_url(url=[specs.images[i]], x=specs.img_xys[i][0],
-            #               y=specs.img_xys[i][1], w=specs.img_wh[0],
-            #               h=specs.img_wh[1])
         return fig
 
 class TextBoxComponent:
@@ -138,6 +129,21 @@ class TextInputComponent:
     def _ti_callback(self, attr, old, new):
         self.current_value = new
         return
+from bokeh.models import ColumnDataSource, OpenURL, TapTool
+from bokeh.models.callbacks import CustomJS
+
+class ButtonURLComponent:
+    def __init__(self, specs, widget_callback):
+        self.widget_callback = widget_callback
+        self.widget = self._set_button(specs)
+
+    def _set_button(self, specs):
+        button = Button()
+        button.label = specs.text
+        button.width = specs.width
+        button.height = specs.height
+        button.callback = self.widget_callback()
+        return button
 
 class ButtonComponent:
     def __init__(self, specs, widget_callback):
@@ -151,6 +157,7 @@ class ButtonComponent:
         button.height = specs.height
         button.on_click(self.widget_callback)
         return button
+
 
 class ConsoleOutput:
     def __init__(self, specs):
