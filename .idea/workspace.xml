@@ -3,226 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="977e9f69-e7b2-4235-9856-6e88bdf80fc9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Enolase/input_fasta/DE_3der.fasta.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Enolase/input_fasta/DGD_3rra.fasta.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Enolase/input_fasta/DTD_2dw6.fasta.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Enolase/input_fasta/EL_1bqg.fasta.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Enolase/input_fasta/GD2_3hpf.fasta.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Enolase/input_fasta/GD_1bqg.fasta.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Enolase/input_fasta/LFD_2hxu.fasta.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Enolase/input_fasta/LTGD_2pp3.fasta.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Enolase/input_fasta/MAL_3zvi.fasta.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Enolase/input_fasta/MCANTI_3dg6.fasta.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Enolase/input_fasta/MCSL_2chr.fasta.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Enolase/input_fasta/MD_3vcn.fasta.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Enolase/input_fasta/MR_4hnc.fasta.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Enolase/input_fasta/NSAR2_2p8b.fasta.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Enolase/input_fasta/NSAR_2ggi.fasta.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Enolase/input_fasta/OSS_4a6g.fasta.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Enolase/input_fasta/RD_2i5q.fasta.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Enolase/input_pdb/DE_3der.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Enolase/input_pdb/DGD_3rra.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Enolase/input_pdb/DTD_2dw6.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Enolase/input_pdb/EL_1bqg.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Enolase/input_pdb/GD2_3hpf.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Enolase/input_pdb/GD_1bqg.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Enolase/input_pdb/LFD_2hxu.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Enolase/input_pdb/LTGD_2pp3.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Enolase/input_pdb/MAL_3zvi.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Enolase/input_pdb/MCANTI_3dg6.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Enolase/input_pdb/MCSL_2chr.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Enolase/input_pdb/MD_3vcn.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Enolase/input_pdb/MR_4hnc.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Enolase/input_pdb/NSAR2_2p8b.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Enolase/input_pdb/NSAR_2ggi.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Enolase/input_pdb/OSS_4a6g.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Enolase/input_pdb/RD_2i5q.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Enolase/input_pdb_full/DE_3der.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Enolase/input_pdb_full/DGD_3rra.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Enolase/input_pdb_full/DTD_2dw6.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Enolase/input_pdb_full/EL_1bqg.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Enolase/input_pdb_full/GD2_3hpf.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Enolase/input_pdb_full/GD_1bqg.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Enolase/input_pdb_full/LFD_2hxu.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Enolase/input_pdb_full/LTGD_2pp3.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Enolase/input_pdb_full/MAL_3zvi.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Enolase/input_pdb_full/MCANTI_3dg6.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Enolase/input_pdb_full/MCSL_2chr.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Enolase/input_pdb_full/MD_3vcn.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Enolase/input_pdb_full/MR_4hnc.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Enolase/input_pdb_full/NSAR2_2p8b.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Enolase/input_pdb_full/NSAR_2ggi.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Enolase/input_pdb_full/OSS_4a6g.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Enolase/input_pdb_full/RD_2i5q.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Enolase/sfld_datasets/AALG.fasta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Enolase/sfld_datasets/CC.fasta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Enolase/sfld_datasets/CIS.fasta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Enolase/sfld_datasets/DAD.fasta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Enolase/sfld_datasets/DE.fasta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Enolase/sfld_datasets/DGD.fasta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Enolase/sfld_datasets/DTD.fasta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Enolase/sfld_datasets/ENL.fasta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Enolase/sfld_datasets/GCND.fasta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Enolase/sfld_datasets/GCRD.fasta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Enolase/sfld_datasets/GDD.fasta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Enolase/sfld_datasets/GLC.fasta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Enolase/sfld_datasets/HB.fasta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Enolase/sfld_datasets/LFD.fasta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Enolase/sfld_datasets/LGD.fasta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Enolase/sfld_datasets/LLD.fasta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Enolase/sfld_datasets/LTGD.fasta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Enolase/sfld_datasets/MAL.fasta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Enolase/sfld_datasets/MCanti.fasta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Enolase/sfld_datasets/MD.fasta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Enolase/sfld_datasets/MR.fasta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Enolase/sfld_datasets/NSAR.fasta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Enolase/sfld_datasets/NSART.fasta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Enolase/sfld_datasets/OSBS.fasta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Enolase/sfld_datasets/RD.fasta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Enolase/sfld_datasets/XD.fasta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Enolase/sfld_datasets/XDT.fasta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Other Superfam/input_fasta/1n1b.fasta.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Other Superfam/input_fasta/1yyq.fasta.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Other Superfam/input_fasta/2dh4.fasta.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Other Superfam/input_fasta/2ps5.fasta.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Other Superfam/input_fasta/3adz.fasta.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Other Superfam/input_fasta/3aqb.fasta.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Other Superfam/input_fasta/3bny.fasta.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Other Superfam/input_fasta/3lg5.fasta.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Other Superfam/input_fasta/3m00.fasta.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Other Superfam/input_fasta/3oab.fasta.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Other Superfam/input_fasta/3sae.fasta.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Other Superfam/input_fasta/3v1v.fasta.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Other Superfam/input_fasta/3we9.fasta.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Other Superfam/input_fasta/3zmb.fasta.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Other Superfam/input_fasta/4dem.fasta.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Other Superfam/input_fasta/4hd1.fasta.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Other Superfam/input_pdb/1n1b.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Other Superfam/input_pdb/1yyq.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Other Superfam/input_pdb/2dh4.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Other Superfam/input_pdb/2ps5.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Other Superfam/input_pdb/3adz.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Other Superfam/input_pdb/3aqb.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Other Superfam/input_pdb/3bny.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Other Superfam/input_pdb/3lg5.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Other Superfam/input_pdb/3m00.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Other Superfam/input_pdb/3oab.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Other Superfam/input_pdb/3sae.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Other Superfam/input_pdb/3v1v.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Other Superfam/input_pdb/3we9.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Other Superfam/input_pdb/3zmb.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Other Superfam/input_pdb/4dem.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Other Superfam/input_pdb/4hd1.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Other Superfam/sfld_datasets/COMQ.fasta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Other Superfam/sfld_datasets/PSL.fasta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Other Superfam/sfld_datasets/PTL.fasta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Other Superfam/sfld_datasets/SPSL.fasta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Other Superfam/sfld_datasets/TCL.fasta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Other Superfam/sfld_datasets/TCLE.fasta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Other Superfam/sfld_datasets/TCLL.fasta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Other Superfam/sfld_datasets/TSL.fasta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/input_fasta/DE_3der.fasta.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/input_fasta/DGD_3rra.fasta.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/input_fasta/DTD_2dw6.fasta.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/input_fasta/EL_1bqg.fasta.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/input_fasta/GD2_3hpf.fasta.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/input_fasta/GD_1bqg.fasta.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/input_fasta/LFD_2hxu.fasta.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/input_fasta/LTGD_2pp3.fasta.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/input_fasta/MAL_3zvi.fasta.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/input_fasta/MCANTI_3dg6.fasta.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/input_fasta/MCSL_2chr.fasta.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/input_fasta/MD_3vcn.fasta.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/input_fasta/MR_4hnc.fasta.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/input_fasta/NSAR2_2p8b.fasta.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/input_fasta/NSAR_2ggi.fasta.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/input_fasta/OSS_4a6g.fasta.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/input_fasta/RD_2i5q.fasta.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/input_pdb/DE_3der.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/input_pdb/DGD_3rra.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/input_pdb/DTD_2dw6.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/input_pdb/EL_1bqg.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/input_pdb/GD2_3hpf.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/input_pdb/GD_1bqg.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/input_pdb/LFD_2hxu.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/input_pdb/LTGD_2pp3.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/input_pdb/MAL_3zvi.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/input_pdb/MCANTI_3dg6.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/input_pdb/MCSL_2chr.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/input_pdb/MD_3vcn.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/input_pdb/MR_4hnc.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/input_pdb/NSAR2_2p8b.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/input_pdb/NSAR_2ggi.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/input_pdb/OSS_4a6g.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/input_pdb/RD_2i5q.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/sfld_datasets/AALG.fasta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/sfld_datasets/CC.fasta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/sfld_datasets/CIS.fasta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/sfld_datasets/DAD.fasta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/sfld_datasets/DE.fasta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/sfld_datasets/DGD.fasta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/sfld_datasets/DTD.fasta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/sfld_datasets/ENL.fasta" beforeDir="false" afterPath="$PROJECT_DIR$/files/sfld_datasets/ENL.fasta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/sfld_datasets/GCND.fasta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/sfld_datasets/GCRD.fasta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/sfld_datasets/GDD.fasta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/sfld_datasets/GLC.fasta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/sfld_datasets/HB.fasta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/sfld_datasets/LFD.fasta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/sfld_datasets/LGD.fasta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/sfld_datasets/LLD.fasta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/sfld_datasets/LTGD.fasta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/sfld_datasets/MAL.fasta" beforeDir="false" afterPath="$PROJECT_DIR$/files/sfld_datasets/MAL.fasta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/sfld_datasets/MCanti.fasta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/sfld_datasets/MD.fasta" beforeDir="false" afterPath="$PROJECT_DIR$/files/sfld_datasets/MD.fasta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/sfld_datasets/MR.fasta" beforeDir="false" afterPath="$PROJECT_DIR$/files/sfld_datasets/MR.fasta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/sfld_datasets/NSAR.fasta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/sfld_datasets/NSART.fasta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/sfld_datasets/OSBS.fasta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/sfld_datasets/RD.fasta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/sfld_datasets/XD.fasta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/sfld_datasets/XDT.fasta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/cluster_description.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_0/logos_15.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_0/logos_17.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_0/logos_18.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_0/logos_21.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_0/logos_6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_1/logos_13.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_1/logos_15.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_1/logos_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_2/logos_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_2/logos_4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_3/logos_13.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_3/logos_14.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_3/logos_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_4/logos_11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_4/logos_12.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_4/logos_19.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_4/logos_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_4/logos_20.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_4/logos_5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_4/logos_9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_5/logos_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_5/logos_13.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_5/logos_16.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_5/logos_7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_5/logos_8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_6/logos_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_6/logos_15.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_6/logos_17.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_6/logos_18.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_6/logos_21.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/logos/cluster_6/logos_6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/mast/mast.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/motifs/motifs_in_cluster_0.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/motifs/motifs_in_cluster_1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/motifs/motifs_in_cluster_2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/motifs/motifs_in_cluster_3.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/motifs/motifs_in_cluster_4.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/motifs/motifs_in_cluster_5.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/motifs/motifs_in_cluster_6.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/project_main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scorer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scorer_preprocess.py" beforeDir="false" afterPath="$PROJECT_DIR$/scorer_preprocess.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/bokeh_ui/figures.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/bokeh_ui/figures.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/bokeh_ui/ui.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/bokeh_ui/ui.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/ui_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/ui_config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/utils/mast" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -274,78 +61,12 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/project_main.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="145" column="37" selection-start-line="145" selection-start-column="37" selection-end-line="145" selection-end-column="37" />
-              <folding>
-                <element signature="e#0#47#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/converters.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="524">
-              <caret line="248" column="53" selection-start-line="248" selection-start-column="53" selection-end-line="248" selection-end-column="53" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/config.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="45" column="26" selection-start-line="45" selection-start-column="26" selection-end-line="45" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cluster/cluster.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="287">
-              <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
-              <folding>
-                <element signature="e#0#34#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/match_scorer.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="321">
-              <caret line="74" column="25" selection-start-line="74" selection-start-column="25" selection-end-line="74" selection-end-column="25" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scorer_preprocess.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="66" selection-start-line="66" selection-end-line="66" />
+            <state relative-caret-position="591">
+              <caret line="114" column="51" selection-start-line="114" selection-start-column="51" selection-end-line="114" selection-end-column="51" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scorer.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2409">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
-              <folding>
-                <element signature="e#0#35#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -354,17 +75,32 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/UI/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+            <state relative-caret-position="711">
+              <caret line="34" column="1" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
+              <folding>
+                <element signature="e#0#47#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cluster/generate_cluster_params.py">
+        <entry file="file://$PROJECT_DIR$/src/UI/ui_config.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="77" column="16" selection-start-line="77" selection-start-column="16" selection-end-line="77" selection-end-column="16" />
+            <state relative-caret-position="210">
+              <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/UI/scorer.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="201">
+              <caret line="15" column="44" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -372,13 +108,25 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/filter/filter.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/UI/bokeh_ui/ui.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+            <state relative-caret-position="261">
+              <caret line="45" column="28" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="28" />
               <folding>
-                <element signature="e#0#47#0" expanded="true" />
+                <element signature="e#0#45#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/UI/bokeh_ui/figures.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="381">
+              <caret line="170" selection-start-line="170" selection-end-line="170" />
+              <folding>
+                <element signature="e#0#37#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -396,9 +144,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>style</find>
-      <find>TextAreaInput</find>
-      <find>con_text_con</find>
       <find>mast</find>
       <find>font-size</find>
       <find>logo</find>
@@ -422,10 +167,13 @@
       <find>align</find>
       <find>button</find>
       <find>callback</find>
-      <find>url</find>
       <find>cluster</find>
       <find>cluster_descr_parser</find>
       <find>leven</find>
+      <find>button.value</find>
+      <find>html</find>
+      <find>static</find>
+      <find>url</find>
     </findStrings>
     <replaceStrings>
       <replace>self.dir.trash</replace>
@@ -470,7 +218,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/tes.py" />
         <option value="$PROJECT_DIR$/src/pssm_parser_test.py" />
         <option value="$PROJECT_DIR$/src/merge_meme_files.py" />
         <option value="$PROJECT_DIR$/src/run_meme_on_cons.py" />
@@ -507,20 +254,21 @@
         <option value="$PROJECT_DIR$/src/UI/bokeh_ui/figures/figureset.py" />
         <option value="$PROJECT_DIR$/src/UI/bokeh_ui/figures/individual_figure.py" />
         <option value="$PROJECT_DIR$/src/UI/tes.py" />
-        <option value="$PROJECT_DIR$/src/UI/ui_config.py" />
-        <option value="$PROJECT_DIR$/src/UI/main.py" />
-        <option value="$PROJECT_DIR$/src/UI/bokeh_ui/figures.py" />
-        <option value="$PROJECT_DIR$/src/UI/bokeh_ui/ui.py" />
         <option value="$PROJECT_DIR$/src/config.py" />
         <option value="$PROJECT_DIR$/src/cluster/cluster.py" />
         <option value="$PROJECT_DIR$/src/cluster/match_scorer.py" />
         <option value="$PROJECT_DIR$/dd.py" />
         <option value="$PROJECT_DIR$/match_scorer.py" />
         <option value="$PROJECT_DIR$/ss.py" />
-        <option value="$PROJECT_DIR$/scorer_preprocess.py" />
         <option value="$PROJECT_DIR$/scorer.py" />
         <option value="$PROJECT_DIR$/src/cluster/generate_cluster_params.py" />
         <option value="$PROJECT_DIR$/project_main.py" />
+        <option value="$PROJECT_DIR$/src/UI/scorer.py" />
+        <option value="$PROJECT_DIR$/scorer_preprocess.py" />
+        <option value="$PROJECT_DIR$/src/UI/ui_config.py" />
+        <option value="$PROJECT_DIR$/src/UI/main.py" />
+        <option value="$PROJECT_DIR$/src/UI/bokeh_ui/figures.py" />
+        <option value="$PROJECT_DIR$/src/UI/bokeh_ui/ui.py" />
       </list>
     </option>
   </component>
@@ -535,8 +283,36 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="cleaned_workflow" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cleaned_workflow" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cleaned_workflow" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cleaned_workflow" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cleaned_workflow" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cleaned_workflow" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="UI" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cleaned_workflow" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cleaned_workflow" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="UI" type="462c0819:PsiDirectoryNode" />
+              <item name="bokeh_ui" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope" />
-      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -570,8 +346,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.project_main">
-    <configuration name="dd" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.main">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="merged_src" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -579,12 +355,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/UI" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dd.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/UI/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -615,28 +391,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="match_scorer" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="merged_src" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/cluster" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/cluster/match_scorer.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="project_main" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="merged_src" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -651,6 +405,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/project_main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="scorer_preprocess" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="merged_src" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scorer_preprocess.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -682,19 +458,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.match_scorer" />
       <item itemvalue="Python.match_scorer (1)" />
-      <item itemvalue="Python.dd" />
       <item itemvalue="Python.ss" />
       <item itemvalue="Python.project_main" />
+      <item itemvalue="Python.scorer_preprocess" />
+      <item itemvalue="Python.main" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.main" />
+        <item itemvalue="Python.scorer_preprocess" />
         <item itemvalue="Python.project_main" />
         <item itemvalue="Python.ss" />
         <item itemvalue="Python.match_scorer (1)" />
-        <item itemvalue="Python.dd" />
-        <item itemvalue="Python.match_scorer" />
       </list>
     </recent_temporary>
   </component>
@@ -800,7 +576,8 @@
       <workItem from="1553758874393" duration="10628000" />
       <workItem from="1553818929277" duration="718000" />
       <workItem from="1553823986771" duration="2171000" />
-      <workItem from="1553826172147" duration="9810000" />
+      <workItem from="1553826172147" duration="17909000" />
+      <workItem from="1553862650071" duration="3955000" />
     </task>
     <servers />
   </component>
@@ -813,18 +590,18 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="420082000" />
+    <option name="totallyTimeSpent" value="432136000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1920" height="990" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49945235" weight="0.35005337" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49945235" visible="true" weight="0.3543223" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.1189968" />
       <window_info id="Favorites" order="2" sideWeight="0.50054765" side_tool="true" weight="0.3569904" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32894737" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.10843374" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.28258488" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.14895947" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -880,6 +657,8 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/cleaned_workflow$scorer_preprocess.coverage" NAME="scorer_preprocess Coverage Results" MODIFIED="1553855842959" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cleaned_workflow$main.coverage" NAME="main Coverage Results" MODIFIED="1553868607669" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/UI" />
     <SUITE FILE_PATH="coverage/cleaned_workflow$ss.coverage" NAME="ss Coverage Results" MODIFIED="1553830306114" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/cleaned_workflow$dd.coverage" NAME="dd Coverage Results" MODIFIED="1553765181792" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/cleaned_workflow$project_main.coverage" NAME="project_main Coverage Results" MODIFIED="1553835365516" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -887,7 +666,6 @@
     <SUITE FILE_PATH="coverage/cleaned_workflow$match_scorer.coverage" NAME="match_scorer Coverage Results" MODIFIED="1553763519352" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/cluster" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/UI/config/gs_data_construct.py" />
     <entry file="file://$PROJECT_DIR$/src/UI/utils/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1004,13 +782,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/anaconda3/lib/python3.7/site-packages/bokeh/models/widgets/buttons.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="93" column="8" selection-start-line="93" selection-start-column="8" selection-end-line="93" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/anaconda3/lib/python3.7/site-packages/bokeh/model.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="287">
@@ -1022,36 +793,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-695">
           <caret line="447" column="6" selection-start-line="447" selection-start-column="6" selection-end-line="447" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/UI/bokeh_ui/ui.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="50" column="44" lean-forward="true" selection-start-line="50" selection-start-column="44" selection-end-line="50" selection-end-column="44" />
-          <folding>
-            <element signature="e#0#45#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/UI/ui_config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="162" column="28" selection-start-line="162" selection-start-column="28" selection-end-line="162" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/UI/bokeh_ui/figures.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="134" column="24" selection-start-line="134" selection-start-column="6" selection-end-line="134" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1074,37 +815,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/UI/tes.py">
+    <entry file="file://$PROJECT_DIR$/src/UI/tes.py" />
+    <entry file="file://$PROJECT_DIR$/ss.py" />
+    <entry file="file://$PROJECT_DIR$/src/config.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+        <state relative-caret-position="273">
+          <caret line="45" column="26" selection-start-line="45" selection-start-column="26" selection-end-line="45" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/converters.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="12">
+          <caret line="244" column="41" lean-forward="true" selection-start-line="244" selection-start-column="41" selection-end-line="244" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project_main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="145" column="37" selection-start-line="145" selection-start-column="37" selection-end-line="145" selection-end-column="37" />
           <folding>
-            <element signature="e#0#32#0" expanded="true" />
+            <element signature="e#0#47#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ss.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="7" column="51" lean-forward="true" selection-start-line="6" selection-start-column="17" selection-end-line="7" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scorer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2409">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/UI/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -1114,43 +847,6 @@
           <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
           <folding>
             <element signature="e#0#47#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="45" column="26" selection-start-line="45" selection-start-column="26" selection-end-line="45" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cluster/cluster.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/match_scorer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="74" column="25" selection-start-line="74" selection-start-column="25" selection-end-line="74" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scorer_preprocess.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="66" selection-start-line="66" selection-end-line="66" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1165,20 +861,91 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project_main.py">
+    <entry file="file://$PROJECT_DIR$/match_scorer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="145" column="37" selection-start-line="145" selection-start-column="37" selection-end-line="145" selection-end-column="37" />
+        <state relative-caret-position="321">
+          <caret line="74" column="25" selection-start-line="74" selection-start-column="25" selection-end-line="74" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cluster/cluster.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scorer.py" />
+    <entry file="file://$PROJECT_DIR$/scorer_preprocess.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="591">
+          <caret line="114" column="51" selection-start-line="114" selection-start-column="51" selection-end-line="114" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UI/scorer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="15" column="44" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UI/ui_config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UI/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="711">
+          <caret line="34" column="1" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
           <folding>
             <element signature="e#0#47#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/converters.py">
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.7/site-packages/bokeh/models/widgets/buttons.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="524">
-          <caret line="248" column="53" selection-start-line="248" selection-start-column="53" selection-end-line="248" selection-end-column="53" />
+        <state relative-caret-position="210">
+          <caret line="84" column="6" selection-start-line="84" selection-start-column="6" selection-end-line="84" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UI/bokeh_ui/figures.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="381">
+          <caret line="170" selection-start-line="170" selection-end-line="170" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UI/bokeh_ui/ui.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="45" column="28" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

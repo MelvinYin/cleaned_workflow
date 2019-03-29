@@ -132,6 +132,20 @@ class TextInputComponent:
 from bokeh.models import ColumnDataSource, OpenURL, TapTool
 from bokeh.models.callbacks import CustomJS
 
+# class ButtonURLComponent:
+#     def __init__(self, specs, widget_callback):
+#         self.widget_callback = widget_callback
+#         self.widget = self._set_button(specs)
+#
+#     def _set_button(self, specs):
+#         button = Button()
+#         button.label = specs.text
+#         button.width = specs.width
+#         button.height = specs.height
+#         button.name = _convert_url_to_bokeh("mast_folder/mast.html")
+#         button.callback = self.widget_callback()
+#         return button
+
 class ButtonURLComponent:
     def __init__(self, specs, widget_callback):
         self.widget_callback = widget_callback
@@ -139,9 +153,26 @@ class ButtonURLComponent:
 
     def _set_button(self, specs):
         button = Button()
+        # button = figure()
+        # button = figure(plot_width=400, plot_height=400,
+        #            tools="tap", title="Click the Dots")
+        #
+        # source = ColumnDataSource(data=dict(
+        #     x=[1, 2, 3, 4, 5],
+        #     y=[2, 5, 8, 2, 7],
+        #     color=["navy", "orange", "olive", "firebrick", "gold"]
+        # ))
+        #
+        # button.circle('x', 'y', color='color', size=20, source=source)
+        #
+        # url = _convert_url_to_bokeh("mast_folder/mast.html")
+        # taptool = button.select(type=TapTool)
+        # taptool.callback = OpenURL(url=url)
+
         button.label = specs.text
         button.width = specs.width
         button.height = specs.height
+        button.name = _convert_url_to_bokeh("mast_folder/mast.html")
         button.callback = self.widget_callback()
         return button
 

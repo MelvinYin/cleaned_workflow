@@ -41,10 +41,13 @@ class UI:
         self.layout = self._plot()
 
     def _url_callback(self):
-        url = "mast.html"
+        url = "mast_folder/mast.html"
         url = _convert_url_to_bokeh(url)
         args = dict(url=url)
-        obj = CustomJS(args=args, code='window.open(url);')
+        obj = CustomJS(args=args, code="var level = cb_obj.name;" \
+                                        "var tes = window.open(url + '?now=' "
+                                       "+ new Date().toString());")
+
         return obj
 
     def _button_callback(self):
@@ -52,11 +55,15 @@ class UI:
         print("button callback called")
         values_to_update = self.callback(self._ti.current_value)
         fam_probs = values_to_update['class_probs']
-        self._family_prob_1.figure_update(fam_probs[0])
-        self._family_prob_2.figure_update(fam_probs[1])
-        self._family_prob_3.figure_update(fam_probs[2])
-        self._family_prob_4.figure_update(fam_probs[3])
-        self._family_prob_5.figure_update(fam_probs[4])
+        try:
+            self._family_prob_1.figure_update(fam_probs[0])
+            self._family_prob_2.figure_update(fam_probs[1])
+            self._family_prob_3.figure_update(fam_probs[2])
+            self._family_prob_4.figure_update(fam_probs[3])
+            self._family_prob_5.figure_update(fam_probs[4])
+        except:
+            if len(fam_probs) >= 5:
+                raise
         return
 
     def _plot(self):

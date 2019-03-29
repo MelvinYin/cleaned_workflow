@@ -4,6 +4,7 @@ from enum import Enum, auto
 def _convert_url_to_bokeh(url):
     _url = os.path.join(os.path.basename(os.path.dirname(__file__)),
                         'static', url)
+    # _url = f"./static/{url}"
     return _url
 
 class FigureNames(Enum):

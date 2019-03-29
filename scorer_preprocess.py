@@ -65,16 +65,54 @@ def meme_merger(meme_dir, output_fname):
         file.writelines(output_lines)
     return
 
+def _get_motif_mapping(motif_filepath):
+    with open(motif_filepath, 'r') as file:
+        raw_lines = file.readlines()
+    motif_map = dict()
+    curr_motif_count = 1
+    for line in raw_lines:
+        if line.startswith("MOTIF"):
+            motif_no = int(re.search("[0-9]+", line).group(0))
+            motif_map[motif_no] = curr_motif_count
+            curr_motif_count += 1
+    return motif_map
+
+def _rewrite_motif_txt(motif_filepath, motif_map):
+    with open(motif_filepath, 'r') as file:
+        raw_lines = file.readlines()
+    output_lines = ""
+    for line in raw_lines:
+        if line.startswith("MOTIF"):
+            motif_no = int(re.search("[0-9]+", line).group(0))
+            remapped_no = motif_map[motif_no]
+            line = f"MOTIF MEME-{remapped_no}\n"
+        output_lines += line
+    with open(motif_filepath, 'w') as file:
+        file.writelines(output_lines)
+
+def _remap_comb_fam(comb_fam, motif_map):
+    new_comb_fam = dict()
+    for comb, comb_val in comb_fam.items():
+        new_comb = []
+        for element in comb:
+            new_comb.append(motif_map[element])
+        new_comb_fam[tuple(new_comb)] = comb_val
+    return new_comb_fam
+
 def main():
     input_motif_dir = "./output/motifs"
     input_cluster_descr = "./output/cluster_description.txt"
-    pkl_path = "./UI/combi_fam_data.pkl"
+    pkl_path = "./src/UI/combi_fam_data.pkl"
     assert os.path.isdir(input_motif_dir)
     assert os.path.isfile(input_cluster_descr)
+    meme_merger("./output/motifs", "./src/UI/motifs.txt")
+    motif_map = _get_motif_mapping("./src/UI/motifs.txt")
+    _rewrite_motif_txt("./src/UI/motifs.txt", motif_map)
     combination_families = cluster_descr_parser(input_cluster_descr)
     combination_families = _convert_to_percentage(combination_families)
+    combination_families = _remap_comb_fam(combination_families, motif_map)
     with open(pkl_path, 'wb') as file:
         pickle.dump(combination_families, file, -1)
-
-    meme_merger("./output/motifs", "./UI/motifs.txt")
     return
+
+main()

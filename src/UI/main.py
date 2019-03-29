@@ -1,5 +1,6 @@
 from utils.sys_path_adder import folders_to_add
 from bokeh.plotting import show, curdoc
+from scorer import Scorer
 
 folders_to_add(['bokeh_ui', 'utils'])
 folders_to_add(['figures'], suffix='bokeh_ui')
@@ -7,17 +8,18 @@ folders_to_add(['figures'], suffix='bokeh_ui')
 from ui import UI
 from ui_config import UISpecs
 
+scorer = Scorer()
+
 def _callback(args):
-    print("Provided arg: {}".format(args))
+    input_seq = args.strip().replace("\n", "")
+    output = scorer.score_seq(input_seq)
     to_return = dict()
-    to_return['class_probs'] = [['class_1', '98%'], ['class_2', '8%'],
-                                ['class_3', '098%'], ['class_4', '9%'],
-                                ['class_5', '12%']]
+    to_return['class_probs'] = output
     return to_return
 
 def main():
     ui = UI(_callback, UISpecs())
-    # show(ui.ui_layout)
+    # show(ui.layout)
     curdoc().add_root(ui.layout)
 
 main()
