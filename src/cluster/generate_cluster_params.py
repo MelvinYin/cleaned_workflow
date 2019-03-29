@@ -29,9 +29,13 @@ def parse_mast_txt(input_fname):
     return name_combi
 
 def _lev_metric(x, y):
-    x_str = "".join([str(i) for i in x])
-    y_str = "".join([str(i) for i in y])
-    dist = leven.levenshtein(x_str, y_str)
+    x_leven = ""
+    for i in x:
+        x_leven += chr(i)
+    y_leven = ""
+    for i in y:
+        y_leven += chr(i)
+    dist = leven.levenshtein(x_leven, y_leven)
     return dist
 
 def get_dist_metric(combinations):
