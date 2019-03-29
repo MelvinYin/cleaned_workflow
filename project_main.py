@@ -64,12 +64,12 @@ class Executor:
         switches = OrderedDict()
         # Get input_seqs
         switches['MERGE_INPUT'] = (True, self.merge_input)
-        switches['SHRINK_INPUT'] = (True, self.shrink_input)
+        switches['SHRINK_INPUT'] = (False, self.shrink_input)
         switches['CREATE_SHORT_SEQS'] = (True, self.create_short_seqs)
         # Get consensus_loops
         switches['RUN_DHCL'] = (True, self.run_dhcl)
         switches['EXTRACT_CONSENSUS'] = (True, self.extract_consensus)
-        switches['REDUCE_CONSENSUS'] = (True, self.reduce_consensus)
+        switches['REDUCE_CONSENSUS'] = (False, self.reduce_consensus)
         # Get PSSM using:
         # Meme
         switches['BUILD_PSSM'] = (False, self.build_pssm)
