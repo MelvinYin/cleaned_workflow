@@ -111,6 +111,7 @@ def main():
     combination_families = cluster_descr_parser(input_cluster_descr)
     combination_families = _convert_to_percentage(combination_families)
     combination_families = _remap_comb_fam(combination_families, motif_map)
+    print(combination_families)
     with open(pkl_path, 'wb') as file:
         pickle.dump(combination_families, file, -1)
     return

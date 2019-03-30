@@ -44,8 +44,7 @@ class UI:
         url = "mast_folder/mast.html"
         url = _convert_url_to_bokeh(url)
         args = dict(url=url)
-        obj = CustomJS(args=args, code="var level = cb_obj.name;" \
-                                        "var tes = window.open(url + '?now=' "
+        obj = CustomJS(args=args, code="window.open(url + '?now=' "
                                        "+ new Date().toString());")
 
         return obj
@@ -87,8 +86,7 @@ class UI:
                                 self._logo_descr_4.figure, Spacer(height=30),
                                 self._logo_descr_5.figure, Spacer(height=30),
                                 self._logo_descr_6.figure)
-        logos_set = row(logo_descr_col, Spacer(width=30),
-                        self._logos_fig.figure)
+        logos_set = row(logo_descr_col, Spacer(width=30))
 
 
         # alignment_col = column(Spacer(height=17), logo_header_row,

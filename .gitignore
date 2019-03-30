@@ -12,3 +12,5 @@ __pycache__/
 src/UI/tes.py
 *.png
 *.txt
+*.xml
+*.pkl
