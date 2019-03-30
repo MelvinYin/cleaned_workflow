@@ -64,8 +64,8 @@ class Scorer:
         for comb, comb_prob in level_scores.items():
             families_probs = self.class_data[comb]
             for fam, fam_prob in families_probs.items():
-                assigned_probs[fam] += fam_prob * comb_prob
-        assert np.isclose(sum(assigned_probs.values()), 1.)
+                assigned_probs[fam] += 100. * fam_prob * comb_prob
+        assert np.isclose(sum(assigned_probs.values()), 100.)
 
         return assigned_probs
 

@@ -102,16 +102,15 @@ def _remap_comb_fam(comb_fam, motif_map):
 def main():
     input_motif_dir = "./output/motifs"
     input_cluster_descr = "./output/cluster_description.txt"
-    pkl_path = "./src/UI/combi_fam_data.pkl"
+    pkl_path = "./src/UI/static/combi_fam_data.pkl"
     assert os.path.isdir(input_motif_dir)
     assert os.path.isfile(input_cluster_descr)
-    meme_merger("./output/motifs", "./src/UI/motifs.txt")
-    motif_map = _get_motif_mapping("./src/UI/motifs.txt")
-    _rewrite_motif_txt("./src/UI/motifs.txt", motif_map)
+    meme_merger("./output/motifs", "./src/UI/static/motifs.txt")
+    motif_map = _get_motif_mapping("./src/UI/static/motifs.txt")
+    _rewrite_motif_txt("./src/UI/static/motifs.txt", motif_map)
     combination_families = cluster_descr_parser(input_cluster_descr)
     combination_families = _convert_to_percentage(combination_families)
     combination_families = _remap_comb_fam(combination_families, motif_map)
-    print(combination_families)
     with open(pkl_path, 'wb') as file:
         pickle.dump(combination_families, file, -1)
     return
