@@ -1,9 +1,7 @@
 from bokeh.layouts import column, row, Spacer
 from figures import ConsoleOutput, TextInputComponent, ButtonComponent, \
-    TextBoxComponent, ConsoleTextConsoleRow, SingleImageComponent, \
-    MultiImageComponent, ButtonURLComponent
+    TextBoxComponent, ConsoleTextConsoleRow, ButtonURLComponent
 from bokeh.models.callbacks import CustomJS
-from bokeh.models import OpenURL
 from ui_config import _convert_url_to_bokeh
 
 class UI:
@@ -22,9 +20,10 @@ class UI:
         self._family_prob_3 = ConsoleTextConsoleRow(specs.con_text_con_3)
         self._family_prob_4 = ConsoleTextConsoleRow(specs.con_text_con_4)
         self._family_prob_5 = ConsoleTextConsoleRow(specs.con_text_con_5)
-        self._button = ButtonComponent(specs.button, self._button_callback)
+        self._input_button = ButtonComponent(specs.input_button,
+                                       self._button_callback)
 
-        self._alignment_img = ButtonURLComponent(specs.mast_img,
+        self._alignment_img = ButtonURLComponent(specs.show_align,
                                                  self._url_callback)
         self.layout = self._plot()
 
@@ -61,7 +60,7 @@ class UI:
                                    self._family_prob_3.figure,
                                    self._family_prob_4.figure,
                                    self._family_prob_5.figure)
-        left_text_input_col = column(self._ti.widget, self._button.widget)
+        left_text_input_col = column(self._ti.widget, self._input_button.widget)
         right_console_col = column(Spacer(height=5), family_prob_table,
                                    width=80)
         alignment_row = row(Spacer(width=185), self._alignment_img.widget)

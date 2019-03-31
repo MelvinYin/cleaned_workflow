@@ -2,55 +2,60 @@ import os
 import re
 import pickle
 
-def cluster_descr_parser(src):
+family_initial_to_name_map = dict(ENL='Enolase',
+                                  GAD='Galactarate Dehydratase',
+                                  GLD='Glucarate Dehydratase',
+                                  MR='Mandelate Racemase',
+                                  MD='Mannonate Dehydratase',
+                                  MAL='Methylaspartate Ammonia-lyase',
+                                  MC='Muconate Cycloisomerase')
+
+def parse_cluster_descr(src):
     with open(src, 'r') as file:
         raw_lines = file.readlines()
-    combination_families = dict()
-    curr_combination = None
-    curr_groups = None
+    combi_famfreq = dict()
+    combi = None
+    family_freqs = None
     for line in raw_lines:
-        if line.startswith("Combination") and curr_groups is None:
-            matched_values = re.findall("([0-9]+)", line)
-            curr_combination = tuple([int(i) for i in matched_values])
-            curr_groups = dict()
+        if line.startswith("Combination") and family_freqs is None:
+            combi_str = re.findall("([0-9]+)", line)
+            combi = tuple([int(i) for i in combi_str])
+            family_freqs = dict()
             continue
         if line.startswith("Combination"):
-            combination_families[curr_combination] = curr_groups
-            curr_groups = dict()
-            matched_values = re.findall("([0-9]+)", line)
-            curr_combination = tuple([int(i) for i in matched_values])
+            combi_famfreq[combi] = family_freqs
+            family_freqs = dict()
+            combi_str = re.findall("([0-9]+)", line)
+            combi = tuple([int(i) for i in combi_str])
             continue
         if re.search(" : ", line) is not None:
-            group_id = re.match("[A-Z]+", line).group(0)
-            count = re.search("[0-9]+", line).group(0)
-            curr_groups[group_id] = int(count)
-    if curr_groups:
-        combination_families[curr_combination] = curr_groups
-    return combination_families
+            family_initials = re.match("[A-Z]+", line).group(0)
+            family = family_initial_to_name_map[family_initials]
+            freq = re.search("[0-9]+", line).group(0)
+            family_freqs[family] = int(freq)
+    if family_freqs:
+        combi_famfreq[combi] = family_freqs
+    return combi_famfreq
 
-def _convert_to_percentage(combination_families):
-    for key in combination_families.keys():
-        new_curr_groups = dict()
-        old_curr_groups = combination_families[key]
-        total_count = sum(old_curr_groups.values())
-        for group_id, count in old_curr_groups.items():
-            new_curr_groups[group_id] = float(count) / total_count
-        combination_families[key] = new_curr_groups
-    return combination_families
+def _convert_to_percent(combi_famfreq):
+    combi_famprob = dict()
+    for combi in combi_famfreq.keys():
+        famprob = dict()
+        famfreq = combi_famfreq[combi]
+        total_freq = sum(famfreq.values())
+        for fam, freq in famfreq.items():
+            famprob[fam] = float(freq) / total_freq
+        combi_famprob[combi] = famprob
+    return combi_famprob
 
-def meme_merger(meme_dir, output_fname):
+def merge_memefiles(meme_dir, output_fname):
     output_lines = ''
     added_motifs = set()
+    to_copy = True
+    # So initial lines of first file is copied, but not subsequent ones,
+    # see to_copy=False at end of for loop
     for filename in os.listdir(meme_dir):
-        to_copy = False
         with open(f"{meme_dir}/{filename}", 'r') as file:
-            if not output_lines:
-                for line in file:
-                    if line.startswith('MOTIF'):
-                        motif_no = int(re.search("[0-9]+", line).group(0))
-                        added_motifs.add(motif_no)
-                    output_lines += line
-                continue
             for line in file:
                 if line.startswith('MOTIF'):
                     motif_no = int(re.search("[0-9]+", line).group(0))
@@ -61,6 +66,7 @@ def meme_merger(meme_dir, output_fname):
                         to_copy = False
                 if to_copy:
                     output_lines += line
+        to_copy = False
     with open(f"{output_fname}", 'w') as file:
         file.writelines(output_lines)
     return
@@ -92,27 +98,28 @@ def _rewrite_motif_txt(motif_filepath, motif_map):
 
 def _remap_comb_fam(comb_fam, motif_map):
     new_comb_fam = dict()
-    for comb, comb_val in comb_fam.items():
+    for comb, value in comb_fam.items():
         new_comb = []
         for element in comb:
             new_comb.append(motif_map[element])
-        new_comb_fam[tuple(new_comb)] = comb_val
+        new_comb_fam[tuple(new_comb)] = value
     return new_comb_fam
 
 def main():
     input_motif_dir = "./output/motifs"
+    otuput_motif_file = "./src/UI/static/motifs.txt"
     input_cluster_descr = "./output/cluster_description.txt"
     pkl_path = "./src/UI/static/combi_fam_data.pkl"
     assert os.path.isdir(input_motif_dir)
     assert os.path.isfile(input_cluster_descr)
-    meme_merger("./output/motifs", "./src/UI/static/motifs.txt")
-    motif_map = _get_motif_mapping("./src/UI/static/motifs.txt")
-    _rewrite_motif_txt("./src/UI/static/motifs.txt", motif_map)
-    combination_families = cluster_descr_parser(input_cluster_descr)
-    combination_families = _convert_to_percentage(combination_families)
-    combination_families = _remap_comb_fam(combination_families, motif_map)
+    merge_memefiles(input_motif_dir, otuput_motif_file)
+    motif_map = _get_motif_mapping(otuput_motif_file)
+    _rewrite_motif_txt(otuput_motif_file, motif_map)
+    combi_famfreq = parse_cluster_descr(input_cluster_descr)
+    combi_famprob = _convert_to_percent(combi_famfreq)
+    combi_famprob = _remap_comb_fam(combi_famprob, motif_map)
     with open(pkl_path, 'wb') as file:
-        pickle.dump(combination_families, file, -1)
+        pickle.dump(combi_famprob, file, -1)
     return
 
 main()

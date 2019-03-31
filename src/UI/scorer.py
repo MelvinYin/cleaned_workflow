@@ -8,8 +8,7 @@ import re
 import shutil
 import subprocess
 
-from ui_config import _convert_url_to_bokeh
-
+from ui_utils import _convert_url_to_bokeh
 
 class Scorer:
     def __init__(self):
@@ -113,11 +112,11 @@ class Scorer:
     def score_fasta(self, seq_path):
         shutil.copy(seq_path, self._tmp_seq_store)
         assigned_probs = self._score()
-        # os.remove(self._tmp_seq_store)
+        os.remove(self._tmp_seq_store)
         return assigned_probs
 
     def score_seq(self, seq):
         self._store_to_fasta(seq)
         assigned_probs = self._score()
-        # os.remove(self._tmp_seq_store)
+        os.remove(self._tmp_seq_store)
         return assigned_probs

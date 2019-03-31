@@ -8,7 +8,7 @@ from bokeh.models import WheelZoomTool, OpenURL
 
 from scipy.ndimage import imread
 import numpy as np
-from ui_config import _convert_url_to_bokeh
+from ui_utils import _convert_url_to_bokeh
 
 
 class SingleImageComponent:

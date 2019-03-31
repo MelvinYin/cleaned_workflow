@@ -1,31 +1,10 @@
-import os
 from enum import Enum, auto
 
-def _convert_url_to_bokeh(url):
-    _url = os.path.join(os.path.basename(os.path.dirname(__file__)),
-                        'static', url)
-    # _url = f"./static/{url}"
-    return _url
+from ui_utils import _convert_url_to_bokeh
 
 class FigureNames(Enum):
     console_output = auto()
     con_text_con_1 = auto()
-
-class ConsoleOutputSpecs:
-    def __init__(self):
-        self.name = FigureNames.console_output
-        self.title = "Console"
-        self.text = 'Initial<p>'
-        self.width = 50
-        self.height = 20
-        self.textbox_width = 400
-        self.textbox_height = 500
-        # Division by 2 so it fits well and within what bokeh uses.
-        self.html_height = int(self.textbox_height / 2)
-        _style = dict(border='2px solid rgb(200, 200, 200)',
-                      height='{}px'.format(self.html_height))
-        _style['overflow-y'] = 'auto'
-        self.style = _style
 
 class GenericSpecs:
     def __init__(self, width=1, height=1, text='label', style=None):
@@ -37,23 +16,6 @@ class GenericSpecs:
         else:
             # self.style = dict(border='2px solid rgb(200, 200, 200)')
             self.style = dict()
-
-
-class LogosSpecs:
-    def __init__(self, width=500, height=400,
-                 images=('logos_1.png', 'logos_2.png', 'logos_3.png',
-                         'logos_4.png', 'logos_5.png', 'logos_6.png')):
-        images = tuple([_convert_url_to_bokeh(url) for url in images])
-        self.width = width
-        self.height = height
-        self.images = images
-        self.x_range = (-1, 11)
-        self.y_range = (-1, 26)
-        template_img_xy = (0, 4)
-        self.img_wh = (10, 4)
-        self.img_xys = list([(template_img_xy[0],
-                              self.img_wh[1]*i+template_img_xy[1])
-                             for i in range(len(images))])
 
 class SingleLineConsoleSpecs:
     def __init__(self, textbox_width=100, textbox_height=10,
@@ -85,87 +47,56 @@ class ConsoleTextConsoleSpecs:
 
 class UISpecs:
     def __init__(self):
-        self.console = ConsoleOutputSpecs()
         self.ti = GenericSpecs(width=100, height=200, text='Input Sequence')
-        self.button = GenericSpecs(width=100, height=100, text="Submit")
+        self.input_button = GenericSpecs(width=100, height=100, text="Submit")
 
         app_title_style = dict(color='rgb(0, 0, 0)')
         app_title_style['text-decoration'] = 'underline'
         app_title_style['font-size'] = '200%'
 
-        input_header_style = dict(color='rgb(0, 0, 0)')
-        input_header_style['text-decoration'] = 'underline'
-        input_header_style['font-size'] = '120%'
-
-        prob_header_style = dict(color='rgb(0, 0, 0)')
-        prob_header_style['text-decoration'] = 'underline'
-        prob_header_style['font-size'] = '120%'
-
-        alignment_header_style = dict(color='rgb(0, 0, 0)')
-        alignment_header_style['text-decoration'] = 'underline'
-        alignment_header_style['font-size'] = '120%'
-
-        logos_header_style = dict(color='rgb(0, 0, 0)')
-        logos_header_style['text-decoration'] = 'underline'
-        logos_header_style['font-size'] = '120%'
+        subheader_style = dict(color='rgb(0, 0, 0)')
+        subheader_style['text-decoration'] = 'underline'
+        subheader_style['font-size'] = '120%'
 
         self.app_title = GenericSpecs(width=1000, height=10,
                                       text="Enolase Family Predictor",
                                       style=app_title_style)
         self.input_header = GenericSpecs(width=200, height=10,
                                          text="Input Sequence",
-                                         style=input_header_style)
+                                         style=subheader_style)
         self.prob_header = GenericSpecs(width=200, height=10,
                                         text="Family Prediction",
-                                        style=prob_header_style)
+                                        style=subheader_style)
         self.alignment_header = GenericSpecs(width=200, height=10,
                                              text="Profile Alignment",
-                                             style=alignment_header_style)
-        self.logo_header = GenericSpecs(width=200, height=10,
-                                        text="Profile Logos",
-                                        style=logos_header_style)
+                                             style=subheader_style)
 
         t1 = GenericSpecs(width=50, height=10, text="=>")
 
-        c11 = SingleLineConsoleSpecs(text='Enolase')
-        c12 = SingleLineConsoleSpecs(text='98.2%')
+        c11 = SingleLineConsoleSpecs(text='Subgroup 1')
+        c12 = SingleLineConsoleSpecs(text='20.0%')
 
-        c21 = SingleLineConsoleSpecs(text='Galacterate Dehydratase')
-        c22 = SingleLineConsoleSpecs(text='1.0%')
+        c21 = SingleLineConsoleSpecs(text='Subgroup 2')
+        c22 = SingleLineConsoleSpecs(text='20.0%')
 
-        c31 = SingleLineConsoleSpecs(text='Glucarate Dehydratase')
-        c32 = SingleLineConsoleSpecs(text='0.6%')
+        c31 = SingleLineConsoleSpecs(text='Subgroup 3')
+        c32 = SingleLineConsoleSpecs(text='20.0%')
 
-        c41 = SingleLineConsoleSpecs(text='Mannonate Dehydratase')
-        c42 = SingleLineConsoleSpecs(text='0.1%')
+        c41 = SingleLineConsoleSpecs(text='Subgroup 4')
+        c42 = SingleLineConsoleSpecs(text='20.0%')
 
-        c51 = SingleLineConsoleSpecs(text='Mandelate Racemase')
-        c52 = SingleLineConsoleSpecs(text='0.1%')
+        c51 = SingleLineConsoleSpecs(text='Subgroup 5')
+        c52 = SingleLineConsoleSpecs(text='20.0%')
 
         self.con_text_con_1 = ConsoleTextConsoleSpecs(c11, t1, c12)
         self.con_text_con_2 = ConsoleTextConsoleSpecs(c21, t1, c22)
         self.con_text_con_3 = ConsoleTextConsoleSpecs(c31, t1, c32)
         self.con_text_con_4 = ConsoleTextConsoleSpecs(c41, t1, c42)
         self.con_text_con_5 = ConsoleTextConsoleSpecs(c51, t1, c52)
-        self.mast_img = GenericSpecs(width=100, height=100,
+        self.show_align = GenericSpecs(width=100, height=100,
                                      text="Show Alignment")
-
-        self.tmp_output_header = GenericSpecs(width=200, height=10,
-                                        text="OUTPUT_PLACEHOLDER")
         self.width = 100
         self.height = 100
-        self.logo_descr_1 = GenericSpecs(width=60, height=10,
-                                         text="Profile 1: INSERT")
-        self.logo_descr_2 = GenericSpecs(width=60, height=10,
-                                         text="Profile 2: INSERT")
-        self.logo_descr_3 = GenericSpecs(width=60, height=10,
-                                         text="Profile 3: INSERT")
-        self.logo_descr_4 = GenericSpecs(width=60, height=10,
-                                         text="Profile 4: INSERT")
-        self.logo_descr_5 = GenericSpecs(width=60, height=10,
-                                         text="Profile 5: INSERT")
-        self.logo_descr_6 = GenericSpecs(width=60, height=10,
-                                         text="Profile 6: INSERT")
 
 
 

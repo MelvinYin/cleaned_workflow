@@ -14,3 +14,5 @@ src/UI/tes.py
 *.txt
 *.xml
 *.pkl
+*.xml
+*.pdb
