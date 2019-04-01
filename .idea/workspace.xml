@@ -3,21 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="977e9f69-e7b2-4235-9856-6e88bdf80fc9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scorer_preprocess.py" beforeDir="false" afterPath="$PROJECT_DIR$/scorer_preprocess.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/bokeh_ui/figures.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/bokeh_ui/figures.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/bokeh_ui/ui.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/bokeh_ui/ui.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/scorer.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/scorer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/static/logos_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/static/logos_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/static/logos_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/static/logos_4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/static/logos_5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/static/logos_6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/static/tmp_input.fasta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/ui_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/ui_config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/utils/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/utils/sys_path_adder.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -71,8 +56,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scorer_preprocess.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-330">
-              <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+            <state relative-caret-position="540">
+              <caret line="45" column="41" selection-start-line="45" selection-start-column="41" selection-end-line="45" selection-end-column="41" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -83,7 +68,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/UI/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="810">
+            <state relative-caret-position="720">
               <caret line="27" selection-start-line="27" selection-end-line="27" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
@@ -95,7 +80,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/UI/ui_config.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
+            <state relative-caret-position="2490">
               <caret line="85" column="28" selection-start-line="85" selection-start-column="28" selection-end-line="85" selection-end-column="28" />
               <folding>
                 <element signature="e#0#27#0" expanded="true" />
@@ -107,7 +92,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/UI/scorer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-540">
+            <state>
               <caret column="18" selection-start-column="18" selection-end-column="18" />
             </state>
           </provider>
@@ -288,7 +273,7 @@
     <property name="SearchEverywhereHistoryKey" value="jump to&#9;ACTION&#9;JumpToColorsAndFonts" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last.edited.regexp" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../cv_final_project" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -549,7 +534,8 @@
       <workItem from="1553926153617" duration="330000" />
       <workItem from="1553933439867" duration="2352000" />
       <workItem from="1553960602331" duration="5501000" />
-      <workItem from="1554011477749" duration="5753000" />
+      <workItem from="1554011477749" duration="6354000" />
+      <workItem from="1554085617508" duration="619000" />
     </task>
     <servers />
   </component>
@@ -562,11 +548,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="446947000" />
+    <option name="totallyTimeSpent" value="448167000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1920" height="990" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49945235" weight="0.20597652" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.1189968" />
@@ -695,13 +680,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/UI/utils/sys_path_adder.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UI/utils/sys_path_adder.py" />
     <entry file="file://$USER_HOME$/anaconda3/lib/python3.7/site-packages/bokeh/plotting/figure.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="222">
@@ -855,16 +834,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/UI/embed_multiple_responsive.html" />
-    <entry file="file://$PROJECT_DIR$/src/UI/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UI/utils.py" />
     <entry file="file://$PROJECT_DIR$/src/UI/sys_path_adder.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -873,37 +843,6 @@
         <state>
           <folding>
             <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/UI/bokeh_ui/ui.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="3" column="43" selection-start-line="3" selection-start-column="43" selection-end-line="3" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/UI/scorer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-540">
-          <caret column="18" selection-start-column="18" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/UI/bokeh_ui/figures.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="37" selection-start-column="37" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/UI/ui_config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="85" column="28" selection-start-line="85" selection-start-column="28" selection-end-line="85" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#27#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -918,9 +857,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/scorer_preprocess.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="45" column="41" selection-start-line="45" selection-start-column="41" selection-end-line="45" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/UI/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
+        <state relative-caret-position="720">
           <caret line="27" selection-start-line="27" selection-end-line="27" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
@@ -928,13 +877,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scorer_preprocess.py">
+    <entry file="file://$PROJECT_DIR$/src/UI/ui_config.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-330">
-          <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+        <state relative-caret-position="2490">
+          <caret line="85" column="28" selection-start-line="85" selection-start-column="28" selection-end-line="85" selection-end-column="28" />
           <folding>
-            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#0#27#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UI/scorer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="18" selection-start-column="18" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UI/bokeh_ui/ui.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="3" column="43" selection-start-line="3" selection-start-column="43" selection-end-line="3" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UI/bokeh_ui/figures.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="37" selection-start-column="37" selection-end-column="37" />
         </state>
       </provider>
     </entry>
