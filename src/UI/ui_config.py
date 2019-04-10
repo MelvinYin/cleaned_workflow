@@ -59,7 +59,7 @@ class UISpecs:
         subheader_style['font-size'] = '120%'
 
         self.app_title = GenericSpecs(width=1000, height=10,
-                                      text="Enolase Family Predictor",
+                                      text="Functional Annotation Predictor",
                                       style=app_title_style)
         self.input_header = GenericSpecs(width=200, height=10,
                                          text="Input Sequence",
