@@ -16,4 +16,5 @@ src/UI/tes.py
 *.pkl
 *.xml
 *.pdb
+*.pem
 personal/
