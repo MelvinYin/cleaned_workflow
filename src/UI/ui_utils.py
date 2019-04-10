@@ -14,7 +14,6 @@ def folders_to_add(folders, suffix=None):
     for folder in folders:
         sys.path.append(_src_path + folder)
 
-
 def _convert_url_to_bokeh(url):
     _url = os.path.join(os.path.basename(os.path.dirname(__file__)),
                         'static', url)

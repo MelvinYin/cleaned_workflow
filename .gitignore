@@ -1,20 +1,10 @@
 .idea/
-*.zip
-old/
 files/_trash/
-files/README.txt
-TODO.txt
-discussion notes.txt
 __pycache__/
 *.html
 *.xml
-.idea/workspace.xml
-src/UI/tes.py
 *.png
-*.txt
-*.xml
 *.pkl
-*.xml
-*.pdb
 *.pem
+*.zip
 personal/
